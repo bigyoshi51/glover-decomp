@@ -1,0 +1,15 @@
+{
+  "function_name": "func_8010D490",
+  "game": "glover_usa",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "segment": "D910",
+  "asm_text": "nonmatching func_8010D490, 0x4C\n\nglabel func_8010D490\n    /* E490 8010D490 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* E494 8010D494 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* E498 8010D498 0C043248 */  jal        func_8010C920\n    /* E49C 8010D49C AFB00010 */   sw        $s0, 0x10($sp)\n    /* E4A0 8010D4A0 24040101 */  addiu      $a0, $zero, 0x101\n    /* E4A4 8010D4A4 00408021 */  addu       $s0, $v0, $zero\n    /* E4A8 8010D4A8 00002821 */  addu       $a1, $zero, $zero\n    /* E4AC 8010D4AC 00003021 */  addu       $a2, $zero, $zero\n    /* E4B0 8010D4B0 0C0434E7 */  jal        func_8010D39C\n    /* E4B4 8010D4B4 00003821 */   addu      $a3, $zero, $zero\n    /* E4B8 8010D4B8 02002021 */  addu       $a0, $s0, $zero\n    /* E4BC 8010D4BC 0C043256 */  jal        func_8010C958\n    /* E4C0 8010D4C0 00408021 */   addu      $s0, $v0, $zero\n    /* E4C4 8010D4C4 02001021 */  addu       $v0, $s0, $zero\n    /* E4C8 8010D4C8 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* E4CC 8010D4CC 8FB00010 */  lw         $s0, 0x10($sp)\n    /* E4D0 8010D4D0 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* E4D4 8010D4D4 03E00008 */  jr         $ra\n    /* E4D8 8010D4D8 00000000 */   nop\nendlabel func_8010D490\n",
+  "m2c_output": "s32 func_8010C920();                                /* extern */\n? func_8010C958(s32);                               /* extern */\ns32 func_8010D39C(?, ?, ?, ?);                      /* extern */\n\ns32 func_8010D490(void) {\n    s32 temp_s0;\n    s32 temp_s0_2;\n\n    temp_s0_2 = func_8010C920();\n    temp_s0 = func_8010D39C(0x101, 0, 0, 0);\n    func_8010C958(temp_s0_2);\n    return temp_s0;\n}\n",
+  "final_c": "s32 func_8010D490(void) {\n    s32 temp = func_8010C920();\n    s32 result = func_8010D39C(0x101, 0, 0, 0);\n    func_8010C958(temp);\n    return result;\n}",
+  "matched": true,
+  "instruction_count": 19,
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1773631403.3623803
+}

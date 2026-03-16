@@ -1,0 +1,15 @@
+{
+  "function_name": "func_8011D7F0",
+  "game": "glover_usa",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "segment": "18020",
+  "asm_text": "nonmatching func_8011D7F0, 0x20\n\nglabel func_8011D7F0\n    /* 1D7F0 8011D7F0 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 1D7F4 8011D7F4 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 1D7F8 8011D7F8 0C047204 */  jal        func_8011C810\n    /* 1D7FC 8011D7FC 00000000 */   nop\n    /* 1D800 8011D800 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 1D804 8011D804 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 1D808 8011D808 03E00008 */  jr         $ra\n    /* 1D80C 8011D80C 00000000 */   nop\nendlabel func_8011D7F0\n",
+  "m2c_output": "? func_8011C810();                                  /* extern */\n\nvoid func_8011D7F0(void) {\n    func_8011C810();\n}\n",
+  "final_c": "void func_8011D7F0(void) {\n    func_8011C810();\n}",
+  "matched": true,
+  "instruction_count": 8,
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1773631405.6533551
+}

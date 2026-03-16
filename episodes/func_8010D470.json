@@ -1,0 +1,15 @@
+{
+  "function_name": "func_8010D470",
+  "game": "glover_usa",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "segment": "D910",
+  "asm_text": "nonmatching func_8010D470, 0x20\n\nglabel func_8010D470\n    /* E470 8010D470 90820000 */  lbu        $v0, 0x0($a0)\n    /* E474 8010D474 10400004 */  beqz       $v0, .L8010D488\n    /* E478 8010D478 24830001 */   addiu     $v1, $a0, 0x1\n  .L8010D47C:\n    /* E47C 8010D47C 90620000 */  lbu        $v0, 0x0($v1)\n    /* E480 8010D480 1440FFFE */  bnez       $v0, .L8010D47C\n    /* E484 8010D484 24630001 */   addiu     $v1, $v1, 0x1\n  .L8010D488:\n    /* E488 8010D488 03E00008 */  jr         $ra\n    /* E48C 8010D48C 00641023 */   subu      $v0, $v1, $a0\nendlabel func_8010D470\n",
+  "m2c_output": "s32 func_8010D470(u8 *arg0) {\n    u8 *var_v1;\n\n    var_v1 = arg0 + 1;\n    if (*arg0 != 0) {\n        do {\n            var_v1 += 1;\n        } while (*var_v1 != 0);\n    }\n    return var_v1 - arg0;\n}\n",
+  "final_c": "s32 func_8010D470(u8 *arg0) {\n    u8 *ptr = arg0 + 1;\n    if (*arg0 != 0) {\n        do {} while (*ptr++ != 0);\n    }\n    return (s32)(ptr - arg0);\n}",
+  "matched": true,
+  "instruction_count": 8,
+  "has_branches": true,
+  "has_calls": false,
+  "timestamp": 1773631403.1337488
+}
