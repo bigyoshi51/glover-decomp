@@ -101,7 +101,13 @@ extract:
 	$(RM) -r asm/ assets/
 	$(SPLAT) $(SPLAT_YAML)
 
-.PHONY: all rom clean distclean extract
+expected: rom
+	$(RM) -r $(BUILD_DIR)/expected
+	mkdir -p $(BUILD_DIR)/expected/src $(BUILD_DIR)/expected/asm
+	cp $(BUILD_DIR)/src/*.o $(BUILD_DIR)/expected/src/
+	cp $(BUILD_DIR)/asm/*.o $(BUILD_DIR)/expected/asm/
+
+.PHONY: all rom clean distclean extract expected
 .DEFAULT_GOAL := rom
 .SECONDARY:
 
