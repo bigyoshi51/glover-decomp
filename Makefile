@@ -55,6 +55,9 @@ IINC := -Iinclude -I.
 
 #### Host CC check ####
 RUN_CC_CHECK ?= 1
+ifdef PERMUTER
+RUN_CC_CHECK := 0
+endif
 ifneq ($(RUN_CC_CHECK),0)
 CC_CHECK       := gcc
 CC_CHECK_FLAGS := -MMD -MP -fno-builtin -fsyntax-only -funsigned-char -std=gnu90 -m32 \
@@ -125,9 +128,13 @@ $(LDSCRIPT): $(TARGET).ld
 	$(CPP) -P $(IINC) -o $@ $<
 
 $(BUILD_DIR)/%.o: %.c
+ifndef PERMUTER
 	$(CC_CHECK) $(CC_CHECK_FLAGS) $(CPPFLAGS) -o $@ $<
+endif
 	export COMPILER_PATH=tools/gcc_2.7.2/$(DETECTED_OS) && $(CC) $(OPTFLAGS) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+ifndef PERMUTER
 	@$(STRIP) $@ -N dummy-symbol-name
+endif
 
 $(BUILD_DIR)/%.o: %.s
 	$(AS) $(ASFLAGS) $(ENDIAN) $(IINC) -I $(dir $*) -o $@ $<
