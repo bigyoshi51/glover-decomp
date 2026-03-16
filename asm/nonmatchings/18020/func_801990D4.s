@@ -144,5 +144,5 @@ glabel func_801990D4
     /* 992D0 801992D0 8FB20040 */  lw         $s2, 0x40($sp)
     /* 992D4 801992D4 8FB1003C */  lw         $s1, 0x3C($sp)
     /* 992D8 801992D8 8FB00038 */  lw         $s0, 0x38($sp)
-    /* 992DC 801992DC C7B50060 */  lwc1       $fs0f, 0x60($sp)
+    /* 992DC 801992DC C7B50060 */  lwc1       $f21, 0x60($sp)
 endlabel func_801990D4

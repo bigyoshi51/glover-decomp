@@ -2,7 +2,7 @@
 #define COMMON_H
 
 #ifndef INCLUDE_ASM
-#define INCLUDE_ASM(dir, symbol) asm(".include \"" dir "/" #symbol ".s\"")
+#define INCLUDE_ASM(dir, symbol) asm(".include \"macro.inc\"\n.include \"" dir "/" #symbol ".s\"")
 #endif
 
 typedef signed char s8;

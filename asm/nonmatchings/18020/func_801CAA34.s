@@ -11,15 +11,15 @@ glabel func_801CAA34
     /* CAA50 801CAA50 00001812 */  mflo       $v1
     /* CAA54 801CAA54 8622001C */  lh         $v0, 0x1C($s1)
     /* CAA58 801CAA58 8E240034 */  lw         $a0, 0x34($s1)
-    /* CAA5C 801CAA5C 44826000 */  mtc1       $v0, $fa0
+    /* CAA5C 801CAA5C 44826000 */  mtc1       $v0, $f12
     /* CAA60 801CAA60 00000000 */  nop
-    /* CAA64 801CAA64 46806321 */  cvt.d.w    $fa0, $fa0
+    /* CAA64 801CAA64 46806321 */  cvt.d.w    $f12, $f12
     /* CAA68 801CAA68 00031BC3 */  sra        $v1, $v1, 15
     /* CAA6C 801CAA6C 00031400 */  sll        $v0, $v1, 16
     /* CAA70 801CAA70 00021403 */  sra        $v0, $v0, 16
-    /* CAA74 801CAA74 44827000 */  mtc1       $v0, $fa1
+    /* CAA74 801CAA74 44827000 */  mtc1       $v0, $f14
     /* CAA78 801CAA78 00000000 */  nop
-    /* CAA7C 801CAA7C 468073A1 */  cvt.d.w    $fa1, $fa1
+    /* CAA7C 801CAA7C 468073A1 */  cvt.d.w    $f14, $f14
     /* CAA80 801CAA80 26220024 */  addiu      $v0, $s1, 0x24
     /* CAA84 801CAA84 A6230028 */  sh         $v1, 0x28($s1)
     /* CAA88 801CAA88 AFA40010 */  sw         $a0, 0x10($sp)
@@ -38,15 +38,15 @@ glabel func_801CAA34
     /* CAABC 801CAABC 00001812 */  mflo       $v1
     /* CAAC0 801CAAC0 8622001E */  lh         $v0, 0x1E($s1)
     /* CAAC4 801CAAC4 8E240034 */  lw         $a0, 0x34($s1)
-    /* CAAC8 801CAAC8 44826000 */  mtc1       $v0, $fa0
+    /* CAAC8 801CAAC8 44826000 */  mtc1       $v0, $f12
     /* CAACC 801CAACC 00000000 */  nop
-    /* CAAD0 801CAAD0 46806321 */  cvt.d.w    $fa0, $fa0
+    /* CAAD0 801CAAD0 46806321 */  cvt.d.w    $f12, $f12
     /* CAAD4 801CAAD4 00031BC3 */  sra        $v1, $v1, 15
     /* CAAD8 801CAAD8 00031400 */  sll        $v0, $v1, 16
     /* CAADC 801CAADC 00021403 */  sra        $v0, $v0, 16
-    /* CAAE0 801CAAE0 44827000 */  mtc1       $v0, $fa1
+    /* CAAE0 801CAAE0 44827000 */  mtc1       $v0, $f14
     /* CAAE4 801CAAE4 00000000 */  nop
-    /* CAAE8 801CAAE8 468073A1 */  cvt.d.w    $fa1, $fa1
+    /* CAAE8 801CAAE8 468073A1 */  cvt.d.w    $f14, $f14
     /* CAAEC 801CAAEC 2622002A */  addiu      $v0, $s1, 0x2A
     /* CAAF0 801CAAF0 A623002E */  sh         $v1, 0x2E($s1)
     /* CAAF4 801CAAF4 AFA40010 */  sw         $a0, 0x10($sp)
@@ -126,16 +126,16 @@ glabel func_801CAA34
   .L801CAC18:
     /* CAC18 801CAC18 03E00008 */  jr         $ra
     /* CAC1C 801CAC1C 27BD0040 */   addiu     $sp, $sp, 0x40
-    /* CAC20 801CAC20 44800000 */  mtc1       $zero, $fv0
-    /* CAC24 801CAC24 44800800 */  mtc1       $zero, $fv0f
+    /* CAC20 801CAC20 44800000 */  mtc1       $zero, $f0
+    /* CAC24 801CAC24 44800800 */  mtc1       $zero, $f1
     /* CAC28 801CAC28 00000000 */  nop
-    /* CAC2C 801CAC2C 46206032 */  c.eq.d     $fa0, $fv0
+    /* CAC2C 801CAC2C 46206032 */  c.eq.d     $f12, $f0
     /* CAC30 801CAC30 00000000 */  nop
     /* CAC34 801CAC34 00000000 */  nop
     /* CAC38 801CAC38 45000003 */  bc1f       .L801CAC48
     /* CAC3C 801CAC3C ACC00000 */   sw        $zero, 0x0($a2)
     /* CAC40 801CAC40 0807273E */  j          .L801C9CF8
-    /* CAC44 801CAC44 46206006 */   mov.d     $fv0, $fa0
+    /* CAC44 801CAC44 46206006 */   mov.d     $f0, $f12
   .L801CAC48:
-    /* CAC48 801CAC48 462C003C */  c.lt.d     $fv0, $fa0
+    /* CAC48 801CAC48 462C003C */  c.lt.d     $f0, $f12
 endlabel func_801CAA34

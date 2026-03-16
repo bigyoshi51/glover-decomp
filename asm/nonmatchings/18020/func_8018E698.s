@@ -25,6 +25,6 @@ glabel func_8018E698
     /* 8E6E4 8018E6E4 24630300 */  addiu      $v1, $v1, %lo(D_80290300)
     /* 8E6E8 8018E6E8 8C620000 */  lw         $v0, 0x0($v1)
     /* 8E6EC 8018E6EC 34A53FFF */  ori        $a1, $a1, (0xFFFF3FFF & 0xFFFF)
-    /* 8E6F0 8018E6F0 44800000 */  mtc1       $zero, $fv0
+    /* 8E6F0 8018E6F0 44800000 */  mtc1       $zero, $f0
     /* 8E6F4 8018E6F4 2464000C */  addiu      $a0, $v1, 0xC
 endlabel func_8018E698

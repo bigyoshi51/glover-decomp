@@ -2,7 +2,7 @@ nonmatching func_8010EBE8, 0x310
 
 glabel func_8010EBE8
     /* FBE8 8010EBE8 3C018010 */  lui        $at, %hi(D_8010015C)
-    /* FBEC 8010EBEC C420015C */  lwc1       $fv0, %lo(D_8010015C)($at)
+    /* FBEC 8010EBEC C420015C */  lwc1       $f0, %lo(D_8010015C)($at)
     /* FBF0 8010EBF0 27BDFFC8 */  addiu      $sp, $sp, -0x38
     /* FBF4 8010EBF4 3C048010 */  lui        $a0, %hi(D_80100150)
     /* FBF8 8010EBF8 24840150 */  addiu      $a0, $a0, %lo(D_80100150)
@@ -16,7 +16,7 @@ glabel func_8010EBE8
     /* FC18 8010EC18 3C01801F */  lui        $at, %hi(D_801EFC92)
     /* FC1C 8010EC1C A022FC92 */  sb         $v0, %lo(D_801EFC92)($at)
     /* FC20 8010EC20 3C01801F */  lui        $at, %hi(D_801ED3BC)
-    /* FC24 8010EC24 E420D3BC */  swc1       $fv0, %lo(D_801ED3BC)($at)
+    /* FC24 8010EC24 E420D3BC */  swc1       $f0, %lo(D_801ED3BC)($at)
     /* FC28 8010EC28 0C055691 */  jal        func_80155A44
     /* FC2C 8010EC2C 00009821 */   addu      $s3, $zero, $zero
     /* FC30 8010EC30 0C051762 */  jal        func_80145D88

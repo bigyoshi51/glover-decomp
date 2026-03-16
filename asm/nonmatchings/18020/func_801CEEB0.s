@@ -59,36 +59,36 @@ glabel func_801CEEB0
     /* CEF80 801CEF80 AC620014 */   sw        $v0, 0x14($v1)
   .L801CEF84:
     /* CEF84 801CEF84 86220004 */  lh         $v0, 0x4($s1)
-    /* CEF88 801CEF88 44820000 */  mtc1       $v0, $fv0
+    /* CEF88 801CEF88 44820000 */  mtc1       $v0, $f0
     /* CEF8C 801CEF8C 00000000 */  nop
-    /* CEF90 801CEF90 46800020 */  cvt.s.w    $fv0, $fv0
-    /* CEF94 801CEF94 46180002 */  mul.s      $fv0, $fv0, $fs2
+    /* CEF90 801CEF90 46800020 */  cvt.s.w    $f0, $f0
+    /* CEF94 801CEF94 46180002 */  mul.s      $f0, $f0, $f24
     /* CEF98 801CEF98 86220006 */  lh         $v0, 0x6($s1)
     /* CEF9C 801CEF9C 86330000 */  lh         $s3, 0x0($s1)
-    /* CEFA0 801CEFA0 44822000 */  mtc1       $v0, $ft0
+    /* CEFA0 801CEFA0 44822000 */  mtc1       $v0, $f4
     /* CEFA4 801CEFA4 00000000 */  nop
-    /* CEFA8 801CEFA8 46802120 */  cvt.s.w    $ft0, $ft0
-    /* CEFAC 801CEFAC 46142102 */  mul.s      $ft0, $ft0, $fs0
+    /* CEFA8 801CEFA8 46802120 */  cvt.s.w    $f4, $f4
+    /* CEFAC 801CEFAC 46142102 */  mul.s      $f4, $f4, $f20
     /* CEFB0 801CEFB0 86340002 */  lh         $s4, 0x2($s1)
-    /* CEFB4 801CEFB4 44931000 */  mtc1       $s3, $fv1
+    /* CEFB4 801CEFB4 44931000 */  mtc1       $s3, $f2
     /* CEFB8 801CEFB8 00000000 */  nop
-    /* CEFBC 801CEFBC 468010A0 */  cvt.s.w    $fv1, $fv1
-    /* CEFC0 801CEFC0 46001080 */  add.s      $fv1, $fv1, $fv0
-    /* CEFC4 801CEFC4 44940000 */  mtc1       $s4, $fv0
+    /* CEFBC 801CEFBC 468010A0 */  cvt.s.w    $f2, $f2
+    /* CEFC0 801CEFC0 46001080 */  add.s      $f2, $f2, $f0
+    /* CEFC4 801CEFC4 44940000 */  mtc1       $s4, $f0
     /* CEFC8 801CEFC8 00000000 */  nop
-    /* CEFCC 801CEFCC 46800020 */  cvt.s.w    $fv0, $fv0
-    /* CEFD0 801CEFD0 46040000 */  add.s      $fv0, $fv0, $ft0
+    /* CEFCC 801CEFCC 46800020 */  cvt.s.w    $f0, $f0
+    /* CEFD0 801CEFD0 46040000 */  add.s      $f0, $f0, $f4
     /* CEFD4 801CEFD4 3C013F80 */  lui        $at, (0x3F800000 >> 16)
-    /* CEFD8 801CEFD8 44812000 */  mtc1       $at, $ft0
+    /* CEFD8 801CEFD8 44812000 */  mtc1       $at, $f4
     /* CEFDC 801CEFDC 00000000 */  nop
-    /* CEFE0 801CEFE0 46041081 */  sub.s      $fv1, $fv1, $ft0
-    /* CEFE4 801CEFE4 46040001 */  sub.s      $fv0, $fv0, $ft0
+    /* CEFE0 801CEFE0 46041081 */  sub.s      $f2, $f2, $f4
+    /* CEFE4 801CEFE4 46040001 */  sub.s      $f0, $f0, $f4
     /* CEFE8 801CEFE8 3C05802B */  lui        $a1, %hi(D_802AD620)
     /* CEFEC 801CEFEC 8CA5D620 */  lw         $a1, %lo(D_802AD620)($a1)
-    /* CEFF0 801CEFF0 4600110D */  trunc.w.s  $ft0, $fv1
-    /* CEFF4 801CEFF4 440C2000 */  mfc1       $t4, $ft0
-    /* CEFF8 801CEFF8 4600008D */  trunc.w.s  $fv1, $fv0
-    /* CEFFC 801CEFFC 440B1000 */  mfc1       $t3, $fv1
+    /* CEFF0 801CEFF0 4600110D */  trunc.w.s  $f4, $f2
+    /* CEFF4 801CEFF4 440C2000 */  mfc1       $t4, $f4
+    /* CEFF8 801CEFF8 4600008D */  trunc.w.s  $f2, $f0
+    /* CEFFC 801CEFFC 440B1000 */  mfc1       $t3, $f2
     /* CF000 801CF000 0265102A */  slt        $v0, $s3, $a1
     /* CF004 801CF004 10400059 */  beqz       $v0, .L801CF16C
     /* CF008 801CF008 00000000 */   nop

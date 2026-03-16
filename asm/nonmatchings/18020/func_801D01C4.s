@@ -1,8 +1,8 @@
 nonmatching func_801D01C4, 0xBC
 
 glabel func_801D01C4
-    /* D01C4 801D01C4 4600008D */  trunc.w.s  $fv1, $fv0
-    /* D01C8 801D01C8 44041000 */  mfc1       $a0, $fv1
+    /* D01C4 801D01C4 4600008D */  trunc.w.s  $f2, $f0
+    /* D01C8 801D01C8 44041000 */  mfc1       $a0, $f2
     /* D01CC 801D01CC 3C028000 */  lui        $v0, (0x80000000 >> 16)
     /* D01D0 801D01D0 00822025 */  or         $a0, $a0, $v0
     /* D01D4 801D01D4 00121080 */  sll        $v0, $s2, 2

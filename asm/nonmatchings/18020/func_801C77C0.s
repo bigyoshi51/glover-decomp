@@ -2,22 +2,22 @@
 nonmatching func_801C77C0, 0xA0
 
 glabel func_801C77C0
-    /* C77C0 801C77C0 F7400130 */  sdc1       $fv0, 0x130($k0)
-    /* C77C4 801C77C4 F7420138 */  sdc1       $fv1, 0x138($k0)
-    /* C77C8 801C77C8 F7440140 */  sdc1       $ft0, 0x140($k0)
-    /* C77CC 801C77CC F7460148 */  sdc1       $ft1, 0x148($k0)
-    /* C77D0 801C77D0 F7480150 */  sdc1       $ft2, 0x150($k0)
-    /* C77D4 801C77D4 F74A0158 */  sdc1       $ft3, 0x158($k0)
-    /* C77D8 801C77D8 F74C0160 */  sdc1       $fa0, 0x160($k0)
-    /* C77DC 801C77DC F74E0168 */  sdc1       $fa1, 0x168($k0)
-    /* C77E0 801C77E0 F7500170 */  sdc1       $ft4, 0x170($k0)
-    /* C77E4 801C77E4 F7520178 */  sdc1       $ft5, 0x178($k0)
-    /* C77E8 801C77E8 F7540180 */  sdc1       $fs0, 0x180($k0)
-    /* C77EC 801C77EC F7560188 */  sdc1       $fs1, 0x188($k0)
-    /* C77F0 801C77F0 F7580190 */  sdc1       $fs2, 0x190($k0)
-    /* C77F4 801C77F4 F75A0198 */  sdc1       $fs3, 0x198($k0)
-    /* C77F8 801C77F8 F75C01A0 */  sdc1       $fs4, 0x1A0($k0)
-    /* C77FC 801C77FC F75E01A8 */  sdc1       $fs5, 0x1A8($k0)
+    /* C77C0 801C77C0 F7400130 */  sdc1       $f0, 0x130($k0)
+    /* C77C4 801C77C4 F7420138 */  sdc1       $f2, 0x138($k0)
+    /* C77C8 801C77C8 F7440140 */  sdc1       $f4, 0x140($k0)
+    /* C77CC 801C77CC F7460148 */  sdc1       $f6, 0x148($k0)
+    /* C77D0 801C77D0 F7480150 */  sdc1       $f8, 0x150($k0)
+    /* C77D4 801C77D4 F74A0158 */  sdc1       $f10, 0x158($k0)
+    /* C77D8 801C77D8 F74C0160 */  sdc1       $f12, 0x160($k0)
+    /* C77DC 801C77DC F74E0168 */  sdc1       $f14, 0x168($k0)
+    /* C77E0 801C77E0 F7500170 */  sdc1       $f16, 0x170($k0)
+    /* C77E4 801C77E4 F7520178 */  sdc1       $f18, 0x178($k0)
+    /* C77E8 801C77E8 F7540180 */  sdc1       $f20, 0x180($k0)
+    /* C77EC 801C77EC F7560188 */  sdc1       $f22, 0x188($k0)
+    /* C77F0 801C77F0 F7580190 */  sdc1       $f24, 0x190($k0)
+    /* C77F4 801C77F4 F75A0198 */  sdc1       $f26, 0x198($k0)
+    /* C77F8 801C77F8 F75C01A0 */  sdc1       $f28, 0x1A0($k0)
+    /* C77FC 801C77FC F75E01A8 */  sdc1       $f30, 0x1A8($k0)
   .L801C7800:
     /* C7800 801C7800 40086800 */  mfc0       $t0, $13 /* handwritten instruction */
     /* C7804 801C7804 AF480120 */  sw         $t0, 0x120($k0) /* handwritten instruction */

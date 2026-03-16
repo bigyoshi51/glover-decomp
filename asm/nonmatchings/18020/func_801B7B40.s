@@ -1,16 +1,16 @@
 nonmatching func_801B7B40, 0x90
 
 glabel func_801B7B40
-    /* B7B40 801B7B40 E7B50058 */  swc1       $fs0f, 0x58($sp)
-    /* B7B44 801B7B44 E7B4005C */  swc1       $fs0, 0x5C($sp)
+    /* B7B40 801B7B40 E7B50058 */  swc1       $f21, 0x58($sp)
+    /* B7B44 801B7B44 E7B4005C */  swc1       $f20, 0x5C($sp)
     /* B7B48 801B7B48 3C018011 */  lui        $at, %hi(D_8010BD18 + 0x4)
-    /* B7B4C 801B7B4C C435BD1C */  lwc1       $fs0f, %lo(D_8010BD18 + 0x4)($at)
-    /* B7B50 801B7B50 C434BD20 */  lwc1       $fs0, %lo(D_8010BD20)($at)
-    /* B7B54 801B7B54 E7B70060 */  swc1       $fs1f, 0x60($sp)
-    /* B7B58 801B7B58 E7B60064 */  swc1       $fs1, 0x64($sp)
+    /* B7B4C 801B7B4C C435BD1C */  lwc1       $f21, %lo(D_8010BD18 + 0x4)($at)
+    /* B7B50 801B7B50 C434BD20 */  lwc1       $f20, %lo(D_8010BD20)($at)
+    /* B7B54 801B7B54 E7B70060 */  swc1       $f23, 0x60($sp)
+    /* B7B58 801B7B58 E7B60064 */  swc1       $f22, 0x64($sp)
     /* B7B5C 801B7B5C 3C018011 */  lui        $at, %hi(D_8010BD20 + 0x4)
-    /* B7B60 801B7B60 C437BD24 */  lwc1       $fs1f, %lo(D_8010BD20 + 0x4)($at)
-    /* B7B64 801B7B64 C436BD28 */  lwc1       $fs1, %lo(D_8010BD28)($at)
+    /* B7B60 801B7B60 C437BD24 */  lwc1       $f23, %lo(D_8010BD20 + 0x4)($at)
+    /* B7B64 801B7B64 C436BD28 */  lwc1       $f22, %lo(D_8010BD28)($at)
     /* B7B68 801B7B68 AFB50044 */  sw         $s5, 0x44($sp)
     /* B7B6C 801B7B6C 0000A821 */  addu       $s5, $zero, $zero
     /* B7B70 801B7B70 AFB3003C */  sw         $s3, 0x3C($sp)

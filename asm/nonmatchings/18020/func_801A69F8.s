@@ -1,7 +1,7 @@
 nonmatching func_801A69F8, 0xF4
 
 glabel func_801A69F8
-    /* A69F8 801A69F8 4602003C */  c.lt.s     $fv0, $fv1
+    /* A69F8 801A69F8 4602003C */  c.lt.s     $f0, $f2
     /* A69FC 801A69FC 00000000 */  nop
     /* A6A00 801A6A00 45010005 */  bc1t       .L801A6A18
     /* A6A04 801A6A04 00003821 */   addu      $a3, $zero, $zero
@@ -30,15 +30,15 @@ glabel func_801A69F8
     /* A6A54 801A6A54 00000000 */   nop
     /* A6A58 801A6A58 8E4200DC */  lw         $v0, 0xDC($s2)
     /* A6A5C 801A6A5C 3C018011 */  lui        $at, %hi(D_8010B030)
-    /* A6A60 801A6A60 C424B030 */  lwc1       $ft0, %lo(D_8010B030)($at)
-    /* A6A64 801A6A64 C442004C */  lwc1       $fv1, 0x4C($v0)
-    /* A6A68 801A6A68 4602203E */  c.le.s     $ft0, $fv1
+    /* A6A60 801A6A60 C424B030 */  lwc1       $f4, %lo(D_8010B030)($at)
+    /* A6A64 801A6A64 C442004C */  lwc1       $f2, 0x4C($v0)
+    /* A6A68 801A6A68 4602203E */  c.le.s     $f4, $f2
     /* A6A6C 801A6A6C 00000000 */  nop
     /* A6A70 801A6A70 45000007 */  bc1f       .L801A6A90
     /* A6A74 801A6A74 00001821 */   addu      $v1, $zero, $zero
-    /* A6A78 801A6A78 C440000C */  lwc1       $fv0, 0xC($v0)
-    /* A6A7C 801A6A7C 46040000 */  add.s      $fv0, $fv0, $ft0
-    /* A6A80 801A6A80 4600103C */  c.lt.s     $fv1, $fv0
+    /* A6A78 801A6A78 C440000C */  lwc1       $f0, 0xC($v0)
+    /* A6A7C 801A6A7C 46040000 */  add.s      $f0, $f0, $f4
+    /* A6A80 801A6A80 4600103C */  c.lt.s     $f2, $f0
     /* A6A84 801A6A84 00000000 */  nop
     /* A6A88 801A6A88 45030001 */  bc1tl      .L801A6A90
     /* A6A8C 801A6A8C 24030001 */   addiu     $v1, $zero, 0x1
@@ -52,15 +52,15 @@ glabel func_801A69F8
   .L801A6AA8:
     /* A6AA8 801A6AA8 8E4200DC */  lw         $v0, 0xDC($s2)
     /* A6AAC 801A6AAC 3C018011 */  lui        $at, %hi(D_8010B034)
-    /* A6AB0 801A6AB0 C424B034 */  lwc1       $ft0, %lo(D_8010B034)($at)
-    /* A6AB4 801A6AB4 C442004C */  lwc1       $fv1, 0x4C($v0)
-    /* A6AB8 801A6AB8 4602203E */  c.le.s     $ft0, $fv1
+    /* A6AB0 801A6AB0 C424B034 */  lwc1       $f4, %lo(D_8010B034)($at)
+    /* A6AB4 801A6AB4 C442004C */  lwc1       $f2, 0x4C($v0)
+    /* A6AB8 801A6AB8 4602203E */  c.le.s     $f4, $f2
     /* A6ABC 801A6ABC 00000000 */  nop
     /* A6AC0 801A6AC0 45000007 */  bc1f       .L801A6AE0
     /* A6AC4 801A6AC4 00001821 */   addu      $v1, $zero, $zero
-    /* A6AC8 801A6AC8 C440000C */  lwc1       $fv0, 0xC($v0)
-    /* A6ACC 801A6ACC 46040000 */  add.s      $fv0, $fv0, $ft0
-    /* A6AD0 801A6AD0 4600103C */  c.lt.s     $fv1, $fv0
+    /* A6AC8 801A6AC8 C440000C */  lwc1       $f0, 0xC($v0)
+    /* A6ACC 801A6ACC 46040000 */  add.s      $f0, $f0, $f4
+    /* A6AD0 801A6AD0 4600103C */  c.lt.s     $f2, $f0
     /* A6AD4 801A6AD4 00000000 */  nop
     /* A6AD8 801A6AD8 45030001 */  bc1tl      .L801A6AE0
     /* A6ADC 801A6ADC 24030001 */   addiu     $v1, $zero, 0x1

@@ -25,7 +25,7 @@ glabel func_8012AC54
     /* 2ACA4 8012ACA4 2631000C */   addiu     $s1, $s1, 0xC
   .L8012ACA8:
     /* 2ACA8 8012ACA8 3C018010 */  lui        $at, %hi(D_80101838)
-    /* 2ACAC 8012ACAC C42C1838 */  lwc1       $fa0, %lo(D_80101838)($at)
+    /* 2ACAC 8012ACAC C42C1838 */  lwc1       $f12, %lo(D_80101838)($at)
     /* 2ACB0 8012ACB0 0C068A51 */  jal        func_801A2944
     /* 2ACB4 8012ACB4 02A02821 */   addu      $a1, $s5, $zero
     /* 2ACB8 8012ACB8 5440000E */  bnel       $v0, $zero, .L8012ACF4

@@ -12,7 +12,7 @@ glabel func_801C6470
     /* C6490 801C6490 27BDFFC0 */  addiu      $sp, $sp, -0x40
     /* C6494 801C6494 00003021 */  addu       $a2, $zero, $zero
     /* C6498 801C6498 3C013F80 */  lui        $at, (0x3F800000 >> 16)
-    /* C649C 801C649C 44810000 */  mtc1       $at, $fv0
+    /* C649C 801C649C 44810000 */  mtc1       $at, $f0
     /* C64A0 801C64A0 03A04821 */  addu       $t1, $sp, $zero
     /* C64A4 801C64A4 03A04021 */  addu       $t0, $sp, $zero
   .L801C64A8:
@@ -22,7 +22,7 @@ glabel func_801C6470
   .L801C64B4:
     /* C64B4 801C64B4 54C30002 */  bnel       $a2, $v1, .L801C64C0
     /* C64B8 801C64B8 ACA00000 */   sw        $zero, 0x0($a1)
-    /* C64BC 801C64BC E4E00000 */  swc1       $fv0, 0x0($a3)
+    /* C64BC 801C64BC E4E00000 */  swc1       $f0, 0x0($a3)
   .L801C64C0:
     /* C64C0 801C64C0 24630001 */  addiu      $v1, $v1, 0x1
     /* C64C4 801C64C4 28620004 */  slti       $v0, $v1, 0x4

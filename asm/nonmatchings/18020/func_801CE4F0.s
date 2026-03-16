@@ -47,9 +47,9 @@ glabel func_801CE4F0
     /* CE59C 801CE59C AFB30064 */  sw         $s3, 0x64($sp)
     /* CE5A0 801CE5A0 AFB20060 */  sw         $s2, 0x60($sp)
     /* CE5A4 801CE5A4 AFB00058 */  sw         $s0, 0x58($sp)
-    /* CE5A8 801CE5A8 F7B80090 */  sdc1       $fs2, 0x90($sp)
-    /* CE5AC 801CE5AC F7B60088 */  sdc1       $fs1, 0x88($sp)
-    /* CE5B0 801CE5B0 F7B40080 */  sdc1       $fs0, 0x80($sp)
+    /* CE5A8 801CE5A8 F7B80090 */  sdc1       $f24, 0x90($sp)
+    /* CE5AC 801CE5AC F7B60088 */  sdc1       $f22, 0x88($sp)
+    /* CE5B0 801CE5B0 F7B40080 */  sdc1       $f20, 0x80($sp)
     /* CE5B4 801CE5B4 96220014 */  lhu        $v0, 0x14($s1)
     /* CE5B8 801CE5B8 30420004 */  andi       $v0, $v0, 0x4
     /* CE5BC 801CE5BC 1440030C */  bnez       $v0, .L801CF1F0

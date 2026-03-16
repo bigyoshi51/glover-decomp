@@ -1,13 +1,13 @@
 nonmatching func_801AE0CC, 0x138
 
 glabel func_801AE0CC
-    /* AE0CC 801AE0CC C6260038 */  lwc1       $ft1, 0x38($s1)
-    /* AE0D0 801AE0D0 46061080 */  add.s      $fv1, $fv1, $ft1
+    /* AE0CC 801AE0CC C6260038 */  lwc1       $f6, 0x38($s1)
+    /* AE0D0 801AE0D0 46061080 */  add.s      $f2, $f2, $f6
     /* AE0D4 801AE0D4 3C01802A */  lui        $at, %hi(D_8029F9A8)
-    /* AE0D8 801AE0D8 C424F9A8 */  lwc1       $ft0, %lo(D_8029F9A8)($at)
-    /* AE0DC 801AE0DC 46062100 */  add.s      $ft0, $ft0, $ft1
-    /* AE0E0 801AE0E0 46041082 */  mul.s      $fv1, $fv1, $ft0
-    /* AE0E4 801AE0E4 4602003E */  c.le.s     $fv0, $fv1
+    /* AE0D8 801AE0D8 C424F9A8 */  lwc1       $f4, %lo(D_8029F9A8)($at)
+    /* AE0DC 801AE0DC 46062100 */  add.s      $f4, $f4, $f6
+    /* AE0E0 801AE0E0 46041082 */  mul.s      $f2, $f2, $f4
+    /* AE0E4 801AE0E4 4602003E */  c.le.s     $f0, $f2
     /* AE0E8 801AE0E8 00000000 */  nop
     /* AE0EC 801AE0EC 4500000B */  bc1f       .L801AE11C
     /* AE0F0 801AE0F0 3C030010 */   lui       $v1, (0x100000 >> 16)

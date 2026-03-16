@@ -3,26 +3,26 @@ nonmatching func_80145D88, 0xA8
 glabel func_80145D88
     /* 45D88 80145D88 10800009 */  beqz       $a0, .L80145DB0
     /* 45D8C 80145D8C 3142FFFF */   andi      $v0, $t2, 0xFFFF
-    /* 45D90 80145D90 44820000 */  mtc1       $v0, $fv0
-    /* 45D94 80145D94 46800020 */  cvt.s.w    $fv0, $fv0
-    /* 45D98 80145D98 46003002 */  mul.s      $fv0, $ft1, $fv0
-    /* 45D9C 80145D9C 44841000 */  mtc1       $a0, $fv1
-    /* 45DA0 80145DA0 468010A0 */  cvt.s.w    $fv1, $fv1
-    /* 45DA4 80145DA4 46020003 */  div.s      $fv0, $fv0, $fv1
-    /* 45DA8 80145DA8 4600008D */  trunc.w.s  $fv1, $fv0
-    /* 45DAC 80145DAC 44071000 */  mfc1       $a3, $fv1
+    /* 45D90 80145D90 44820000 */  mtc1       $v0, $f0
+    /* 45D94 80145D94 46800020 */  cvt.s.w    $f0, $f0
+    /* 45D98 80145D98 46003002 */  mul.s      $f0, $f6, $f0
+    /* 45D9C 80145D9C 44841000 */  mtc1       $a0, $f2
+    /* 45DA0 80145DA0 468010A0 */  cvt.s.w    $f2, $f2
+    /* 45DA4 80145DA4 46020003 */  div.s      $f0, $f0, $f2
+    /* 45DA8 80145DA8 4600008D */  trunc.w.s  $f2, $f0
+    /* 45DAC 80145DAC 44071000 */  mfc1       $a3, $f2
   .L80145DB0:
     /* 45DB0 80145DB0 10A00009 */  beqz       $a1, .L80145DD8
     /* 45DB4 80145DB4 3162FFFF */   andi      $v0, $t3, 0xFFFF
-    /* 45DB8 80145DB8 44820000 */  mtc1       $v0, $fv0
-    /* 45DBC 80145DBC 46800020 */  cvt.s.w    $fv0, $fv0
+    /* 45DB8 80145DB8 44820000 */  mtc1       $v0, $f0
+    /* 45DBC 80145DBC 46800020 */  cvt.s.w    $f0, $f0
   .L80145DC0:
-    /* 45DC0 80145DC0 46004002 */  mul.s      $fv0, $ft2, $fv0
-    /* 45DC4 80145DC4 44851000 */  mtc1       $a1, $fv1
-    /* 45DC8 80145DC8 468010A0 */  cvt.s.w    $fv1, $fv1
-    /* 45DCC 80145DCC 46020003 */  div.s      $fv0, $fv0, $fv1
-    /* 45DD0 80145DD0 4600008D */  trunc.w.s  $fv1, $fv0
-    /* 45DD4 80145DD4 44061000 */  mfc1       $a2, $fv1
+    /* 45DC0 80145DC0 46004002 */  mul.s      $f0, $f8, $f0
+    /* 45DC4 80145DC4 44851000 */  mtc1       $a1, $f2
+    /* 45DC8 80145DC8 468010A0 */  cvt.s.w    $f2, $f2
+    /* 45DCC 80145DCC 46020003 */  div.s      $f0, $f0, $f2
+    /* 45DD0 80145DD0 4600008D */  trunc.w.s  $f2, $f0
+    /* 45DD4 80145DD4 44061000 */  mfc1       $a2, $f2
   .L80145DD8:
     /* 45DD8 80145DD8 00002821 */  addu       $a1, $zero, $zero
     /* 45DDC 80145DDC 00004821 */  addu       $t1, $zero, $zero

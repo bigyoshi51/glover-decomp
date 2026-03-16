@@ -1,9 +1,9 @@
 nonmatching func_801C12A0, 0x318
 
 glabel func_801C12A0
-    /* C12A0 801C12A0 E4880024 */  swc1       $ft2, 0x24($a0)
+    /* C12A0 801C12A0 E4880024 */  swc1       $f8, 0x24($a0)
     /* C12A4 801C12A4 03E00008 */  jr         $ra
-    /* C12A8 801C12A8 E484006C */   swc1      $ft0, 0x6C($a0)
+    /* C12A8 801C12A8 E484006C */   swc1      $f4, 0x6C($a0)
     /* C12AC 801C12AC 90AE0000 */  lbu        $t6, 0x0($a1)
     /* C12B0 801C12B0 24A20001 */  addiu      $v0, $a1, 0x1
     /* C12B4 801C12B4 03E00008 */  jr         $ra

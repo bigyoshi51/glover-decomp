@@ -6,7 +6,7 @@ glabel func_801C0E3C
   .L801C0E44:
     /* C0E44 801C0E44 10000005 */  b          .L801C0E5C
     /* C0E48 801C0E48 240AFFFF */   addiu     $t2, $zero, -0x1
-    /* C0E4C 801C0E4C 440A3000 */  mfc1       $t2, $ft1
+    /* C0E4C 801C0E4C 440A3000 */  mfc1       $t2, $f6
   .L801C0E50:
     /* C0E50 801C0E50 00000000 */  nop
     /* C0E54 801C0E54 0540FFFB */  bltz       $t2, .L801C0E44

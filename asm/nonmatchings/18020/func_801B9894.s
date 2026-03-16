@@ -12,8 +12,8 @@ glabel func_801B9894
     /* B98B4 801B98B4 AFB3006C */  sw         $s3, 0x6C($sp)
     /* B98B8 801B98B8 AFB20068 */  sw         $s2, 0x68($sp)
     /* B98BC 801B98BC AFB00060 */  sw         $s0, 0x60($sp)
-    /* B98C0 801B98C0 E7B50080 */  swc1       $fs0f, 0x80($sp)
-    /* B98C4 801B98C4 E7B40084 */  swc1       $fs0, 0x84($sp)
+    /* B98C0 801B98C0 E7B50080 */  swc1       $f21, 0x80($sp)
+    /* B98C4 801B98C4 E7B40084 */  swc1       $f20, 0x84($sp)
     /* B98C8 801B98C8 8622004C */  lh         $v0, 0x4C($s1)
     /* B98CC 801B98CC 1840002E */  blez       $v0, .L801B9988
   .L801B98D0:

@@ -2,7 +2,14 @@
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010C910);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010C920);
+s32 func_8010D9B4(void);
+void func_8010D9C0(s32);
+
+s32 func_8010C920(void) {
+    s32 val = func_8010D9B4();
+    func_8010D9C0(val & -2);
+    return val & 1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010C958);
 
@@ -70,8 +77,7 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010DD0C);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010DDD0);
 
-void func_8010E0D0(void) {
-}
+INCLUDE_ASM("asm/nonmatchings/D910", func_8010E0D0);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E0D8);
 
@@ -83,8 +89,7 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010E2F4);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E400);
 
-void func_8010E558(void) {
-}
+INCLUDE_ASM("asm/nonmatchings/D910", func_8010E558);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E560);
 

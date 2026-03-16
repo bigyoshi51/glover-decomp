@@ -13,7 +13,7 @@ glabel func_8012ACE4
     /* 2AD04 8012AD04 240700FF */   addiu     $a3, $zero, 0xFF
   .L8012AD08:
     /* 2AD08 8012AD08 3C018010 */  lui        $at, %hi(D_80101844)
-    /* 2AD0C 8012AD0C C42C1844 */  lwc1       $fa0, %lo(D_80101844)($at)
+    /* 2AD0C 8012AD0C C42C1844 */  lwc1       $f12, %lo(D_80101844)($at)
     /* 2AD10 8012AD10 0C068A51 */  jal        func_801A2944
     /* 2AD14 8012AD14 02A02821 */   addu      $a1, $s5, $zero
     /* 2AD18 8012AD18 1040002A */  beqz       $v0, .L8012ADC4

@@ -1,7 +1,7 @@
 nonmatching func_801AE2E8, 0x60
 
 glabel func_801AE2E8
-    /* AE2E8 801AE2E8 44065000 */  mfc1       $a2, $ft3
+    /* AE2E8 801AE2E8 44065000 */  mfc1       $a2, $f10
     /* AE2EC 801AE2EC 0C05242B */  jal        func_801490AC
     /* AE2F0 801AE2F0 00802821 */   addu      $a1, $a0, $zero
     /* AE2F4 801AE2F4 2404000A */  addiu      $a0, $zero, 0xA
@@ -17,13 +17,13 @@ glabel func_801AE2E8
     /* AE318 801AE318 2402001D */  addiu      $v0, $zero, 0x1D
     /* AE31C 801AE31C 1462000F */  bne        $v1, $v0, .L801AE35C
     /* AE320 801AE320 00000000 */   nop
-    /* AE324 801AE324 C4800000 */  lwc1       $fv0, 0x0($a0)
-    /* AE328 801AE328 C622003C */  lwc1       $fv1, 0x3C($s1)
-    /* AE32C 801AE32C 46020001 */  sub.s      $fv0, $fv0, $fv1
-    /* AE330 801AE330 E7A00018 */  swc1       $fv0, 0x18($sp)
+    /* AE324 801AE324 C4800000 */  lwc1       $f0, 0x0($a0)
+    /* AE328 801AE328 C622003C */  lwc1       $f2, 0x3C($s1)
+    /* AE32C 801AE32C 46020001 */  sub.s      $f0, $f0, $f2
+    /* AE330 801AE330 E7A00018 */  swc1       $f0, 0x18($sp)
     /* AE334 801AE334 8E220164 */  lw         $v0, 0x164($s1)
-    /* AE338 801AE338 C6220040 */  lwc1       $fv1, 0x40($s1)
-    /* AE33C 801AE33C C4400004 */  lwc1       $fv0, 0x4($v0)
-    /* AE340 801AE340 46020001 */  sub.s      $fv0, $fv0, $fv1
-    /* AE344 801AE344 E7A0001C */  swc1       $fv0, 0x1C($sp)
+    /* AE338 801AE338 C6220040 */  lwc1       $f2, 0x40($s1)
+    /* AE33C 801AE33C C4400004 */  lwc1       $f0, 0x4($v0)
+    /* AE340 801AE340 46020001 */  sub.s      $f0, $f0, $f2
+    /* AE344 801AE344 E7A0001C */  swc1       $f0, 0x1C($sp)
 endlabel func_801AE2E8

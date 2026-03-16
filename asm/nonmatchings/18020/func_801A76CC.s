@@ -21,14 +21,14 @@ glabel func_801A76CC
     /* A7710 801A7710 1840000E */  blez       $v0, .L801A774C
     /* A7714 801A7714 00002021 */   addu      $a0, $zero, $zero
     /* A7718 801A7718 3C018011 */  lui        $at, %hi(D_8010B0D8)
-    /* A771C 801A771C C422B0D8 */  lwc1       $fv1, %lo(D_8010B0D8)($at)
+    /* A771C 801A771C C422B0D8 */  lwc1       $f2, %lo(D_8010B0D8)($at)
     /* A7720 801A7720 00001821 */  addu       $v1, $zero, $zero
   .L801A7724:
     /* A7724 801A7724 8CA20020 */  lw         $v0, 0x20($a1)
     /* A7728 801A7728 00621021 */  addu       $v0, $v1, $v0
-    /* A772C 801A772C C4400004 */  lwc1       $fv0, 0x4($v0)
-    /* A7730 801A7730 46020001 */  sub.s      $fv0, $fv0, $fv1
-    /* A7734 801A7734 E4400004 */  swc1       $fv0, 0x4($v0)
+    /* A772C 801A772C C4400004 */  lwc1       $f0, 0x4($v0)
+    /* A7730 801A7730 46020001 */  sub.s      $f0, $f0, $f2
+    /* A7734 801A7734 E4400004 */  swc1       $f0, 0x4($v0)
     /* A7738 801A7738 84A20010 */  lh         $v0, 0x10($a1)
     /* A773C 801A773C 24840001 */  addiu      $a0, $a0, 0x1
     /* A7740 801A7740 0082102A */  slt        $v0, $a0, $v0
@@ -61,16 +61,16 @@ glabel func_801A76CC
     /* A779C 801A779C 8FBF0050 */  lw         $ra, 0x50($sp)
     /* A77A0 801A77A0 8FB1004C */  lw         $s1, 0x4C($sp)
     /* A77A4 801A77A4 8FB00048 */  lw         $s0, 0x48($sp)
-    /* A77A8 801A77A8 C7BF0080 */  lwc1       $fs5f, 0x80($sp)
-    /* A77AC 801A77AC C7BE0084 */  lwc1       $fs5, 0x84($sp)
-    /* A77B0 801A77B0 C7BD0078 */  lwc1       $fs4f, 0x78($sp)
-    /* A77B4 801A77B4 C7BC007C */  lwc1       $fs4, 0x7C($sp)
-    /* A77B8 801A77B8 C7BB0070 */  lwc1       $fs3f, 0x70($sp)
-    /* A77BC 801A77BC C7BA0074 */  lwc1       $fs3, 0x74($sp)
-    /* A77C0 801A77C0 C7B90068 */  lwc1       $fs2f, 0x68($sp)
-    /* A77C4 801A77C4 C7B8006C */  lwc1       $fs2, 0x6C($sp)
-    /* A77C8 801A77C8 C7B70060 */  lwc1       $fs1f, 0x60($sp)
-    /* A77CC 801A77CC C7B60064 */  lwc1       $fs1, 0x64($sp)
-    /* A77D0 801A77D0 C7B50058 */  lwc1       $fs0f, 0x58($sp)
-    /* A77D4 801A77D4 C7B4005C */  lwc1       $fs0, 0x5C($sp)
+    /* A77A8 801A77A8 C7BF0080 */  lwc1       $f31, 0x80($sp)
+    /* A77AC 801A77AC C7BE0084 */  lwc1       $f30, 0x84($sp)
+    /* A77B0 801A77B0 C7BD0078 */  lwc1       $f29, 0x78($sp)
+    /* A77B4 801A77B4 C7BC007C */  lwc1       $f28, 0x7C($sp)
+    /* A77B8 801A77B8 C7BB0070 */  lwc1       $f27, 0x70($sp)
+    /* A77BC 801A77BC C7BA0074 */  lwc1       $f26, 0x74($sp)
+    /* A77C0 801A77C0 C7B90068 */  lwc1       $f25, 0x68($sp)
+    /* A77C4 801A77C4 C7B8006C */  lwc1       $f24, 0x6C($sp)
+    /* A77C8 801A77C8 C7B70060 */  lwc1       $f23, 0x60($sp)
+    /* A77CC 801A77CC C7B60064 */  lwc1       $f22, 0x64($sp)
+    /* A77D0 801A77D0 C7B50058 */  lwc1       $f21, 0x58($sp)
+    /* A77D4 801A77D4 C7B4005C */  lwc1       $f20, 0x5C($sp)
 endlabel func_801A76CC

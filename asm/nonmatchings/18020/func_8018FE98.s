@@ -6,15 +6,15 @@ glabel func_8018FE98
     /* 8FEA0 8018FEA0 0C063755 */  jal        func_8018DD54
     /* 8FEA4 8018FEA4 00003021 */   addu      $a2, $zero, $zero
     /* 8FEA8 8018FEA8 24440048 */  addiu      $a0, $v0, 0x48
-    /* 8FEAC 8018FEAC C6420010 */  lwc1       $fv1, 0x10($s2)
+    /* 8FEAC 8018FEAC C6420010 */  lwc1       $f2, 0x10($s2)
     /* 8FEB0 8018FEB0 24050006 */  addiu      $a1, $zero, 0x6
-    /* 8FEB4 8018FEB4 44800000 */  mtc1       $zero, $fv0
+    /* 8FEB4 8018FEB4 44800000 */  mtc1       $zero, $f0
     /* 8FEB8 8018FEB8 24060013 */  addiu      $a2, $zero, 0x13
-    /* 8FEBC 8018FEBC E44000D8 */  swc1       $fv0, 0xD8($v0)
-    /* 8FEC0 8018FEC0 E44000D4 */  swc1       $fv0, 0xD4($v0)
-    /* 8FEC4 8018FEC4 E44000D0 */  swc1       $fv0, 0xD0($v0)
-    /* 8FEC8 8018FEC8 4600100D */  trunc.w.s  $fv0, $fv1
-    /* 8FECC 8018FECC 44030000 */  mfc1       $v1, $fv0
+    /* 8FEBC 8018FEBC E44000D8 */  swc1       $f0, 0xD8($v0)
+    /* 8FEC0 8018FEC0 E44000D4 */  swc1       $f0, 0xD4($v0)
+    /* 8FEC4 8018FEC4 E44000D0 */  swc1       $f0, 0xD0($v0)
+    /* 8FEC8 8018FEC8 4600100D */  trunc.w.s  $f0, $f2
+    /* 8FECC 8018FECC 44030000 */  mfc1       $v1, $f0
     /* 8FED0 8018FED0 0C06DDD9 */  jal        func_801B7764
     /* 8FED4 8018FED4 A44300FE */   sh        $v1, 0xFE($v0)
     /* 8FED8 8018FED8 00002021 */  addu       $a0, $zero, $zero
@@ -31,9 +31,9 @@ glabel func_8018FE98
     /* 8FF04 8018FF04 00000000 */   nop
     /* 8FF08 8018FF08 08063F98 */  j          .L8018FE60
     /* 8FF0C 8018FF0C 00000000 */   nop
-    /* 8FF10 8018FF10 C6400010 */  lwc1       $fv0, 0x10($s2)
+    /* 8FF10 8018FF10 C6400010 */  lwc1       $f0, 0x10($s2)
     /* 8FF14 8018FF14 3C01801F */  lui        $at, %hi(D_801ED680)
-    /* 8FF18 8018FF18 E420D680 */  swc1       $fv0, %lo(D_801ED680)($at)
+    /* 8FF18 8018FF18 E420D680 */  swc1       $f0, %lo(D_801ED680)($at)
     /* 8FF1C 8018FF1C 08063F98 */  j          .L8018FE60
     /* 8FF20 8018FF20 00000000 */   nop
     /* 8FF24 8018FF24 86440014 */  lh         $a0, 0x14($s2)

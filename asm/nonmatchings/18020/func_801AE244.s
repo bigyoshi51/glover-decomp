@@ -36,12 +36,12 @@ glabel func_801AE244
     /* AE2BC 801AE2BC 14620012 */  bne        $v1, $v0, .L801AE308
     /* AE2C0 801AE2C0 24040007 */   addiu     $a0, $zero, 0x7
     /* AE2C4 801AE2C4 3C018011 */  lui        $at, %hi(D_8010B510)
-    /* AE2C8 801AE2C8 C420B510 */  lwc1       $fv0, %lo(D_8010B510)($at)
+    /* AE2C8 801AE2C8 C420B510 */  lwc1       $f0, %lo(D_8010B510)($at)
     /* AE2CC 801AE2CC AFA00020 */  sw         $zero, 0x20($sp)
     /* AE2D0 801AE2D0 AFA0001C */  sw         $zero, 0x1C($sp)
     /* AE2D4 801AE2D4 0C051C00 */  jal        func_80147000
-    /* AE2D8 801AE2D8 E7A00018 */   swc1      $fv0, 0x18($sp)
+    /* AE2D8 801AE2D8 E7A00018 */   swc1      $f0, 0x18($sp)
     /* AE2DC 801AE2DC 27A40018 */  addiu      $a0, $sp, 0x18
-    /* AE2E0 801AE2E0 44825000 */  mtc1       $v0, $ft3
-    /* AE2E4 801AE2E4 468052A0 */  cvt.s.w    $ft3, $ft3
+    /* AE2E0 801AE2E0 44825000 */  mtc1       $v0, $f10
+    /* AE2E4 801AE2E4 468052A0 */  cvt.s.w    $f10, $f10
 endlabel func_801AE244

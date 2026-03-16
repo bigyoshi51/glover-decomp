@@ -352,7 +352,7 @@ glabel func_80199A9C
     /* 99FC4 80199FC4 260402C8 */   addiu     $a0, $s0, 0x2C8
   .L80199FC8:
     /* 99FC8 80199FC8 3C018011 */  lui        $at, %hi(D_8010A6F0)
-    /* 99FCC 80199FCC C42CA6F0 */  lwc1       $fa0, %lo(D_8010A6F0)($at)
+    /* 99FCC 80199FCC C42CA6F0 */  lwc1       $f12, %lo(D_8010A6F0)($at)
     /* 99FD0 80199FD0 0C068A51 */  jal        func_801A2944
     /* 99FD4 80199FD4 02002821 */   addu      $a1, $s0, $zero
     /* 99FD8 80199FD8 10400005 */  beqz       $v0, .L80199FF0

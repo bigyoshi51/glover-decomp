@@ -4,29 +4,29 @@ glabel func_801C28A0
     /* C28A0 801C28A0 00002012 */  mflo       $a0
     /* C28A4 801C28A4 308400FF */  andi       $a0, $a0, 0xFF
     /* C28A8 801C28A8 308D0080 */  andi       $t5, $a0, 0x80
-    /* C28AC 801C28AC 448D2000 */  mtc1       $t5, $ft0
-    /* C28B0 801C28B0 460A3400 */  add.s      $ft4, $ft1, $ft3
+    /* C28AC 801C28AC 448D2000 */  mtc1       $t5, $f4
+    /* C28B0 801C28B0 460A3400 */  add.s      $f16, $f6, $f10
     /* C28B4 801C28B4 00801825 */  or         $v1, $a0, $zero
     /* C28B8 801C28B8 00601025 */  or         $v0, $v1, $zero
-    /* C28BC 801C28BC 46802220 */  cvt.s.w    $ft2, $ft0
-    /* C28C0 801C28C0 E630002C */  swc1       $ft4, 0x2C($s1)
+    /* C28BC 801C28BC 46802220 */  cvt.s.w    $f8, $f4
+    /* C28C0 801C28C0 E630002C */  swc1       $f16, 0x2C($s1)
     /* C28C4 801C28C4 00047023 */  negu       $t6, $a0
     /* C28C8 801C28C8 2419FF00 */  addiu      $t9, $zero, -0x100
-    /* C28CC 801C28CC 46089032 */  c.eq.s     $ft5, $ft2
+    /* C28CC 801C28CC 46089032 */  c.eq.s     $f18, $f8
     /* C28D0 801C28D0 00000000 */  nop
     /* C28D4 801C28D4 45010003 */  bc1t       .L801C28E4
     /* C28D8 801C28D8 00000000 */   nop
     /* C28DC 801C28DC 10000001 */  b          .L801C28E4
     /* C28E0 801C28E0 032E1023 */   subu      $v0, $t9, $t6
   .L801C28E4:
-    /* C28E4 801C28E4 44825000 */  mtc1       $v0, $ft3
-    /* C28E8 801C28E8 C626002C */  lwc1       $ft1, 0x2C($s1)
+    /* C28E4 801C28E4 44825000 */  mtc1       $v0, $f10
+    /* C28E8 801C28E8 C626002C */  lwc1       $f6, 0x2C($s1)
     /* C28EC 801C28EC 922300C6 */  lbu        $v1, 0xC6($s1)
-    /* C28F0 801C28F0 46805420 */  cvt.s.w    $ft4, $ft3
+    /* C28F0 801C28F0 46805420 */  cvt.s.w    $f16, $f10
     /* C28F4 801C28F4 923800C8 */  lbu        $t8, 0xC8($s1)
-    /* C28F8 801C28F8 46103100 */  add.s      $ft0, $ft1, $ft4
+    /* C28F8 801C28F8 46103100 */  add.s      $f4, $f6, $f16
     /* C28FC 801C28FC 1303003A */  beq        $t8, $v1, .L801C29E8
-    /* C2900 801C2900 E624002C */   swc1      $ft0, 0x2C($s1)
+    /* C2900 801C2900 E624002C */   swc1      $f4, 0x2C($s1)
     /* C2904 801C2904 922600C7 */  lbu        $a2, 0xC7($s1)
     /* C2908 801C2908 240F0080 */  addiu      $t7, $zero, 0x80
     /* C290C 801C290C A22300C8 */  sb         $v1, 0xC8($s1)

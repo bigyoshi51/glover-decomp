@@ -20,10 +20,10 @@ glabel func_801A8E54
     /* A8E90 801A8E90 30420100 */  andi       $v0, $v0, 0x100
     /* A8E94 801A8E94 10400035 */  beqz       $v0, .L801A8F6C
     /* A8E98 801A8E98 00000000 */   nop
-    /* A8E9C 801A8E9C C6020020 */  lwc1       $fv1, 0x20($s0)
+    /* A8E9C 801A8E9C C6020020 */  lwc1       $f2, 0x20($s0)
     /* A8EA0 801A8EA0 3C018011 */  lui        $at, %hi(D_8010B164)
-    /* A8EA4 801A8EA4 C420B164 */  lwc1       $fv0, %lo(D_8010B164)($at)
-    /* A8EA8 801A8EA8 4600103C */  c.lt.s     $fv1, $fv0
+    /* A8EA4 801A8EA4 C420B164 */  lwc1       $f0, %lo(D_8010B164)($at)
+    /* A8EA8 801A8EA8 4600103C */  c.lt.s     $f2, $f0
     /* A8EAC 801A8EAC 00000000 */  nop
     /* A8EB0 801A8EB0 4500002E */  bc1f       .L801A8F6C
     /* A8EB4 801A8EB4 00000000 */   nop

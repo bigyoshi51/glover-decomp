@@ -37,11 +37,11 @@ glabel func_801ADFC8
     /* AE048 801AE048 0C0523AF */  jal        func_80148EBC
     /* AE04C 801AE04C 2625003C */   addiu     $a1, $s1, 0x3C
     /* AE050 801AE050 3C018029 */  lui        $at, %hi(D_80290308)
-    /* AE054 801AE054 C4220308 */  lwc1       $fv1, %lo(D_80290308)($at)
-    /* AE058 801AE058 C6240038 */  lwc1       $ft0, 0x38($s1)
-    /* AE05C 801AE05C 46041080 */  add.s      $fv1, $fv1, $ft0
-    /* AE060 801AE060 46021082 */  mul.s      $fv1, $fv1, $fv1
-    /* AE064 801AE064 4602003E */  c.le.s     $fv0, $fv1
+    /* AE054 801AE054 C4220308 */  lwc1       $f2, %lo(D_80290308)($at)
+    /* AE058 801AE058 C6240038 */  lwc1       $f4, 0x38($s1)
+    /* AE05C 801AE05C 46041080 */  add.s      $f2, $f2, $f4
+    /* AE060 801AE060 46021082 */  mul.s      $f2, $f2, $f2
+    /* AE064 801AE064 4602003E */  c.le.s     $f0, $f2
     /* AE068 801AE068 00000000 */  nop
     /* AE06C 801AE06C 4500000E */  bc1f       .L801AE0A8
     /* AE070 801AE070 00000000 */   nop
@@ -69,5 +69,5 @@ glabel func_801ADFC8
     /* AE0BC 801AE0BC 0C0523AF */  jal        func_80148EBC
     /* AE0C0 801AE0C0 2625003C */   addiu     $a1, $s1, 0x3C
     /* AE0C4 801AE0C4 3C018029 */  lui        $at, %hi(D_80290308)
-    /* AE0C8 801AE0C8 C4220308 */  lwc1       $fv1, %lo(D_80290308)($at)
+    /* AE0C8 801AE0C8 C4220308 */  lwc1       $f2, %lo(D_80290308)($at)
 endlabel func_801ADFC8

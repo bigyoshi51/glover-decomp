@@ -16,11 +16,11 @@ glabel func_801C1D48
     /* C1D70 801C1D70 24420001 */  addiu      $v0, $v0, 0x1
     /* C1D74 801C1D74 548E0008 */  bnel       $a0, $t6, .L801C1D98
     /* C1D78 801C1D78 0046082A */   slt       $at, $v0, $a2
-    /* C1D7C 801C1D7C C464008C */  lwc1       $ft0, 0x8C($v1)
+    /* C1D7C 801C1D7C C464008C */  lwc1       $f4, 0x8C($v1)
     /* C1D80 801C1D80 3C06802B */  lui        $a2, %hi(D_802AB038)
     /* C1D84 801C1D84 24A50001 */  addiu      $a1, $a1, 0x1
-    /* C1D88 801C1D88 460C2180 */  add.s      $ft1, $ft0, $fa0
-    /* C1D8C 801C1D8C E4660030 */  swc1       $ft1, 0x30($v1)
+    /* C1D88 801C1D88 460C2180 */  add.s      $f6, $f4, $f12
+    /* C1D8C 801C1D8C E4660030 */  swc1       $f6, 0x30($v1)
     /* C1D90 801C1D90 8CC6B038 */  lw         $a2, %lo(D_802AB038)($a2)
     /* C1D94 801C1D94 0046082A */  slt        $at, $v0, $a2
   .L801C1D98:

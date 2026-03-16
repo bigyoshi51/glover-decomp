@@ -45,9 +45,9 @@ glabel func_801B7984
     /* B7A1C 801B7A1C 0C0509C0 */  jal        func_80142700
     /* B7A20 801B7A20 24050002 */   addiu     $a1, $zero, 0x2
     /* B7A24 801B7A24 8E0200D8 */  lw         $v0, 0xD8($s0)
-    /* B7A28 801B7A28 C6000030 */  lwc1       $fv0, 0x30($s0)
-    /* B7A2C 801B7A2C E4400074 */  swc1       $fv0, 0x74($v0)
-    /* B7A30 801B7A30 E4400070 */  swc1       $fv0, 0x70($v0)
+    /* B7A28 801B7A28 C6000030 */  lwc1       $f0, 0x30($s0)
+    /* B7A2C 801B7A2C E4400074 */  swc1       $f0, 0x74($v0)
+    /* B7A30 801B7A30 E4400070 */  swc1       $f0, 0x70($v0)
   .L801B7A34:
     /* B7A34 801B7A34 920300E5 */  lbu        $v1, 0xE5($s0)
     /* B7A38 801B7A38 2402000D */  addiu      $v0, $zero, 0xD

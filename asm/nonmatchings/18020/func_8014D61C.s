@@ -1,12 +1,12 @@
 nonmatching func_8014D61C, 0x50
 
 glabel func_8014D61C
-    /* 4D61C 8014D61C 4407A000 */  mfc1       $a3, $fs0
+    /* 4D61C 8014D61C 4407A000 */  mfc1       $a3, $f20
     /* 4D620 8014D620 02002821 */  addu       $a1, $s0, $zero
     /* 4D624 8014D624 3C048020 */  lui        $a0, %hi(D_80202240)
     /* 4D628 8014D628 24842240 */  addiu      $a0, $a0, %lo(D_80202240)
-    /* 4D62C 8014D62C 4600D00D */  trunc.w.s  $fv0, $fs3
-    /* 4D630 8014D630 E7A00010 */  swc1       $fv0, 0x10($sp)
+    /* 4D62C 8014D62C 4600D00D */  trunc.w.s  $f0, $f26
+    /* 4D630 8014D630 E7A00010 */  swc1       $f0, 0x10($sp)
     /* 4D634 8014D634 AFA80014 */  sw         $t0, 0x14($sp)
     /* 4D638 8014D638 0C0531AC */  jal        func_8014C6B0
     /* 4D63C 8014D63C AFA30018 */   sw        $v1, 0x18($sp)

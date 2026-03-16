@@ -26,13 +26,13 @@ glabel func_801CBB28
     /* CBB80 801CBB80 AC900000 */  sw         $s0, 0x0($a0)
     /* CBB84 801CBB84 AC830004 */  sw         $v1, 0x4($a0)
     /* CBB88 801CBB88 8E420024 */  lw         $v0, 0x24($s2)
-    /* CBB8C 801CBB8C 4616A502 */  mul.s      $fs0, $fs0, $fs1
+    /* CBB8C 801CBB8C 4616A502 */  mul.s      $f20, $f20, $f22
     /* CBB90 801CBB90 90440027 */  lbu        $a0, 0x27($v0)
     /* CBB94 801CBB94 26730008 */  addiu      $s3, $s3, 0x8
     /* CBB98 801CBB98 02608021 */  addu       $s0, $s3, $zero
     /* CBB9C 801CBB9C 00042400 */  sll        $a0, $a0, 16
-    /* CBBA0 801CBBA0 4600A00D */  trunc.w.s  $fv0, $fs0
-    /* CBBA4 801CBBA4 44020000 */  mfc1       $v0, $fv0
+    /* CBBA0 801CBBA0 4600A00D */  trunc.w.s  $f0, $f20
+    /* CBBA4 801CBBA4 44020000 */  mfc1       $v0, $f0
     /* CBBA8 801CBBA8 00000000 */  nop
     /* CBBAC 801CBBAC 3042FFFF */  andi       $v0, $v0, 0xFFFF
     /* CBBB0 801CBBB0 3C030500 */  lui        $v1, (0x5000000 >> 16)

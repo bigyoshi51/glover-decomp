@@ -13,9 +13,9 @@ glabel func_8011FE48
     /* 1FE68 8011FE68 10400120 */  beqz       $v0, .L801202EC
     /* 1FE6C 8011FE6C 2409002D */   addiu     $t1, $zero, 0x2D
     /* 1FE70 8011FE70 3C018010 */  lui        $at, %hi(D_80101100)
-    /* 1FE74 8011FE74 C4341100 */  lwc1       $fs0, %lo(D_80101100)($at)
+    /* 1FE74 8011FE74 C4341100 */  lwc1       $f20, %lo(D_80101100)($at)
     /* 1FE78 8011FE78 3C018010 */  lui        $at, %hi(D_80101104)
-    /* 1FE7C 8011FE7C C4361104 */  lwc1       $fs1, %lo(D_80101104)($at)
+    /* 1FE7C 8011FE7C C4361104 */  lwc1       $f22, %lo(D_80101104)($at)
     /* 1FE80 8011FE80 3C16801F */  lui        $s6, %hi(D_801F7E08)
     /* 1FE84 8011FE84 26D67E08 */  addiu      $s6, $s6, %lo(D_801F7E08)
     /* 1FE88 8011FE88 26D5FFFC */  addiu      $s5, $s6, -0x4

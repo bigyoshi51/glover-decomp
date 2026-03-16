@@ -8,15 +8,15 @@ glabel func_801CEA60
     /* CEA6C 801CEA6C 30420010 */  andi       $v0, $v0, 0x10
     /* CEA70 801CEA70 10400004 */  beqz       $v0, .L801CEA84
     /* CEA74 801CEA74 00000000 */   nop
-    /* CEA78 801CEA78 C6380008 */  lwc1       $fs2, 0x8($s1)
+    /* CEA78 801CEA78 C6380008 */  lwc1       $f24, 0x8($s1)
     /* CEA7C 801CEA7C 080736A5 */  j          .L801CDA94
-    /* CEA80 801CEA80 C634000C */   lwc1      $fs0, 0xC($s1)
+    /* CEA80 801CEA80 C634000C */   lwc1      $f20, 0xC($s1)
   .L801CEA84:
     /* CEA84 801CEA84 3C013F80 */  lui        $at, (0x3F800000 >> 16)
-    /* CEA88 801CEA88 4481A000 */  mtc1       $at, $fs0
+    /* CEA88 801CEA88 4481A000 */  mtc1       $at, $f20
     /* CEA8C 801CEA8C 00000000 */  nop
-    /* CEA90 801CEA90 4600A606 */  mov.s      $fs2, $fs0
+    /* CEA90 801CEA90 4600A606 */  mov.s      $f24, $f20
     /* CEA94 801CEA94 3C014480 */  lui        $at, (0x44800000 >> 16)
-    /* CEA98 801CEA98 44810000 */  mtc1       $at, $fv0
+    /* CEA98 801CEA98 44810000 */  mtc1       $at, $f0
 endlabel func_801CEA60
     /* CEA9C 801CEA9C 00000000 */  nop

@@ -8,8 +8,8 @@ glabel func_801B2AF0
     /* B2B00 801B2B00 1440000D */  bnez       $v0, .L801B2B38
     /* B2B04 801B2B04 00000000 */   nop
     /* B2B08 801B2B08 3C01802A */  lui        $at, %hi(D_8029F9B0)
-    /* B2B0C 801B2B0C C420F9B0 */  lwc1       $fv0, %lo(D_8029F9B0)($at)
-    /* B2B10 801B2B10 4600703C */  c.lt.s     $fa1, $fv0
+    /* B2B0C 801B2B0C C420F9B0 */  lwc1       $f0, %lo(D_8029F9B0)($at)
+    /* B2B10 801B2B10 4600703C */  c.lt.s     $f14, $f0
     /* B2B14 801B2B14 00000000 */  nop
     /* B2B18 801B2B18 45000007 */  bc1f       .L801B2B38
     /* B2B1C 801B2B1C 24020004 */   addiu     $v0, $zero, 0x4
@@ -18,7 +18,7 @@ glabel func_801B2AF0
     /* B2B28 801B2B28 10620003 */  beq        $v1, $v0, .L801B2B38
     /* B2B2C 801B2B2C 00000000 */   nop
     /* B2B30 801B2B30 3C018029 */  lui        $at, %hi(D_80290310)
-    /* B2B34 801B2B34 E4200310 */  swc1       $fv0, %lo(D_80290310)($at)
+    /* B2B34 801B2B34 E4200310 */  swc1       $f0, %lo(D_80290310)($at)
   .L801B2B38:
     /* B2B38 801B2B38 8FBF0054 */  lw         $ra, 0x54($sp)
     /* B2B3C 801B2B3C 8FB00050 */  lw         $s0, 0x50($sp)

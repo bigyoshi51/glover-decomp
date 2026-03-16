@@ -2,11 +2,11 @@ nonmatching func_801BA700, 0xB8
 
 glabel func_801BA700
     /* BA700 801BA700 24040010 */  addiu      $a0, $zero, 0x10
-    /* BA704 801BA704 46141081 */  sub.s      $fv1, $fv1, $fs0
+    /* BA704 801BA704 46141081 */  sub.s      $f2, $f2, $f20
     /* BA708 801BA708 2625003C */  addiu      $a1, $s1, 0x3C
     /* BA70C 801BA70C 27A60018 */  addiu      $a2, $sp, 0x18
     /* BA710 801BA710 00003821 */  addu       $a3, $zero, $zero
-    /* BA714 801BA714 E7A20020 */  swc1       $fv1, 0x20($sp)
+    /* BA714 801BA714 E7A20020 */  swc1       $f2, 0x20($sp)
     /* BA718 801BA718 0C06D9B5 */  jal        func_801B66D4
     /* BA71C 801BA71C AFA00010 */   sw        $zero, 0x10($sp)
     /* BA720 801BA720 00401821 */  addu       $v1, $v0, $zero
@@ -14,8 +14,8 @@ glabel func_801BA700
     /* BA728 801BA728 26100001 */   addiu     $s0, $s0, 0x1
     /* BA72C 801BA72C 8C6200D0 */  lw         $v0, 0xD0($v1)
     /* BA730 801BA730 A4730024 */  sh         $s3, 0x24($v1)
-    /* BA734 801BA734 E4580018 */  swc1       $fs2, 0x18($v0)
-    /* BA738 801BA738 E4780070 */  swc1       $fs2, 0x70($v1)
+    /* BA734 801BA734 E4580018 */  swc1       $f24, 0x18($v0)
+    /* BA738 801BA738 E4780070 */  swc1       $f24, 0x70($v1)
   .L801BA73C:
     /* BA73C 801BA73C 2A020005 */  slti       $v0, $s0, 0x5
     /* BA740 801BA740 1440FFD6 */  bnez       $v0, .L801BA69C

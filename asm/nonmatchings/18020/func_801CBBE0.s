@@ -25,8 +25,8 @@ glabel func_801CBBE0
     /* CBC30 801CBC30 8FB20020 */  lw         $s2, 0x20($sp)
     /* CBC34 801CBC34 8FB1001C */  lw         $s1, 0x1C($sp)
     /* CBC38 801CBC38 8FB00018 */  lw         $s0, 0x18($sp)
-    /* CBC3C 801CBC3C D7B60040 */  ldc1       $fs1, 0x40($sp)
-    /* CBC40 801CBC40 D7B40038 */  ldc1       $fs0, 0x38($sp)
+    /* CBC3C 801CBC3C D7B60040 */  ldc1       $f22, 0x40($sp)
+    /* CBC40 801CBC40 D7B40038 */  ldc1       $f20, 0x38($sp)
     /* CBC44 801CBC44 03E00008 */  jr         $ra
     /* CBC48 801CBC48 27BD0048 */   addiu     $sp, $sp, 0x48
     /* CBC4C 801CBC4C 27BDFFC8 */  addiu      $sp, $sp, -0x38

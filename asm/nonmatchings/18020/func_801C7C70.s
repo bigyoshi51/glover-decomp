@@ -32,12 +32,12 @@ glabel func_801C7C70
     /* C7CD8 801C7CD8 445BF800 */  cfc1       $k1, $31
     /* C7CDC 801C7CDC 00000000 */  nop
     /* C7CE0 801C7CE0 ACBB012C */  sw         $k1, 0x12C($a1) /* handwritten instruction */
-    /* C7CE4 801C7CE4 F4B40180 */  sdc1       $fs0, 0x180($a1)
-    /* C7CE8 801C7CE8 F4B60188 */  sdc1       $fs1, 0x188($a1)
-    /* C7CEC 801C7CEC F4B80190 */  sdc1       $fs2, 0x190($a1)
-    /* C7CF0 801C7CF0 F4BA0198 */  sdc1       $fs3, 0x198($a1)
-    /* C7CF4 801C7CF4 F4BC01A0 */  sdc1       $fs4, 0x1A0($a1)
-    /* C7CF8 801C7CF8 F4BE01A8 */  sdc1       $fs5, 0x1A8($a1)
+    /* C7CE4 801C7CE4 F4B40180 */  sdc1       $f20, 0x180($a1)
+    /* C7CE8 801C7CE8 F4B60188 */  sdc1       $f22, 0x188($a1)
+    /* C7CEC 801C7CEC F4B80190 */  sdc1       $f24, 0x190($a1)
+    /* C7CF0 801C7CF0 F4BA0198 */  sdc1       $f26, 0x198($a1)
+    /* C7CF4 801C7CF4 F4BC01A0 */  sdc1       $f28, 0x1A0($a1)
+    /* C7CF8 801C7CF8 F4BE01A8 */  sdc1       $f30, 0x1A8($a1)
   .L801C7CFC:
     /* C7CFC 801C7CFC 8CBB0118 */  lw         $k1, 0x118($a1) /* handwritten instruction */
     /* C7D00 801C7D00 3369FF00 */  andi       $t1, $k1, 0xFF00 /* handwritten instruction */

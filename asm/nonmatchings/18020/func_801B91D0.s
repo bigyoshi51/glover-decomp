@@ -9,7 +9,7 @@ glabel func_801B91D0
     /* B91E4 801B91E4 AC202104 */  sw         $zero, %lo(D_801F2104)($at)
     /* B91E8 801B91E8 0223102A */  slt        $v0, $s1, $v1
     /* B91EC 801B91EC 3C01801F */  lui        $at, %hi(D_801F2108)
-    /* B91F0 801B91F0 E4202108 */  swc1       $fv0, %lo(D_801F2108)($at)
+    /* B91F0 801B91F0 E4202108 */  swc1       $f0, %lo(D_801F2108)($at)
     /* B91F4 801B91F4 1040001E */  beqz       $v0, .L801B9270
     /* B91F8 801B91F8 00000000 */   nop
     /* B91FC 801B91FC 3C06802B */  lui        $a2, %hi(D_802AA9D8)

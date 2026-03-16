@@ -85,12 +85,12 @@ glabel func_8010F9C0
     /* 10AF8 8010FAF8 00000000 */   nop
   .L8010FAFC:
     /* 10AFC 8010FAFC 3C01801E */  lui        $at, %hi(D_801E58A0)
-    /* 10B00 8010FB00 C42058A0 */  lwc1       $fv0, %lo(D_801E58A0)($at)
+    /* 10B00 8010FB00 C42058A0 */  lwc1       $f0, %lo(D_801E58A0)($at)
     /* 10B04 8010FB04 3C018010 */  lui        $at, %hi(D_801001B4)
-    /* 10B08 8010FB08 C42201B4 */  lwc1       $fv1, %lo(D_801001B4)($at)
-    /* 10B0C 8010FB0C 46020000 */  add.s      $fv0, $fv0, $fv1
+    /* 10B08 8010FB08 C42201B4 */  lwc1       $f2, %lo(D_801001B4)($at)
+    /* 10B0C 8010FB0C 46020000 */  add.s      $f0, $f0, $f2
     /* 10B10 8010FB10 3C01801E */  lui        $at, %hi(D_801E58A0)
-    /* 10B14 8010FB14 E42058A0 */  swc1       $fv0, %lo(D_801E58A0)($at)
+    /* 10B14 8010FB14 E42058A0 */  swc1       $f0, %lo(D_801E58A0)($at)
     /* 10B18 8010FB18 8FBF0018 */  lw         $ra, 0x18($sp)
     /* 10B1C 8010FB1C 8FB10014 */  lw         $s1, 0x14($sp)
     /* 10B20 8010FB20 8FB00010 */  lw         $s0, 0x10($sp)

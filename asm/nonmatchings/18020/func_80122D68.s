@@ -9,7 +9,7 @@ glabel func_80122D68
     /* 22D7C 80122D7C AFA20014 */   sw        $v0, 0x14($sp)
   .L80122D80:
     /* 22D80 80122D80 3C018020 */  lui        $at, %hi(D_801F94CC)
-    /* 22D84 80122D84 C42094CC */  lwc1       $fv0, %lo(D_801F94CC)($at)
+    /* 22D84 80122D84 C42094CC */  lwc1       $f0, %lo(D_801F94CC)($at)
     /* 22D88 80122D88 3C02801F */  lui        $v0, %hi(D_801F7F84)
     /* 22D8C 80122D8C 8C427F84 */  lw         $v0, %lo(D_801F7F84)($v0)
 endlabel func_80122D68

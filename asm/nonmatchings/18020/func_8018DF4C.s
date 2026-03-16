@@ -9,7 +9,7 @@ glabel func_8018DF4C
     /* 8DF5C 8018DF5C 3C02802A */  lui        $v0, %hi(D_8029F550)
     /* 8DF60 8018DF60 8C42F550 */  lw         $v0, %lo(D_8029F550)($v0)
     /* 8DF64 8018DF64 3C018011 */  lui        $at, %hi(D_8010972C)
-    /* 8DF68 8018DF68 C434972C */  lwc1       $fs0, %lo(D_8010972C)($at)
+    /* 8DF68 8018DF68 C434972C */  lwc1       $f20, %lo(D_8010972C)($at)
     /* 8DF6C 8018DF6C 144000F6 */  bnez       $v0, .L8018E348
     /* 8DF70 8018DF70 26530001 */   addiu     $s3, $s2, 0x1
     /* 8DF74 8018DF74 3C02801F */  lui        $v0, %hi(D_801EFD08)

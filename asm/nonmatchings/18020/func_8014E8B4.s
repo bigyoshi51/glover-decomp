@@ -1,23 +1,23 @@
 nonmatching func_8014E8B4, 0x140
 
 glabel func_8014E8B4
-    /* 4E8B4 8014E8B4 44820000 */  mtc1       $v0, $fv0
-    /* 4E8B8 8014E8B8 46800020 */  cvt.s.w    $fv0, $fv0
-    /* 4E8BC 8014E8BC 46001080 */  add.s      $fv1, $fv1, $fv0
+    /* 4E8B4 8014E8B4 44820000 */  mtc1       $v0, $f0
+    /* 4E8B8 8014E8B8 46800020 */  cvt.s.w    $f0, $f0
+    /* 4E8BC 8014E8BC 46001080 */  add.s      $f2, $f2, $f0
     /* 4E8C0 8014E8C0 3C028020 */  lui        $v0, %hi(D_801F8FF4)
     /* 4E8C4 8014E8C4 24428FF4 */  addiu      $v0, $v0, %lo(D_801F8FF4)
-    /* 4E8C8 8014E8C8 46041081 */  sub.s      $fv1, $fv1, $ft0
-    /* 4E8CC 8014E8CC C4400000 */  lwc1       $fv0, 0x0($v0)
-    /* 4E8D0 8014E8D0 46001081 */  sub.s      $fv1, $fv1, $fv0
+    /* 4E8C8 8014E8C8 46041081 */  sub.s      $f2, $f2, $f4
+    /* 4E8CC 8014E8CC C4400000 */  lwc1       $f0, 0x0($v0)
+    /* 4E8D0 8014E8D0 46001081 */  sub.s      $f2, $f2, $f0
     /* 4E8D4 8014E8D4 3C018010 */  lui        $at, %hi(D_80106528)
-    /* 4E8D8 8014E8D8 C4256528 */  lwc1       $ft0f, %lo(D_80106528)($at)
-    /* 4E8DC 8014E8DC C424652C */  lwc1       $ft0, %lo(D_80106528 + 0x4)($at)
-    /* 4E8E0 8014E8E0 460010A1 */  cvt.d.s    $fv1, $fv1
-    /* 4E8E4 8014E8E4 46241083 */  div.d      $fv1, $fv1, $ft0
-    /* 4E8E8 8014E8E8 46000021 */  cvt.d.s    $fv0, $fv0
-    /* 4E8EC 8014E8EC 46220000 */  add.d      $fv0, $fv0, $fv1
-    /* 4E8F0 8014E8F0 46200020 */  cvt.s.d    $fv0, $fv0
-    /* 4E8F4 8014E8F4 E4400000 */  swc1       $fv0, 0x0($v0)
+    /* 4E8D8 8014E8D8 C4256528 */  lwc1       $f5, %lo(D_80106528)($at)
+    /* 4E8DC 8014E8DC C424652C */  lwc1       $f4, %lo(D_80106528 + 0x4)($at)
+    /* 4E8E0 8014E8E0 460010A1 */  cvt.d.s    $f2, $f2
+    /* 4E8E4 8014E8E4 46241083 */  div.d      $f2, $f2, $f4
+    /* 4E8E8 8014E8E8 46000021 */  cvt.d.s    $f0, $f0
+    /* 4E8EC 8014E8EC 46220000 */  add.d      $f0, $f0, $f2
+    /* 4E8F0 8014E8F0 46200020 */  cvt.s.d    $f0, $f0
+    /* 4E8F4 8014E8F4 E4400000 */  swc1       $f0, 0x0($v0)
     /* 4E8F8 8014E8F8 00009021 */  addu       $s2, $zero, $zero
     /* 4E8FC 8014E8FC 3C108020 */  lui        $s0, %hi(D_801F8BD0)
     /* 4E900 8014E900 26108BD0 */  addiu      $s0, $s0, %lo(D_801F8BD0)

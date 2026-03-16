@@ -86,6 +86,6 @@ glabel func_801C1C1C
     /* C1D34 801C1D34 00A01025 */  or         $v0, $a1, $zero
     /* C1D38 801C1D38 03E00008 */  jr         $ra
     /* C1D3C 801C1D3C 00000000 */   nop
-    /* C1D40 801C1D40 44856000 */  mtc1       $a1, $fa0
+    /* C1D40 801C1D40 44856000 */  mtc1       $a1, $f12
     /* C1D44 801C1D44 14800003 */  bnez       $a0, .L801C1D54
 endlabel func_801C1C1C

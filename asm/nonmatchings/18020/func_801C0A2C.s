@@ -57,6 +57,6 @@ glabel func_801C0A2C
     /* C0AEC 801C0AEC 03E00008 */  jr         $ra
     /* C0AF0 801C0AF0 A48000B0 */   sh        $zero, 0xB0($a0)
     /* C0AF4 801C0AF4 90AE0000 */  lbu        $t6, 0x0($a1)
-    /* C0AF8 801C0AF8 44808000 */  mtc1       $zero, $ft4
+    /* C0AF8 801C0AF8 44808000 */  mtc1       $zero, $f16
     /* C0AFC 801C0AFC 24A50002 */  addiu      $a1, $a1, 0x2
 endlabel func_801C0A2C

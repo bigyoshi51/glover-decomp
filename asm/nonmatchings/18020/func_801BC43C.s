@@ -2,31 +2,31 @@ nonmatching func_801BC43C, 0x1A8
 
 glabel func_801BC43C
     /* BC43C 801BC43C A6020080 */  sh         $v0, 0x80($s0)
-    /* BC440 801BC440 462010A0 */  cvt.s.d    $fv1, $fv1
-    /* BC444 801BC444 46200020 */  cvt.s.d    $fv0, $fv0
-    /* BC448 801BC448 E6020074 */  swc1       $fv1, 0x74($s0)
-    /* BC44C 801BC44C E6000078 */  swc1       $fv0, 0x78($s0)
+    /* BC440 801BC440 462010A0 */  cvt.s.d    $f2, $f2
+    /* BC444 801BC444 46200020 */  cvt.s.d    $f0, $f0
+    /* BC448 801BC448 E6020074 */  swc1       $f2, 0x74($s0)
+    /* BC44C 801BC44C E6000078 */  swc1       $f0, 0x78($s0)
     /* BC450 801BC450 3C03801F */  lui        $v1, %hi(D_801F2180)
     /* BC454 801BC454 90632180 */  lbu        $v1, %lo(D_801F2180)($v1)
     /* BC458 801BC458 24020002 */  addiu      $v0, $zero, 0x2
   .L801BC45C:
     /* BC45C 801BC45C 14620010 */  bne        $v1, $v0, .L801BC4A0
     /* BC460 801BC460 24020200 */   addiu     $v0, $zero, 0x200
-    /* BC464 801BC464 C6020074 */  lwc1       $fv1, 0x74($s0)
-    /* BC468 801BC468 460010A1 */  cvt.d.s    $fv1, $fv1
-    /* BC46C 801BC46C 46341082 */  mul.d      $fv1, $fv1, $fs0
-    /* BC470 801BC470 C6000078 */  lwc1       $fv0, 0x78($s0)
+    /* BC464 801BC464 C6020074 */  lwc1       $f2, 0x74($s0)
+    /* BC468 801BC468 460010A1 */  cvt.d.s    $f2, $f2
+    /* BC46C 801BC46C 46341082 */  mul.d      $f2, $f2, $f20
+    /* BC470 801BC470 C6000078 */  lwc1       $f0, 0x78($s0)
     /* BC474 801BC474 A6020086 */  sh         $v0, 0x86($s0)
-    /* BC478 801BC478 46000021 */  cvt.d.s    $fv0, $fv0
-    /* BC47C 801BC47C 46340002 */  mul.d      $fv0, $fv0, $fs0
+    /* BC478 801BC478 46000021 */  cvt.d.s    $f0, $f0
+    /* BC47C 801BC47C 46340002 */  mul.d      $f0, $f0, $f20
     /* BC480 801BC480 A6020084 */  sh         $v0, 0x84($s0)
     /* BC484 801BC484 9222FFFE */  lbu        $v0, -0x2($s1)
     /* BC488 801BC488 A6020082 */  sh         $v0, 0x82($s0)
     /* BC48C 801BC48C A6020080 */  sh         $v0, 0x80($s0)
-    /* BC490 801BC490 462010A0 */  cvt.s.d    $fv1, $fv1
-    /* BC494 801BC494 46200020 */  cvt.s.d    $fv0, $fv0
-    /* BC498 801BC498 E6020074 */  swc1       $fv1, 0x74($s0)
-    /* BC49C 801BC49C E6000078 */  swc1       $fv0, 0x78($s0)
+    /* BC490 801BC490 462010A0 */  cvt.s.d    $f2, $f2
+    /* BC494 801BC494 46200020 */  cvt.s.d    $f0, $f0
+    /* BC498 801BC498 E6020074 */  swc1       $f2, 0x74($s0)
+    /* BC49C 801BC49C E6000078 */  swc1       $f0, 0x78($s0)
   .L801BC4A0:
     /* BC4A0 801BC4A0 0C051C00 */  jal        func_80147000
     /* BC4A4 801BC4A4 24040002 */   addiu     $a0, $zero, 0x2
@@ -69,10 +69,10 @@ glabel func_801BC43C
     /* BC52C 801BC52C 8FB20028 */  lw         $s2, 0x28($sp)
     /* BC530 801BC530 8FB10024 */  lw         $s1, 0x24($sp)
     /* BC534 801BC534 8FB00020 */  lw         $s0, 0x20($sp)
-    /* BC538 801BC538 C7B70040 */  lwc1       $fs1f, 0x40($sp)
-    /* BC53C 801BC53C C7B60044 */  lwc1       $fs1, 0x44($sp)
-    /* BC540 801BC540 C7B50038 */  lwc1       $fs0f, 0x38($sp)
-    /* BC544 801BC544 C7B4003C */  lwc1       $fs0, 0x3C($sp)
+    /* BC538 801BC538 C7B70040 */  lwc1       $f23, 0x40($sp)
+    /* BC53C 801BC53C C7B60044 */  lwc1       $f22, 0x44($sp)
+    /* BC540 801BC540 C7B50038 */  lwc1       $f21, 0x38($sp)
+    /* BC544 801BC544 C7B4003C */  lwc1       $f20, 0x3C($sp)
     /* BC548 801BC548 27BD0048 */  addiu      $sp, $sp, 0x48
     /* BC54C 801BC54C 03E00008 */  jr         $ra
     /* BC550 801BC550 00000000 */   nop
@@ -109,7 +109,7 @@ glabel func_801BC43C
     /* BC5CC 801BC5CC 00A01821 */  addu       $v1, $a1, $zero
     /* BC5D0 801BC5D0 24040015 */  addiu      $a0, $zero, 0x15
     /* BC5D4 801BC5D4 00402821 */  addu       $a1, $v0, $zero
-    /* BC5D8 801BC5D8 E7B50020 */  swc1       $fs0f, 0x20($sp)
-    /* BC5DC 801BC5DC E7B40024 */  swc1       $fs0, 0x24($sp)
-    /* BC5E0 801BC5E0 4486A000 */  mtc1       $a2, $fs0
+    /* BC5D8 801BC5D8 E7B50020 */  swc1       $f21, 0x20($sp)
+    /* BC5DC 801BC5DC E7B40024 */  swc1       $f20, 0x24($sp)
+    /* BC5E0 801BC5E0 4486A000 */  mtc1       $a2, $f20
 endlabel func_801BC43C

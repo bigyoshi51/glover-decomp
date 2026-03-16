@@ -23,22 +23,22 @@ glabel func_801CBF70
     /* CBFBC 801CBFBC 8FB00010 */  lw         $s0, 0x10($sp)
     /* CBFC0 801CBFC0 03E00008 */  jr         $ra
     /* CBFC4 801CBFC4 27BD0020 */   addiu     $sp, $sp, 0x20
-    /* CBFC8 801CBFC8 C4800010 */  lwc1       $fv0, 0x10($a0)
-    /* CBFCC 801CBFCC 44851000 */  mtc1       $a1, $fv1
+    /* CBFC8 801CBFC8 C4800010 */  lwc1       $f0, 0x10($a0)
+    /* CBFCC 801CBFCC 44851000 */  mtc1       $a1, $f2
     /* CBFD0 801CBFD0 00000000 */  nop
-    /* CBFD4 801CBFD4 468010A0 */  cvt.s.w    $fv1, $fv1
-    /* CBFD8 801CBFD8 46020002 */  mul.s      $fv0, $fv0, $fv1
-    /* CBFDC 801CBFDC C4820014 */  lwc1       $fv1, 0x14($a0)
-    /* CBFE0 801CBFE0 46001080 */  add.s      $fv1, $fv1, $fv0
+    /* CBFD4 801CBFD4 468010A0 */  cvt.s.w    $f2, $f2
+    /* CBFD8 801CBFD8 46020002 */  mul.s      $f0, $f0, $f2
+    /* CBFDC 801CBFDC C4820014 */  lwc1       $f2, 0x14($a0)
+    /* CBFE0 801CBFE0 46001080 */  add.s      $f2, $f2, $f0
     /* CBFE4 801CBFE4 3C018011 */  lui        $at, %hi(D_8010C5F8)
-    /* CBFE8 801CBFE8 D420C5F8 */  ldc1       $fv0, %lo(D_8010C5F8)($at)
-    /* CBFEC 801CBFEC 46001121 */  cvt.d.s    $ft0, $fv1
-    /* CBFF0 801CBFF0 4624003C */  c.lt.d     $fv0, $ft0
+    /* CBFE8 801CBFE8 D420C5F8 */  ldc1       $f0, %lo(D_8010C5F8)($at)
+    /* CBFEC 801CBFEC 46001121 */  cvt.d.s    $f4, $f2
+    /* CBFF0 801CBFF0 4624003C */  c.lt.d     $f0, $f4
     /* CBFF4 801CBFF4 00000000 */  nop
     /* CBFF8 801CBFF8 00000000 */  nop
     /* CBFFC 801CBFFC 45000005 */  bc1f       .L801CC014
-    /* CC000 801CC000 E4820014 */   swc1      $fv1, 0x14($a0)
+    /* CC000 801CC000 E4820014 */   swc1      $f2, 0x14($a0)
     /* CC004 801CC004 3C018011 */  lui        $at, %hi(D_8010C600)
-    /* CC008 801CC008 D420C600 */  ldc1       $fv0, %lo(D_8010C600)($at)
-    /* CC00C 801CC00C 46202001 */  sub.d      $fv0, $ft0, $fv0
+    /* CC008 801CC008 D420C600 */  ldc1       $f0, %lo(D_8010C600)($at)
+    /* CC00C 801CC00C 46202001 */  sub.d      $f0, $f4, $f0
 endlabel func_801CBF70

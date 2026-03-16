@@ -95,9 +95,9 @@ glabel func_801CF0C0
     /* CF20C 801CF20C 8FB20060 */  lw         $s2, 0x60($sp)
     /* CF210 801CF210 8FB1005C */  lw         $s1, 0x5C($sp)
     /* CF214 801CF214 8FB00058 */  lw         $s0, 0x58($sp)
-    /* CF218 801CF218 D7B80090 */  ldc1       $fs2, 0x90($sp)
-    /* CF21C 801CF21C D7B60088 */  ldc1       $fs1, 0x88($sp)
-    /* CF220 801CF220 D7B40080 */  ldc1       $fs0, 0x80($sp)
+    /* CF218 801CF218 D7B80090 */  ldc1       $f24, 0x90($sp)
+    /* CF21C 801CF21C D7B60088 */  ldc1       $f22, 0x88($sp)
+    /* CF220 801CF220 D7B40080 */  ldc1       $f20, 0x80($sp)
     /* CF224 801CF224 03E00008 */  jr         $ra
     /* CF228 801CF228 27BD0098 */   addiu     $sp, $sp, 0x98
     /* CF22C 801CF22C 00805021 */  addu       $t2, $a0, $zero
@@ -155,40 +155,40 @@ glabel func_801CF0C0
     /* CF2F4 801CF2F4 34420004 */  ori        $v0, $v0, (0xA4500004 & 0xFFFF)
     /* CF2F8 801CF2F8 03E00008 */  jr         $ra
     /* CF2FC 801CF2FC 8C420000 */   lw        $v0, 0x0($v0)
-    /* CF300 801CF300 44841000 */  mtc1       $a0, $fv1
+    /* CF300 801CF300 44841000 */  mtc1       $a0, $f2
     /* CF304 801CF304 00000000 */  nop
-    /* CF308 801CF308 468010A1 */  cvt.d.w    $fv1, $fv1
+    /* CF308 801CF308 468010A1 */  cvt.d.w    $f2, $f2
     /* CF30C 801CF30C 3C01801F */  lui        $at, %hi(D_801F43D8)
-    /* CF310 801CF310 C42443D8 */  lwc1       $ft0, %lo(D_801F43D8)($at)
-    /* CF314 801CF314 46802120 */  cvt.s.w    $ft0, $ft0
+    /* CF310 801CF310 C42443D8 */  lwc1       $f4, %lo(D_801F43D8)($at)
+    /* CF314 801CF314 46802120 */  cvt.s.w    $f4, $f4
     /* CF318 801CF318 04830005 */  bgezl      $a0, .L801CF330
-    /* CF31C 801CF31C 46201020 */   cvt.s.d   $fv0, $fv1
+    /* CF31C 801CF31C 46201020 */   cvt.s.d   $f0, $f2
     /* CF320 801CF320 3C018011 */  lui        $at, %hi(D_8010C670)
-    /* CF324 801CF324 D420C670 */  ldc1       $fv0, %lo(D_8010C670)($at)
-    /* CF328 801CF328 46201080 */  add.d      $fv1, $fv1, $fv0
-    /* CF32C 801CF32C 46201020 */  cvt.s.d    $fv0, $fv1
+    /* CF324 801CF324 D420C670 */  ldc1       $f0, %lo(D_8010C670)($at)
+    /* CF328 801CF328 46201080 */  add.d      $f2, $f2, $f0
+    /* CF32C 801CF32C 46201020 */  cvt.s.d    $f0, $f2
   .L801CF330:
-    /* CF330 801CF330 46002003 */  div.s      $fv0, $ft0, $fv0
+    /* CF330 801CF330 46002003 */  div.s      $f0, $f4, $f0
     /* CF334 801CF334 3C013F00 */  lui        $at, (0x3F000000 >> 16)
-    /* CF338 801CF338 44811000 */  mtc1       $at, $fv1
+    /* CF338 801CF338 44811000 */  mtc1       $at, $f2
     /* CF33C 801CF33C 00000000 */  nop
-    /* CF340 801CF340 46020080 */  add.s      $fv1, $fv0, $fv1
+    /* CF340 801CF340 46020080 */  add.s      $f2, $f0, $f2
     /* CF344 801CF344 3C014F00 */  lui        $at, (0x4F000000 >> 16)
-    /* CF348 801CF348 44810000 */  mtc1       $at, $fv0
+    /* CF348 801CF348 44810000 */  mtc1       $at, $f0
     /* CF34C 801CF34C 00000000 */  nop
-    /* CF350 801CF350 4602003E */  c.le.s     $fv0, $fv1
+    /* CF350 801CF350 4602003E */  c.le.s     $f0, $f2
     /* CF354 801CF354 00000000 */  nop
     /* CF358 801CF358 00000000 */  nop
     /* CF35C 801CF35C 45030006 */  bc1tl      .L801CF378
-    /* CF360 801CF360 46001001 */   sub.s     $fv0, $fv1, $fv0
-    /* CF364 801CF364 4600100D */  trunc.w.s  $fv0, $fv1
-    /* CF368 801CF368 44060000 */  mfc1       $a2, $fv0
+    /* CF360 801CF360 46001001 */   sub.s     $f0, $f2, $f0
+    /* CF364 801CF364 4600100D */  trunc.w.s  $f0, $f2
+    /* CF368 801CF368 44060000 */  mfc1       $a2, $f0
     /* CF36C 801CF36C 00000000 */  nop
     /* CF370 801CF370 080738E3 */  j          .L801CE38C
     /* CF374 801CF374 2CC20084 */   sltiu     $v0, $a2, 0x84
   .L801CF378:
-    /* CF378 801CF378 4600008D */  trunc.w.s  $fv1, $fv0
-    /* CF37C 801CF37C 44061000 */  mfc1       $a2, $fv1
+    /* CF378 801CF378 4600008D */  trunc.w.s  $f2, $f0
+    /* CF37C 801CF37C 44061000 */  mfc1       $a2, $f2
     /* CF380 801CF380 3C028000 */  lui        $v0, (0x80000000 >> 16)
     /* CF384 801CF384 00C23025 */  or         $a2, $a2, $v0
     /* CF388 801CF388 2CC20084 */  sltiu      $v0, $a2, 0x84

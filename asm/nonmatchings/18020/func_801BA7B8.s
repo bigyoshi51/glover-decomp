@@ -5,12 +5,12 @@ glabel func_801BA7B8
     /* BA7BC 801BA7BC 8FB20048 */  lw         $s2, 0x48($sp)
     /* BA7C0 801BA7C0 8FB10044 */  lw         $s1, 0x44($sp)
     /* BA7C4 801BA7C4 8FB00040 */  lw         $s0, 0x40($sp)
-    /* BA7C8 801BA7C8 C7B90068 */  lwc1       $fs2f, 0x68($sp)
-    /* BA7CC 801BA7CC C7B8006C */  lwc1       $fs2, 0x6C($sp)
-    /* BA7D0 801BA7D0 C7B70060 */  lwc1       $fs1f, 0x60($sp)
-    /* BA7D4 801BA7D4 C7B60064 */  lwc1       $fs1, 0x64($sp)
-    /* BA7D8 801BA7D8 C7B50058 */  lwc1       $fs0f, 0x58($sp)
-    /* BA7DC 801BA7DC C7B4005C */  lwc1       $fs0, 0x5C($sp)
+    /* BA7C8 801BA7C8 C7B90068 */  lwc1       $f25, 0x68($sp)
+    /* BA7CC 801BA7CC C7B8006C */  lwc1       $f24, 0x6C($sp)
+    /* BA7D0 801BA7D0 C7B70060 */  lwc1       $f23, 0x60($sp)
+    /* BA7D4 801BA7D4 C7B60064 */  lwc1       $f22, 0x64($sp)
+    /* BA7D8 801BA7D8 C7B50058 */  lwc1       $f21, 0x58($sp)
+    /* BA7DC 801BA7DC C7B4005C */  lwc1       $f20, 0x5C($sp)
     /* BA7E0 801BA7E0 27BD0070 */  addiu      $sp, $sp, 0x70
     /* BA7E4 801BA7E4 03E00008 */  jr         $ra
     /* BA7E8 801BA7E8 00000000 */   nop

@@ -98,12 +98,12 @@ glabel func_801B4BBC
     /* B4D20 801B4D20 02002021 */  addu       $a0, $s0, $zero
     /* B4D24 801B4D24 24050005 */  addiu      $a1, $zero, 0x5
     /* B4D28 801B4D28 3C018011 */  lui        $at, %hi(D_8010BAA8)
-    /* B4D2C 801B4D2C C420BAA8 */  lwc1       $fv0, %lo(D_8010BAA8)($at)
+    /* B4D2C 801B4D2C C420BAA8 */  lwc1       $f0, %lo(D_8010BAA8)($at)
     /* B4D30 801B4D30 2402FFEC */  addiu      $v0, $zero, -0x14
     /* B4D34 801B4D34 3C01802A */  lui        $at, %hi(D_8029F5C8)
     /* B4D38 801B4D38 A022F5C8 */  sb         $v0, %lo(D_8029F5C8)($at)
     /* B4D3C 801B4D3C 3C01802A */  lui        $at, %hi(D_8029FA30)
-    /* B4D40 801B4D40 E420FA30 */  swc1       $fv0, %lo(D_8029FA30)($at)
+    /* B4D40 801B4D40 E420FA30 */  swc1       $f0, %lo(D_8029FA30)($at)
     /* B4D44 801B4D44 0C06DDD9 */  jal        func_801B7764
     /* B4D48 801B4D48 24060013 */   addiu     $a2, $zero, 0x13
     /* B4D4C 801B4D4C 8FBF0014 */  lw         $ra, 0x14($sp)

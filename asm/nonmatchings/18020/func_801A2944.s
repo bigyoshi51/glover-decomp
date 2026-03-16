@@ -13,7 +13,7 @@ glabel func_801A2944
     /* A2964 801A2964 00003021 */  addu       $a2, $zero, $zero
     /* A2968 801A2968 8E2300DC */  lw         $v1, 0xDC($s1)
     /* A296C 801A296C 3C01801F */  lui        $at, %hi(D_801F01DC)
-    /* A2970 801A2970 C42001DC */  lwc1       $fv0, %lo(D_801F01DC)($at)
+    /* A2970 801A2970 C42001DC */  lwc1       $f0, %lo(D_801F01DC)($at)
     /* A2974 801A2974 00003821 */  addu       $a3, $zero, $zero
     /* A2978 801A2978 2402FED4 */  addiu      $v0, $zero, -0x12C
 endlabel func_801A2944

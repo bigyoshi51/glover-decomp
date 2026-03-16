@@ -70,11 +70,11 @@ glabel func_801BC240
     /* BC338 801BC338 24910008 */   addiu     $s1, $a0, 0x8
     /* BC33C 801BC33C 24130400 */  addiu      $s3, $zero, 0x400
     /* BC340 801BC340 3C018011 */  lui        $at, %hi(D_8010BF28)
-    /* BC344 801BC344 C437BF28 */  lwc1       $fs1f, %lo(D_8010BF28)($at)
-    /* BC348 801BC348 C436BF2C */  lwc1       $fs1, %lo(D_8010BF28 + 0x4)($at)
+    /* BC344 801BC344 C437BF28 */  lwc1       $f23, %lo(D_8010BF28)($at)
+    /* BC348 801BC348 C436BF2C */  lwc1       $f22, %lo(D_8010BF28 + 0x4)($at)
     /* BC34C 801BC34C 3C018011 */  lui        $at, %hi(D_8010BF30)
-    /* BC350 801BC350 C435BF30 */  lwc1       $fs0f, %lo(D_8010BF30)($at)
-    /* BC354 801BC354 C434BF34 */  lwc1       $fs0, %lo(D_8010BF30 + 0x4)($at)
+    /* BC350 801BC350 C435BF30 */  lwc1       $f21, %lo(D_8010BF30)($at)
+    /* BC354 801BC354 C434BF34 */  lwc1       $f20, %lo(D_8010BF30 + 0x4)($at)
   .L801BC358:
     /* BC358 801BC358 3C02802B */  lui        $v0, %hi(D_802AAFDA)
     /* BC35C 801BC35C 8442AFDA */  lh         $v0, %lo(D_802AAFDA)($v0)
@@ -88,12 +88,12 @@ glabel func_801BC240
     /* BC378 801BC378 82220000 */  lb         $v0, 0x0($s1)
     /* BC37C 801BC37C 82230001 */  lb         $v1, 0x1($s1)
     /* BC380 801BC380 8628FFF6 */  lh         $t0, -0xA($s1)
-    /* BC384 801BC384 44822000 */  mtc1       $v0, $ft0
-    /* BC388 801BC388 46802120 */  cvt.s.w    $ft0, $ft0
-    /* BC38C 801BC38C 44062000 */  mfc1       $a2, $ft0
-    /* BC390 801BC390 44832000 */  mtc1       $v1, $ft0
-    /* BC394 801BC394 46802120 */  cvt.s.w    $ft0, $ft0
-    /* BC398 801BC398 44072000 */  mfc1       $a3, $ft0
+    /* BC384 801BC384 44822000 */  mtc1       $v0, $f4
+    /* BC388 801BC388 46802120 */  cvt.s.w    $f4, $f4
+    /* BC38C 801BC38C 44062000 */  mfc1       $a2, $f4
+    /* BC390 801BC390 44832000 */  mtc1       $v1, $f4
+    /* BC394 801BC394 46802120 */  cvt.s.w    $f4, $f4
+    /* BC398 801BC398 44072000 */  mfc1       $a3, $f4
     /* BC39C 801BC39C 00002821 */  addu       $a1, $zero, $zero
     /* BC3A0 801BC3A0 0C053A7D */  jal        func_8014E9F4
     /* BC3A4 801BC3A4 AFA80010 */   sw        $t0, 0x10($sp)
@@ -126,14 +126,14 @@ glabel func_801BC240
     /* BC404 801BC404 24020001 */  addiu      $v0, $zero, 0x1
     /* BC408 801BC408 14620014 */  bne        $v1, $v0, .L801BC45C
     /* BC40C 801BC40C 24020002 */   addiu     $v0, $zero, 0x2
-    /* BC410 801BC410 C6020074 */  lwc1       $fv1, 0x74($s0)
-    /* BC414 801BC414 460010A1 */  cvt.d.s    $fv1, $fv1
-    /* BC418 801BC418 46361082 */  mul.d      $fv1, $fv1, $fs1
-    /* BC41C 801BC41C C6000078 */  lwc1       $fv0, 0x78($s0)
+    /* BC410 801BC410 C6020074 */  lwc1       $f2, 0x74($s0)
+    /* BC414 801BC414 460010A1 */  cvt.d.s    $f2, $f2
+    /* BC418 801BC418 46361082 */  mul.d      $f2, $f2, $f22
+    /* BC41C 801BC41C C6000078 */  lwc1       $f0, 0x78($s0)
     /* BC420 801BC420 24020300 */  addiu      $v0, $zero, 0x300
     /* BC424 801BC424 A6020086 */  sh         $v0, 0x86($s0)
-    /* BC428 801BC428 46000021 */  cvt.d.s    $fv0, $fv0
-    /* BC42C 801BC42C 46360002 */  mul.d      $fv0, $fv0, $fs1
+    /* BC428 801BC428 46000021 */  cvt.d.s    $f0, $f0
+    /* BC42C 801BC42C 46360002 */  mul.d      $f0, $f0, $f22
     /* BC430 801BC430 A6020084 */  sh         $v0, 0x84($s0)
     /* BC434 801BC434 9222FFFD */  lbu        $v0, -0x3($s1)
     /* BC438 801BC438 A6020082 */  sh         $v0, 0x82($s0)

@@ -5,8 +5,8 @@ glabel func_801AEB0C
     /* AEB10 801AEB10 AFB20020 */  sw         $s2, 0x20($sp)
     /* AEB14 801AEB14 AFB1001C */  sw         $s1, 0x1C($sp)
     /* AEB18 801AEB18 AFB00018 */  sw         $s0, 0x18($sp)
-    /* AEB1C 801AEB1C E7B50038 */  swc1       $fs0f, 0x38($sp)
-    /* AEB20 801AEB20 E7B4003C */  swc1       $fs0, 0x3C($sp)
+    /* AEB1C 801AEB1C E7B50038 */  swc1       $f21, 0x38($sp)
+    /* AEB20 801AEB20 E7B4003C */  swc1       $f20, 0x3C($sp)
     /* AEB24 801AEB24 92630160 */  lbu        $v1, 0x160($s3)
     /* AEB28 801AEB28 30620001 */  andi       $v0, $v1, 0x1
     /* AEB2C 801AEB2C 10400005 */  beqz       $v0, .L801AEB44
@@ -34,7 +34,7 @@ glabel func_801AEB0C
     /* AEB78 801AEB78 10400086 */  beqz       $v0, .L801AED94
     /* AEB7C 801AEB7C 00008821 */   addu      $s1, $zero, $zero
     /* AEB80 801AEB80 3C018011 */  lui        $at, %hi(D_8010B540)
-    /* AEB84 801AEB84 C434B540 */  lwc1       $fs0, %lo(D_8010B540)($at)
+    /* AEB84 801AEB84 C434B540 */  lwc1       $f20, %lo(D_8010B540)($at)
     /* AEB88 801AEB88 3C02801F */  lui        $v0, %hi(D_801F0198)
     /* AEB8C 801AEB8C 8C420198 */  lw         $v0, %lo(D_801F0198)($v0)
     /* AEB90 801AEB90 1840003E */  blez       $v0, .L801AEC8C
@@ -60,10 +60,10 @@ glabel func_801AEB0C
     /* AEBD8 801AEBD8 00000000 */   nop
     /* AEBDC 801AEBDC 3C01802A */  lui        $at, %hi(D_80299718)
     /* AEBE0 801AEBE0 00300821 */  addu       $at, $at, $s0
-    /* AEBE4 801AEBE4 C4229718 */  lwc1       $fv1, %lo(D_80299718)($at)
+    /* AEBE4 801AEBE4 C4229718 */  lwc1       $f2, %lo(D_80299718)($at)
     /* AEBE8 801AEBE8 3C01801F */  lui        $at, %hi(D_801EEC14)
-    /* AEBEC 801AEBEC C420EC14 */  lwc1       $fv0, %lo(D_801EEC14)($at)
-    /* AEBF0 801AEBF0 4600103E */  c.le.s     $fv1, $fv0
+    /* AEBEC 801AEBEC C420EC14 */  lwc1       $f0, %lo(D_801EEC14)($at)
+    /* AEBF0 801AEBF0 4600103E */  c.le.s     $f2, $f0
     /* AEBF4 801AEBF4 00000000 */  nop
     /* AEBF8 801AEBF8 4500001E */  bc1f       .L801AEC74
     /* AEBFC 801AEBFC 00000000 */   nop

@@ -27,6 +27,6 @@ glabel func_8013305C
     /* 330B0 801330B0 8FB20040 */  lw         $s2, 0x40($sp)
     /* 330B4 801330B4 8FB1003C */  lw         $s1, 0x3C($sp)
     /* 330B8 801330B8 8FB00038 */  lw         $s0, 0x38($sp)
-    /* 330BC 801330BC C7BB0060 */  lwc1       $fs3f, 0x60($sp)
-    /* 330C0 801330C0 C7BA0064 */  lwc1       $fs3, 0x64($sp)
+    /* 330BC 801330BC C7BB0060 */  lwc1       $f27, 0x60($sp)
+    /* 330C0 801330C0 C7BA0064 */  lwc1       $f26, 0x64($sp)
 endlabel func_8013305C

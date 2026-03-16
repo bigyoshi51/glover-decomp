@@ -1,12 +1,12 @@
 nonmatching func_801C0C1C, 0x54
 
 glabel func_801C0C1C
-    /* C0C1C 801C0C1C E48A00D8 */  swc1       $ft3, 0xD8($a0)
-    /* C0C20 801C0C20 44802000 */  mtc1       $zero, $ft0
+    /* C0C1C 801C0C1C E48A00D8 */  swc1       $f10, 0xD8($a0)
+    /* C0C20 801C0C20 44802000 */  mtc1       $zero, $f4
     /* C0C24 801C0C24 A08000D1 */  sb         $zero, 0xD1($a0)
     /* C0C28 801C0C28 00A01025 */  or         $v0, $a1, $zero
     /* C0C2C 801C0C2C 03E00008 */  jr         $ra
-    /* C0C30 801C0C30 E4840068 */   swc1      $ft0, 0x68($a0)
+    /* C0C30 801C0C30 E4840068 */   swc1      $f4, 0x68($a0)
     /* C0C34 801C0C34 90A20000 */  lbu        $v0, 0x0($a1)
     /* C0C38 801C0C38 24A50001 */  addiu      $a1, $a1, 0x1
     /* C0C3C 801C0C3C 28410080 */  slti       $at, $v0, 0x80

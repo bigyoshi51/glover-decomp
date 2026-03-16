@@ -1,13 +1,13 @@
 nonmatching func_8017AE0C, 0x36C
 
 glabel func_8017AE0C
-    /* 7AE0C 8017AE0C 46341083 */  div.d      $fv1, $fv1, $fs0
+    /* 7AE0C 8017AE0C 46341083 */  div.d      $f2, $f2, $f20
     /* 7AE10 8017AE10 8E02003C */  lw         $v0, 0x3C($s0)
-    /* 7AE14 8017AE14 C4400014 */  lwc1       $fv0, 0x14($v0)
-    /* 7AE18 8017AE18 46000021 */  cvt.d.s    $fv0, $fv0
-    /* 7AE1C 8017AE1C 46220000 */  add.d      $fv0, $fv0, $fv1
-    /* 7AE20 8017AE20 46200020 */  cvt.s.d    $fv0, $fv0
-    /* 7AE24 8017AE24 E60000BC */  swc1       $fv0, 0xBC($s0)
+    /* 7AE14 8017AE14 C4400014 */  lwc1       $f0, 0x14($v0)
+    /* 7AE18 8017AE18 46000021 */  cvt.d.s    $f0, $f0
+    /* 7AE1C 8017AE1C 46220000 */  add.d      $f0, $f0, $f2
+    /* 7AE20 8017AE20 46200020 */  cvt.s.d    $f0, $f0
+    /* 7AE24 8017AE24 E60000BC */  swc1       $f0, 0xBC($s0)
   .L8017AE28:
     /* 7AE28 8017AE28 8E05002C */  lw         $a1, 0x2C($s0)
     /* 7AE2C 8017AE2C 10A00007 */  beqz       $a1, .L8017AE4C
@@ -33,14 +33,14 @@ glabel func_8017AE0C
     /* 7AE74 8017AE74 8FB20050 */  lw         $s2, 0x50($sp)
     /* 7AE78 8017AE78 8FB1004C */  lw         $s1, 0x4C($sp)
     /* 7AE7C 8017AE7C 8FB00048 */  lw         $s0, 0x48($sp)
-    /* 7AE80 8017AE80 C7BB0078 */  lwc1       $fs3f, 0x78($sp)
-    /* 7AE84 8017AE84 C7BA007C */  lwc1       $fs3, 0x7C($sp)
-    /* 7AE88 8017AE88 C7B90070 */  lwc1       $fs2f, 0x70($sp)
-    /* 7AE8C 8017AE8C C7B80074 */  lwc1       $fs2, 0x74($sp)
-    /* 7AE90 8017AE90 C7B70068 */  lwc1       $fs1f, 0x68($sp)
-    /* 7AE94 8017AE94 C7B6006C */  lwc1       $fs1, 0x6C($sp)
-    /* 7AE98 8017AE98 C7B50060 */  lwc1       $fs0f, 0x60($sp)
-    /* 7AE9C 8017AE9C C7B40064 */  lwc1       $fs0, 0x64($sp)
+    /* 7AE80 8017AE80 C7BB0078 */  lwc1       $f27, 0x78($sp)
+    /* 7AE84 8017AE84 C7BA007C */  lwc1       $f26, 0x7C($sp)
+    /* 7AE88 8017AE88 C7B90070 */  lwc1       $f25, 0x70($sp)
+    /* 7AE8C 8017AE8C C7B80074 */  lwc1       $f24, 0x74($sp)
+    /* 7AE90 8017AE90 C7B70068 */  lwc1       $f23, 0x68($sp)
+    /* 7AE94 8017AE94 C7B6006C */  lwc1       $f22, 0x6C($sp)
+    /* 7AE98 8017AE98 C7B50060 */  lwc1       $f21, 0x60($sp)
+    /* 7AE9C 8017AE9C C7B40064 */  lwc1       $f20, 0x64($sp)
     /* 7AEA0 8017AEA0 27BD0080 */  addiu      $sp, $sp, 0x80
     /* 7AEA4 8017AEA4 03E00008 */  jr         $ra
     /* 7AEA8 8017AEA8 00000000 */   nop
@@ -157,21 +157,21 @@ glabel func_8017AE0C
     /* 7B040 8017B040 0C052668 */  jal        func_801499A0
     /* 7B044 8017B044 24C6011C */   addiu     $a2, $a2, 0x11C
     /* 7B048 8017B048 8E02000C */  lw         $v0, 0xC($s0)
-    /* 7B04C 8017B04C C6020014 */  lwc1       $fv1, 0x14($s0)
-    /* 7B050 8017B050 C44000B4 */  lwc1       $fv0, 0xB4($v0)
-    /* 7B054 8017B054 46001080 */  add.s      $fv1, $fv1, $fv0
+    /* 7B04C 8017B04C C6020014 */  lwc1       $f2, 0x14($s0)
+    /* 7B050 8017B050 C44000B4 */  lwc1       $f0, 0xB4($v0)
+    /* 7B054 8017B054 46001080 */  add.s      $f2, $f2, $f0
     /* 7B058 8017B058 8E02000C */  lw         $v0, 0xC($s0)
-    /* 7B05C 8017B05C E6020014 */  swc1       $fv1, 0x14($s0)
-    /* 7B060 8017B060 C6020018 */  lwc1       $fv1, 0x18($s0)
-    /* 7B064 8017B064 C44000B8 */  lwc1       $fv0, 0xB8($v0)
-    /* 7B068 8017B068 46001080 */  add.s      $fv1, $fv1, $fv0
+    /* 7B05C 8017B05C E6020014 */  swc1       $f2, 0x14($s0)
+    /* 7B060 8017B060 C6020018 */  lwc1       $f2, 0x18($s0)
+    /* 7B064 8017B064 C44000B8 */  lwc1       $f0, 0xB8($v0)
+    /* 7B068 8017B068 46001080 */  add.s      $f2, $f2, $f0
     /* 7B06C 8017B06C 8E02000C */  lw         $v0, 0xC($s0)
-    /* 7B070 8017B070 E6020018 */  swc1       $fv1, 0x18($s0)
-    /* 7B074 8017B074 C602001C */  lwc1       $fv1, 0x1C($s0)
-    /* 7B078 8017B078 C44000BC */  lwc1       $fv0, 0xBC($v0)
-    /* 7B07C 8017B07C 46001080 */  add.s      $fv1, $fv1, $fv0
+    /* 7B070 8017B070 E6020018 */  swc1       $f2, 0x18($s0)
+    /* 7B074 8017B074 C602001C */  lwc1       $f2, 0x1C($s0)
+    /* 7B078 8017B078 C44000BC */  lwc1       $f0, 0xBC($v0)
+    /* 7B07C 8017B07C 46001080 */  add.s      $f2, $f2, $f0
     /* 7B080 8017B080 8E020010 */  lw         $v0, 0x10($s0)
-    /* 7B084 8017B084 E602001C */  swc1       $fv1, 0x1C($s0)
+    /* 7B084 8017B084 E602001C */  swc1       $f2, 0x1C($s0)
     /* 7B088 8017B088 8C430000 */  lw         $v1, 0x0($v0)
     /* 7B08C 8017B08C 8C440004 */  lw         $a0, 0x4($v0)
     /* 7B090 8017B090 8C450008 */  lw         $a1, 0x8($v0)

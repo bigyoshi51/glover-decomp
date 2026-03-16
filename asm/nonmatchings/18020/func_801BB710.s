@@ -118,8 +118,8 @@ glabel func_801BB710
     /* BB8BC 801BB8BC 0806EA82 */  j          .L801BAA08
     /* BB8C0 801BB8C0 24C6001C */   addiu     $a2, $a2, 0x1C
   .L801BB8C4:
-    /* BB8C4 801BB8C4 C4C00008 */  lwc1       $fv0, 0x8($a2)
+    /* BB8C4 801BB8C4 C4C00008 */  lwc1       $f0, 0x8($a2)
     /* BB8C8 801BB8C8 91030570 */  lbu        $v1, 0x570($t0)
     /* BB8CC 801BB8CC 00092100 */  sll        $a0, $t1, 4
-    /* BB8D0 801BB8D0 4600008D */  trunc.w.s  $fv1, $fv0
+    /* BB8D0 801BB8D0 4600008D */  trunc.w.s  $f2, $f0
 endlabel func_801BB710

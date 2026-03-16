@@ -1,11 +1,11 @@
 nonmatching func_801ADDC4, 0x204
 
 glabel func_801ADDC4
-    /* ADDC4 801ADDC4 462010A0 */  cvt.s.d    $fv1, $fv1
-    /* ADDC8 801ADDC8 46200020 */  cvt.s.d    $fv0, $fv0
-    /* ADDCC 801ADDCC E7A40018 */  swc1       $ft0, 0x18($sp)
-    /* ADDD0 801ADDD0 E7A2001C */  swc1       $fv1, 0x1C($sp)
-    /* ADDD4 801ADDD4 E7A00020 */  swc1       $fv0, 0x20($sp)
+    /* ADDC4 801ADDC4 462010A0 */  cvt.s.d    $f2, $f2
+    /* ADDC8 801ADDC8 46200020 */  cvt.s.d    $f0, $f0
+    /* ADDCC 801ADDCC E7A40018 */  swc1       $f4, 0x18($sp)
+    /* ADDD0 801ADDD0 E7A2001C */  swc1       $f2, 0x1C($sp)
+    /* ADDD4 801ADDD4 E7A00020 */  swc1       $f0, 0x20($sp)
     /* ADDD8 801ADDD8 0C06D9B5 */  jal        func_801B66D4
     /* ADDDC 801ADDDC AFA00010 */   sw        $zero, 0x10($sp)
     /* ADDE0 801ADDE0 00001021 */  addu       $v0, $zero, $zero
@@ -25,22 +25,22 @@ glabel func_801ADDC4
     /* ADE18 801ADE18 AFB20040 */  sw         $s2, 0x40($sp)
     /* ADE1C 801ADE1C AFB1003C */  sw         $s1, 0x3C($sp)
     /* ADE20 801ADE20 AFB00038 */  sw         $s0, 0x38($sp)
-    /* ADE24 801ADE24 E7BD0078 */  swc1       $fs4f, 0x78($sp)
-    /* ADE28 801ADE28 E7BC007C */  swc1       $fs4, 0x7C($sp)
-    /* ADE2C 801ADE2C E7BB0070 */  swc1       $fs3f, 0x70($sp)
-    /* ADE30 801ADE30 E7BA0074 */  swc1       $fs3, 0x74($sp)
-    /* ADE34 801ADE34 E7B90068 */  swc1       $fs2f, 0x68($sp)
-    /* ADE38 801ADE38 E7B8006C */  swc1       $fs2, 0x6C($sp)
-    /* ADE3C 801ADE3C E7B70060 */  swc1       $fs1f, 0x60($sp)
-    /* ADE40 801ADE40 E7B60064 */  swc1       $fs1, 0x64($sp)
-    /* ADE44 801ADE44 E7B50058 */  swc1       $fs0f, 0x58($sp)
-    /* ADE48 801ADE48 E7B4005C */  swc1       $fs0, 0x5C($sp)
+    /* ADE24 801ADE24 E7BD0078 */  swc1       $f29, 0x78($sp)
+    /* ADE28 801ADE28 E7BC007C */  swc1       $f28, 0x7C($sp)
+    /* ADE2C 801ADE2C E7BB0070 */  swc1       $f27, 0x70($sp)
+    /* ADE30 801ADE30 E7BA0074 */  swc1       $f26, 0x74($sp)
+    /* ADE34 801ADE34 E7B90068 */  swc1       $f25, 0x68($sp)
+    /* ADE38 801ADE38 E7B8006C */  swc1       $f24, 0x6C($sp)
+    /* ADE3C 801ADE3C E7B70060 */  swc1       $f23, 0x60($sp)
+    /* ADE40 801ADE40 E7B60064 */  swc1       $f22, 0x64($sp)
+    /* ADE44 801ADE44 E7B50058 */  swc1       $f21, 0x58($sp)
+    /* ADE48 801ADE48 E7B4005C */  swc1       $f20, 0x5C($sp)
     /* ADE4C 801ADE4C 8C510000 */  lw         $s1, 0x0($v0)
     /* ADE50 801ADE50 12220230 */  beq        $s1, $v0, .L801AE714
     /* ADE54 801ADE54 24140028 */   addiu     $s4, $zero, 0x28
     /* ADE58 801ADE58 3C15802A */  lui        $s5, %hi(D_8029F9AC)
     /* ADE5C 801ADE5C 26B5F9AC */  addiu      $s5, $s5, %lo(D_8029F9AC)
-    /* ADE60 801ADE60 4480E000 */  mtc1       $zero, $fs4
+    /* ADE60 801ADE60 4480E000 */  mtc1       $zero, $f28
   .L801ADE64:
     /* ADE64 801ADE64 8E22016C */  lw         $v0, 0x16C($s1)
     /* ADE68 801ADE68 8E330000 */  lw         $s3, 0x0($s1)

@@ -137,23 +137,23 @@ glabel func_801CA3BC
     /* CA5B4 801CA5B4 86060026 */  lh         $a2, 0x26($s0)
     /* CA5B8 801CA5B8 8602001C */  lh         $v0, 0x1C($s0)
     /* CA5BC 801CA5BC 96070024 */  lhu        $a3, 0x24($s0)
-    /* CA5C0 801CA5C0 44826000 */  mtc1       $v0, $fa0
+    /* CA5C0 801CA5C0 44826000 */  mtc1       $v0, $f12
     /* CA5C4 801CA5C4 00000000 */  nop
     /* CA5C8 801CA5C8 0C0727E9 */  jal        func_801C9FA4
-    /* CA5CC 801CA5CC 46806320 */   cvt.s.w   $fa0, $fa0
+    /* CA5CC 801CA5CC 46806320 */   cvt.s.w   $f12, $f12
     /* CA5D0 801CA5D0 8E050030 */  lw         $a1, 0x30($s0)
     /* CA5D4 801CA5D4 8606002C */  lh         $a2, 0x2C($s0)
     /* CA5D8 801CA5D8 9607002A */  lhu        $a3, 0x2A($s0)
     /* CA5DC 801CA5DC 8603001E */  lh         $v1, 0x1E($s0)
-    /* CA5E0 801CA5E0 4600008D */  trunc.w.s  $fv1, $fv0
-    /* CA5E4 801CA5E4 44021000 */  mfc1       $v0, $fv1
-    /* CA5E8 801CA5E8 44836000 */  mtc1       $v1, $fa0
+    /* CA5E0 801CA5E0 4600008D */  trunc.w.s  $f2, $f0
+    /* CA5E4 801CA5E4 44021000 */  mfc1       $v0, $f2
+    /* CA5E8 801CA5E8 44836000 */  mtc1       $v1, $f12
     /* CA5EC 801CA5EC 00000000 */  nop
-    /* CA5F0 801CA5F0 46806320 */  cvt.s.w    $fa0, $fa0
+    /* CA5F0 801CA5F0 46806320 */  cvt.s.w    $f12, $f12
     /* CA5F4 801CA5F4 0C0727E9 */  jal        func_801C9FA4
     /* CA5F8 801CA5F8 A602001C */   sh        $v0, 0x1C($s0)
-    /* CA5FC 801CA5FC 4600008D */  trunc.w.s  $fv1, $fv0
-    /* CA600 801CA600 44021000 */  mfc1       $v0, $fv1
+    /* CA5FC 801CA5FC 4600008D */  trunc.w.s  $f2, $f0
+    /* CA600 801CA600 44021000 */  mfc1       $v0, $f2
     /* CA604 801CA604 00000000 */  nop
     /* CA608 801CA608 A602001E */  sh         $v0, 0x1E($s0)
     /* CA60C 801CA60C 8602001C */  lh         $v0, 0x1C($s0)

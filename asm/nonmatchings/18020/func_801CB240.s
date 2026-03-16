@@ -14,9 +14,9 @@ glabel func_801CB240
     /* CB264 801CB264 080728E6 */  j          .L801CA398
     /* CB268 801CB268 AC830004 */   sw        $v1, 0x4($a0)
   .L801CB26C:
-    /* CB26C 801CB26C C6400018 */  lwc1       $fv0, 0x18($s2)
+    /* CB26C 801CB26C C6400018 */  lwc1       $f0, 0x18($s2)
     /* CB270 801CB270 3C018011 */  lui        $at, %hi(D_8010C580)
-    /* CB274 801CB274 D422C580 */  ldc1       $fv1, %lo(D_8010C580)($at)
-    /* CB278 801CB278 46000021 */  cvt.d.s    $fv0, $fv0
-    /* CB27C 801CB27C 4620103C */  c.lt.d     $fv1, $fv0
+    /* CB274 801CB274 D422C580 */  ldc1       $f2, %lo(D_8010C580)($at)
+    /* CB278 801CB278 46000021 */  cvt.d.s    $f0, $f0
+    /* CB27C 801CB27C 4620103C */  c.lt.d     $f2, $f0
 endlabel func_801CB240

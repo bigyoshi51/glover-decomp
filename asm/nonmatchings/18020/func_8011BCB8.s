@@ -1,7 +1,7 @@
 nonmatching func_8011BCB8, 0xA8
 
 glabel func_8011BCB8
-    /* 1BCB8 8011BCB8 4480A000 */  mtc1       $zero, $fs0
+    /* 1BCB8 8011BCB8 4480A000 */  mtc1       $zero, $f20
   .L8011BCBC:
     /* 1BCBC 8011BCBC 0C05F6E8 */  jal        func_8017DBA0
     /* 1BCC0 8011BCC0 02002021 */   addu      $a0, $s0, $zero
@@ -13,8 +13,8 @@ glabel func_8011BCB8
     /* 1BCD8 8011BCD8 90620057 */  lbu        $v0, 0x57($v1)
     /* 1BCDC 8011BCDC 54520008 */  bnel       $v0, $s2, .L8011BD00
     /* 1BCE0 8011BCE0 26100001 */   addiu     $s0, $s0, 0x1
-    /* 1BCE4 8011BCE4 C48000F4 */  lwc1       $fv0, 0xF4($a0)
-    /* 1BCE8 8011BCE8 46140032 */  c.eq.s     $fv0, $fs0
+    /* 1BCE4 8011BCE4 C48000F4 */  lwc1       $f0, 0xF4($a0)
+    /* 1BCE8 8011BCE8 46140032 */  c.eq.s     $f0, $f20
     /* 1BCEC 8011BCEC 00000000 */  nop
     /* 1BCF0 8011BCF0 45020003 */  bc1fl      .L8011BD00
     /* 1BCF4 8011BCF4 26100001 */   addiu     $s0, $s0, 0x1
@@ -27,7 +27,7 @@ glabel func_8011BCB8
     /* 1BD08 8011BD08 00000000 */   nop
     /* 1BD0C 8011BD0C 2410006E */  addiu      $s0, $zero, 0x6E
     /* 1BD10 8011BD10 24120001 */  addiu      $s2, $zero, 0x1
-    /* 1BD14 8011BD14 4480A000 */  mtc1       $zero, $fs0
+    /* 1BD14 8011BD14 4480A000 */  mtc1       $zero, $f20
   .L8011BD18:
     /* 1BD18 8011BD18 0C05F6E8 */  jal        func_8017DBA0
     /* 1BD1C 8011BD1C 02002021 */   addu      $a0, $s0, $zero
@@ -39,8 +39,8 @@ glabel func_8011BCB8
     /* 1BD34 8011BD34 90620057 */  lbu        $v0, 0x57($v1)
     /* 1BD38 8011BD38 54520008 */  bnel       $v0, $s2, .L8011BD5C
     /* 1BD3C 8011BD3C 26100001 */   addiu     $s0, $s0, 0x1
-    /* 1BD40 8011BD40 C48000F4 */  lwc1       $fv0, 0xF4($a0)
-    /* 1BD44 8011BD44 46140032 */  c.eq.s     $fv0, $fs0
+    /* 1BD40 8011BD40 C48000F4 */  lwc1       $f0, 0xF4($a0)
+    /* 1BD44 8011BD44 46140032 */  c.eq.s     $f0, $f20
     /* 1BD48 8011BD48 00000000 */  nop
     /* 1BD4C 8011BD4C 45020003 */  bc1fl      .L8011BD5C
     /* 1BD50 8011BD50 26100001 */   addiu     $s0, $s0, 0x1

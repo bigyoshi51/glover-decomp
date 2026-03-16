@@ -1,18 +1,18 @@
 nonmatching func_801CEE00, 0x60
 
 glabel func_801CEE00
-    /* CEE00 801CEE00 448B1000 */  mtc1       $t3, $fv1
+    /* CEE00 801CEE00 448B1000 */  mtc1       $t3, $f2
     /* CEE04 801CEE04 00000000 */  nop
-    /* CEE08 801CEE08 468010A0 */  cvt.s.w    $fv1, $fv1
-    /* CEE0C 801CEE0C 46141082 */  mul.s      $fv1, $fv1, $fs0
+    /* CEE08 801CEE08 468010A0 */  cvt.s.w    $f2, $f2
+    /* CEE0C 801CEE0C 46141082 */  mul.s      $f2, $f2, $f20
     /* CEE10 801CEE10 86220002 */  lh         $v0, 0x2($s1)
-    /* CEE14 801CEE14 44820000 */  mtc1       $v0, $fv0
+    /* CEE14 801CEE14 44820000 */  mtc1       $v0, $f0
     /* CEE18 801CEE18 00000000 */  nop
-    /* CEE1C 801CEE1C 46800020 */  cvt.s.w    $fv0, $fv0
-    /* CEE20 801CEE20 46020000 */  add.s      $fv0, $fv0, $fv1
-    /* CEE24 801CEE24 46160000 */  add.s      $fv0, $fv0, $fs1
-    /* CEE28 801CEE28 4600008D */  trunc.w.s  $fv1, $fv0
-    /* CEE2C 801CEE2C 44101000 */  mfc1       $s0, $fv1
+    /* CEE1C 801CEE1C 46800020 */  cvt.s.w    $f0, $f0
+    /* CEE20 801CEE20 46020000 */  add.s      $f0, $f0, $f2
+    /* CEE24 801CEE24 46160000 */  add.s      $f0, $f0, $f22
+    /* CEE28 801CEE28 4600008D */  trunc.w.s  $f2, $f0
+    /* CEE2C 801CEE2C 44101000 */  mfc1       $s0, $f2
     /* CEE30 801CEE30 30820020 */  andi       $v0, $a0, 0x20
     /* CEE34 801CEE34 10400005 */  beqz       $v0, .L801CEE4C
     /* CEE38 801CEE38 020E8021 */   addu      $s0, $s0, $t6

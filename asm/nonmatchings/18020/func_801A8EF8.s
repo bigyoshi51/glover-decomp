@@ -13,9 +13,9 @@ glabel func_801A8EF8
   .L801A8F18:
     /* A8F18 801A8F18 8E0700D4 */  lw         $a3, 0xD4($s0)
     /* A8F1C 801A8F1C 3C018011 */  lui        $at, %hi(D_8010B168)
-    /* A8F20 801A8F20 C420B168 */  lwc1       $fv0, %lo(D_8010B168)($at)
-    /* A8F24 801A8F24 C4E20000 */  lwc1       $fv1, 0x0($a3)
-    /* A8F28 801A8F28 46001032 */  c.eq.s     $fv1, $fv0
+    /* A8F20 801A8F20 C420B168 */  lwc1       $f0, %lo(D_8010B168)($at)
+    /* A8F24 801A8F24 C4E20000 */  lwc1       $f2, 0x0($a3)
+    /* A8F28 801A8F28 46001032 */  c.eq.s     $f2, $f0
     /* A8F2C 801A8F2C 00000000 */  nop
     /* A8F30 801A8F30 4501000E */  bc1t       .L801A8F6C
     /* A8F34 801A8F34 00000000 */   nop
@@ -56,10 +56,10 @@ glabel func_801A8EF8
     /* A8FB0 801A8FB0 30420100 */  andi       $v0, $v0, 0x100
     /* A8FB4 801A8FB4 10400074 */  beqz       $v0, .L801A9188
     /* A8FB8 801A8FB8 00000000 */   nop
-    /* A8FBC 801A8FBC C6020018 */  lwc1       $fv1, 0x18($s0)
+    /* A8FBC 801A8FBC C6020018 */  lwc1       $f2, 0x18($s0)
     /* A8FC0 801A8FC0 3C018011 */  lui        $at, %hi(D_8010B16C)
-    /* A8FC4 801A8FC4 C420B16C */  lwc1       $fv0, %lo(D_8010B16C)($at)
-    /* A8FC8 801A8FC8 4600103C */  c.lt.s     $fv1, $fv0
+    /* A8FC4 801A8FC4 C420B16C */  lwc1       $f0, %lo(D_8010B16C)($at)
+    /* A8FC8 801A8FC8 4600103C */  c.lt.s     $f2, $f0
     /* A8FCC 801A8FCC 00000000 */  nop
     /* A8FD0 801A8FD0 45010007 */  bc1t       .L801A8FF0
     /* A8FD4 801A8FD4 00000000 */   nop
@@ -75,10 +75,10 @@ glabel func_801A8EF8
     /* A8FF8 801A8FF8 2C420038 */  sltiu      $v0, $v0, 0x38
     /* A8FFC 801A8FFC 1040000D */  beqz       $v0, .L801A9034
     /* A9000 801A9000 00000000 */   nop
-    /* A9004 801A9004 C6020018 */  lwc1       $fv1, 0x18($s0)
+    /* A9004 801A9004 C6020018 */  lwc1       $f2, 0x18($s0)
     /* A9008 801A9008 3C018011 */  lui        $at, %hi(D_8010B170)
-    /* A900C 801A900C C420B170 */  lwc1       $fv0, %lo(D_8010B170)($at)
-    /* A9010 801A9010 4602003C */  c.lt.s     $fv0, $fv1
+    /* A900C 801A900C C420B170 */  lwc1       $f0, %lo(D_8010B170)($at)
+    /* A9010 801A9010 4602003C */  c.lt.s     $f0, $f2
     /* A9014 801A9014 00000000 */  nop
     /* A9018 801A9018 45000004 */  bc1f       .L801A902C
     /* A901C 801A901C 240200FF */   addiu     $v0, $zero, 0xFF

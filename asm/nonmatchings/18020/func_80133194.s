@@ -25,6 +25,6 @@ glabel func_80133194
     /* 331E8 801331E8 24840001 */  addiu      $a0, $a0, 0x1
     /* 331EC 801331EC 00820018 */  mult       $a0, $v0
     /* 331F0 801331F0 3C018010 */  lui        $at, %hi(D_80101F1C)
-    /* 331F4 801331F4 C4201F1C */  lwc1       $fv0, %lo(D_80101F1C)($at)
+    /* 331F4 801331F4 C4201F1C */  lwc1       $f0, %lo(D_80101F1C)($at)
     /* 331F8 801331F8 240200FF */  addiu      $v0, $zero, 0xFF
 endlabel func_80133194
