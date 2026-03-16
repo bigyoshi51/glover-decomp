@@ -64,7 +64,13 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010D170);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010D39C);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010D470);
+s32 func_8010D470(u8 *arg0) {
+    u8 *ptr = arg0 + 1;
+    if (*arg0 != 0) {
+        do {} while (*ptr++ != 0);
+    }
+    return (s32)(ptr - arg0);
+}
 
 s32 func_8010D39C(s32, s32, s32, s32);
 

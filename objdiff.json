@@ -12,7 +12,7 @@
   "units": [
     {
       "name": "src/D910",
-      "target_path": "build/expected/src/D910.o",
+      "target_path": "expected/src/D910.o",
       "base_path": "build/src/D910.o",
       "metadata": {
         "source_path": "src/D910.c",
@@ -26,7 +26,7 @@
     },
     {
       "name": "src/18020",
-      "target_path": "build/expected/src/18020.o",
+      "target_path": "expected/src/18020.o",
       "base_path": "build/src/18020.o",
       "metadata": {
         "source_path": "src/18020.c",
@@ -40,7 +40,7 @@
     },
     {
       "name": "asm/1000 (entry)",
-      "target_path": "build/expected/asm/1000.o",
+      "target_path": "expected/asm/1000.o",
       "base_path": "build/asm/1000.o",
       "metadata": {
         "source_path": "asm/1000.s",
