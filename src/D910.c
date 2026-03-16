@@ -39,7 +39,11 @@ s32 func_8010CA44(s32 arg0) {
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CA84);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010CB60);
+void func_8010CB60(s32 arg0, s32 arg1) {
+    s32 shift = (~arg0 & 3) << 3;
+    s32 *ptr = (s32*)(arg0 & -4);
+    *ptr = (*ptr & ~(0xFF << shift)) | ((arg1 & 0xFF) << shift);
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CB9C);
 
@@ -148,7 +152,47 @@ void func_8010E2B4(void) {
     D_801E64CC = 0;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010E2F4);
+void func_8014A50C(u8*, u8*, s32, s32, s32, s32);
+extern u8 D_801000D0[];
+extern u8 D_801000DC[];
+extern f32 D_801000E8;
+extern f32 D_801000EC;
+extern s32 D_801E64C0;
+extern f32 D_801F644C;
+extern s32 D_801F6458;
+extern s32 D_801F645C;
+extern s8 D_801F6460;
+extern s8 D_801F6461;
+extern s8 D_801F6462;
+extern s32 D_801F64AC;
+extern f32 D_801F64C0;
+extern s32 D_801F64CC;
+extern s32 D_801F64D0;
+extern s8 D_801F64D4;
+extern s8 D_801F64D5;
+extern s8 D_801F64D6;
+extern s32 D_801F6520;
+
+void func_8010E2F4(void) {
+    func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, 1);
+    func_8014A50C(D_801F6440 + 0x74, D_801000DC, 0xA0, 0x78, 0, 1);
+    D_801F64D0 = 0x2454;
+    D_801F645C = 0x2454;
+    D_801F64CC = 0x32C8;
+    D_801F6458 = 0x32C8;
+    D_801F64D6 = 0;
+    D_801F64D5 = 0;
+    D_801F64D4 = 0;
+    D_801F6462 = 0;
+    D_801F6461 = 0;
+    D_801F6460 = 0;
+    D_801F64AC = 0;
+    D_801F6520 = 0;
+    D_801E64C0 = 0;
+    D_801E64CC = 1;
+    D_801F644C = D_801000E8;
+    D_801F64C0 = D_801000EC;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E400);
 
@@ -194,7 +238,27 @@ void func_8010FB30(void) {
     func_8011FF40(D_801E7531);
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010FB80);
+void func_8011D88C(s32);
+extern u8 D_801001C4[];
+extern s8 D_801E7530;
+extern s32 D_801E58B4;
+extern s32 D_801E58A4;
+extern s32 D_801E58A8;
+extern s32 D_801E747C;
+extern s32 D_801E6608;
+
+void func_8010FB80(s8 arg0) {
+    func_80155A44(D_801001C4);
+    func_8010EBE8();
+    func_80155A44(D_801001C4);
+    D_801E7530 = arg0;
+    func_8011D88C(1);
+    D_801E58B4 = 1;
+    D_801E58A4 = 0xD;
+    D_801E58A8 = 0;
+    D_801E747C = 0;
+    D_801E6608 = 0x1F;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010FC10);
 
