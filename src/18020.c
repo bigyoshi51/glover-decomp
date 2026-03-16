@@ -1534,7 +1534,7 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80183F64);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018415C);
 
-void func_801D211C(s32, s32);
+void func_801D211C();
 
 void func_801841FC(s32 arg0, s32 *arg1, s32 arg2) {
     func_801D211C(arg0, *arg1);

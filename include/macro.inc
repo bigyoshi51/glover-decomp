@@ -1,3 +1,6 @@
+.ifndef _MACRO_INC_
+.set _MACRO_INC_, 1
+
 .set noat
 .set noreorder
 
@@ -42,3 +45,5 @@
     .size \label\().NON_MATCHING, \size
     \label\().NON_MATCHING:
 .endm
+
+.endif
