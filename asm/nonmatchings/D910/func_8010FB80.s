@@ -1,0 +1,40 @@
+nonmatching func_8010FB80, 0x90
+
+glabel func_8010FB80
+    /* 10B80 8010FB80 27BDFFE0 */  addiu      $sp, $sp, -0x20
+    /* 10B84 8010FB84 AFB10014 */  sw         $s1, 0x14($sp)
+    /* 10B88 8010FB88 00808821 */  addu       $s1, $a0, $zero
+    /* 10B8C 8010FB8C AFB00010 */  sw         $s0, 0x10($sp)
+    /* 10B90 8010FB90 3C108010 */  lui        $s0, %hi(D_801001C4)
+    /* 10B94 8010FB94 261001C4 */  addiu      $s0, $s0, %lo(D_801001C4)
+    /* 10B98 8010FB98 AFBF0018 */  sw         $ra, 0x18($sp)
+    /* 10B9C 8010FB9C 0C055691 */  jal        func_80155A44
+    /* 10BA0 8010FBA0 02002021 */   addu      $a0, $s0, $zero
+    /* 10BA4 8010FBA4 0C043AFA */  jal        func_8010EBE8
+    /* 10BA8 8010FBA8 00000000 */   nop
+    /* 10BAC 8010FBAC 0C055691 */  jal        func_80155A44
+    /* 10BB0 8010FBB0 02002021 */   addu      $a0, $s0, $zero
+    /* 10BB4 8010FBB4 3C01801E */  lui        $at, %hi(D_801E7530)
+    /* 10BB8 8010FBB8 A0317530 */  sb         $s1, %lo(D_801E7530)($at)
+    /* 10BBC 8010FBBC 0C047623 */  jal        func_8011D88C
+    /* 10BC0 8010FBC0 24040001 */   addiu     $a0, $zero, 0x1
+    /* 10BC4 8010FBC4 24020001 */  addiu      $v0, $zero, 0x1
+    /* 10BC8 8010FBC8 3C01801E */  lui        $at, %hi(D_801E58B4)
+    /* 10BCC 8010FBCC AC2258B4 */  sw         $v0, %lo(D_801E58B4)($at)
+    /* 10BD0 8010FBD0 2402000D */  addiu      $v0, $zero, 0xD
+    /* 10BD4 8010FBD4 3C01801E */  lui        $at, %hi(D_801E58A4)
+    /* 10BD8 8010FBD8 AC2258A4 */  sw         $v0, %lo(D_801E58A4)($at)
+    /* 10BDC 8010FBDC 2402001F */  addiu      $v0, $zero, 0x1F
+    /* 10BE0 8010FBE0 3C01801E */  lui        $at, %hi(D_801E58A8)
+    /* 10BE4 8010FBE4 AC2058A8 */  sw         $zero, %lo(D_801E58A8)($at)
+    /* 10BE8 8010FBE8 3C01801E */  lui        $at, %hi(D_801E747C)
+    /* 10BEC 8010FBEC AC20747C */  sw         $zero, %lo(D_801E747C)($at)
+    /* 10BF0 8010FBF0 3C01801E */  lui        $at, %hi(D_801E6608)
+    /* 10BF4 8010FBF4 AC226608 */  sw         $v0, %lo(D_801E6608)($at)
+    /* 10BF8 8010FBF8 8FBF0018 */  lw         $ra, 0x18($sp)
+    /* 10BFC 8010FBFC 8FB10014 */  lw         $s1, 0x14($sp)
+    /* 10C00 8010FC00 8FB00010 */  lw         $s0, 0x10($sp)
+    /* 10C04 8010FC04 27BD0020 */  addiu      $sp, $sp, 0x20
+    /* 10C08 8010FC08 03E00008 */  jr         $ra
+    /* 10C0C 8010FC0C 00000000 */   nop
+endlabel func_8010FB80

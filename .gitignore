@@ -1,0 +1,8 @@
+build/
+baserom.z64
+*.z64
+*.n64
+*.v64
+.splat/
+__pycache__/
+*.pyc

@@ -1,0 +1,95 @@
+name: Glover (North America)
+sha1: 270be17b3c8da9b88a7b99c2a545b0bce16837f4
+options:
+  basename: glover
+  target_path: /home/dan/Documents/code/decomp/projects/Glover (USA)/baserom.z64
+  elf_path: build/glover.elf
+  base_path: .
+  platform: n64
+  compiler: KMC
+
+  # asm_path: asm
+  # src_path: src
+  # build_path: build
+  # create_asm_dependencies: True
+
+  ld_script_path: glover.ld
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  header_encoding: ASCII
+
+  o_as_suffix: True
+  use_legacy_include_asm: False
+  mips_abi_float_regs: o32
+
+  asm_function_macro: glabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+
+  section_order: [".text", ".rodata", ".data", ".bss"]
+  auto_link_sections: [".data", ".rodata", ".bss"]
+  subalign: null
+  ld_align_segment_vram_end: False
+  ld_align_section_vram_end: False
+
+  symbol_addrs_path:
+    - symbol_addrs.txt
+  reloc_addrs_path:
+    - reloc_addrs.txt
+
+  undefined_funcs_auto_path: undefined_funcs_auto.txt
+  undefined_syms_auto_path: undefined_syms_auto.txt
+
+  extensions_path: tools/splat_ext
+
+  # string_encoding: ASCII
+  # data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+  # libultra_symbols: True
+  # hardware_regs: True
+  # gfx_ucode: # one of [f3d, f3db, f3dex, f3dexb, f3dex2]
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: ipl3
+    type: bin
+    start: 0x40
+
+  # Everything from 0x1000 to 0xF5680 is loaded to vram 0x80100000 at boot.
+  # BSS is 0x801F5680 - 0x802B0D10 (zeroed at runtime, not in ROM).
+  # main() is at 0x80139DE8.
+
+  - name: entry
+    type: code
+    start: 0x1000
+    vram: 0x80100000
+    subsegments:
+      - [0x1000, asm]
+
+  - name: main
+    type: code
+    start: 0xD910
+    vram: 0x8010C910
+    follows_vram: entry
+    subsegments:
+      - [0xD910, c]
+
+  - name: game
+    type: code
+    start: 0x18020
+    vram: 0x80118020
+    bss_size: 0xBB690  # 0x802B0D10 - 0x801F5680
+    subsegments:
+      - [0x18020, c]
+      - [0xD51D0, data]
+      - { start: 0xF5680, type: bss, vram: 0x801F5680 }
+
+  - type: bin
+    start: 0xF5680
+    follows_vram: game
+
+  - [0x800000]

@@ -1,0 +1,13 @@
+# decomp agent configuration
+project_root: /home/dan/Documents/code/decomp/projects/Glover (USA)
+base_rom: baserom.z64
+ido_recomp: tools/ido-static-recomp
+
+# Agent settings
+max_attempts: 30
+model: claude-sonnet-4-20250514
+
+# Project structure
+asm_dir: asm/nonmatchings
+src_dir: src
+include_dir: include
