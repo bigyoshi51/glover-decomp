@@ -1,15 +1,40 @@
 {
   "function_name": "func_8018ED18",
-  "game": "glover_usa",
-  "compiler": "gcc_2.7.2_kmc",
-  "compiler_flags": "-O2 -g2",
-  "segment": "18020",
   "asm_text": "nonmatching func_8018ED18, 0x3C\n\nglabel func_8018ED18\n    /* 8ED18 8018ED18 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 8ED1C 8018ED1C AFB00010 */  sw         $s0, 0x10($sp)\n    /* 8ED20 8018ED20 00008021 */  addu       $s0, $zero, $zero\n    /* 8ED24 8018ED24 AFBF0014 */  sw         $ra, 0x14($sp)\n  .L8018ED28:\n    /* 8ED28 8018ED28 0C0634E7 */  jal        func_8018D39C\n    /* 8ED2C 8018ED2C 02002021 */   addu      $a0, $s0, $zero\n    /* 8ED30 8018ED30 26100001 */  addiu      $s0, $s0, 0x1\n    /* 8ED34 8018ED34 2A02000F */  slti       $v0, $s0, 0xF\n    /* 8ED38 8018ED38 1440FFFB */  bnez       $v0, .L8018ED28\n    /* 8ED3C 8018ED3C 00000000 */   nop\n    /* 8ED40 8018ED40 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* 8ED44 8018ED44 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 8ED48 8018ED48 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 8ED4C 8018ED4C 03E00008 */  jr         $ra\n    /* 8ED50 8018ED50 00000000 */   nop\nendlabel func_8018ED18\n",
   "m2c_output": "? func_8018D39C(s32);                               /* extern */\n\nvoid func_8018ED18(void) {\n    s32 var_s0;\n\n    var_s0 = 0;\n    do {\n        func_8018D39C(var_s0);\n        var_s0 += 1;\n    } while (var_s0 < 0xF);\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_8018ED18(void) {\n    s32 i = 0;\n    do {\n        func_8018D39C(i);\n        i += 1;\n    } while (i < 0xF);\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
   "final_c": "void func_8018ED18(void) {\n    s32 i = 0;\n    do {\n        func_8018D39C(i);\n        i += 1;\n    } while (i < 0xF);\n}",
   "matched": true,
   "instruction_count": 15,
   "has_branches": true,
   "has_calls": true,
-  "timestamp": 1773631406.6610112
+  "timestamp": 1773633463.888831,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8011D7F0",
+    "func_80120F08",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_801841FC",
+    "func_8018D55C",
+    "func_801ABDDC",
+    "func_801B9894"
+  ],
+  "called_functions": [
+    "func_8018D39C"
+  ],
+  "referenced_data": [],
+  "segment": "18020"
 }

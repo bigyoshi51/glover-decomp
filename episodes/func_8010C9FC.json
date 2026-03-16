@@ -1,15 +1,48 @@
 {
   "function_name": "func_8010C9FC",
-  "game": "glover_usa",
-  "compiler": "gcc_2.7.2_kmc",
-  "compiler_flags": "-O2 -g2",
-  "segment": "D910",
   "asm_text": "nonmatching func_8010C9FC, 0x48\n\nglabel func_8010C9FC\n    /* D9FC 8010C9FC 3C01801F */  lui        $at, %hi(D_801F5680)\n    /* DA00 8010CA00 AC205680 */  sw         $zero, %lo(D_801F5680)($at)\n    /* DA04 8010CA04 0804328A */  j          .L8010CA28\n    /* DA08 8010CA08 00000000 */   nop\n  .L8010CA0C:\n    /* DA0C 8010CA0C 3C02801F */  lui        $v0, %hi(D_801F5680)\n    /* DA10 8010CA10 8C425680 */  lw         $v0, %lo(D_801F5680)($v0)\n    /* DA14 8010CA14 24420001 */  addiu      $v0, $v0, 0x1\n    /* DA18 8010CA18 3C01801F */  lui        $at, %hi(D_801F5680)\n    /* DA1C 8010CA1C AC225680 */  sw         $v0, %lo(D_801F5680)($at)\n    /* DA20 8010CA20 3C02801F */  lui        $v0, %hi(D_801F5680)\n    /* DA24 8010CA24 8C425680 */  lw         $v0, %lo(D_801F5680)($v0)\n  .L8010CA28:\n    /* DA28 8010CA28 3C02801F */  lui        $v0, %hi(D_801F5680)\n    /* DA2C 8010CA2C 8C425680 */  lw         $v0, %lo(D_801F5680)($v0)\n    /* DA30 8010CA30 0044102A */  slt        $v0, $v0, $a0\n    /* DA34 8010CA34 1440FFF5 */  bnez       $v0, .L8010CA0C\n    /* DA38 8010CA38 00000000 */   nop\n    /* DA3C 8010CA3C 03E00008 */  jr         $ra\n    /* DA40 8010CA40 00000000 */   nop\nendlabel func_8010C9FC\n",
   "m2c_output": "extern s32 D_801F5680;\n\nvoid func_8010C9FC(s32 arg0) {\n    D_801F5680 = 0;\nloop_2:\n    if (D_801F5680 < arg0) {\n        D_801F5680 += 1;\n        goto loop_2;\n    }\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_8010C9FC(s32 arg0) {\n    for (D_801F5680 = 0; D_801F5680 < arg0; D_801F5680++) {}\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
   "final_c": "void func_8010C9FC(s32 arg0) {\n    for (D_801F5680 = 0; D_801F5680 < arg0; D_801F5680++) {}\n}",
   "matched": true,
   "instruction_count": 18,
   "has_branches": true,
   "has_calls": false,
-  "timestamp": 1773631402.2214708
+  "timestamp": 1773633459.8998952,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8010C920",
+    "func_8010C958",
+    "func_8010C988",
+    "func_8010C9C0",
+    "func_8010CA44",
+    "func_8010CB60",
+    "func_8010D104",
+    "func_8010D470",
+    "func_8010D490",
+    "func_8010D4DC",
+    "func_8010D56C",
+    "func_8010D5FC",
+    "func_8010D7F0",
+    "func_8010E2B4",
+    "func_8010E2F4",
+    "func_8010FB30",
+    "func_8010FB80"
+  ],
+  "called_functions": [],
+  "referenced_data": [
+    "D_801F5680"
+  ],
+  "segment": "D910"
 }

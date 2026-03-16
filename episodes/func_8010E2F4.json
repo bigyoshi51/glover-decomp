@@ -1,15 +1,70 @@
 {
   "function_name": "func_8010E2F4",
-  "game": "glover_usa",
-  "compiler": "gcc_2.7.2_kmc",
-  "compiler_flags": "-O2 -g2",
-  "segment": "D910",
   "asm_text": "nonmatching func_8010E2F4, 0x10C\n\nglabel func_8010E2F4\n    /* F2F4 8010E2F4 27BDFFD8 */  addiu      $sp, $sp, -0x28\n    /* F2F8 8010E2F8 AFB00018 */  sw         $s0, 0x18($sp)\n    /* F2FC 8010E2FC 3C10801F */  lui        $s0, %hi(D_801F6440)\n    /* F300 8010E300 26106440 */  addiu      $s0, $s0, %lo(D_801F6440)\n    /* F304 8010E304 02002021 */  addu       $a0, $s0, $zero\n    /* F308 8010E308 3C058010 */  lui        $a1, %hi(D_801000D0)\n    /* F30C 8010E30C 24A500D0 */  addiu      $a1, $a1, %lo(D_801000D0)\n    /* F310 8010E310 240600A0 */  addiu      $a2, $zero, 0xA0\n    /* F314 8010E314 24070078 */  addiu      $a3, $zero, 0x78\n    /* F318 8010E318 AFB1001C */  sw         $s1, 0x1C($sp)\n    /* F31C 8010E31C 24110001 */  addiu      $s1, $zero, 0x1\n    /* F320 8010E320 AFBF0020 */  sw         $ra, 0x20($sp)\n    /* F324 8010E324 AFA00010 */  sw         $zero, 0x10($sp)\n    /* F328 8010E328 0C052943 */  jal        func_8014A50C\n    /* F32C 8010E32C AFB10014 */   sw        $s1, 0x14($sp)\n    /* F330 8010E330 26040074 */  addiu      $a0, $s0, 0x74\n    /* F334 8010E334 3C058010 */  lui        $a1, %hi(D_801000DC)\n    /* F338 8010E338 24A500DC */  addiu      $a1, $a1, %lo(D_801000DC)\n    /* F33C 8010E33C 240600A0 */  addiu      $a2, $zero, 0xA0\n    /* F340 8010E340 24070078 */  addiu      $a3, $zero, 0x78\n    /* F344 8010E344 AFA00010 */  sw         $zero, 0x10($sp)\n    /* F348 8010E348 0C052943 */  jal        func_8014A50C\n    /* F34C 8010E34C AFB10014 */   sw        $s1, 0x14($sp)\n    /* F350 8010E350 3C018010 */  lui        $at, %hi(D_801000E8)\n    /* F354 8010E354 C42000E8 */  lwc1       $f0, %lo(D_801000E8)($at)\n    /* F358 8010E358 3C018010 */  lui        $at, %hi(D_801000EC)\n    /* F35C 8010E35C C42200EC */  lwc1       $f2, %lo(D_801000EC)($at)\n    /* F360 8010E360 24022454 */  addiu      $v0, $zero, 0x2454\n    /* F364 8010E364 3C01801F */  lui        $at, %hi(D_801F64D0)\n    /* F368 8010E368 AC2264D0 */  sw         $v0, %lo(D_801F64D0)($at)\n    /* F36C 8010E36C 3C01801F */  lui        $at, %hi(D_801F645C)\n    /* F370 8010E370 AC22645C */  sw         $v0, %lo(D_801F645C)($at)\n    /* F374 8010E374 240232C8 */  addiu      $v0, $zero, 0x32C8\n    /* F378 8010E378 3C01801F */  lui        $at, %hi(D_801F64CC)\n    /* F37C 8010E37C AC2264CC */  sw         $v0, %lo(D_801F64CC)($at)\n    /* F380 8010E380 3C01801F */  lui        $at, %hi(D_801F6458)\n    /* F384 8010E384 AC226458 */  sw         $v0, %lo(D_801F6458)($at)\n    /* F388 8010E388 3C01801F */  lui        $at, %hi(D_801F64D6)\n    /* F38C 8010E38C A02064D6 */  sb         $zero, %lo(D_801F64D6)($at)\n    /* F390 8010E390 3C01801F */  lui        $at, %hi(D_801F64D5)\n    /* F394 8010E394 A02064D5 */  sb         $zero, %lo(D_801F64D5)($at)\n    /* F398 8010E398 3C01801F */  lui        $at, %hi(D_801F64D4)\n    /* F39C 8010E39C A02064D4 */  sb         $zero, %lo(D_801F64D4)($at)\n    /* F3A0 8010E3A0 3C01801F */  lui        $at, %hi(D_801F6462)\n    /* F3A4 8010E3A4 A0206462 */  sb         $zero, %lo(D_801F6462)($at)\n    /* F3A8 8010E3A8 3C01801F */  lui        $at, %hi(D_801F6461)\n    /* F3AC 8010E3AC A0206461 */  sb         $zero, %lo(D_801F6461)($at)\n    /* F3B0 8010E3B0 3C01801F */  lui        $at, %hi(D_801F6460)\n    /* F3B4 8010E3B4 A0206460 */  sb         $zero, %lo(D_801F6460)($at)\n    /* F3B8 8010E3B8 3C01801F */  lui        $at, %hi(D_801F64AC)\n    /* F3BC 8010E3BC AC2064AC */  sw         $zero, %lo(D_801F64AC)($at)\n    /* F3C0 8010E3C0 3C01801F */  lui        $at, %hi(D_801F6520)\n    /* F3C4 8010E3C4 AC206520 */  sw         $zero, %lo(D_801F6520)($at)\n    /* F3C8 8010E3C8 3C01801E */  lui        $at, %hi(D_801E64C0)\n    /* F3CC 8010E3CC AC2064C0 */  sw         $zero, %lo(D_801E64C0)($at)\n    /* F3D0 8010E3D0 3C01801E */  lui        $at, %hi(D_801E64CC)\n    /* F3D4 8010E3D4 AC3164CC */  sw         $s1, %lo(D_801E64CC)($at)\n    /* F3D8 8010E3D8 3C01801F */  lui        $at, %hi(D_801F644C)\n    /* F3DC 8010E3DC E420644C */  swc1       $f0, %lo(D_801F644C)($at)\n    /* F3E0 8010E3E0 3C01801F */  lui        $at, %hi(D_801F64C0)\n    /* F3E4 8010E3E4 E42264C0 */  swc1       $f2, %lo(D_801F64C0)($at)\n    /* F3E8 8010E3E8 8FBF0020 */  lw         $ra, 0x20($sp)\n    /* F3EC 8010E3EC 8FB1001C */  lw         $s1, 0x1C($sp)\n    /* F3F0 8010E3F0 8FB00018 */  lw         $s0, 0x18($sp)\n    /* F3F4 8010E3F4 27BD0028 */  addiu      $sp, $sp, 0x28\n    /* F3F8 8010E3F8 03E00008 */  jr         $ra\n    /* F3FC 8010E3FC 00000000 */   nop\nendlabel func_8010E2F4\n",
   "m2c_output": "? func_8014A50C(? *, ? *, ?, ?, s32, s32);          /* extern */\nextern ? D_801000D0;\nextern ? D_801000DC;\nextern f32 D_801000E8;\nextern f32 D_801000EC;\nextern s32 D_801E64C0;\nextern s32 D_801E64CC;\nextern ? D_801F6440;\nextern f32 D_801F644C;\nextern s32 D_801F6458;\nextern s32 D_801F645C;\nextern s8 D_801F6460;\nextern s8 D_801F6461;\nextern s8 D_801F6462;\nextern s32 D_801F64AC;\nextern f32 D_801F64C0;\nextern s32 D_801F64CC;\nextern s32 D_801F64D0;\nextern s8 D_801F64D4;\nextern s8 D_801F64D5;\nextern s8 D_801F64D6;\nextern s32 D_801F6520;\n\nvoid func_8010E2F4(void) {\n    func_8014A50C(&D_801F6440, &D_801000D0, 0xA0, 0x78, 0, 1);\n    func_8014A50C(&D_801F6440 + 0x74, &D_801000DC, 0xA0, 0x78, 0, 1);\n    D_801F64D0 = 0x2454;\n    D_801F645C = 0x2454;\n    D_801F64CC = 0x32C8;\n    D_801F6458 = 0x32C8;\n    D_801F64D6 = 0;\n    D_801F64D5 = 0;\n    D_801F64D4 = 0;\n    D_801F6462 = 0;\n    D_801F6461 = 0;\n    D_801F6460 = 0;\n    D_801F64AC = 0;\n    D_801F6520 = 0;\n    D_801E64C0 = 0;\n    D_801E64CC = 1;\n    D_801F644C = D_801000E8;\n    D_801F64C0 = D_801000EC;\n}\n",
-  "final_c": "void func_8010E2F4(void) {\n    func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, 1);\n    func_8014A50C(D_801F6440 + 0x74, D_801000DC, 0xA0, 0x78, 0, 1);\n    /* ... 16 globals initialized ... */\n}",
+  "attempts": [
+    {
+      "c_code": "void func_8010E2F4(void) {\n    func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, 1);\n    func_8014A50C(D_801F6440 + 0x74, D_801000DC, 0xA0, 0x78, 0, 1);\n    D_801F64D0 = 0x2454;\n    D_801F645C = 0x2454;\n    D_801F64CC = 0x32C8;\n    D_801F6458 = 0x32C8;\n    D_801F64D6 = 0;\n    D_801F64D5 = 0;\n    D_801F64D4 = 0;\n    D_801F6462 = 0;\n    D_801F6461 = 0;\n    D_801F6460 = 0;\n    D_801F64AC = 0;\n    D_801F6520 = 0;\n    D_801E64C0 = 0;\n    D_801E64CC = 1;\n    D_801F644C = D_801000E8;\n    D_801F64C0 = D_801000EC;\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "void func_8010E2F4(void) {\n    func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, 1);\n    func_8014A50C(D_801F6440 + 0x74, D_801000DC, 0xA0, 0x78, 0, 1);\n    D_801F64D0 = 0x2454;\n    D_801F645C = 0x2454;\n    D_801F64CC = 0x32C8;\n    D_801F6458 = 0x32C8;\n    D_801F64D6 = 0;\n    D_801F64D5 = 0;\n    D_801F64D4 = 0;\n    D_801F6462 = 0;\n    D_801F6461 = 0;\n    D_801F6460 = 0;\n    D_801F64AC = 0;\n    D_801F6520 = 0;\n    D_801E64C0 = 0;\n    D_801E64CC = 1;\n    D_801F644C = D_801000E8;\n    D_801F64C0 = D_801000EC;\n}",
   "matched": true,
   "instruction_count": 67,
   "has_branches": false,
   "has_calls": true,
-  "timestamp": 1773631404.87687
+  "timestamp": 1773633462.3603432,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8010C920",
+    "func_8010C958",
+    "func_8010C988",
+    "func_8010C9C0",
+    "func_8010C9FC",
+    "func_8010CA44",
+    "func_8010CB60",
+    "func_8010D104",
+    "func_8010D470",
+    "func_8010D490",
+    "func_8010D4DC",
+    "func_8010D56C",
+    "func_8010D5FC",
+    "func_8010D7F0",
+    "func_8010E2B4",
+    "func_8010FB30",
+    "func_8010FB80"
+  ],
+  "called_functions": [
+    "func_8014A50C"
+  ],
+  "referenced_data": [
+    "D_801F6440",
+    "D_801000D0",
+    "D_801000DC",
+    "D_801000E8",
+    "D_801000EC",
+    "D_801F64D0",
+    "D_801F645C",
+    "D_801F64CC",
+    "D_801F6458",
+    "D_801F64D6",
+    "D_801F64D5",
+    "D_801F64D4",
+    "D_801F6462",
+    "D_801F6461",
+    "D_801F6460",
+    "D_801F64AC",
+    "D_801F6520",
+    "D_801E64C0",
+    "D_801E64CC",
+    "D_801F644C",
+    "D_801F64C0"
+  ],
+  "segment": "D910"
 }

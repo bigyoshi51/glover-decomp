@@ -1,15 +1,50 @@
 {
   "function_name": "func_8010D7F0",
-  "game": "glover_usa",
-  "compiler": "gcc_2.7.2_kmc",
-  "compiler_flags": "-O2 -g2",
-  "segment": "D910",
   "asm_text": "nonmatching func_8010D7F0, 0x70\n\nglabel func_8010D7F0\n    /* E7F0 8010D7F0 27BDFFD8 */  addiu      $sp, $sp, -0x28\n    /* E7F4 8010D7F4 AFB10014 */  sw         $s1, 0x14($sp)\n    /* E7F8 8010D7F8 00808821 */  addu       $s1, $a0, $zero\n    /* E7FC 8010D7FC AFB20018 */  sw         $s2, 0x18($sp)\n    /* E800 8010D800 00A09021 */  addu       $s2, $a1, $zero\n    /* E804 8010D804 AFB3001C */  sw         $s3, 0x1C($sp)\n    /* E808 8010D808 00C09821 */  addu       $s3, $a2, $zero\n    /* E80C 8010D80C AFBF0020 */  sw         $ra, 0x20($sp)\n    /* E810 8010D810 0C043248 */  jal        func_8010C920\n    /* E814 8010D814 AFB00010 */   sw        $s0, 0x10($sp)\n    /* E818 8010D818 24040707 */  addiu      $a0, $zero, 0x707\n    /* E81C 8010D81C 00408021 */  addu       $s0, $v0, $zero\n    /* E820 8010D820 02202821 */  addu       $a1, $s1, $zero\n    /* E824 8010D824 02403021 */  addu       $a2, $s2, $zero\n    /* E828 8010D828 0C0434E7 */  jal        func_8010D39C\n    /* E82C 8010D82C 02603821 */   addu      $a3, $s3, $zero\n    /* E830 8010D830 02002021 */  addu       $a0, $s0, $zero\n    /* E834 8010D834 0C043256 */  jal        func_8010C958\n    /* E838 8010D838 00408021 */   addu      $s0, $v0, $zero\n    /* E83C 8010D83C 02001021 */  addu       $v0, $s0, $zero\n    /* E840 8010D840 8FBF0020 */  lw         $ra, 0x20($sp)\n    /* E844 8010D844 8FB3001C */  lw         $s3, 0x1C($sp)\n    /* E848 8010D848 8FB20018 */  lw         $s2, 0x18($sp)\n    /* E84C 8010D84C 8FB10014 */  lw         $s1, 0x14($sp)\n    /* E850 8010D850 8FB00010 */  lw         $s0, 0x10($sp)\n    /* E854 8010D854 27BD0028 */  addiu      $sp, $sp, 0x28\n    /* E858 8010D858 03E00008 */  jr         $ra\n    /* E85C 8010D85C 00000000 */   nop\nendlabel func_8010D7F0\n",
   "m2c_output": "s32 func_8010C920();                                /* extern */\n? func_8010C958(s32);                               /* extern */\ns32 func_8010D39C(?, s32, ?, ?);                    /* extern */\n\ns32 func_8010D7F0(s32 arg0, ? arg1, ? arg2) {\n    s32 temp_s0;\n    s32 temp_s0_2;\n\n    temp_s0_2 = func_8010C920();\n    temp_s0 = func_8010D39C(0x707, arg0, arg1, arg2);\n    func_8010C958(temp_s0_2);\n    return temp_s0;\n}\n",
+  "attempts": [
+    {
+      "c_code": "s32 func_8010D7F0(s32 arg0, s32 arg1, s32 arg2) {\n    s32 temp = func_8010C920();\n    s32 result = func_8010D39C(0x707, arg0, arg1, arg2);\n    func_8010C958(temp);\n    return result;\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
   "final_c": "s32 func_8010D7F0(s32 arg0, s32 arg1, s32 arg2) {\n    s32 temp = func_8010C920();\n    s32 result = func_8010D39C(0x707, arg0, arg1, arg2);\n    func_8010C958(temp);\n    return result;\n}",
   "matched": true,
   "instruction_count": 28,
   "has_branches": false,
   "has_calls": true,
-  "timestamp": 1773631404.3715959
+  "timestamp": 1773633461.90176,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8010C920",
+    "func_8010C958",
+    "func_8010C988",
+    "func_8010C9C0",
+    "func_8010C9FC",
+    "func_8010CA44",
+    "func_8010CB60",
+    "func_8010D104",
+    "func_8010D470",
+    "func_8010D490",
+    "func_8010D4DC",
+    "func_8010D56C",
+    "func_8010D5FC",
+    "func_8010E2B4",
+    "func_8010E2F4",
+    "func_8010FB30",
+    "func_8010FB80"
+  ],
+  "called_functions": [
+    "func_8010C920",
+    "func_8010D39C",
+    "func_8010C958"
+  ],
+  "referenced_data": [],
+  "segment": "D910"
 }

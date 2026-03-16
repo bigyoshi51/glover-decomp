@@ -1,15 +1,55 @@
 {
   "function_name": "func_8010FB30",
-  "game": "glover_usa",
-  "compiler": "gcc_2.7.2_kmc",
-  "compiler_flags": "-O2 -g2",
-  "segment": "D910",
   "asm_text": "nonmatching func_8010FB30, 0x50\n\nglabel func_8010FB30\n    /* 10B30 8010FB30 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 10B34 8010FB34 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 10B38 8010FB38 3C01801F */  lui        $at, %hi(D_801EC7A7)\n    /* 10B3C 8010FB3C A020C7A7 */  sb         $zero, %lo(D_801EC7A7)($at)\n    /* 10B40 8010FB40 0C043AFA */  jal        func_8010EBE8\n    /* 10B44 8010FB44 00000000 */   nop\n    /* 10B48 8010FB48 3C048010 */  lui        $a0, %hi(D_801001B8)\n    /* 10B4C 8010FB4C 248401B8 */  addiu      $a0, $a0, %lo(D_801001B8)\n    /* 10B50 8010FB50 0C055691 */  jal        func_80155A44\n    /* 10B54 8010FB54 00000000 */   nop\n    /* 10B58 8010FB58 0C047EE3 */  jal        func_8011FB8C\n    /* 10B5C 8010FB5C 00000000 */   nop\n    /* 10B60 8010FB60 3C04801E */  lui        $a0, %hi(D_801E7531)\n    /* 10B64 8010FB64 80847531 */  lb         $a0, %lo(D_801E7531)($a0)\n    /* 10B68 8010FB68 0C047FD0 */  jal        func_8011FF40\n    /* 10B6C 8010FB6C 00000000 */   nop\n    /* 10B70 8010FB70 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 10B74 8010FB74 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 10B78 8010FB78 03E00008 */  jr         $ra\n    /* 10B7C 8010FB7C 00000000 */   nop\nendlabel func_8010FB30\n",
   "m2c_output": "? func_8010EBE8();                                  /* extern */\n? func_8011FB8C();                                  /* extern */\n? func_8011FF40(s8);                                /* extern */\n? func_80155A44(? *);                               /* extern */\nextern ? D_801001B8;\nextern s8 D_801E7531;\nextern s8 D_801EC7A7;\n\nvoid func_8010FB30(void) {\n    D_801EC7A7 = 0;\n    func_8010EBE8();\n    func_80155A44(&D_801001B8);\n    func_8011FB8C();\n    func_8011FF40(D_801E7531);\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_8010FB30(void) {\n    D_801EC7A7 = 0;\n    func_8010EBE8();\n    func_80155A44(D_801001B8);\n    func_8011FB8C();\n    func_8011FF40(D_801E7531);\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
   "final_c": "void func_8010FB30(void) {\n    D_801EC7A7 = 0;\n    func_8010EBE8();\n    func_80155A44(D_801001B8);\n    func_8011FB8C();\n    func_8011FF40(D_801E7531);\n}",
   "matched": true,
   "instruction_count": 20,
   "has_branches": false,
   "has_calls": true,
-  "timestamp": 1773631405.1388822
+  "timestamp": 1773633462.5762546,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8010C920",
+    "func_8010C958",
+    "func_8010C988",
+    "func_8010C9C0",
+    "func_8010C9FC",
+    "func_8010CA44",
+    "func_8010CB60",
+    "func_8010D104",
+    "func_8010D470",
+    "func_8010D490",
+    "func_8010D4DC",
+    "func_8010D56C",
+    "func_8010D5FC",
+    "func_8010D7F0",
+    "func_8010E2B4",
+    "func_8010E2F4",
+    "func_8010FB80"
+  ],
+  "called_functions": [
+    "func_8010EBE8",
+    "func_80155A44",
+    "func_8011FB8C",
+    "func_8011FF40"
+  ],
+  "referenced_data": [
+    "D_801EC7A7",
+    "D_801001B8",
+    "D_801E7531"
+  ],
+  "segment": "D910"
 }
