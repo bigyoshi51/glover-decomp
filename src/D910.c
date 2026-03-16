@@ -93,9 +93,33 @@ s32 func_8010D490(void) {
     return result;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010D4DC);
+void func_8010CD28(u32, s32, s32);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010D56C);
+s32 func_8010D4DC(s32 arg0, s32 arg1) {
+    s32 saved = func_8010C920();
+    s32 len = func_8010D470((u8*)arg0);
+    s32 result;
+    func_8010CD28(0xB1FF0000, arg0, len);
+    result = func_8010D39C(0x202, len, arg1, 0);
+    if (result & 0x8000) {
+        result |= (s32)0xFFFF0000;
+    }
+    func_8010C958(saved);
+    return result;
+}
+
+s32 func_8010D56C(s32 arg0, s32 arg1) {
+    s32 saved = func_8010C920();
+    s32 len = func_8010D470((u8*)arg0);
+    s32 result;
+    func_8010CD28(0xB1FF0000, arg0, len);
+    result = func_8010D39C(0x303, len, arg1, 0);
+    if (result & 0x8000) {
+        result |= (s32)0xFFFF0000;
+    }
+    func_8010C958(saved);
+    return result;
+}
 
 s32 func_8010D5FC(s32 arg0) {
     s32 temp = func_8010C920();
