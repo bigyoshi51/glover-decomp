@@ -15,17 +15,25 @@ void func_8010C958(s32 arg0) {
     func_8010D9C0(func_8010D9B4() | arg0);
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010C988);
+void func_8010C988(s32 *arg0, s32 arg1) {
+    while (*(volatile u32*)0xA4600010 & 3) {}
+    *arg0 = arg1;
+}
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010C9C0);
+u32 func_8010C9C0(s32 *arg0) {
+    while (*(volatile u32*)0xA4600010 & 3) {}
+    return *arg0;
+}
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010C9FC);
+extern volatile s32 D_801F5680;
 
-u32 func_8010C9C0(s32);
+void func_8010C9FC(s32 arg0) {
+    for (D_801F5680 = 0; D_801F5680 < arg0; D_801F5680++) {}
+}
 
 s32 func_8010CA44(s32 arg0) {
     s32 shift = (~arg0 & 3) << 3;
-    u32 val = func_8010C9C0(arg0 & -4);
+    u32 val = func_8010C9C0((s32*)(arg0 & -4));
     return (val >> shift) & 0xFF;
 }
 
@@ -46,7 +54,7 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010CEE0);
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CF54);
 
 void func_8010D8D0(void);
-void func_8010C988(u32, s32);
+void func_8010C988(s32*, s32);
 extern s8 D_801F59B0;
 extern u8 D_801F59B2;
 
