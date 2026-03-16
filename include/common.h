@@ -2,7 +2,16 @@
 #define COMMON_H
 
 #ifndef INCLUDE_ASM
-#define INCLUDE_ASM(dir, symbol) asm(".include \"macro.inc\"\n.include \"" dir "/" #symbol ".s\"")
+#define INCLUDE_ASM(FOLDER, NAME) \
+    __asm__( \
+        ".section .text\n" \
+        "    .set noat\n" \
+        "    .set noreorder\n" \
+        "    .include \"macro.inc\"\n" \
+        "    .include \"" FOLDER "/" #NAME ".s\"\n" \
+        "    .set reorder\n" \
+        "    .set at\n" \
+    )
 #endif
 
 typedef signed char s8;
