@@ -79,7 +79,15 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010D4DC);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010D56C);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010D5FC);
+s32 func_8010D5FC(s32 arg0) {
+    s32 temp = func_8010C920();
+    s32 result = func_8010D39C(0x404, arg0, 0, 0);
+    if (result & 0x8000) {
+        result |= 0xFFFF0000;
+    }
+    func_8010C958(temp);
+    return result;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010D664);
 
