@@ -1,4 +1,4 @@
-nonmatching func_8014BE1C, 0x238
+nonmatching func_8014BE1C, 0x220
 
 glabel func_8014BE1C
     /* 4BE1C 8014BE1C 0C05359B */  jal        func_8014D66C
@@ -146,10 +146,4 @@ glabel func_8014BE1C
     /* 4C030 8014C030 27BD0028 */  addiu      $sp, $sp, 0x28
     /* 4C034 8014C034 03E00008 */  jr         $ra
     /* 4C038 8014C038 00000000 */   nop
-    /* 4C03C 8014C03C 27BDFFE0 */  addiu      $sp, $sp, -0x20
-    /* 4C040 8014C040 3C028020 */  lui        $v0, %hi(D_80202240)
-    /* 4C044 8014C044 8C422240 */  lw         $v0, %lo(D_80202240)($v0)
-    /* 4C048 8014C048 3C03E700 */  lui        $v1, (0xE7000000 >> 16)
-    /* 4C04C 8014C04C 3C040600 */  lui        $a0, (0x6000000 >> 16)
-    /* 4C050 8014C050 3C058029 */  lui        $a1, (0x80290000 >> 16)
 endlabel func_8014BE1C

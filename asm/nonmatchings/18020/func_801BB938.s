@@ -28,6 +28,7 @@ glabel func_801BB938
     /* BB998 801BB998 4600008D */  trunc.w.s  $f2, $f0
     /* BB99C 801BB99C 44051000 */  mfc1       $a1, $f2
     /* BB9A0 801BB9A0 00031100 */  sll        $v0, $v1, 4
+  .L801BB9A4:
     /* BB9A4 801BB9A4 00431023 */  subu       $v0, $v0, $v1
     /* BB9A8 801BB9A8 00021140 */  sll        $v0, $v0, 5
 endlabel func_801BB938

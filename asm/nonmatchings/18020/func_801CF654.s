@@ -1,4 +1,4 @@
-nonmatching func_801CF654, 0xBC
+nonmatching func_801CF654, 0xA8
 
 glabel func_801CF654
     /* CF654 801CF654 24420BFC */  addiu      $v0, $v0, 0xBFC
@@ -48,10 +48,4 @@ glabel func_801CF654
     /* CF6F0 801CF6F0 8FB00010 */  lw         $s0, 0x10($sp)
     /* CF6F4 801CF6F4 03E00008 */  jr         $ra
     /* CF6F8 801CF6F8 27BD0020 */   addiu     $sp, $sp, 0x20
-    /* CF6FC 801CF6FC 27BDFFE8 */  addiu      $sp, $sp, -0x18
-    /* CF700 801CF700 AFBF0010 */  sw         $ra, 0x10($sp)
-  .L801CF704:
-    /* CF704 801CF704 0C0739CC */  jal        func_801CE730
-    /* CF708 801CF708 00000000 */   nop
-    /* CF70C 801CF70C 1440FFFD */  bnez       $v0, .L801CF704
 endlabel func_801CF654

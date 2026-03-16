@@ -1,4 +1,4 @@
-nonmatching func_801CBBE0, 0x80
+nonmatching func_801CBBE0, 0x6C
 
 glabel func_801CBBE0
     /* CBBE0 801CBBE0 02358823 */  subu       $s1, $s1, $s5
@@ -29,9 +29,4 @@ glabel func_801CBBE0
     /* CBC40 801CBC40 D7B40038 */  ldc1       $f20, 0x38($sp)
     /* CBC44 801CBC44 03E00008 */  jr         $ra
     /* CBC48 801CBC48 27BD0048 */   addiu     $sp, $sp, 0x48
-    /* CBC4C 801CBC4C 27BDFFC8 */  addiu      $sp, $sp, -0x38
-    /* CBC50 801CBC50 AFB50024 */  sw         $s5, 0x24($sp)
-    /* CBC54 801CBC54 8FB50048 */  lw         $s5, 0x48($sp)
-    /* CBC58 801CBC58 AFB7002C */  sw         $s7, 0x2C($sp)
-    /* CBC5C 801CBC5C 0080B821 */  addu       $s7, $a0, $zero
 endlabel func_801CBBE0

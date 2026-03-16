@@ -55,6 +55,7 @@ glabel func_801BB5C4
     /* BB68C 801BB68C AC48000C */  sw         $t0, 0xC($v0)
     /* BB690 801BB690 AC4A0010 */  sw         $t2, 0x10($v0)
     /* BB694 801BB694 90830575 */  lbu        $v1, 0x575($a0)
+  .L801BB698:
     /* BB698 801BB698 000310C0 */  sll        $v0, $v1, 3
     /* BB69C 801BB69C 00431023 */  subu       $v0, $v0, $v1
     /* BB6A0 801BB6A0 00021080 */  sll        $v0, $v0, 2
@@ -75,6 +76,7 @@ glabel func_801BB5C4
     /* BB6DC 801BB6DC 000310C0 */  sll        $v0, $v1, 3
     /* BB6E0 801BB6E0 00431023 */  subu       $v0, $v0, $v1
     /* BB6E4 801BB6E4 00021080 */  sll        $v0, $v0, 2
+  .L801BB6E8:
     /* BB6E8 801BB6E8 00821021 */  addu       $v0, $a0, $v0
     /* BB6EC 801BB6EC A0490021 */  sb         $t1, 0x21($v0)
     /* BB6F0 801BB6F0 90820575 */  lbu        $v0, 0x575($a0)

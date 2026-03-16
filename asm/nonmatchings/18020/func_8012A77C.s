@@ -21,6 +21,7 @@ glabel func_8012A77C
     /* 2A7B8 8012A7B8 00001821 */  addu       $v1, $zero, $zero
   .L8012A7BC:
     /* 2A7BC 8012A7BC 00431024 */  and        $v0, $v0, $v1
+  .L8012A7C0:
     /* 2A7C0 8012A7C0 1040008A */  beqz       $v0, .L8012A9EC
     /* 2A7C4 8012A7C4 00000000 */   nop
     /* 2A7C8 8012A7C8 3C028020 */  lui        $v0, %hi(D_802004E0)

@@ -1,5 +1,5 @@
 /* Handwritten function */
-nonmatching func_80133900, 0x98
+nonmatching func_80133900, 0x90
 
 glabel func_80133900
     /* 33900 80133900 02709821 */  addu       $s3, $s3, $s0
@@ -39,6 +39,4 @@ glabel func_80133900
     /* 33984 80133984 27BD0010 */  addiu      $sp, $sp, 0x10
     /* 33988 80133988 03E00008 */  jr         $ra
     /* 3398C 8013398C 00000000 */   nop
-    /* 33990 80133990 27BDFFF0 */  addiu      $sp, $sp, -0x10
-    /* 33994 80133994 AFBE0008 */  sw         $fp, 0x8($sp)
 endlabel func_80133900

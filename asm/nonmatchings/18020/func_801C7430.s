@@ -1,5 +1,5 @@
 /* Handwritten function */
-nonmatching func_801C7430, 0x130
+nonmatching func_801C7430, 0x114
 
 glabel func_801C7430
     /* C7430 801C7430 01485021 */  addu       $t2, $t2, $t0
@@ -77,11 +77,7 @@ glabel func_801C7430
     /* C7538 801C7538 AC860010 */  sw         $a2, 0x10($a0)
     /* C753C 801C753C 03E00008 */  jr         $ra
     /* C7540 801C7540 AC850014 */   sw        $a1, 0x14($a0)
+endlabel func_801C7430
     /* C7544 801C7544 00000000 */  nop
     /* C7548 801C7548 00000000 */  nop
     /* C754C 801C754C 00000000 */  nop
-    /* C7550 801C7550 27BDFFE8 */  addiu      $sp, $sp, -0x18
-    /* C7554 801C7554 AFB00010 */  sw         $s0, 0x10($sp)
-    /* C7558 801C7558 00808021 */  addu       $s0, $a0, $zero
-    /* C755C 801C755C 00E04821 */  addu       $t1, $a3, $zero
-endlabel func_801C7430

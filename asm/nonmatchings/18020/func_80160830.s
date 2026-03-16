@@ -1,4 +1,4 @@
-nonmatching func_80160830, 0xF0
+nonmatching func_80160830, 0xE0
 
 glabel func_80160830
     /* 60830 80160830 00821021 */  addu       $v0, $a0, $v0
@@ -60,8 +60,4 @@ glabel func_80160830
     /* 60904 80160904 27BD0040 */  addiu      $sp, $sp, 0x40
     /* 60908 80160908 03E00008 */  jr         $ra
     /* 6090C 8016090C 00000000 */   nop
-    /* 60910 80160910 27BDFF78 */  addiu      $sp, $sp, -0x88
-    /* 60914 80160914 AFB60068 */  sw         $s6, 0x68($sp)
-    /* 60918 80160918 8FB60098 */  lw         $s6, 0x98($sp)
-    /* 6091C 8016091C AFBE0070 */  sw         $fp, 0x70($sp)
 endlabel func_80160830

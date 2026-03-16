@@ -15,5 +15,6 @@ glabel func_801B87E8
     /* B8814 801B8814 2C540001 */  sltiu      $s4, $v0, 0x1
     /* B8818 801B8818 3C018011 */  lui        $at, %hi(D_8010BD84)
     /* B881C 801B881C C436BD84 */  lwc1       $f22, %lo(D_8010BD84)($at)
+  .L801B8820:
     /* B8820 801B8820 3C05801F */  lui        $a1, (0x801F0000 >> 16)
 endlabel func_801B87E8

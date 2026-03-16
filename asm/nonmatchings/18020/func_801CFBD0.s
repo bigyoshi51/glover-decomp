@@ -1,4 +1,4 @@
-nonmatching func_801CFBD0, 0x80
+nonmatching func_801CFBD0, 0x68
 
 glabel func_801CFBD0
     /* CFBD0 801CFBD0 AC204780 */  sw         $zero, 0x4780($at)
@@ -29,10 +29,4 @@ glabel func_801CFBD0
     /* CFC2C 801CFC2C 8FB00018 */  lw         $s0, 0x18($sp)
     /* CFC30 801CFC30 03E00008 */  jr         $ra
     /* CFC34 801CFC34 27BD0030 */   addiu     $sp, $sp, 0x30
-    /* CFC38 801CFC38 27BDFFD0 */  addiu      $sp, $sp, -0x30
-    /* CFC3C 801CFC3C AFB00018 */  sw         $s0, 0x18($sp)
-    /* CFC40 801CFC40 00808021 */  addu       $s0, $a0, $zero
-    /* CFC44 801CFC44 AFBF002C */  sw         $ra, 0x2C($sp)
-    /* CFC48 801CFC48 AFB40028 */  sw         $s4, 0x28($sp)
-    /* CFC4C 801CFC4C AFB30024 */  sw         $s3, 0x24($sp)
 endlabel func_801CFBD0

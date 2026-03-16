@@ -1,4 +1,4 @@
-nonmatching func_801766C0, 0x98
+nonmatching func_801766C0, 0x8C
 
 glabel func_801766C0
     /* 766C0 801766C0 3C038029 */  lui        $v1, %hi(D_802900F0)
@@ -38,7 +38,4 @@ glabel func_801766C0
     /* 76740 80176740 27BD0020 */  addiu      $sp, $sp, 0x20
     /* 76744 80176744 03E00008 */  jr         $ra
     /* 76748 80176748 00000000 */   nop
-    /* 7674C 8017674C 27BDFFD8 */  addiu      $sp, $sp, -0x28
-    /* 76750 80176750 AFBF0020 */  sw         $ra, 0x20($sp)
-    /* 76754 80176754 90830074 */  lbu        $v1, 0x74($a0)
 endlabel func_801766C0

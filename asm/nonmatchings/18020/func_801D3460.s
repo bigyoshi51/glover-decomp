@@ -39,6 +39,7 @@ glabel func_801D3460
     /* D34E4 801D34E4 02003021 */   addu      $a2, $s0, $zero
     /* D34E8 801D34E8 00409821 */  addu       $s3, $v0, $zero
     /* D34EC 801D34EC 1260008E */  beqz       $s3, .L801D3728
+  .L801D34F0:
     /* D34F0 801D34F0 02308823 */   subu      $s1, $s1, $s0
     /* D34F4 801D34F4 8FA2003C */  lw         $v0, 0x3C($sp)
 endlabel func_801D3460

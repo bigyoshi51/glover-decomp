@@ -1,4 +1,4 @@
-nonmatching func_801C863C, 0x5C
+nonmatching func_801C863C, 0x54
 
 glabel func_801C863C
     /* C863C 801C863C 24420001 */  addiu      $v0, $v0, 0x1
@@ -23,6 +23,4 @@ glabel func_801C863C
     /* C8684 801C8684 8FB00010 */  lw         $s0, 0x10($sp)
     /* C8688 801C8688 03E00008 */  jr         $ra
     /* C868C 801C868C 27BD0030 */   addiu     $sp, $sp, 0x30
-    /* C8690 801C8690 27BDFFE0 */  addiu      $sp, $sp, -0x20
-    /* C8694 801C8694 AFB00010 */  sw         $s0, 0x10($sp)
 endlabel func_801C863C

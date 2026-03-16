@@ -1,4 +1,4 @@
-nonmatching func_801C1054, 0x2C
+nonmatching func_801C1054, 0x28
 
 glabel func_801C1054
     /* C1054 801C1054 01225021 */  addu       $t2, $t1, $v0
@@ -11,5 +11,4 @@ glabel func_801C1054
     /* C1070 801C1070 24A20001 */  addiu      $v0, $a1, 0x1
     /* C1074 801C1074 03E00008 */  jr         $ra
     /* C1078 801C1078 A08E00C6 */   sb        $t6, 0xC6($a0)
-    /* C107C 801C107C 27BDFFE8 */  addiu      $sp, $sp, -0x18
 endlabel func_801C1054

@@ -1,4 +1,4 @@
-nonmatching func_801B48DC, 0x2E0
+nonmatching func_801B48DC, 0x2DC
 
 glabel func_801B48DC
     /* B48DC 801B48DC 8FB40050 */  lw         $s4, 0x50($sp)
@@ -193,5 +193,4 @@ glabel func_801B48DC
     /* B4BAC 801B4BAC 27BD0010 */  addiu      $sp, $sp, 0x10
     /* B4BB0 801B4BB0 03E00008 */  jr         $ra
     /* B4BB4 801B4BB4 00000000 */   nop
-    /* B4BB8 801B4BB8 27BDFFE0 */  addiu      $sp, $sp, -0x20
 endlabel func_801B48DC

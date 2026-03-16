@@ -1,6 +1,6 @@
-nonmatching main, 0x198
+nonmatching func_80139DE8, 0x198
 
-glabel main
+glabel func_80139DE8
     /* 39DE8 80139DE8 90620074 */  lbu        $v0, 0x74($v1)
     /* 39DEC 80139DEC 00402021 */  addu       $a0, $v0, $zero
     /* 39DF0 80139DF0 000418C0 */  sll        $v1, $a0, 3
@@ -109,4 +109,4 @@ glabel main
     /* 39F74 80139F74 00000000 */  nop
     /* 39F78 80139F78 450100C5 */  bc1t       .L8013A290
     /* 39F7C 80139F7C 00000000 */   nop
-endlabel main
+endlabel func_80139DE8

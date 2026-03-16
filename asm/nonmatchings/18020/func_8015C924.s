@@ -1,4 +1,4 @@
-nonmatching func_8015C924, 0x158
+nonmatching func_8015C924, 0x148
 
 glabel func_8015C924
     /* 5C924 8015C924 00661021 */  addu       $v0, $v1, $a2
@@ -88,8 +88,4 @@ glabel func_8015C924
   .L8015CA64:
     /* 5CA64 8015CA64 03E00008 */  jr         $ra
     /* 5CA68 8015CA68 00000000 */   nop
-    /* 5CA6C 8015CA6C 27BDFFD8 */  addiu      $sp, $sp, -0x28
-    /* 5CA70 8015CA70 AFB10014 */  sw         $s1, 0x14($sp)
-    /* 5CA74 8015CA74 00808821 */  addu       $s1, $a0, $zero
-    /* 5CA78 8015CA78 AFBF0024 */  sw         $ra, 0x24($sp)
 endlabel func_8015C924

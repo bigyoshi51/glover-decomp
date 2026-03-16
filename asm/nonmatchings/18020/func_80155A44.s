@@ -24,6 +24,7 @@ glabel func_80155A44
     /* 55A90 80155A90 AFCE0000 */  sw         $t6, 0x0($fp)
     /* 55A94 80155A94 8FCE0000 */  lw         $t6, 0x0($fp)
     /* 55A98 80155A98 3C0FBA00 */  lui        $t7, (0xBA000E02 >> 16)
+  .L80155A9C:
     /* 55A9C 80155A9C 35EF0E02 */  ori        $t7, $t7, (0xBA000E02 & 0xFFFF)
     /* 55AA0 80155AA0 ADCF0000 */  sw         $t7, 0x0($t6)
     /* 55AA4 80155AA4 8FCE0000 */  lw         $t6, 0x0($fp)
@@ -33,6 +34,7 @@ glabel func_80155A44
     /* 55AB4 80155AB4 8DCE2240 */  lw         $t6, %lo(D_80202240)($t6)
     /* 55AB8 80155AB8 25CF0008 */  addiu      $t7, $t6, 0x8
     /* 55ABC 80155ABC 3C018020 */  lui        $at, %hi(D_80202240)
+  .L80155AC0:
     /* 55AC0 80155AC0 AC2F2240 */  sw         $t7, %lo(D_80202240)($at)
     /* 55AC4 80155AC4 AFCE0000 */  sw         $t6, 0x0($fp)
     /* 55AC8 80155AC8 8FCE0000 */  lw         $t6, 0x0($fp)

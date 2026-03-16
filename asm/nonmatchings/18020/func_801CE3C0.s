@@ -1,0 +1,32 @@
+nonmatching func_801CE3C0, 0x70
+
+glabel func_801CE3C0
+    /* CE3C0 801CE3C0 27BDFFC8 */  addiu      $sp, $sp, -0x38
+    /* CE3C4 801CE3C4 AFBE0030 */  sw         $fp, 0x30($sp)
+    /* CE3C8 801CE3C8 AFB7002C */  sw         $s7, 0x2C($sp)
+    /* CE3CC 801CE3CC AFB60028 */  sw         $s6, 0x28($sp)
+    /* CE3D0 801CE3D0 AFB50024 */  sw         $s5, 0x24($sp)
+    /* CE3D4 801CE3D4 AFB40020 */  sw         $s4, 0x20($sp)
+    /* CE3D8 801CE3D8 AFB3001C */  sw         $s3, 0x1C($sp)
+    /* CE3DC 801CE3DC AFB20018 */  sw         $s2, 0x18($sp)
+    /* CE3E0 801CE3E0 AFB10014 */  sw         $s1, 0x14($sp)
+    /* CE3E4 801CE3E4 AFB00010 */  sw         $s0, 0x10($sp)
+    /* CE3E8 801CE3E8 8C820000 */  lw         $v0, 0x0($a0)
+    /* CE3EC 801CE3EC 3C16BA00 */  lui        $s6, (0xBA001402 >> 16)
+    /* CE3F0 801CE3F0 36D61402 */  ori        $s6, $s6, (0xBA001402 & 0xFFFF)
+    /* CE3F4 801CE3F4 3C17BB00 */  lui        $s7, (0xBB000001 >> 16)
+    /* CE3F8 801CE3F8 36F70001 */  ori        $s7, $s7, (0xBB000001 & 0xFFFF)
+    /* CE3FC 801CE3FC 3C138000 */  lui        $s3, (0x80008000 >> 16)
+    /* CE400 801CE400 36738000 */  ori        $s3, $s3, (0x80008000 & 0xFFFF)
+    /* CE404 801CE404 3C10B900 */  lui        $s0, (0xB9000002 >> 16)
+    /* CE408 801CE408 36100002 */  ori        $s0, $s0, (0xB9000002 & 0xFFFF)
+    /* CE40C 801CE40C 3C11BA00 */  lui        $s1, (0xBA001301 >> 16)
+    /* CE410 801CE410 36311301 */  ori        $s1, $s1, (0xBA001301 & 0xFFFF)
+    /* CE414 801CE414 3C12BA00 */  lui        $s2, (0xBA000C02 >> 16)
+    /* CE418 801CE418 36520C02 */  ori        $s2, $s2, (0xBA000C02 & 0xFFFF)
+    /* CE41C 801CE41C 3C14BA00 */  lui        $s4, (0xBA000903 >> 16)
+    /* CE420 801CE420 36940903 */  ori        $s4, $s4, (0xBA000903 & 0xFFFF)
+    /* CE424 801CE424 3C18BA00 */  lui        $t8, (0xBA001102 >> 16)
+    /* CE428 801CE428 37181102 */  ori        $t8, $t8, (0xBA001102 & 0xFFFF)
+    /* CE42C 801CE42C 3C19BA00 */  lui        $t9, (0xBA000000 >> 16)
+endlabel func_801CE3C0

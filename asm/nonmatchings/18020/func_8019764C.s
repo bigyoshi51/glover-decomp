@@ -1,4 +1,4 @@
-nonmatching func_8019764C, 0xA4
+nonmatching func_8019764C, 0x8C
 
 glabel func_8019764C
     /* 9764C 8019764C 8C42F9A4 */  lw         $v0, -0x65C($v0)
@@ -41,10 +41,4 @@ glabel func_8019764C
     /* 976CC 801976CC 27BD0018 */  addiu      $sp, $sp, 0x18
     /* 976D0 801976D0 03E00008 */  jr         $ra
     /* 976D4 801976D4 00000000 */   nop
-    /* 976D8 801976D8 27BDFF58 */  addiu      $sp, $sp, -0xA8
-    /* 976DC 801976DC AFB20080 */  sw         $s2, 0x80($sp)
-    /* 976E0 801976E0 00809021 */  addu       $s2, $a0, $zero
-    /* 976E4 801976E4 AFBF0090 */  sw         $ra, 0x90($sp)
-    /* 976E8 801976E8 AFB5008C */  sw         $s5, 0x8C($sp)
-    /* 976EC 801976EC AFB40088 */  sw         $s4, 0x88($sp)
 endlabel func_8019764C

@@ -1,4 +1,4 @@
-nonmatching func_80141874, 0x3B8
+nonmatching func_80141874, 0x3A8
 
 glabel func_80141874
     /* 41874 80141874 A0430013 */  sb         $v1, 0x13($v0)
@@ -248,8 +248,4 @@ glabel func_80141874
   .L80141C14:
     /* 41C14 80141C14 03E00008 */  jr         $ra
     /* 41C18 80141C18 00000000 */   nop
-    /* 41C1C 80141C1C 27BDFFE8 */  addiu      $sp, $sp, -0x18
-    /* 41C20 80141C20 AFBE0010 */  sw         $fp, 0x10($sp)
-    /* 41C24 80141C24 03A0F021 */  addu       $fp, $sp, $zero
-    /* 41C28 80141C28 AFC40018 */  sw         $a0, 0x18($fp)
 endlabel func_80141874

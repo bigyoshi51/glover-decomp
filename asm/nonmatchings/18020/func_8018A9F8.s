@@ -1,4 +1,4 @@
-nonmatching func_8018A9F8, 0x68
+nonmatching func_8018A9F8, 0x60
 
 glabel func_8018A9F8
     /* 8A9F8 8018A9F8 8E46003C */  lw         $a2, 0x3C($s2)
@@ -25,6 +25,4 @@ glabel func_8018A9F8
     /* 8AA4C 8018AA4C 27BD0040 */  addiu      $sp, $sp, 0x40
     /* 8AA50 8018AA50 03E00008 */  jr         $ra
     /* 8AA54 8018AA54 00000000 */   nop
-    /* 8AA58 8018AA58 27BDFFD8 */  addiu      $sp, $sp, -0x28
-    /* 8AA5C 8018AA5C AFB00020 */  sw         $s0, 0x20($sp)
 endlabel func_8018A9F8
