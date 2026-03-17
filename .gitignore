@@ -6,3 +6,4 @@ baserom.z64
 .splat/
 __pycache__/
 *.pyc
+logs/

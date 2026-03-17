@@ -1,26 +1,33 @@
 {
   "function_name": "func_8011D7F0",
-  "asm_text": "nonmatching func_8011D7F0, 0x20\n\nglabel func_8011D7F0\n    /* 1D7F0 8011D7F0 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 1D7F4 8011D7F4 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 1D7F8 8011D7F8 0C047204 */  jal        func_8011C810\n    /* 1D7FC 8011D7FC 00000000 */   nop\n    /* 1D800 8011D800 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 1D804 8011D804 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 1D808 8011D808 03E00008 */  jr         $ra\n    /* 1D80C 8011D80C 00000000 */   nop\nendlabel func_8011D7F0\n",
-  "m2c_output": "? func_8011C810();                                  /* extern */\n\nvoid func_8011D7F0(void) {\n    func_8011C810();\n}\n",
-  "attempts": [
+  "project": "glover",
+  "model": "claude-opus-4-6 (Claude Code)",
+  "start_time": "2026-03-16T03:57:43.020361+00:00",
+  "end_time": null,
+  "steps": [
     {
-      "c_code": "void func_8011D7F0(void) {\n    func_8011C810();\n}",
-      "matched": true,
-      "diff_count": 0,
-      "diff_details": [],
-      "compiler_flags": "",
-      "notes": "flags: -O2 -g2"
+      "step_number": 1,
+      "timestamp": "2026-03-17T03:21:09.240366+00:00",
+      "assistant_text": "Manual decompilation (Claude Code session)",
+      "tool_calls": [],
+      "match_percent": 100.0,
+      "compiled": true,
+      "token_usage": null
     }
   ],
-  "final_c": "void func_8011D7F0(void) {\n    func_8011C810();\n}",
-  "matched": true,
+  "outcome": "match",
+  "final_match_percent": 100.0,
+  "best_match_percent": 100.0,
+  "total_tokens": 0,
   "instruction_count": 8,
-  "has_branches": false,
-  "has_calls": true,
-  "timestamp": 1773633463.0203612,
-  "game": "glover",
-  "compiler": "gcc_2.7.2_kmc",
+  "initial_m2c_source": "? func_8011C810();                                  /* extern */\n\nvoid func_8011D7F0(void) {\n    func_8011C810();\n}\n",
+  "final_source": "void func_8011D7F0(void) {\n    func_8011C810();\n}",
   "compiler_flags": "-O2 -g2",
+  "segment": "18020",
+  "called_functions": [
+    "func_8011C810"
+  ],
+  "referenced_data": [],
   "nearby_decompiled": [
     "func_80120F08",
     "func_80147000",
@@ -32,9 +39,5 @@
     "func_801ABDDC",
     "func_801B9894"
   ],
-  "called_functions": [
-    "func_8011C810"
-  ],
-  "referenced_data": [],
-  "segment": "18020"
+  "asm_text": "nonmatching func_8011D7F0, 0x20\n\nglabel func_8011D7F0\n    /* 1D7F0 8011D7F0 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 1D7F4 8011D7F4 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 1D7F8 8011D7F8 0C047204 */  jal        func_8011C810\n    /* 1D7FC 8011D7FC 00000000 */   nop\n    /* 1D800 8011D800 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 1D804 8011D804 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 1D808 8011D808 03E00008 */  jr         $ra\n    /* 1D80C 8011D80C 00000000 */   nop\nendlabel func_8011D7F0\n"
 }

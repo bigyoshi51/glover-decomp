@@ -1,26 +1,36 @@
 {
   "function_name": "func_8010E2B4",
-  "asm_text": "nonmatching func_8010E2B4, 0x40\n\nglabel func_8010E2B4\n    /* F2B4 8010E2B4 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* F2B8 8010E2B8 AFB00010 */  sw         $s0, 0x10($sp)\n    /* F2BC 8010E2BC 3C10801F */  lui        $s0, %hi(D_801F6440)\n    /* F2C0 8010E2C0 26106440 */  addiu      $s0, $s0, %lo(D_801F6440)\n    /* F2C4 8010E2C4 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* F2C8 8010E2C8 0C047FC2 */  jal        func_8011FF08\n    /* F2CC 8010E2CC 02002021 */   addu      $a0, $s0, $zero\n    /* F2D0 8010E2D0 0C047FC2 */  jal        func_8011FF08\n    /* F2D4 8010E2D4 26040074 */   addiu     $a0, $s0, 0x74\n    /* F2D8 8010E2D8 3C01801E */  lui        $at, %hi(D_801E64CC)\n    /* F2DC 8010E2DC AC2064CC */  sw         $zero, %lo(D_801E64CC)($at)\n    /* F2E0 8010E2E0 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* F2E4 8010E2E4 8FB00010 */  lw         $s0, 0x10($sp)\n    /* F2E8 8010E2E8 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* F2EC 8010E2EC 03E00008 */  jr         $ra\n    /* F2F0 8010E2F0 00000000 */   nop\nendlabel func_8010E2B4\n",
-  "m2c_output": "? func_8011FF08(? *);                               /* extern */\nextern s32 D_801E64CC;\nextern ? D_801F6440;\n\nvoid func_8010E2B4(void) {\n    func_8011FF08(&D_801F6440);\n    func_8011FF08(&D_801F6440 + 0x74);\n    D_801E64CC = 0;\n}\n",
-  "attempts": [
+  "project": "glover",
+  "model": "claude-opus-4-6 (Claude Code)",
+  "start_time": "2026-03-16T03:57:42.127110+00:00",
+  "end_time": null,
+  "steps": [
     {
-      "c_code": "void func_8010E2B4(void) {\n    func_8011FF08(D_801F6440);\n    func_8011FF08(D_801F6440 + 0x74);\n    D_801E64CC = 0;\n}",
-      "matched": true,
-      "diff_count": 0,
-      "diff_details": [],
-      "compiler_flags": "",
-      "notes": "flags: -O2 -g2"
+      "step_number": 1,
+      "timestamp": "2026-03-17T03:21:09.239389+00:00",
+      "assistant_text": "Manual decompilation (Claude Code session)",
+      "tool_calls": [],
+      "match_percent": 100.0,
+      "compiled": true,
+      "token_usage": null
     }
   ],
-  "final_c": "void func_8010E2B4(void) {\n    func_8011FF08(D_801F6440);\n    func_8011FF08(D_801F6440 + 0x74);\n    D_801E64CC = 0;\n}",
-  "matched": true,
+  "outcome": "match",
+  "final_match_percent": 100.0,
+  "best_match_percent": 100.0,
+  "total_tokens": 0,
   "instruction_count": 16,
-  "has_branches": false,
-  "has_calls": true,
-  "timestamp": 1773633462.1271105,
-  "game": "glover",
-  "compiler": "gcc_2.7.2_kmc",
+  "initial_m2c_source": "? func_8011FF08(? *);                               /* extern */\nextern s32 D_801E64CC;\nextern ? D_801F6440;\n\nvoid func_8010E2B4(void) {\n    func_8011FF08(&D_801F6440);\n    func_8011FF08(&D_801F6440 + 0x74);\n    D_801E64CC = 0;\n}\n",
+  "final_source": "void func_8010E2B4(void) {\n    func_8011FF08(D_801F6440);\n    func_8011FF08(D_801F6440 + 0x74);\n    D_801E64CC = 0;\n}",
   "compiler_flags": "-O2 -g2",
+  "segment": "D910",
+  "called_functions": [
+    "func_8011FF08"
+  ],
+  "referenced_data": [
+    "D_801F6440",
+    "D_801E64CC"
+  ],
   "nearby_decompiled": [
     "func_8010C920",
     "func_8010C958",
@@ -40,12 +50,5 @@
     "func_8010FB30",
     "func_8010FB80"
   ],
-  "called_functions": [
-    "func_8011FF08"
-  ],
-  "referenced_data": [
-    "D_801F6440",
-    "D_801E64CC"
-  ],
-  "segment": "D910"
+  "asm_text": "nonmatching func_8010E2B4, 0x40\n\nglabel func_8010E2B4\n    /* F2B4 8010E2B4 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* F2B8 8010E2B8 AFB00010 */  sw         $s0, 0x10($sp)\n    /* F2BC 8010E2BC 3C10801F */  lui        $s0, %hi(D_801F6440)\n    /* F2C0 8010E2C0 26106440 */  addiu      $s0, $s0, %lo(D_801F6440)\n    /* F2C4 8010E2C4 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* F2C8 8010E2C8 0C047FC2 */  jal        func_8011FF08\n    /* F2CC 8010E2CC 02002021 */   addu      $a0, $s0, $zero\n    /* F2D0 8010E2D0 0C047FC2 */  jal        func_8011FF08\n    /* F2D4 8010E2D4 26040074 */   addiu     $a0, $s0, 0x74\n    /* F2D8 8010E2D8 3C01801E */  lui        $at, %hi(D_801E64CC)\n    /* F2DC 8010E2DC AC2064CC */  sw         $zero, %lo(D_801E64CC)($at)\n    /* F2E0 8010E2E0 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* F2E4 8010E2E4 8FB00010 */  lw         $s0, 0x10($sp)\n    /* F2E8 8010E2E8 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* F2EC 8010E2EC 03E00008 */  jr         $ra\n    /* F2F0 8010E2F0 00000000 */   nop\nendlabel func_8010E2B4\n"
 }

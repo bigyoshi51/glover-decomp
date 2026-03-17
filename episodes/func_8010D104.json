@@ -1,26 +1,39 @@
 {
   "function_name": "func_8010D104",
-  "asm_text": "nonmatching func_8010D104, 0x6C\n\nglabel func_8010D104\n    /* E104 8010D104 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* E108 8010D108 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* E10C 8010D10C 0C043248 */  jal        func_8010C920\n    /* E110 8010D110 AFB00010 */   sw        $s0, 0x10($sp)\n    /* E114 8010D114 0C043634 */  jal        func_8010D8D0\n    /* E118 8010D118 00408021 */   addu      $s0, $v0, $zero\n    /* E11C 8010D11C 3C04B1FF */  lui        $a0, (0xB1FFFFF0 >> 16)\n    /* E120 8010D120 3484FFF0 */  ori        $a0, $a0, (0xB1FFFFF0 & 0xFFFF)\n    /* E124 8010D124 0C043262 */  jal        func_8010C988\n    /* E128 8010D128 00002821 */   addu      $a1, $zero, $zero\n    /* E12C 8010D12C 3C04B1FF */  lui        $a0, (0xB1FFFFFC >> 16)\n    /* E130 8010D130 3484FFFC */  ori        $a0, $a0, (0xB1FFFFFC & 0xFFFF)\n    /* E134 8010D134 0C043262 */  jal        func_8010C988\n    /* E138 8010D138 00002821 */   addu      $a1, $zero, $zero\n    /* E13C 8010D13C 24020001 */  addiu      $v0, $zero, 0x1\n    /* E140 8010D140 3C01801F */  lui        $at, %hi(D_801F59B0)\n    /* E144 8010D144 A02259B0 */  sb         $v0, %lo(D_801F59B0)($at)\n    /* E148 8010D148 240200FF */  addiu      $v0, $zero, 0xFF\n    /* E14C 8010D14C 3C01801F */  lui        $at, %hi(D_801F59B2)\n    /* E150 8010D150 A02259B2 */  sb         $v0, %lo(D_801F59B2)($at)\n    /* E154 8010D154 0C043256 */  jal        func_8010C958\n    /* E158 8010D158 02002021 */   addu      $a0, $s0, $zero\n    /* E15C 8010D15C 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* E160 8010D160 8FB00010 */  lw         $s0, 0x10($sp)\n    /* E164 8010D164 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* E168 8010D168 03E00008 */  jr         $ra\n    /* E16C 8010D16C 00000000 */   nop\nendlabel func_8010D104\n",
-  "m2c_output": "s32 func_8010C920();                                /* extern */\n? func_8010C958(s32);                               /* extern */\n? func_8010C988(?, ?);                              /* extern */\n? func_8010D8D0();                                  /* extern */\nextern s8 D_801F59B0;\nextern s8 D_801F59B2;\n\nvoid func_8010D104(void) {\n    s32 temp_s0;\n\n    temp_s0 = func_8010C920();\n    func_8010D8D0();\n    func_8010C988(0xB1FFFFF0, 0);\n    func_8010C988(0xB1FFFFFC, 0);\n    D_801F59B0 = 1;\n    D_801F59B2 = 0xFF;\n    func_8010C958(temp_s0);\n}\n",
-  "attempts": [
+  "project": "glover",
+  "model": "claude-opus-4-6 (Claude Code)",
+  "start_time": "2026-03-16T03:57:40.559081+00:00",
+  "end_time": null,
+  "steps": [
     {
-      "c_code": "void func_8010D104(void) {\n    s32 temp = func_8010C920();\n    func_8010D8D0();\n    func_8010C988(0xB1FFFFF0, 0);\n    func_8010C988(0xB1FFFFFC, 0);\n    D_801F59B0 = 1;\n    D_801F59B2 = 0xFF;\n    func_8010C958(temp);\n}",
-      "matched": true,
-      "diff_count": 0,
-      "diff_details": [],
-      "compiler_flags": "",
-      "notes": "flags: -O2 -g2"
+      "step_number": 1,
+      "timestamp": "2026-03-17T03:21:09.237665+00:00",
+      "assistant_text": "Manual decompilation (Claude Code session)",
+      "tool_calls": [],
+      "match_percent": 100.0,
+      "compiled": true,
+      "token_usage": null
     }
   ],
-  "final_c": "void func_8010D104(void) {\n    s32 temp = func_8010C920();\n    func_8010D8D0();\n    func_8010C988(0xB1FFFFF0, 0);\n    func_8010C988(0xB1FFFFFC, 0);\n    D_801F59B0 = 1;\n    D_801F59B2 = 0xFF;\n    func_8010C958(temp);\n}",
-  "matched": true,
+  "outcome": "match",
+  "final_match_percent": 100.0,
+  "best_match_percent": 100.0,
+  "total_tokens": 0,
   "instruction_count": 27,
-  "has_branches": false,
-  "has_calls": true,
-  "timestamp": 1773633460.559081,
-  "game": "glover",
-  "compiler": "gcc_2.7.2_kmc",
+  "initial_m2c_source": "s32 func_8010C920();                                /* extern */\n? func_8010C958(s32);                               /* extern */\n? func_8010C988(?, ?);                              /* extern */\n? func_8010D8D0();                                  /* extern */\nextern s8 D_801F59B0;\nextern s8 D_801F59B2;\n\nvoid func_8010D104(void) {\n    s32 temp_s0;\n\n    temp_s0 = func_8010C920();\n    func_8010D8D0();\n    func_8010C988(0xB1FFFFF0, 0);\n    func_8010C988(0xB1FFFFFC, 0);\n    D_801F59B0 = 1;\n    D_801F59B2 = 0xFF;\n    func_8010C958(temp_s0);\n}\n",
+  "final_source": "void func_8010D104(void) {\n    s32 temp = func_8010C920();\n    func_8010D8D0();\n    func_8010C988(0xB1FFFFF0, 0);\n    func_8010C988(0xB1FFFFFC, 0);\n    D_801F59B0 = 1;\n    D_801F59B2 = 0xFF;\n    func_8010C958(temp);\n}",
   "compiler_flags": "-O2 -g2",
+  "segment": "D910",
+  "called_functions": [
+    "func_8010C920",
+    "func_8010D8D0",
+    "func_8010C988",
+    "func_8010C958"
+  ],
+  "referenced_data": [
+    "D_801F59B0",
+    "D_801F59B2"
+  ],
   "nearby_decompiled": [
     "func_8010C920",
     "func_8010C958",
@@ -40,15 +53,5 @@
     "func_8010FB30",
     "func_8010FB80"
   ],
-  "called_functions": [
-    "func_8010C920",
-    "func_8010D8D0",
-    "func_8010C988",
-    "func_8010C958"
-  ],
-  "referenced_data": [
-    "D_801F59B0",
-    "D_801F59B2"
-  ],
-  "segment": "D910"
+  "asm_text": "nonmatching func_8010D104, 0x6C\n\nglabel func_8010D104\n    /* E104 8010D104 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* E108 8010D108 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* E10C 8010D10C 0C043248 */  jal        func_8010C920\n    /* E110 8010D110 AFB00010 */   sw        $s0, 0x10($sp)\n    /* E114 8010D114 0C043634 */  jal        func_8010D8D0\n    /* E118 8010D118 00408021 */   addu      $s0, $v0, $zero\n    /* E11C 8010D11C 3C04B1FF */  lui        $a0, (0xB1FFFFF0 >> 16)\n    /* E120 8010D120 3484FFF0 */  ori        $a0, $a0, (0xB1FFFFF0 & 0xFFFF)\n    /* E124 8010D124 0C043262 */  jal        func_8010C988\n    /* E128 8010D128 00002821 */   addu      $a1, $zero, $zero\n    /* E12C 8010D12C 3C04B1FF */  lui        $a0, (0xB1FFFFFC >> 16)\n    /* E130 8010D130 3484FFFC */  ori        $a0, $a0, (0xB1FFFFFC & 0xFFFF)\n    /* E134 8010D134 0C043262 */  jal        func_8010C988\n    /* E138 8010D138 00002821 */   addu      $a1, $zero, $zero\n    /* E13C 8010D13C 24020001 */  addiu      $v0, $zero, 0x1\n    /* E140 8010D140 3C01801F */  lui        $at, %hi(D_801F59B0)\n    /* E144 8010D144 A02259B0 */  sb         $v0, %lo(D_801F59B0)($at)\n    /* E148 8010D148 240200FF */  addiu      $v0, $zero, 0xFF\n    /* E14C 8010D14C 3C01801F */  lui        $at, %hi(D_801F59B2)\n    /* E150 8010D150 A02259B2 */  sb         $v0, %lo(D_801F59B2)($at)\n    /* E154 8010D154 0C043256 */  jal        func_8010C958\n    /* E158 8010D158 02002021 */   addu      $a0, $s0, $zero\n    /* E15C 8010D15C 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* E160 8010D160 8FB00010 */  lw         $s0, 0x10($sp)\n    /* E164 8010D164 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* E168 8010D168 03E00008 */  jr         $ra\n    /* E16C 8010D16C 00000000 */   nop\nendlabel func_8010D104\n"
 }

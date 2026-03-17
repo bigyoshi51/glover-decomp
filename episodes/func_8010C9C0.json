@@ -1,26 +1,31 @@
 {
   "function_name": "func_8010C9C0",
-  "asm_text": "nonmatching func_8010C9C0, 0x3C\n\nglabel func_8010C9C0\n    /* D9C0 8010C9C0 3C02A460 */  lui        $v0, (0xA4600010 >> 16)\n    /* D9C4 8010C9C4 34420010 */  ori        $v0, $v0, (0xA4600010 & 0xFFFF)\n    /* D9C8 8010C9C8 8C420000 */  lw         $v0, 0x0($v0)\n    /* D9CC 8010C9CC 30420003 */  andi       $v0, $v0, 0x3\n    /* D9D0 8010C9D0 10400007 */  beqz       $v0, .L8010C9F0\n    /* D9D4 8010C9D4 00000000 */   nop\n    /* D9D8 8010C9D8 3C03A460 */  lui        $v1, (0xA4600010 >> 16)\n    /* D9DC 8010C9DC 34630010 */  ori        $v1, $v1, (0xA4600010 & 0xFFFF)\n  .L8010C9E0:\n    /* D9E0 8010C9E0 8C620000 */  lw         $v0, 0x0($v1)\n    /* D9E4 8010C9E4 30420003 */  andi       $v0, $v0, 0x3\n    /* D9E8 8010C9E8 1440FFFD */  bnez       $v0, .L8010C9E0\n    /* D9EC 8010C9EC 00000000 */   nop\n  .L8010C9F0:\n    /* D9F0 8010C9F0 8C820000 */  lw         $v0, 0x0($a0)\n    /* D9F4 8010C9F4 03E00008 */  jr         $ra\n    /* D9F8 8010C9F8 00000000 */   nop\nendlabel func_8010C9C0\n",
-  "m2c_output": "s32 func_8010C9C0(s32 *arg0) {\n    if (*(s32 *)0xA4600010 & 3) {\n        do {\n\n        } while (*(void *)0xA4600010 & 3);\n    }\n    return *arg0;\n}\n",
-  "attempts": [
+  "project": "glover",
+  "model": "claude-opus-4-6 (Claude Code)",
+  "start_time": "2026-03-16T03:57:39.677290+00:00",
+  "end_time": null,
+  "steps": [
     {
-      "c_code": "u32 func_8010C9C0(s32 *arg0) {\n    while (*(volatile u32*)0xA4600010 & 3) {}\n    return *arg0;\n}",
-      "matched": true,
-      "diff_count": 0,
-      "diff_details": [],
-      "compiler_flags": "",
-      "notes": "flags: -O2 -g2"
+      "step_number": 1,
+      "timestamp": "2026-03-17T03:21:09.236737+00:00",
+      "assistant_text": "Manual decompilation (Claude Code session)",
+      "tool_calls": [],
+      "match_percent": 100.0,
+      "compiled": true,
+      "token_usage": null
     }
   ],
-  "final_c": "u32 func_8010C9C0(s32 *arg0) {\n    while (*(volatile u32*)0xA4600010 & 3) {}\n    return *arg0;\n}",
-  "matched": true,
+  "outcome": "match",
+  "final_match_percent": 100.0,
+  "best_match_percent": 100.0,
+  "total_tokens": 0,
   "instruction_count": 15,
-  "has_branches": true,
-  "has_calls": false,
-  "timestamp": 1773633459.6772897,
-  "game": "glover",
-  "compiler": "gcc_2.7.2_kmc",
+  "initial_m2c_source": "s32 func_8010C9C0(s32 *arg0) {\n    if (*(s32 *)0xA4600010 & 3) {\n        do {\n\n        } while (*(void *)0xA4600010 & 3);\n    }\n    return *arg0;\n}\n",
+  "final_source": "u32 func_8010C9C0(s32 *arg0) {\n    while (*(volatile u32*)0xA4600010 & 3) {}\n    return *arg0;\n}",
   "compiler_flags": "-O2 -g2",
+  "segment": "D910",
+  "called_functions": [],
+  "referenced_data": [],
   "nearby_decompiled": [
     "func_8010C920",
     "func_8010C958",
@@ -40,7 +45,5 @@
     "func_8010FB30",
     "func_8010FB80"
   ],
-  "called_functions": [],
-  "referenced_data": [],
-  "segment": "D910"
+  "asm_text": "nonmatching func_8010C9C0, 0x3C\n\nglabel func_8010C9C0\n    /* D9C0 8010C9C0 3C02A460 */  lui        $v0, (0xA4600010 >> 16)\n    /* D9C4 8010C9C4 34420010 */  ori        $v0, $v0, (0xA4600010 & 0xFFFF)\n    /* D9C8 8010C9C8 8C420000 */  lw         $v0, 0x0($v0)\n    /* D9CC 8010C9CC 30420003 */  andi       $v0, $v0, 0x3\n    /* D9D0 8010C9D0 10400007 */  beqz       $v0, .L8010C9F0\n    /* D9D4 8010C9D4 00000000 */   nop\n    /* D9D8 8010C9D8 3C03A460 */  lui        $v1, (0xA4600010 >> 16)\n    /* D9DC 8010C9DC 34630010 */  ori        $v1, $v1, (0xA4600010 & 0xFFFF)\n  .L8010C9E0:\n    /* D9E0 8010C9E0 8C620000 */  lw         $v0, 0x0($v1)\n    /* D9E4 8010C9E4 30420003 */  andi       $v0, $v0, 0x3\n    /* D9E8 8010C9E8 1440FFFD */  bnez       $v0, .L8010C9E0\n    /* D9EC 8010C9EC 00000000 */   nop\n  .L8010C9F0:\n    /* D9F0 8010C9F0 8C820000 */  lw         $v0, 0x0($a0)\n    /* D9F4 8010C9F4 03E00008 */  jr         $ra\n    /* D9F8 8010C9F8 00000000 */   nop\nendlabel func_8010C9C0\n"
 }
