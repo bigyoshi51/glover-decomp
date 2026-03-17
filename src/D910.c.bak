@@ -84,7 +84,7 @@ s32 func_8010D39C(s32 arg0, s32 arg1, s32 arg2, s32 arg3) {
         func_8010C9FC(0x3E8);
         if (func_8010C9C0((s32*)0xB1FFFFF0) != 0) {
             func_8010C988((s32*)0xB1FFFFE0, 0);
-            asm("break 1");
+            break;
             func_8010C988((s32*)0xB1FFFFE0, arg0);
         }
     } while (func_8010C9C0((s32*)0xB1FFFFE0) != 0);
