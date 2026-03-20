@@ -179,7 +179,35 @@ s32 func_8010D664(s32 arg0, s32 arg1, s32 arg2) {
     return totalBytes;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010D728);
+s32 func_8010D728(s32 arg0, s32 arg1, s32 arg2) {
+    s32 saved;
+    s32 totalBytes;
+    s32 chunkSize;
+    s32 n;
+
+    saved = func_8010C920();
+    totalBytes = 0;
+
+    if (arg2 != 0) {
+        do {
+            chunkSize = arg2;
+            if ((u32)arg2 > 0x8000U) {
+                chunkSize = 0x8000;
+            }
+            func_8010CD28(0xB1FF0000, arg1, chunkSize);
+            n = func_8010D39C(0x606, arg0, chunkSize, 0);
+            if (n == 0) {
+                return totalBytes;
+            }
+            arg1 += n;
+            arg2 -= n;
+            totalBytes += n;
+        } while (arg2 != 0);
+    }
+
+    func_8010C958(saved);
+    return totalBytes;
+}
 
 s32 func_8010D7F0(s32 arg0, s32 arg1, s32 arg2) {
     s32 temp = func_8010C920();
