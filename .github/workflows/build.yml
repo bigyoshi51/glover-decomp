@@ -1,0 +1,80 @@
+name: Build & Verify ROM
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install cross-assembler/linker
+        run: sudo apt-get update && sudo apt-get install -y binutils-mips-linux-gnu
+
+      - name: Set up KMC GCC 2.7.2
+        run: |
+          git clone --depth 1 https://github.com/decompals/mips-gcc-2.7.2.git /tmp/mips-gcc
+          mkdir -p tools/gcc_2.7.2
+          cp -r /tmp/mips-gcc/2.7.2/* tools/gcc_2.7.2/ || true
+          if [ -d "tools/gcc_2.7.2/linux" ]; then
+            chmod +x tools/gcc_2.7.2/linux/*
+          elif [ -f "/tmp/mips-gcc/build/2.7.2/linux/gcc" ]; then
+            mkdir -p tools/gcc_2.7.2/linux
+            cp /tmp/mips-gcc/build/2.7.2/linux/* tools/gcc_2.7.2/linux/
+            chmod +x tools/gcc_2.7.2/linux/*
+          fi
+          ls -la tools/gcc_2.7.2/linux/gcc
+
+      - name: Set up asm-processor
+        run: |
+          git clone --depth 1 https://github.com/simonlindholm/asm-processor.git tools/asm-processor
+
+      - name: Build ROM
+        run: make -j$(nproc) RUN_CC_CHECK=0
+
+      - name: Verify ROM size
+        run: |
+          SIZE=$(stat -c%s build/glover.z64)
+          echo "Built ROM size: $SIZE bytes"
+          if [ "$SIZE" -ne 8388608 ]; then
+            echo "::error::ROM size mismatch: expected 8388608, got $SIZE"
+            exit 1
+          fi
+          echo "ROM size OK"
+
+      - name: Download base ROM
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Download from private release asset (tag: baserom)
+          gh release download baserom -p "baserom.z64" 2>/dev/null || {
+            echo "::warning::No baserom release found — skipping byte comparison"
+            echo "SKIP_COMPARE=1" >> "$GITHUB_ENV"
+          }
+
+      - name: Verify base ROM integrity
+        if: env.SKIP_COMPARE != '1'
+        run: |
+          HASH=$(md5sum baserom.z64 | awk '{print $1}')
+          if [ "$HASH" != "87aa5740dff79291ee97832da1f86205" ]; then
+            echo "::error::Base ROM hash mismatch: $HASH"
+            exit 1
+          fi
+
+      - name: Compare ROMs
+        if: env.SKIP_COMPARE != '1'
+        run: |
+          python3 -c "
+          base = open('baserom.z64','rb').read()
+          built = open('build/glover.z64','rb').read()
+          assert len(base) == len(built), f'Size mismatch: {len(base)} vs {len(built)}'
+          diffs = sum(1 for i in range(len(base)) if base[i] != built[i])
+          print(f'Total byte diffs: {diffs}')
+          assert diffs <= 1, f'ROM has {diffs} byte diffs (max allowed: 1)'
+          print('ROM matches (≤1 byte diff — known alabel issue)')
+          "

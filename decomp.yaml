@@ -5,7 +5,7 @@ ido_recomp: tools/ido-static-recomp
 
 # Agent settings
 max_attempts: 30
-model: claude-sonnet-4-20250514
+model: claude-opus-4-6
 
 # Project structure
 asm_dir: asm/nonmatchings

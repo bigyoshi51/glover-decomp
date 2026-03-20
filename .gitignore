@@ -7,3 +7,4 @@ baserom.z64
 __pycache__/
 *.pyc
 logs/
+*.bak
