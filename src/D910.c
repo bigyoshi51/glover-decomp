@@ -258,7 +258,27 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010F23C);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F520);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010F94C);
+void func_801625F0(s32, s32);
+void func_80141720(s32*);
+extern s32 D_801EC860;
+extern s32 D_80269F40[];
+
+void func_8010F94C(void) {
+    s32 i;
+    s32 pad[2];
+
+    i = 0;
+    if (D_801EC860 > 0) {
+        s32 *ptr = &D_80269F40[0];
+        do {
+            func_801625F0(*ptr, -1);
+            func_80141720(ptr);
+            i += 1;
+            ptr++;
+        } while (i < D_801EC860);
+    }
+    D_801EC860 = 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F9C0);
 
