@@ -21,13 +21,12 @@ jobs:
           # Remove dangling symlinks from repo (they point to local dev paths)
           find tools/ -maxdepth 1 -type l -delete 2>/dev/null || true
 
-          # KMC GCC 2.7.2
-          git clone --depth 1 https://github.com/decompals/mips-gcc-2.7.2.git /tmp/mips-gcc
-          mkdir -p tools/gcc_2.7.2
-          cp -r /tmp/mips-gcc/2.7.2/* tools/gcc_2.7.2/ || true
-          if [ -d "tools/gcc_2.7.2/linux" ]; then
-            chmod +x tools/gcc_2.7.2/linux/*
-          fi
+          # KMC GCC 2.7.2 (pre-built binaries from decompals)
+          curl -sL https://github.com/decompals/mips-gcc-2.7.2/releases/download/v0.1/gcc-2.7.2-linux.tar.gz \
+            | tar xz -C /tmp
+          mkdir -p tools/gcc_2.7.2/linux
+          cp /tmp/gcc /tmp/cc1 /tmp/cc1plus /tmp/cpp /tmp/g++ tools/gcc_2.7.2/linux/
+          chmod +x tools/gcc_2.7.2/linux/*
           ls tools/gcc_2.7.2/linux/gcc
 
           # asm-processor
@@ -50,7 +49,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Download from private release asset (tag: baserom)
           gh release download baserom -p "baserom.z64" 2>/dev/null || {
             echo "::warning::No baserom release found — skipping byte comparison"
             echo "SKIP_COMPARE=1" >> "$GITHUB_ENV"
@@ -75,5 +73,5 @@ jobs:
           diffs = sum(1 for i in range(len(base)) if base[i] != built[i])
           print(f'Total byte diffs: {diffs}')
           assert diffs <= 1, f'ROM has {diffs} byte diffs (max allowed: 1)'
-          print('ROM matches (≤1 byte diff — known alabel issue)')
+          print('ROM matches (<=1 byte diff -- known alabel issue)')
           "
