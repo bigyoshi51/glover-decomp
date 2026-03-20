@@ -16,22 +16,21 @@ jobs:
       - name: Install cross-assembler/linker
         run: sudo apt-get update && sudo apt-get install -y binutils-mips-linux-gnu
 
-      - name: Set up KMC GCC 2.7.2
+      - name: Set up build tools
         run: |
+          # Remove dangling symlinks from repo (they point to local dev paths)
+          find tools/ -maxdepth 1 -type l -delete 2>/dev/null || true
+
+          # KMC GCC 2.7.2
           git clone --depth 1 https://github.com/decompals/mips-gcc-2.7.2.git /tmp/mips-gcc
           mkdir -p tools/gcc_2.7.2
           cp -r /tmp/mips-gcc/2.7.2/* tools/gcc_2.7.2/ || true
           if [ -d "tools/gcc_2.7.2/linux" ]; then
             chmod +x tools/gcc_2.7.2/linux/*
-          elif [ -f "/tmp/mips-gcc/build/2.7.2/linux/gcc" ]; then
-            mkdir -p tools/gcc_2.7.2/linux
-            cp /tmp/mips-gcc/build/2.7.2/linux/* tools/gcc_2.7.2/linux/
-            chmod +x tools/gcc_2.7.2/linux/*
           fi
-          ls -la tools/gcc_2.7.2/linux/gcc
+          ls tools/gcc_2.7.2/linux/gcc
 
-      - name: Set up asm-processor
-        run: |
+          # asm-processor
           git clone --depth 1 https://github.com/simonlindholm/asm-processor.git tools/asm-processor
 
       - name: Build ROM
