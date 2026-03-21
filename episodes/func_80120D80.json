@@ -1,0 +1,55 @@
+{
+  "function_name": "func_80120D80",
+  "asm_text": "nonmatching func_80120D80, 0xC8\n\nglabel func_80120D80\n    /* 20D80 80120D80 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 20D84 80120D84 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 20D88 80120D88 0C052A76 */  jal        func_8014A9D8\n    /* 20D8C 80120D8C 00000000 */   nop\n    /* 20D90 80120D90 0C0623E4 */  jal        func_80188F90\n    /* 20D94 80120D94 00000000 */   nop\n    /* 20D98 80120D98 0C0623ED */  jal        func_80188FB4\n    /* 20D9C 80120D9C 00000000 */   nop\n    /* 20DA0 80120DA0 0C069A08 */  jal        func_801A6820\n    /* 20DA4 80120DA4 00000000 */   nop\n    /* 20DA8 80120DA8 0C052AFB */  jal        func_8014ABEC\n    /* 20DAC 80120DAC 00000000 */   nop\n    /* 20DB0 80120DB0 0C0571D6 */  jal        func_8015C758\n    /* 20DB4 80120DB4 00000000 */   nop\n    /* 20DB8 80120DB8 0C06A38C */  jal        func_801A8E30\n    /* 20DBC 80120DBC 00000000 */   nop\n    /* 20DC0 80120DC0 0C06D004 */  jal        func_801B4010\n    /* 20DC4 80120DC4 00000000 */   nop\n    /* 20DC8 80120DC8 0C062A74 */  jal        func_8018A9D0\n    /* 20DCC 80120DCC 00000000 */   nop\n    /* 20DD0 80120DD0 0C05E7AB */  jal        func_80179EAC\n    /* 20DD4 80120DD4 00000000 */   nop\n    /* 20DD8 80120DD8 0C06E450 */  jal        func_801B9140\n    /* 20DDC 80120DDC 00000000 */   nop\n    /* 20DE0 80120DE0 0C05E7AB */  jal        func_80179EAC\n    /* 20DE4 80120DE4 00000000 */   nop\n    /* 20DE8 80120DE8 0C0639BE */  jal        func_8018E6F8\n    /* 20DEC 80120DEC 00000000 */   nop\n    /* 20DF0 80120DF0 0C06397C */  jal        func_8018E5F0\n    /* 20DF4 80120DF4 00000000 */   nop\n    /* 20DF8 80120DF8 0C062CF6 */  jal        func_8018B3D8\n    /* 20DFC 80120DFC 00000000 */   nop\n    /* 20E00 80120E00 0C04AB30 */  jal        func_8012ACC0\n    /* 20E04 80120E04 00000000 */   nop\n    /* 20E08 80120E08 0C062CEE */  jal        func_8018B3B8\n    /* 20E0C 80120E0C 00000000 */   nop\n    /* 20E10 80120E10 0C06EBDB */  jal        func_801BAF6C\n    /* 20E14 80120E14 00000000 */   nop\n    /* 20E18 80120E18 0C06E1F1 */  jal        func_801B87C4\n    /* 20E1C 80120E1C 00000000 */   nop\n    /* 20E20 80120E20 0C06DED0 */  jal        func_801B7B40\n    /* 20E24 80120E24 00000000 */   nop\n    /* 20E28 80120E28 0C05DE7C */  jal        func_801779F0\n    /* 20E2C 80120E2C 00000000 */   nop\n    /* 20E30 80120E30 0C052A7F */  jal        func_8014A9FC\n    /* 20E34 80120E34 00000000 */   nop\n    /* 20E38 80120E38 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 20E3C 80120E3C 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 20E40 80120E40 03E00008 */  jr         $ra\n    /* 20E44 80120E44 00000000 */   nop\nendlabel func_80120D80\n",
+  "m2c_output": "? func_8012ACC0();                                  /* extern */\n? func_8014A9D8();                                  /* extern */\n? func_8014A9FC();                                  /* extern */\n? func_8014ABEC();                                  /* extern */\n? func_8015C758();                                  /* extern */\n? func_801779F0();                                  /* extern */\n? func_80179EAC();                                  /* extern */\n? func_80188F90();                                  /* extern */\n? func_80188FB4();                                  /* extern */\n? func_8018A9D0();                                  /* extern */\n? func_8018B3B8();                                  /* extern */\n? func_8018B3D8();                                  /* extern */\n? func_8018E5F0();                                  /* extern */\n? func_8018E6F8();                                  /* extern */\n? func_801A6820();                                  /* extern */\n? func_801A8E30();                                  /* extern */\n? func_801B4010();                                  /* extern */\n? func_801B7B40();                                  /* extern */\n? func_801B87C4();                                  /* extern */\n? func_801B9140();                                  /* extern */\n? func_801BAF6C();                                  /* extern */\n\nvoid func_80120D80(void) {\n    func_8014A9D8();\n    func_80188F90();\n    func_80188FB4();\n    func_801A6820();\n    func_8014ABEC();\n    func_8015C758();\n    func_801A8E30();\n    func_801B4010();\n    func_8018A9D0();\n    func_80179EAC();\n    func_801B9140();\n    func_80179EAC();\n    func_8018E6F8();\n    func_8018E5F0();\n    func_8018B3D8();\n    func_8012ACC0();\n    func_8018B3B8();\n    func_801BAF6C();\n    func_801B87C4();\n    func_801B7B40();\n    func_801779F0();\n    func_8014A9FC();\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_80120D80(void) {\n    func_8014A9D8();\n    func_80188F90();\n    func_80188FB4();\n    func_801A6820();\n    func_8014ABEC();\n    func_8015C758();\n    func_801A8E30();\n    func_801B4010();\n    func_8018A9D0();\n    func_80179EAC();\n    func_801B9140();\n    func_80179EAC();\n    func_8018E6F8();\n    func_8018E5F0();\n    func_8018B3D8();\n    func_8012ACC0();\n    func_8018B3B8();\n    func_801BAF6C();\n    func_801B87C4();\n    func_801B7B40();\n    func_801779F0();\n    func_8014A9FC();\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "void func_80120D80(void) {\n    func_8014A9D8();\n    func_80188F90();\n    func_80188FB4();\n    func_801A6820();\n    func_8014ABEC();\n    func_8015C758();\n    func_801A8E30();\n    func_801B4010();\n    func_8018A9D0();\n    func_80179EAC();\n    func_801B9140();\n    func_80179EAC();\n    func_8018E6F8();\n    func_8018E5F0();\n    func_8018B3D8();\n    func_8012ACC0();\n    func_8018B3B8();\n    func_801BAF6C();\n    func_801B87C4();\n    func_801B7B40();\n    func_801779F0();\n    func_8014A9FC();\n}",
+  "matched": true,
+  "instruction_count": 50,
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1774129004.9117799,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8011D7F0",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8"
+  ],
+  "called_functions": [
+    "func_8014A9D8",
+    "func_80188F90",
+    "func_80188FB4",
+    "func_801A6820",
+    "func_8014ABEC",
+    "func_8015C758",
+    "func_801A8E30",
+    "func_801B4010",
+    "func_8018A9D0",
+    "func_80179EAC",
+    "func_801B9140",
+    "func_8018E6F8",
+    "func_8018E5F0",
+    "func_8018B3D8",
+    "func_8012ACC0",
+    "func_8018B3B8",
+    "func_801BAF6C",
+    "func_801B87C4",
+    "func_801B7B40",
+    "func_801779F0",
+    "func_8014A9FC"
+  ],
+  "referenced_data": [],
+  "segment": "18020"
+}
