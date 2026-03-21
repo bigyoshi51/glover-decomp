@@ -8,3 +8,7 @@ __pycache__/
 *.pyc
 logs/
 *.bak
+.env
+.env.*
+.claude/
+test_ccb0.c.*

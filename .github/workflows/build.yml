@@ -49,9 +49,9 @@ jobs:
 
       - name: Download base ROM
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.BASEROM_TOKEN }}
         run: |
-          gh release download baserom -p "baserom.z64" 2>/dev/null || {
+          gh release download baserom --repo bigyoshi51/glover-baserom -p "baserom.z64" 2>/dev/null || {
             echo "::warning::No baserom release found — skipping byte comparison"
             echo "SKIP_COMPARE=1" >> "$GITHUB_ENV"
           }
