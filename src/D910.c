@@ -378,7 +378,31 @@ void func_8010FB80(s8 arg0) {
     D_801E6608 = 0x1F;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010FC10);
+extern s32 D_801E58A4;
+extern s32 D_801E58B4;
+extern s32 D_801E58B0;
+extern s32 D_802004E0;
+
+s32 func_8010FC10(s32 *arg0) {
+    s32 old;
+    s32 val;
+
+    val = *arg0;
+    val++;
+    if (val >= 7) {
+        old = D_801E58A4;
+        D_801E58A4 = 0xD;
+        D_801E58B4 = old;
+        val = 0;
+        if (D_802004E0 < 0xB) goto store;
+        if (old == 0xA) goto store;
+        if (old == 6) goto store;
+        D_801E58B0 = 0x14;
+    }
+store:
+    *arg0 = val;
+    return val;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010FC84);
 
