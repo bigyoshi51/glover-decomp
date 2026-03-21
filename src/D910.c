@@ -326,7 +326,53 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010E6AC);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E86C);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010EB14);
+s32 func_80147000(s32);
+extern s32 D_801E64B8;
+extern s32 D_801E64BC;
+extern s8 D_801F6330;
+extern u8 D_801F6331;
+extern s8 D_801F6332;
+extern u8 D_801F6333;
+extern s8 D_801F63A8;
+extern u8 D_801F63A9;
+extern u8 D_801F63AA;
+extern u8 D_801F63AB;
+
+s32 func_8010EB14(void) {
+    s32 brightness;
+    s32 target;
+    s32 diff;
+
+    brightness = D_801E64B8;
+    target = D_801E64BC;
+
+    D_801F6331 = 0xFF;
+    D_801F63A9 = 0xFF;
+    D_801F6330 = 0;
+    D_801F6332 = 0;
+    D_801F63A8 = 0;
+    D_801F63AA = (u8)0xE6;
+    D_801F63AB = (u8)~brightness;
+    D_801F6333 = (u8)brightness;
+
+    if ((u32)target < (u32)brightness) {
+        D_801E64B8 = brightness - 6;
+    }
+    brightness = D_801E64B8;
+    if ((u32)brightness < (u32)target) {
+        D_801E64B8 = brightness + 5;
+    }
+
+    diff = D_801E64B8;
+    diff = diff - target;
+    if (diff < 0) {
+        diff = -diff;
+    }
+    if (diff < 6) {
+        D_801E64BC = func_80147000(0xFF);
+    }
+    return 0;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010EBE8);
 
