@@ -77,3 +77,15 @@ jobs:
           assert diffs <= 1, f'ROM has {diffs} byte diffs (max allowed: 1)'
           print('ROM matches (<=1 byte diff -- known alabel issue)')
           "
+
+      - name: Generate progress report
+        run: |
+          curl -sL https://github.com/encounter/objdiff/releases/latest/download/objdiff-cli-linux-x86_64 -o objdiff-cli
+          chmod +x objdiff-cli
+          ./objdiff-cli report generate -p . -o report.json
+
+      - name: Upload progress report
+        uses: actions/upload-artifact@v4
+        with:
+          name: us_report
+          path: report.json

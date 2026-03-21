@@ -47,6 +47,16 @@
         "progress_categories": ["game"],
         "auto_generated": true
       }
+    },
+    {
+      "name": "asm/header",
+      "target_path": "expected/asm/header.o",
+      "base_path": "build/asm/header.o",
+      "metadata": {
+        "source_path": "asm/header.s",
+        "progress_categories": ["game"],
+        "auto_generated": true
+      }
     }
   ],
   "progress_categories": [
