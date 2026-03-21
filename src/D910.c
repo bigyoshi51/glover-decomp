@@ -422,7 +422,42 @@ void func_8010E400(void) {
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E558);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010E560);
+extern f32 D_80100104;
+extern f32 D_80100108;
+extern f32 D_8010010C;
+extern f32 D_80100110;
+extern f32 D_80100114;
+
+void func_8010E560(void) {
+    s32 one;
+
+    if (D_801E64CC == 0) {
+        one = 1;
+        func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, one);
+        func_8014A50C(D_801F64B4, D_801000DC, 0xA0, 0x78, 0, one);
+        D_801F64D0 = 0x2454;
+        D_801F645C = 0x2454;
+        D_801F64CC = 0x32C8;
+        D_801F6458 = 0x32C8;
+        D_801F64D6 = 0;
+        D_801F64D5 = 0;
+        D_801F64D4 = 0;
+        D_801F6462 = 0;
+        D_801F6461 = 0;
+        D_801F6460 = 0;
+        D_801F64AC = 0;
+        D_801F6520 = 0;
+        D_801E64C0 = 0;
+        D_801E64CC = one;
+        D_801F644C = D_80100104;
+        D_801F64C0 = D_80100108;
+    }
+
+    D_801E64C0 = -1;
+    D_801F644C = D_8010010C;
+    D_801F64C0 = D_80100110;
+    D_801E64C4 = D_80100114;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E6AC);
 
