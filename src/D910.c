@@ -360,7 +360,65 @@ void func_8010E2F4(void) {
     D_801F64C0 = D_801000EC;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010E400);
+extern s32 D_801E64CC;
+extern s32 D_801E64C0;
+extern f32 D_801000F0;
+extern f32 D_801000F4;
+extern f32 D_801000F8;
+extern f32 D_801000FC;
+extern f32 D_80100100;
+extern f32 D_801F644C;
+extern f32 D_801F64C0;
+extern f32 D_801E64C4;
+extern s32 D_801F64D0;
+extern s32 D_801F645C;
+extern s32 D_801F64CC;
+extern s32 D_801F6458;
+extern s8 D_801F64D6;
+extern s8 D_801F64D5;
+extern s8 D_801F64D4;
+extern s8 D_801F6462;
+extern s8 D_801F6461;
+extern s8 D_801F6460;
+extern s32 D_801F64AC;
+extern s32 D_801F6520;
+extern s32 D_801F6528;
+extern u8 D_801F6440[];
+extern u8 D_801F64B4[];
+extern u8 D_801000D0[];
+extern u8 D_801000DC[];
+
+void func_8010E400(void) {
+    s32 one;
+
+    if (D_801E64CC == 0) {
+        one = 1;
+        func_8014A50C(D_801F6440, D_801000D0, 0xA0, 0x78, 0, one);
+        func_8014A50C(D_801F64B4, D_801000DC, 0xA0, 0x78, 0, one);
+        D_801F64D0 = 0x2454;
+        D_801F645C = 0x2454;
+        D_801F64CC = 0x32C8;
+        D_801F6458 = 0x32C8;
+        D_801F64D6 = 0;
+        D_801F64D5 = 0;
+        D_801F64D4 = 0;
+        D_801F6462 = 0;
+        D_801F6461 = 0;
+        D_801F6460 = 0;
+        D_801F64AC = 0;
+        D_801F6520 = 0;
+        D_801E64C0 = 0;
+        D_801E64CC = one;
+        D_801F644C = D_801000F0;
+        D_801F64C0 = D_801000F4;
+    }
+
+    D_801E64C0 = 1;
+    D_801F6528 = 0xFF;
+    D_801F644C = D_801000F8;
+    D_801F64C0 = D_801000FC;
+    D_801E64C4 = D_80100100;
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E558);
 
