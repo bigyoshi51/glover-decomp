@@ -949,150 +949,10 @@ nonmatching D_801F848C, 0x744
 dlabel D_801F848C
     /* 801F848C */ .space 0x744
 
-nonmatching D_801F8BD0, 0xC
+nonmatching D_801F8BD0, 0x500
 
 dlabel D_801F8BD0
-    /* 801F8BD0 */ .space 0x0C
-
-nonmatching D_801F8BDC, 0x4
-
-dlabel D_801F8BDC
-    /* 801F8BDC */ .space 0x04
-
-nonmatching D_801F8BE0, 0xF8
-
-dlabel D_801F8BE0
-    /* 801F8BE0 */ .space 0xF8
-
-nonmatching D_801F8CD8, 0x1
-
-dlabel D_801F8CD8
-    /* 801F8CD8 */ .space 0x01
-
-nonmatching D_801F8CD9, 0x1
-
-dlabel D_801F8CD9
-    /* 801F8CD9 */ .space 0x01
-
-nonmatching D_801F8CDA, 0x72
-
-dlabel D_801F8CDA
-    /* 801F8CDA */ .space 0x72
-
-nonmatching D_801F8D4C, 0x1
-
-dlabel D_801F8D4C
-    /* 801F8D4C */ .space 0x01
-
-nonmatching D_801F8D4D, 0x1
-
-dlabel D_801F8D4D
-    /* 801F8D4D */ .space 0x01
-
-nonmatching D_801F8D4E, 0x72
-
-dlabel D_801F8D4E
-    /* 801F8D4E */ .space 0x72
-
-nonmatching D_801F8DC0, 0x1
-
-dlabel D_801F8DC0
-    /* 801F8DC0 */ .space 0x01
-
-nonmatching D_801F8DC1, 0x1
-
-dlabel D_801F8DC1
-    /* 801F8DC1 */ .space 0x01
-
-nonmatching D_801F8DC2, 0x72
-
-dlabel D_801F8DC2
-    /* 801F8DC2 */ .space 0x72
-
-nonmatching D_801F8E34, 0x1
-
-dlabel D_801F8E34
-    /* 801F8E34 */ .space 0x01
-
-nonmatching D_801F8E35, 0x1
-
-dlabel D_801F8E35
-    /* 801F8E35 */ .space 0x01
-
-nonmatching D_801F8E36, 0x72
-
-dlabel D_801F8E36
-    /* 801F8E36 */ .space 0x72
-
-nonmatching D_801F8EA8, 0x1
-
-dlabel D_801F8EA8
-    /* 801F8EA8 */ .space 0x01
-
-nonmatching D_801F8EA9, 0x1
-
-dlabel D_801F8EA9
-    /* 801F8EA9 */ .space 0x01
-
-nonmatching D_801F8EAA, 0x72
-
-dlabel D_801F8EAA
-    /* 801F8EAA */ .space 0x72
-
-nonmatching D_801F8F1C, 0x1
-
-dlabel D_801F8F1C
-    /* 801F8F1C */ .space 0x01
-
-nonmatching D_801F8F1D, 0x1
-
-dlabel D_801F8F1D
-    /* 801F8F1D */ .space 0x01
-
-nonmatching D_801F8F1E, 0x72
-
-dlabel D_801F8F1E
-    /* 801F8F1E */ .space 0x72
-
-nonmatching D_801F8F90, 0x1
-
-dlabel D_801F8F90
-    /* 801F8F90 */ .space 0x01
-
-nonmatching D_801F8F91, 0x1
-
-dlabel D_801F8F91
-    /* 801F8F91 */ .space 0x01
-
-nonmatching D_801F8F92, 0x5E
-
-dlabel D_801F8F92
-    /* 801F8F92 */ .space 0x5E
-
-nonmatching D_801F8FF0, 0x4
-
-dlabel D_801F8FF0
-    /* 801F8FF0 */ .space 0x04
-
-nonmatching D_801F8FF4, 0x84
-
-dlabel D_801F8FF4
-    /* 801F8FF4 */ .space 0x84
-
-nonmatching D_801F9078, 0x1
-
-dlabel D_801F9078
-    /* 801F9078 */ .space 0x01
-
-nonmatching D_801F9079, 0x1
-
-dlabel D_801F9079
-    /* 801F9079 */ .space 0x01
-
-nonmatching D_801F907A, 0x56
-
-dlabel D_801F907A
-    /* 801F907A */ .space 0x56
+    /* 801F8BD0 */ .space 0x500
 
 nonmatching D_801F90D0, 0x4
 
@@ -1424,20 +1284,10 @@ nonmatching D_801F95C4, 0x4
 dlabel D_801F95C4
     /* 801F95C4 */ .space 0x04
 
-nonmatching D_801F95C8, 0x4
+nonmatching D_801F95C8, 0x28
 
 dlabel D_801F95C8
-    /* 801F95C8 */ .space 0x04
-
-nonmatching D_801F95CC, 0x4
-
-dlabel D_801F95CC
-    /* 801F95CC */ .space 0x04
-
-nonmatching D_801F95D0, 0x20
-
-dlabel D_801F95D0
-    /* 801F95D0 */ .space 0x20
+    /* 801F95C8 */ .space 0x28
 
 nonmatching D_801F95F0, 0x28
 
@@ -1449,15 +1299,10 @@ nonmatching D_801F9618, 0x10
 dlabel D_801F9618
     /* 801F9618 */ .space 0x10
 
-nonmatching D_801F9628, 0x60
+nonmatching D_801F9628, 0x68
 
 dlabel D_801F9628
-    /* 801F9628 */ .space 0x60
-
-nonmatching D_801F9688, 0x8
-
-dlabel D_801F9688
-    /* 801F9688 */ .space 0x08
+    /* 801F9628 */ .space 0x68
 
 nonmatching D_801F9690, 0x1000
 
@@ -1734,15 +1579,10 @@ nonmatching D_801FA8B8, 0x4
 dlabel D_801FA8B8
     /* 801FA8B8 */ .space 0x04
 
-nonmatching D_801FA8BC, 0x4
+nonmatching D_801FA8BC, 0xC
 
 dlabel D_801FA8BC
-    /* 801FA8BC */ .space 0x04
-
-nonmatching D_801FA8C0, 0x8
-
-dlabel D_801FA8C0
-    /* 801FA8C0 */ .space 0x08
+    /* 801FA8BC */ .space 0x0C
 
 nonmatching D_801FA8C8, 0x8
 
@@ -2034,20 +1874,10 @@ nonmatching D_801FAAAC, 0x1
 dlabel D_801FAAAC
     /* 801FAAAC */ .space 0x01
 
-nonmatching D_801FAAAD, 0x1
+nonmatching D_801FAAAD, 0x3
 
 dlabel D_801FAAAD
-    /* 801FAAAD */ .space 0x01
-
-nonmatching D_801FAAAE, 0x1
-
-dlabel D_801FAAAE
-    /* 801FAAAE */ .space 0x01
-
-nonmatching D_801FAAAF, 0x1
-
-dlabel D_801FAAAF
-    /* 801FAAAF */ .space 0x01
+    /* 801FAAAD */ .space 0x03
 
 nonmatching D_801FAAB0, 0x1
 
@@ -2064,40 +1894,20 @@ nonmatching D_801FAAB2, 0x1
 dlabel D_801FAAB2
     /* 801FAAB2 */ .space 0x01
 
-nonmatching D_801FAAB3, 0x1
+nonmatching D_801FAAB3, 0x4
 
 dlabel D_801FAAB3
-    /* 801FAAB3 */ .space 0x01
-
-nonmatching D_801FAAB4, 0x1
-
-dlabel D_801FAAB4
-    /* 801FAAB4 */ .space 0x01
-
-nonmatching D_801FAAB5, 0x1
-
-dlabel D_801FAAB5
-    /* 801FAAB5 */ .space 0x01
-
-nonmatching D_801FAAB6, 0x1
-
-dlabel D_801FAAB6
-    /* 801FAAB6 */ .space 0x01
+    /* 801FAAB3 */ .space 0x04
 
 nonmatching D_801FAAB7, 0x1
 
 dlabel D_801FAAB7
     /* 801FAAB7 */ .space 0x01
 
-nonmatching D_801FAAB8, 0x1
+nonmatching D_801FAAB8, 0xE
 
 dlabel D_801FAAB8
-    /* 801FAAB8 */ .space 0x01
-
-nonmatching D_801FAAB9, 0xD
-
-dlabel D_801FAAB9
-    /* 801FAAB9 */ .space 0x0D
+    /* 801FAAB8 */ .space 0x0E
 
 nonmatching D_801FAAC6, 0x1
 
@@ -2114,30 +1924,10 @@ nonmatching D_801FAAC8, 0x1
 dlabel D_801FAAC8
     /* 801FAAC8 */ .space 0x01
 
-nonmatching D_801FAAC9, 0x1
+nonmatching D_801FAAC9, 0x9
 
 dlabel D_801FAAC9
-    /* 801FAAC9 */ .space 0x01
-
-nonmatching D_801FAACA, 0x1
-
-dlabel D_801FAACA
-    /* 801FAACA */ .space 0x01
-
-nonmatching D_801FAACB, 0x5
-
-dlabel D_801FAACB
-    /* 801FAACB */ .space 0x05
-
-nonmatching D_801FAAD0, 0x1
-
-dlabel D_801FAAD0
-    /* 801FAAD0 */ .space 0x01
-
-nonmatching D_801FAAD1, 0x1
-
-dlabel D_801FAAD1
-    /* 801FAAD1 */ .space 0x01
+    /* 801FAAC9 */ .space 0x09
 
 nonmatching D_801FAAD2, 0x1
 
@@ -2159,40 +1949,20 @@ nonmatching D_801FAAF1, 0x1
 dlabel D_801FAAF1
     /* 801FAAF1 */ .space 0x01
 
-nonmatching D_801FAAF2, 0x8
+nonmatching D_801FAAF2, 0xB
 
 dlabel D_801FAAF2
-    /* 801FAAF2 */ .space 0x08
-
-nonmatching D_801FAAFA, 0x1
-
-dlabel D_801FAAFA
-    /* 801FAAFA */ .space 0x01
-
-nonmatching D_801FAAFB, 0x2
-
-dlabel D_801FAAFB
-    /* 801FAAFB */ .space 0x02
+    /* 801FAAF2 */ .space 0x0B
 
 nonmatching D_801FAAFD, 0x3
 
 dlabel D_801FAAFD
     /* 801FAAFD */ .space 0x03
 
-nonmatching D_801FAB00, 0x4
+nonmatching D_801FAB00, 0x38
 
 dlabel D_801FAB00
-    /* 801FAB00 */ .space 0x04
-
-nonmatching D_801FAB04, 0x4
-
-dlabel D_801FAB04
-    /* 801FAB04 */ .space 0x04
-
-nonmatching D_801FAB08, 0x30
-
-dlabel D_801FAB08
-    /* 801FAB08 */ .space 0x30
+    /* 801FAB00 */ .space 0x38
 
 nonmatching D_801FAB38, 0x38
 
@@ -2209,30 +1979,10 @@ nonmatching D_801FAB74, 0x4
 dlabel D_801FAB74
     /* 801FAB74 */ .space 0x04
 
-nonmatching D_801FAB78, 0xC
+nonmatching D_801FAB78, 0x2C
 
 dlabel D_801FAB78
-    /* 801FAB78 */ .space 0x0C
-
-nonmatching D_801FAB84, 0x14
-
-dlabel D_801FAB84
-    /* 801FAB84 */ .space 0x14
-
-nonmatching D_801FAB98, 0x4
-
-dlabel D_801FAB98
-    /* 801FAB98 */ .space 0x04
-
-nonmatching D_801FAB9C, 0x4
-
-dlabel D_801FAB9C
-    /* 801FAB9C */ .space 0x04
-
-nonmatching D_801FABA0, 0x4
-
-dlabel D_801FABA0
-    /* 801FABA0 */ .space 0x04
+    /* 801FAB78 */ .space 0x2C
 
 nonmatching D_801FABA4, 0x4
 
@@ -2249,95 +1999,15 @@ nonmatching D_801FAC18, 0x4
 dlabel D_801FAC18
     /* 801FAC18 */ .space 0x04
 
-nonmatching D_801FAC1C, 0x4B4
+nonmatching D_801FAC1C, 0x4EC
 
 dlabel D_801FAC1C
-    /* 801FAC1C */ .space 0x4B4
+    /* 801FAC1C */ .space 0x4EC
 
-nonmatching D_801FB0D0, 0x2
-
-dlabel D_801FB0D0
-    /* 801FB0D0 */ .space 0x02
-
-nonmatching D_801FB0D2, 0x18
-
-dlabel D_801FB0D2
-    /* 801FB0D2 */ .space 0x18
-
-nonmatching D_801FB0EA, 0x1
-
-dlabel D_801FB0EA
-    /* 801FB0EA */ .space 0x01
-
-nonmatching D_801FB0EB, 0x1
-
-dlabel D_801FB0EB
-    /* 801FB0EB */ .space 0x01
-
-nonmatching D_801FB0EC, 0x5
-
-dlabel D_801FB0EC
-    /* 801FB0EC */ .space 0x05
-
-nonmatching D_801FB0F1, 0x1
-
-dlabel D_801FB0F1
-    /* 801FB0F1 */ .space 0x01
-
-nonmatching D_801FB0F2, 0x1
-
-dlabel D_801FB0F2
-    /* 801FB0F2 */ .space 0x01
-
-nonmatching D_801FB0F3, 0x3
-
-dlabel D_801FB0F3
-    /* 801FB0F3 */ .space 0x03
-
-nonmatching D_801FB0F6, 0x1
-
-dlabel D_801FB0F6
-    /* 801FB0F6 */ .space 0x01
-
-nonmatching D_801FB0F7, 0x10
-
-dlabel D_801FB0F7
-    /* 801FB0F7 */ .space 0x10
-
-nonmatching D_801FB107, 0x1
-
-dlabel D_801FB107
-    /* 801FB107 */ .space 0x01
-
-nonmatching D_801FB108, 0x1
+nonmatching D_801FB108, 0x158
 
 dlabel D_801FB108
-    /* 801FB108 */ .space 0x01
-
-nonmatching D_801FB109, 0x1
-
-dlabel D_801FB109
-    /* 801FB109 */ .space 0x01
-
-nonmatching D_801FB10A, 0x1
-
-dlabel D_801FB10A
-    /* 801FB10A */ .space 0x01
-
-nonmatching D_801FB10B, 0x1
-
-dlabel D_801FB10B
-    /* 801FB10B */ .space 0x01
-
-nonmatching D_801FB10C, 0x1
-
-dlabel D_801FB10C
-    /* 801FB10C */ .space 0x01
-
-nonmatching D_801FB10D, 0x153
-
-dlabel D_801FB10D
-    /* 801FB10D */ .space 0x153
+    /* 801FB108 */ .space 0x158
 
 nonmatching D_801FB260, 0x4
 
@@ -2399,15 +2069,10 @@ nonmatching D_801FFE48, 0x18
 dlabel D_801FFE48
     /* 801FFE48 */ .space 0x18
 
-nonmatching D_801FFE60, 0x308
+nonmatching D_801FFE60, 0x680
 
 dlabel D_801FFE60
-    /* 801FFE60 */ .space 0x308
-
-nonmatching D_80200168, 0x378
-
-dlabel D_80200168
-    /* 80200168 */ .space 0x378
+    /* 801FFE60 */ .space 0x680
 
 nonmatching D_802004E0, 0x2
 
@@ -2819,40 +2484,15 @@ nonmatching D_80269F80, 0x4
 dlabel D_80269F80
     /* 80269F80 */ .space 0x04
 
-nonmatching D_80269F84, 0x4
+nonmatching D_80269F84, 0xD0
 
 dlabel D_80269F84
-    /* 80269F84 */ .space 0x04
+    /* 80269F84 */ .space 0xD0
 
-nonmatching D_80269F88, 0xCC
-
-dlabel D_80269F88
-    /* 80269F88 */ .space 0xCC
-
-nonmatching D_8026A054, 0x4
+nonmatching D_8026A054, 0xEC
 
 dlabel D_8026A054
-    /* 8026A054 */ .space 0x04
-
-nonmatching D_8026A058, 0x8
-
-dlabel D_8026A058
-    /* 8026A058 */ .space 0x08
-
-nonmatching D_8026A060, 0x4
-
-dlabel D_8026A060
-    /* 8026A060 */ .space 0x04
-
-nonmatching D_8026A064, 0xD8
-
-dlabel D_8026A064
-    /* 8026A064 */ .space 0xD8
-
-nonmatching D_8026A13C, 0x4
-
-dlabel D_8026A13C
-    /* 8026A13C */ .space 0x04
+    /* 8026A054 */ .space 0xEC
 
 nonmatching D_8026A140, 0x4
 
@@ -2864,120 +2504,35 @@ nonmatching D_8026A144, 0x4
 dlabel D_8026A144
     /* 8026A144 */ .space 0x04
 
-nonmatching D_8026A148, 0x4
+nonmatching D_8026A148, 0xE8
 
 dlabel D_8026A148
-    /* 8026A148 */ .space 0x04
-
-nonmatching D_8026A14C, 0xE0
-
-dlabel D_8026A14C
-    /* 8026A14C */ .space 0xE0
-
-nonmatching D_8026A22C, 0x4
-
-dlabel D_8026A22C
-    /* 8026A22C */ .space 0x04
+    /* 8026A148 */ .space 0xE8
 
 nonmatching D_8026A230, 0x3C00
 
 dlabel D_8026A230
     /* 8026A230 */ .space 0x3C00
 
-nonmatching D_8026DE30, 0x168C0
+nonmatching D_8026DE30, 0x168C8
 
 dlabel D_8026DE30
-    /* 8026DE30 */ .space 0x168C0
+    /* 8026DE30 */ .space 0x168C8
 
-nonmatching D_802846F0, 0x4
-
-dlabel D_802846F0
-    /* 802846F0 */ .space 0x04
-
-nonmatching D_802846F4, 0x4
-
-dlabel D_802846F4
-    /* 802846F4 */ .space 0x04
-
-nonmatching D_802846F8, 0x100
+nonmatching D_802846F8, 0x67C
 
 dlabel D_802846F8
-    /* 802846F8 */ .space 0x100
+    /* 802846F8 */ .space 0x67C
 
-nonmatching D_802847F8, 0x8
-
-dlabel D_802847F8
-    /* 802847F8 */ .space 0x08
-
-nonmatching D_80284800, 0x4
-
-dlabel D_80284800
-    /* 80284800 */ .space 0x04
-
-nonmatching D_80284804, 0x60
-
-dlabel D_80284804
-    /* 80284804 */ .space 0x60
-
-nonmatching D_80284864, 0xC
-
-dlabel D_80284864
-    /* 80284864 */ .space 0x0C
-
-nonmatching D_80284870, 0x14
-
-dlabel D_80284870
-    /* 80284870 */ .space 0x14
-
-nonmatching D_80284884, 0x14
-
-dlabel D_80284884
-    /* 80284884 */ .space 0x14
-
-nonmatching D_80284898, 0x14
-
-dlabel D_80284898
-    /* 80284898 */ .space 0x14
-
-nonmatching D_802848AC, 0x4C4
-
-dlabel D_802848AC
-    /* 802848AC */ .space 0x4C4
-
-nonmatching D_80284D70, 0x4
-
-dlabel D_80284D70
-    /* 80284D70 */ .space 0x04
-
-nonmatching D_80284D74, 0x40
+nonmatching D_80284D74, 0x50
 
 dlabel D_80284D74
-    /* 80284D74 */ .space 0x40
+    /* 80284D74 */ .space 0x50
 
-nonmatching D_80284DB4, 0x2
-
-dlabel D_80284DB4
-    /* 80284DB4 */ .space 0x02
-
-nonmatching D_80284DB6, 0xA
-
-dlabel D_80284DB6
-    /* 80284DB6 */ .space 0x0A
-
-nonmatching D_80284DC0, 0x4
-
-dlabel D_80284DC0
-    /* 80284DC0 */ .space 0x04
-
-nonmatching D_80284DC4, 0x4
+nonmatching D_80284DC4, 0x8
 
 dlabel D_80284DC4
-    /* 80284DC4 */ .space 0x04
-
-nonmatching D_80284DC8, 0x4
-
-dlabel D_80284DC8
-    /* 80284DC8 */ .space 0x04
+    /* 80284DC4 */ .space 0x08
 
 nonmatching D_80284DCC, 0x8
 
@@ -2994,20 +2549,10 @@ nonmatching D_80284DE3, 0x9
 dlabel D_80284DE3
     /* 80284DE3 */ .space 0x09
 
-nonmatching D_80284DEC, 0x4
+nonmatching D_80284DEC, 0x27
 
 dlabel D_80284DEC
-    /* 80284DEC */ .space 0x04
-
-nonmatching D_80284DF0, 0x18
-
-dlabel D_80284DF0
-    /* 80284DF0 */ .space 0x18
-
-nonmatching D_80284E08, 0xB
-
-dlabel D_80284E08
-    /* 80284E08 */ .space 0x0B
+    /* 80284DEC */ .space 0x27
 
 nonmatching D_80284E13, 0x9
 
@@ -3019,105 +2564,35 @@ nonmatching D_80284E1C, 0x7C
 dlabel D_80284E1C
     /* 80284E1C */ .space 0x7C
 
-nonmatching D_80284E98, 0xC0
+nonmatching D_80284E98, 0x4440
 
 dlabel D_80284E98
-    /* 80284E98 */ .space 0xC0
+    /* 80284E98 */ .space 0x4440
 
-nonmatching D_80284F58, 0x42C0
-
-dlabel D_80284F58
-    /* 80284F58 */ .space 0x42C0
-
-nonmatching D_80289218, 0xC0
-
-dlabel D_80289218
-    /* 80289218 */ .space 0xC0
-
-nonmatching D_802892D8, 0x4
+nonmatching D_802892D8, 0x38
 
 dlabel D_802892D8
-    /* 802892D8 */ .space 0x04
+    /* 802892D8 */ .space 0x38
 
-nonmatching D_802892DC, 0x1D
-
-dlabel D_802892DC
-    /* 802892DC */ .space 0x1D
-
-nonmatching D_802892F9, 0x17
-
-dlabel D_802892F9
-    /* 802892F9 */ .space 0x17
-
-nonmatching D_80289310, 0x4
+nonmatching D_80289310, 0x10
 
 dlabel D_80289310
-    /* 80289310 */ .space 0x04
+    /* 80289310 */ .space 0x10
 
-nonmatching D_80289314, 0x4
-
-dlabel D_80289314
-    /* 80289314 */ .space 0x04
-
-nonmatching D_80289318, 0x8
-
-dlabel D_80289318
-    /* 80289318 */ .space 0x08
-
-nonmatching D_80289320, 0xC
+nonmatching D_80289320, 0x70
 
 dlabel D_80289320
-    /* 80289320 */ .space 0x0C
+    /* 80289320 */ .space 0x70
 
-nonmatching D_8028932C, 0xC
-
-dlabel D_8028932C
-    /* 8028932C */ .space 0x0C
-
-nonmatching D_80289338, 0x4
-
-dlabel D_80289338
-    /* 80289338 */ .space 0x04
-
-nonmatching D_8028933C, 0x7
-
-dlabel D_8028933C
-    /* 8028933C */ .space 0x07
-
-nonmatching D_80289343, 0x4D
-
-dlabel D_80289343
-    /* 80289343 */ .space 0x4D
-
-nonmatching D_80289390, 0x4
+nonmatching D_80289390, 0x8
 
 dlabel D_80289390
-    /* 80289390 */ .space 0x04
+    /* 80289390 */ .space 0x08
 
-nonmatching D_80289394, 0x4
-
-dlabel D_80289394
-    /* 80289394 */ .space 0x04
-
-nonmatching D_80289398, 0xC0
+nonmatching D_80289398, 0x4448
 
 dlabel D_80289398
-    /* 80289398 */ .space 0xC0
-
-nonmatching D_80289458, 0x42C0
-
-dlabel D_80289458
-    /* 80289458 */ .space 0x42C0
-
-nonmatching D_8028D718, 0xC0
-
-dlabel D_8028D718
-    /* 8028D718 */ .space 0xC0
-
-nonmatching D_8028D7D8, 0x8
-
-dlabel D_8028D7D8
-    /* 8028D7D8 */ .space 0x08
+    /* 80289398 */ .space 0x4448
 
 nonmatching D_8028D7E0, 0x1
 
@@ -3129,15 +2604,10 @@ nonmatching D_8028D7E1, 0x1
 dlabel D_8028D7E1
     /* 8028D7E1 */ .space 0x01
 
-nonmatching D_8028D7E2, 0x2
+nonmatching D_8028D7E2, 0x6
 
 dlabel D_8028D7E2
-    /* 8028D7E2 */ .space 0x02
-
-nonmatching D_8028D7E4, 0x4
-
-dlabel D_8028D7E4
-    /* 8028D7E4 */ .space 0x04
+    /* 8028D7E2 */ .space 0x06
 
 nonmatching D_8028D7E8, 0x26
 
@@ -3174,25 +2644,10 @@ nonmatching D_8028D8AC, 0x4
 dlabel D_8028D8AC
     /* 8028D8AC */ .space 0x04
 
-nonmatching D_8028D8B0, 0x1C
+nonmatching D_8028D8B0, 0x28
 
 dlabel D_8028D8B0
-    /* 8028D8B0 */ .space 0x1C
-
-nonmatching D_8028D8CC, 0x4
-
-dlabel D_8028D8CC
-    /* 8028D8CC */ .space 0x04
-
-nonmatching D_8028D8D0, 0x4
-
-dlabel D_8028D8D0
-    /* 8028D8D0 */ .space 0x04
-
-nonmatching D_8028D8D4, 0x4
-
-dlabel D_8028D8D4
-    /* 8028D8D4 */ .space 0x04
+    /* 8028D8B0 */ .space 0x28
 
 nonmatching D_8028D8D8, 0x26
 
@@ -3259,40 +2714,20 @@ nonmatching D_8028D9A0, 0x20
 dlabel D_8028D9A0
     /* 8028D9A0 */ .space 0x20
 
-nonmatching D_8028D9C0, 0x4
+nonmatching D_8028D9C0, 0x78
 
 dlabel D_8028D9C0
-    /* 8028D9C0 */ .space 0x04
-
-nonmatching D_8028D9C4, 0x70
-
-dlabel D_8028D9C4
-    /* 8028D9C4 */ .space 0x70
-
-nonmatching D_8028DA34, 0x4
-
-dlabel D_8028DA34
-    /* 8028DA34 */ .space 0x04
+    /* 8028D9C0 */ .space 0x78
 
 nonmatching D_8028DA38, 0x8
 
 dlabel D_8028DA38
     /* 8028DA38 */ .space 0x08
 
-nonmatching D_8028DA40, 0xC
+nonmatching D_8028DA40, 0x20
 
 dlabel D_8028DA40
-    /* 8028DA40 */ .space 0x0C
-
-nonmatching D_8028DA4C, 0x10
-
-dlabel D_8028DA4C
-    /* 8028DA4C */ .space 0x10
-
-nonmatching D_8028DA5C, 0x4
-
-dlabel D_8028DA5C
-    /* 8028DA5C */ .space 0x04
+    /* 8028DA40 */ .space 0x20
 
 nonmatching D_8028DA60, 0x1
 
@@ -3304,15 +2739,10 @@ nonmatching D_8028DA61, 0x1
 dlabel D_8028DA61
     /* 8028DA61 */ .space 0x01
 
-nonmatching D_8028DA62, 0x1
+nonmatching D_8028DA62, 0x72
 
 dlabel D_8028DA62
-    /* 8028DA62 */ .space 0x01
-
-nonmatching D_8028DA63, 0x71
-
-dlabel D_8028DA63
-    /* 8028DA63 */ .space 0x71
+    /* 8028DA62 */ .space 0x72
 
 nonmatching D_8028DAD4, 0x1
 
@@ -3369,145 +2799,20 @@ nonmatching D_8028DC31, 0x1
 dlabel D_8028DC31
     /* 8028DC31 */ .space 0x01
 
-nonmatching D_8028DC32, 0x56
+nonmatching D_8028DC32, 0x171E
 
 dlabel D_8028DC32
-    /* 8028DC32 */ .space 0x56
+    /* 8028DC32 */ .space 0x171E
 
-nonmatching D_8028DC88, 0x4
-
-dlabel D_8028DC88
-    /* 8028DC88 */ .space 0x04
-
-nonmatching D_8028DC8C, 0x4
-
-dlabel D_8028DC8C
-    /* 8028DC8C */ .space 0x04
-
-nonmatching D_8028DC90, 0x4
-
-dlabel D_8028DC90
-    /* 8028DC90 */ .space 0x04
-
-nonmatching D_8028DC94, 0x4
-
-dlabel D_8028DC94
-    /* 8028DC94 */ .space 0x04
-
-nonmatching D_8028DC98, 0x4
-
-dlabel D_8028DC98
-    /* 8028DC98 */ .space 0x04
-
-nonmatching D_8028DC9C, 0x4
-
-dlabel D_8028DC9C
-    /* 8028DC9C */ .space 0x04
-
-nonmatching D_8028DCA0, 0x4
-
-dlabel D_8028DCA0
-    /* 8028DCA0 */ .space 0x04
-
-nonmatching D_8028DCA4, 0x4
-
-dlabel D_8028DCA4
-    /* 8028DCA4 */ .space 0x04
-
-nonmatching D_8028DCA8, 0x4
-
-dlabel D_8028DCA8
-    /* 8028DCA8 */ .space 0x04
-
-nonmatching D_8028DCAC, 0x4
-
-dlabel D_8028DCAC
-    /* 8028DCAC */ .space 0x04
-
-nonmatching D_8028DCB0, 0x4
-
-dlabel D_8028DCB0
-    /* 8028DCB0 */ .space 0x04
-
-nonmatching D_8028DCB4, 0x4
-
-dlabel D_8028DCB4
-    /* 8028DCB4 */ .space 0x04
-
-nonmatching D_8028DCB8, 0x4
-
-dlabel D_8028DCB8
-    /* 8028DCB8 */ .space 0x04
-
-nonmatching D_8028DCBC, 0x4
-
-dlabel D_8028DCBC
-    /* 8028DCBC */ .space 0x04
-
-nonmatching D_8028DCC0, 0x4
-
-dlabel D_8028DCC0
-    /* 8028DCC0 */ .space 0x04
-
-nonmatching D_8028DCC4, 0x4
-
-dlabel D_8028DCC4
-    /* 8028DCC4 */ .space 0x04
-
-nonmatching D_8028DCC8, 0x8
-
-dlabel D_8028DCC8
-    /* 8028DCC8 */ .space 0x08
-
-nonmatching D_8028DCD0, 0x88
-
-dlabel D_8028DCD0
-    /* 8028DCD0 */ .space 0x88
-
-nonmatching D_8028DD58, 0x2
-
-dlabel D_8028DD58
-    /* 8028DD58 */ .space 0x02
-
-nonmatching D_8028DD5A, 0x14A2
-
-dlabel D_8028DD5A
-    /* 8028DD5A */ .space 0x14A2
-
-nonmatching D_8028F1FC, 0x154
-
-dlabel D_8028F1FC
-    /* 8028F1FC */ .space 0x154
-
-nonmatching D_8028F350, 0x4
+nonmatching D_8028F350, 0x80
 
 dlabel D_8028F350
-    /* 8028F350 */ .space 0x04
+    /* 8028F350 */ .space 0x80
 
-nonmatching D_8028F354, 0x6C
-
-dlabel D_8028F354
-    /* 8028F354 */ .space 0x6C
-
-nonmatching D_8028F3C0, 0x8
-
-dlabel D_8028F3C0
-    /* 8028F3C0 */ .space 0x08
-
-nonmatching D_8028F3C8, 0x8
-
-dlabel D_8028F3C8
-    /* 8028F3C8 */ .space 0x08
-
-nonmatching D_8028F3D0, 0xC
+nonmatching D_8028F3D0, 0x23
 
 dlabel D_8028F3D0
-    /* 8028F3D0 */ .space 0x0C
-
-nonmatching D_8028F3DC, 0x17
-
-dlabel D_8028F3DC
-    /* 8028F3DC */ .space 0x17
+    /* 8028F3D0 */ .space 0x23
 
 nonmatching D_8028F3F3, 0x1AD
 
@@ -3524,155 +2829,30 @@ nonmatching D_8028F618, 0xF0
 dlabel D_8028F618
     /* 8028F618 */ .space 0xF0
 
-nonmatching D_8028F708, 0xC
+nonmatching D_8028F708, 0xD4
 
 dlabel D_8028F708
-    /* 8028F708 */ .space 0x0C
+    /* 8028F708 */ .space 0xD4
 
-nonmatching D_8028F714, 0x4
-
-dlabel D_8028F714
-    /* 8028F714 */ .space 0x04
-
-nonmatching D_8028F718, 0x8
-
-dlabel D_8028F718
-    /* 8028F718 */ .space 0x08
-
-nonmatching D_8028F720, 0x4
-
-dlabel D_8028F720
-    /* 8028F720 */ .space 0x04
-
-nonmatching D_8028F724, 0x7
-
-dlabel D_8028F724
-    /* 8028F724 */ .space 0x07
-
-nonmatching D_8028F72B, 0x55
-
-dlabel D_8028F72B
-    /* 8028F72B */ .space 0x55
-
-nonmatching D_8028F780, 0x58
-
-dlabel D_8028F780
-    /* 8028F780 */ .space 0x58
-
-nonmatching D_8028F7D8, 0x4
-
-dlabel D_8028F7D8
-    /* 8028F7D8 */ .space 0x04
-
-nonmatching D_8028F7DC, 0x4
+nonmatching D_8028F7DC, 0x38
 
 dlabel D_8028F7DC
-    /* 8028F7DC */ .space 0x04
+    /* 8028F7DC */ .space 0x38
 
-nonmatching D_8028F7E0, 0x34
-
-dlabel D_8028F7E0
-    /* 8028F7E0 */ .space 0x34
-
-nonmatching D_8028F814, 0x14
+nonmatching D_8028F814, 0x18
 
 dlabel D_8028F814
-    /* 8028F814 */ .space 0x14
+    /* 8028F814 */ .space 0x18
 
-nonmatching D_8028F828, 0x4
-
-dlabel D_8028F828
-    /* 8028F828 */ .space 0x04
-
-nonmatching D_8028F82C, 0x4
+nonmatching D_8028F82C, 0x8
 
 dlabel D_8028F82C
-    /* 8028F82C */ .space 0x04
+    /* 8028F82C */ .space 0x08
 
-nonmatching D_8028F830, 0x4
-
-dlabel D_8028F830
-    /* 8028F830 */ .space 0x04
-
-nonmatching D_8028F834, 0x4C
+nonmatching D_8028F834, 0xAC
 
 dlabel D_8028F834
-    /* 8028F834 */ .space 0x4C
-
-nonmatching D_8028F880, 0x10
-
-dlabel D_8028F880
-    /* 8028F880 */ .space 0x10
-
-nonmatching D_8028F890, 0x4
-
-dlabel D_8028F890
-    /* 8028F890 */ .space 0x04
-
-nonmatching D_8028F894, 0x4
-
-dlabel D_8028F894
-    /* 8028F894 */ .space 0x04
-
-nonmatching D_8028F898, 0x4
-
-dlabel D_8028F898
-    /* 8028F898 */ .space 0x04
-
-nonmatching D_8028F89C, 0x4
-
-dlabel D_8028F89C
-    /* 8028F89C */ .space 0x04
-
-nonmatching D_8028F8A0, 0x10
-
-dlabel D_8028F8A0
-    /* 8028F8A0 */ .space 0x10
-
-nonmatching D_8028F8B0, 0x4
-
-dlabel D_8028F8B0
-    /* 8028F8B0 */ .space 0x04
-
-nonmatching D_8028F8B4, 0x4
-
-dlabel D_8028F8B4
-    /* 8028F8B4 */ .space 0x04
-
-nonmatching D_8028F8B8, 0x4
-
-dlabel D_8028F8B8
-    /* 8028F8B8 */ .space 0x04
-
-nonmatching D_8028F8BC, 0x4
-
-dlabel D_8028F8BC
-    /* 8028F8BC */ .space 0x04
-
-nonmatching D_8028F8C0, 0x4
-
-dlabel D_8028F8C0
-    /* 8028F8C0 */ .space 0x04
-
-nonmatching D_8028F8C4, 0x4
-
-dlabel D_8028F8C4
-    /* 8028F8C4 */ .space 0x04
-
-nonmatching D_8028F8C8, 0x4
-
-dlabel D_8028F8C8
-    /* 8028F8C8 */ .space 0x04
-
-nonmatching D_8028F8CC, 0x4
-
-dlabel D_8028F8CC
-    /* 8028F8CC */ .space 0x04
-
-nonmatching D_8028F8D0, 0x10
-
-dlabel D_8028F8D0
-    /* 8028F8D0 */ .space 0x10
+    /* 8028F834 */ .space 0xAC
 
 nonmatching D_8028F8E0, 0x28
 
@@ -3739,25 +2919,15 @@ nonmatching D_8028F968, 0x48
 dlabel D_8028F968
     /* 8028F968 */ .space 0x48
 
-nonmatching D_8028F9B0, 0x4
+nonmatching D_8028F9B0, 0x8
 
 dlabel D_8028F9B0
-    /* 8028F9B0 */ .space 0x04
+    /* 8028F9B0 */ .space 0x08
 
-nonmatching D_8028F9B4, 0x4
-
-dlabel D_8028F9B4
-    /* 8028F9B4 */ .space 0x04
-
-nonmatching D_8028F9B8, 0x10
+nonmatching D_8028F9B8, 0x14
 
 dlabel D_8028F9B8
-    /* 8028F9B8 */ .space 0x10
-
-nonmatching D_8028F9C8, 0x4
-
-dlabel D_8028F9C8
-    /* 8028F9C8 */ .space 0x04
+    /* 8028F9B8 */ .space 0x14
 
 nonmatching D_8028F9CC, 0x34
 
@@ -3789,55 +2959,20 @@ nonmatching D_8028FAB0, 0x4
 dlabel D_8028FAB0
     /* 8028FAB0 */ .space 0x04
 
-nonmatching D_8028FAB4, 0x4
+nonmatching D_8028FAB4, 0x14
 
 dlabel D_8028FAB4
-    /* 8028FAB4 */ .space 0x04
+    /* 8028FAB4 */ .space 0x14
 
-nonmatching D_8028FAB8, 0x8
-
-dlabel D_8028FAB8
-    /* 8028FAB8 */ .space 0x08
-
-nonmatching D_8028FAC0, 0x8
-
-dlabel D_8028FAC0
-    /* 8028FAC0 */ .space 0x08
-
-nonmatching D_8028FAC8, 0x4
+nonmatching D_8028FAC8, 0x8
 
 dlabel D_8028FAC8
-    /* 8028FAC8 */ .space 0x04
+    /* 8028FAC8 */ .space 0x08
 
-nonmatching D_8028FACC, 0x4
-
-dlabel D_8028FACC
-    /* 8028FACC */ .space 0x04
-
-nonmatching D_8028FAD0, 0x4
+nonmatching D_8028FAD0, 0x24
 
 dlabel D_8028FAD0
-    /* 8028FAD0 */ .space 0x04
-
-nonmatching D_8028FAD4, 0x4
-
-dlabel D_8028FAD4
-    /* 8028FAD4 */ .space 0x04
-
-nonmatching D_8028FAD8, 0xC
-
-dlabel D_8028FAD8
-    /* 8028FAD8 */ .space 0x0C
-
-nonmatching D_8028FAE4, 0x4
-
-dlabel D_8028FAE4
-    /* 8028FAE4 */ .space 0x04
-
-nonmatching D_8028FAE8, 0xC
-
-dlabel D_8028FAE8
-    /* 8028FAE8 */ .space 0x0C
+    /* 8028FAD0 */ .space 0x24
 
 nonmatching D_8028FAF4, 0x4
 
@@ -3859,15 +2994,10 @@ nonmatching D_8028FB00, 0x4
 dlabel D_8028FB00
     /* 8028FB00 */ .space 0x04
 
-nonmatching D_8028FB04, 0x4
+nonmatching D_8028FB04, 0x10
 
 dlabel D_8028FB04
-    /* 8028FB04 */ .space 0x04
-
-nonmatching D_8028FB08, 0xC
-
-dlabel D_8028FB08
-    /* 8028FB08 */ .space 0x0C
+    /* 8028FB04 */ .space 0x10
 
 nonmatching D_8028FB14, 0x4
 
@@ -3879,45 +3009,20 @@ nonmatching D_8028FB18, 0x4
 dlabel D_8028FB18
     /* 8028FB18 */ .space 0x04
 
-nonmatching D_8028FB1C, 0x4
+nonmatching D_8028FB1C, 0x8
 
 dlabel D_8028FB1C
-    /* 8028FB1C */ .space 0x04
-
-nonmatching D_8028FB20, 0x4
-
-dlabel D_8028FB20
-    /* 8028FB20 */ .space 0x04
+    /* 8028FB1C */ .space 0x08
 
 nonmatching D_8028FB24, 0x4
 
 dlabel D_8028FB24
     /* 8028FB24 */ .space 0x04
 
-nonmatching D_8028FB28, 0x4
+nonmatching D_8028FB28, 0x14
 
 dlabel D_8028FB28
-    /* 8028FB28 */ .space 0x04
-
-nonmatching D_8028FB2C, 0x4
-
-dlabel D_8028FB2C
-    /* 8028FB2C */ .space 0x04
-
-nonmatching D_8028FB30, 0x4
-
-dlabel D_8028FB30
-    /* 8028FB30 */ .space 0x04
-
-nonmatching D_8028FB34, 0x4
-
-dlabel D_8028FB34
-    /* 8028FB34 */ .space 0x04
-
-nonmatching D_8028FB38, 0x4
-
-dlabel D_8028FB38
-    /* 8028FB38 */ .space 0x04
+    /* 8028FB28 */ .space 0x14
 
 nonmatching D_8028FB3C, 0x4
 
@@ -3929,190 +3034,50 @@ nonmatching D_8028FB40, 0x4
 dlabel D_8028FB40
     /* 8028FB40 */ .space 0x04
 
-nonmatching D_8028FB44, 0x4
+nonmatching D_8028FB44, 0x28
 
 dlabel D_8028FB44
-    /* 8028FB44 */ .space 0x04
+    /* 8028FB44 */ .space 0x28
 
-nonmatching D_8028FB48, 0x4
-
-dlabel D_8028FB48
-    /* 8028FB48 */ .space 0x04
-
-nonmatching D_8028FB4C, 0x14
-
-dlabel D_8028FB4C
-    /* 8028FB4C */ .space 0x14
-
-nonmatching D_8028FB60, 0x4
-
-dlabel D_8028FB60
-    /* 8028FB60 */ .space 0x04
-
-nonmatching D_8028FB64, 0x4
-
-dlabel D_8028FB64
-    /* 8028FB64 */ .space 0x04
-
-nonmatching D_8028FB68, 0x4
-
-dlabel D_8028FB68
-    /* 8028FB68 */ .space 0x04
-
-nonmatching D_8028FB6C, 0x4
+nonmatching D_8028FB6C, 0x10
 
 dlabel D_8028FB6C
-    /* 8028FB6C */ .space 0x04
+    /* 8028FB6C */ .space 0x10
 
-nonmatching D_8028FB70, 0x4
-
-dlabel D_8028FB70
-    /* 8028FB70 */ .space 0x04
-
-nonmatching D_8028FB74, 0x4
-
-dlabel D_8028FB74
-    /* 8028FB74 */ .space 0x04
-
-nonmatching D_8028FB78, 0x4
-
-dlabel D_8028FB78
-    /* 8028FB78 */ .space 0x04
-
-nonmatching D_8028FB7C, 0x4
+nonmatching D_8028FB7C, 0x8
 
 dlabel D_8028FB7C
-    /* 8028FB7C */ .space 0x04
-
-nonmatching D_8028FB80, 0x4
-
-dlabel D_8028FB80
-    /* 8028FB80 */ .space 0x04
+    /* 8028FB7C */ .space 0x08
 
 nonmatching D_8028FB84, 0x4
 
 dlabel D_8028FB84
     /* 8028FB84 */ .space 0x04
 
-nonmatching D_8028FB88, 0x8
+nonmatching D_8028FB88, 0x10
 
 dlabel D_8028FB88
-    /* 8028FB88 */ .space 0x08
+    /* 8028FB88 */ .space 0x10
 
-nonmatching D_8028FB90, 0x4
-
-dlabel D_8028FB90
-    /* 8028FB90 */ .space 0x04
-
-nonmatching D_8028FB94, 0x4
-
-dlabel D_8028FB94
-    /* 8028FB94 */ .space 0x04
-
-nonmatching D_8028FB98, 0x8
+nonmatching D_8028FB98, 0x34
 
 dlabel D_8028FB98
-    /* 8028FB98 */ .space 0x08
+    /* 8028FB98 */ .space 0x34
 
-nonmatching D_8028FBA0, 0x10
-
-dlabel D_8028FBA0
-    /* 8028FBA0 */ .space 0x10
-
-nonmatching D_8028FBB0, 0x4
-
-dlabel D_8028FBB0
-    /* 8028FBB0 */ .space 0x04
-
-nonmatching D_8028FBB4, 0x4
-
-dlabel D_8028FBB4
-    /* 8028FBB4 */ .space 0x04
-
-nonmatching D_8028FBB8, 0x4
-
-dlabel D_8028FBB8
-    /* 8028FBB8 */ .space 0x04
-
-nonmatching D_8028FBBC, 0x4
-
-dlabel D_8028FBBC
-    /* 8028FBBC */ .space 0x04
-
-nonmatching D_8028FBC0, 0x4
-
-dlabel D_8028FBC0
-    /* 8028FBC0 */ .space 0x04
-
-nonmatching D_8028FBC4, 0x8
-
-dlabel D_8028FBC4
-    /* 8028FBC4 */ .space 0x08
-
-nonmatching D_8028FBCC, 0x4
+nonmatching D_8028FBCC, 0xC
 
 dlabel D_8028FBCC
-    /* 8028FBCC */ .space 0x04
+    /* 8028FBCC */ .space 0x0C
 
-nonmatching D_8028FBD0, 0x8
-
-dlabel D_8028FBD0
-    /* 8028FBD0 */ .space 0x08
-
-nonmatching D_8028FBD8, 0x2
+nonmatching D_8028FBD8, 0x12
 
 dlabel D_8028FBD8
-    /* 8028FBD8 */ .space 0x02
+    /* 8028FBD8 */ .space 0x12
 
-nonmatching D_8028FBDA, 0x2
-
-dlabel D_8028FBDA
-    /* 8028FBDA */ .space 0x02
-
-nonmatching D_8028FBDC, 0x4
-
-dlabel D_8028FBDC
-    /* 8028FBDC */ .space 0x04
-
-nonmatching D_8028FBE0, 0x4
-
-dlabel D_8028FBE0
-    /* 8028FBE0 */ .space 0x04
-
-nonmatching D_8028FBE4, 0x4
-
-dlabel D_8028FBE4
-    /* 8028FBE4 */ .space 0x04
-
-nonmatching D_8028FBE8, 0x2
-
-dlabel D_8028FBE8
-    /* 8028FBE8 */ .space 0x02
-
-nonmatching D_8028FBEA, 0x2
+nonmatching D_8028FBEA, 0xA
 
 dlabel D_8028FBEA
-    /* 8028FBEA */ .space 0x02
-
-nonmatching D_8028FBEC, 0x1
-
-dlabel D_8028FBEC
-    /* 8028FBEC */ .space 0x01
-
-nonmatching D_8028FBED, 0x1
-
-dlabel D_8028FBED
-    /* 8028FBED */ .space 0x01
-
-nonmatching D_8028FBEE, 0x2
-
-dlabel D_8028FBEE
-    /* 8028FBEE */ .space 0x02
-
-nonmatching D_8028FBF0, 0x4
-
-dlabel D_8028FBF0
-    /* 8028FBF0 */ .space 0x04
+    /* 8028FBEA */ .space 0x0A
 
 nonmatching D_8028FBF4, 0x2
 
@@ -4124,290 +3089,25 @@ nonmatching D_8028FBF6, 0x2
 dlabel D_8028FBF6
     /* 8028FBF6 */ .space 0x02
 
-nonmatching D_8028FBF8, 0x2
+nonmatching D_8028FBF8, 0x3
 
 dlabel D_8028FBF8
-    /* 8028FBF8 */ .space 0x02
+    /* 8028FBF8 */ .space 0x03
 
-nonmatching D_8028FBFA, 0x1
-
-dlabel D_8028FBFA
-    /* 8028FBFA */ .space 0x01
-
-nonmatching D_8028FBFB, 0x1
+nonmatching D_8028FBFB, 0xD
 
 dlabel D_8028FBFB
-    /* 8028FBFB */ .space 0x01
+    /* 8028FBFB */ .space 0x0D
 
-nonmatching D_8028FBFC, 0x2
-
-dlabel D_8028FBFC
-    /* 8028FBFC */ .space 0x02
-
-nonmatching D_8028FBFE, 0x2
-
-dlabel D_8028FBFE
-    /* 8028FBFE */ .space 0x02
-
-nonmatching D_8028FC00, 0x4
-
-dlabel D_8028FC00
-    /* 8028FC00 */ .space 0x04
-
-nonmatching D_8028FC04, 0x4
-
-dlabel D_8028FC04
-    /* 8028FC04 */ .space 0x04
-
-nonmatching D_8028FC08, 0x34
+nonmatching D_8028FC08, 0x3BC
 
 dlabel D_8028FC08
-    /* 8028FC08 */ .space 0x34
+    /* 8028FC08 */ .space 0x3BC
 
-nonmatching D_8028FC3C, 0x4
-
-dlabel D_8028FC3C
-    /* 8028FC3C */ .space 0x04
-
-nonmatching D_8028FC40, 0x4
-
-dlabel D_8028FC40
-    /* 8028FC40 */ .space 0x04
-
-nonmatching D_8028FC44, 0xA8
-
-dlabel D_8028FC44
-    /* 8028FC44 */ .space 0xA8
-
-nonmatching D_8028FCEC, 0x28
-
-dlabel D_8028FCEC
-    /* 8028FCEC */ .space 0x28
-
-nonmatching D_8028FD14, 0x8
-
-dlabel D_8028FD14
-    /* 8028FD14 */ .space 0x08
-
-nonmatching D_8028FD1C, 0x4
-
-dlabel D_8028FD1C
-    /* 8028FD1C */ .space 0x04
-
-nonmatching D_8028FD20, 0x4
-
-dlabel D_8028FD20
-    /* 8028FD20 */ .space 0x04
-
-nonmatching D_8028FD24, 0x4
-
-dlabel D_8028FD24
-    /* 8028FD24 */ .space 0x04
-
-nonmatching D_8028FD28, 0x4
-
-dlabel D_8028FD28
-    /* 8028FD28 */ .space 0x04
-
-nonmatching D_8028FD2C, 0x3C
-
-dlabel D_8028FD2C
-    /* 8028FD2C */ .space 0x3C
-
-nonmatching D_8028FD68, 0x5C
-
-dlabel D_8028FD68
-    /* 8028FD68 */ .space 0x5C
-
-nonmatching D_8028FDC4, 0xC
-
-dlabel D_8028FDC4
-    /* 8028FDC4 */ .space 0x0C
-
-nonmatching D_8028FDD0, 0x20
-
-dlabel D_8028FDD0
-    /* 8028FDD0 */ .space 0x20
-
-nonmatching D_8028FDF0, 0x8
-
-dlabel D_8028FDF0
-    /* 8028FDF0 */ .space 0x08
-
-nonmatching D_8028FDF8, 0xC
-
-dlabel D_8028FDF8
-    /* 8028FDF8 */ .space 0x0C
-
-nonmatching D_8028FE04, 0x4
-
-dlabel D_8028FE04
-    /* 8028FE04 */ .space 0x04
-
-nonmatching D_8028FE08, 0x4
-
-dlabel D_8028FE08
-    /* 8028FE08 */ .space 0x04
-
-nonmatching D_8028FE0C, 0x40
-
-dlabel D_8028FE0C
-    /* 8028FE0C */ .space 0x40
-
-nonmatching D_8028FE4C, 0x20
-
-dlabel D_8028FE4C
-    /* 8028FE4C */ .space 0x20
-
-nonmatching D_8028FE6C, 0x20
-
-dlabel D_8028FE6C
-    /* 8028FE6C */ .space 0x20
-
-nonmatching D_8028FE8C, 0x4
-
-dlabel D_8028FE8C
-    /* 8028FE8C */ .space 0x04
-
-nonmatching D_8028FE90, 0x4
-
-dlabel D_8028FE90
-    /* 8028FE90 */ .space 0x04
-
-nonmatching D_8028FE94, 0x4
-
-dlabel D_8028FE94
-    /* 8028FE94 */ .space 0x04
-
-nonmatching D_8028FE98, 0x1C
-
-dlabel D_8028FE98
-    /* 8028FE98 */ .space 0x1C
-
-nonmatching D_8028FEB4, 0x20
-
-dlabel D_8028FEB4
-    /* 8028FEB4 */ .space 0x20
-
-nonmatching D_8028FED4, 0x8
-
-dlabel D_8028FED4
-    /* 8028FED4 */ .space 0x08
-
-nonmatching D_8028FEDC, 0x10
-
-dlabel D_8028FEDC
-    /* 8028FEDC */ .space 0x10
-
-nonmatching D_8028FEEC, 0x4
-
-dlabel D_8028FEEC
-    /* 8028FEEC */ .space 0x04
-
-nonmatching D_8028FEF0, 0x40
-
-dlabel D_8028FEF0
-    /* 8028FEF0 */ .space 0x40
-
-nonmatching D_8028FF30, 0x20
-
-dlabel D_8028FF30
-    /* 8028FF30 */ .space 0x20
-
-nonmatching D_8028FF50, 0x20
-
-dlabel D_8028FF50
-    /* 8028FF50 */ .space 0x20
-
-nonmatching D_8028FF70, 0x4
-
-dlabel D_8028FF70
-    /* 8028FF70 */ .space 0x04
-
-nonmatching D_8028FF74, 0x4
-
-dlabel D_8028FF74
-    /* 8028FF74 */ .space 0x04
-
-nonmatching D_8028FF78, 0x4
-
-dlabel D_8028FF78
-    /* 8028FF78 */ .space 0x04
-
-nonmatching D_8028FF7C, 0x1C
-
-dlabel D_8028FF7C
-    /* 8028FF7C */ .space 0x1C
-
-nonmatching D_8028FF98, 0x20
-
-dlabel D_8028FF98
-    /* 8028FF98 */ .space 0x20
-
-nonmatching D_8028FFB8, 0x8
-
-dlabel D_8028FFB8
-    /* 8028FFB8 */ .space 0x08
-
-nonmatching D_8028FFC0, 0x4
-
-dlabel D_8028FFC0
-    /* 8028FFC0 */ .space 0x04
-
-nonmatching D_8028FFC4, 0x8
+nonmatching D_8028FFC4, 0xBC
 
 dlabel D_8028FFC4
-    /* 8028FFC4 */ .space 0x08
-
-nonmatching D_8028FFCC, 0x4
-
-dlabel D_8028FFCC
-    /* 8028FFCC */ .space 0x04
-
-nonmatching D_8028FFD0, 0x4
-
-dlabel D_8028FFD0
-    /* 8028FFD0 */ .space 0x04
-
-nonmatching D_8028FFD4, 0x40
-
-dlabel D_8028FFD4
-    /* 8028FFD4 */ .space 0x40
-
-nonmatching D_80290014, 0x20
-
-dlabel D_80290014
-    /* 80290014 */ .space 0x20
-
-nonmatching D_80290034, 0x20
-
-dlabel D_80290034
-    /* 80290034 */ .space 0x20
-
-nonmatching D_80290054, 0x4
-
-dlabel D_80290054
-    /* 80290054 */ .space 0x04
-
-nonmatching D_80290058, 0x4
-
-dlabel D_80290058
-    /* 80290058 */ .space 0x04
-
-nonmatching D_8029005C, 0x4
-
-dlabel D_8029005C
-    /* 8029005C */ .space 0x04
-
-nonmatching D_80290060, 0x1C
-
-dlabel D_80290060
-    /* 80290060 */ .space 0x1C
-
-nonmatching D_8029007C, 0x4
-
-dlabel D_8029007C
-    /* 8029007C */ .space 0x04
+    /* 8028FFC4 */ .space 0xBC
 
 nonmatching D_80290080, 0x4
 
@@ -4419,260 +3119,70 @@ nonmatching D_80290084, 0x4
 dlabel D_80290084
     /* 80290084 */ .space 0x04
 
-nonmatching D_80290088, 0x4
+nonmatching D_80290088, 0x20
 
 dlabel D_80290088
-    /* 80290088 */ .space 0x04
+    /* 80290088 */ .space 0x20
 
-nonmatching D_8029008C, 0x4
-
-dlabel D_8029008C
-    /* 8029008C */ .space 0x04
-
-nonmatching D_80290090, 0x4
-
-dlabel D_80290090
-    /* 80290090 */ .space 0x04
-
-nonmatching D_80290094, 0x4
-
-dlabel D_80290094
-    /* 80290094 */ .space 0x04
-
-nonmatching D_80290098, 0x4
-
-dlabel D_80290098
-    /* 80290098 */ .space 0x04
-
-nonmatching D_8029009C, 0x4
-
-dlabel D_8029009C
-    /* 8029009C */ .space 0x04
-
-nonmatching D_802900A0, 0x4
-
-dlabel D_802900A0
-    /* 802900A0 */ .space 0x04
-
-nonmatching D_802900A4, 0x4
-
-dlabel D_802900A4
-    /* 802900A4 */ .space 0x04
-
-nonmatching D_802900A8, 0x4
+nonmatching D_802900A8, 0x14
 
 dlabel D_802900A8
-    /* 802900A8 */ .space 0x04
+    /* 802900A8 */ .space 0x14
 
-nonmatching D_802900AC, 0x10
-
-dlabel D_802900AC
-    /* 802900AC */ .space 0x10
-
-nonmatching D_802900BC, 0x4
+nonmatching D_802900BC, 0xC
 
 dlabel D_802900BC
-    /* 802900BC */ .space 0x04
+    /* 802900BC */ .space 0x0C
 
-nonmatching D_802900C0, 0x4
-
-dlabel D_802900C0
-    /* 802900C0 */ .space 0x04
-
-nonmatching D_802900C4, 0x4
-
-dlabel D_802900C4
-    /* 802900C4 */ .space 0x04
-
-nonmatching D_802900C8, 0x4
+nonmatching D_802900C8, 0x12
 
 dlabel D_802900C8
-    /* 802900C8 */ .space 0x04
+    /* 802900C8 */ .space 0x12
 
-nonmatching D_802900CC, 0x4
-
-dlabel D_802900CC
-    /* 802900CC */ .space 0x04
-
-nonmatching D_802900D0, 0x4
-
-dlabel D_802900D0
-    /* 802900D0 */ .space 0x04
-
-nonmatching D_802900D4, 0x4
-
-dlabel D_802900D4
-    /* 802900D4 */ .space 0x04
-
-nonmatching D_802900D8, 0x2
-
-dlabel D_802900D8
-    /* 802900D8 */ .space 0x02
-
-nonmatching D_802900DA, 0x2
+nonmatching D_802900DA, 0x6
 
 dlabel D_802900DA
-    /* 802900DA */ .space 0x02
-
-nonmatching D_802900DC, 0x4
-
-dlabel D_802900DC
-    /* 802900DC */ .space 0x04
+    /* 802900DA */ .space 0x06
 
 nonmatching D_802900E0, 0x4
 
 dlabel D_802900E0
     /* 802900E0 */ .space 0x04
 
-nonmatching D_802900E4, 0x4
+nonmatching D_802900E4, 0x24
 
 dlabel D_802900E4
-    /* 802900E4 */ .space 0x04
+    /* 802900E4 */ .space 0x24
 
-nonmatching D_802900E8, 0x4
-
-dlabel D_802900E8
-    /* 802900E8 */ .space 0x04
-
-nonmatching D_802900EC, 0x4
-
-dlabel D_802900EC
-    /* 802900EC */ .space 0x04
-
-nonmatching D_802900F0, 0x4
-
-dlabel D_802900F0
-    /* 802900F0 */ .space 0x04
-
-nonmatching D_802900F4, 0x4
-
-dlabel D_802900F4
-    /* 802900F4 */ .space 0x04
-
-nonmatching D_802900F8, 0x4
-
-dlabel D_802900F8
-    /* 802900F8 */ .space 0x04
-
-nonmatching D_802900FC, 0x8
-
-dlabel D_802900FC
-    /* 802900FC */ .space 0x08
-
-nonmatching D_80290104, 0x4
-
-dlabel D_80290104
-    /* 80290104 */ .space 0x04
-
-nonmatching D_80290108, 0x2
+nonmatching D_80290108, 0x14
 
 dlabel D_80290108
-    /* 80290108 */ .space 0x02
-
-nonmatching D_8029010A, 0xE
-
-dlabel D_8029010A
-    /* 8029010A */ .space 0x0E
-
-nonmatching D_80290118, 0x4
-
-dlabel D_80290118
-    /* 80290118 */ .space 0x04
+    /* 80290108 */ .space 0x14
 
 nonmatching D_8029011C, 0x2
 
 dlabel D_8029011C
     /* 8029011C */ .space 0x02
 
-nonmatching D_8029011E, 0x2
+nonmatching D_8029011E, 0x2A
 
 dlabel D_8029011E
-    /* 8029011E */ .space 0x02
+    /* 8029011E */ .space 0x2A
 
-nonmatching D_80290120, 0x4
-
-dlabel D_80290120
-    /* 80290120 */ .space 0x04
-
-nonmatching D_80290124, 0x4
-
-dlabel D_80290124
-    /* 80290124 */ .space 0x04
-
-nonmatching D_80290128, 0x4
-
-dlabel D_80290128
-    /* 80290128 */ .space 0x04
-
-nonmatching D_8029012C, 0x2
-
-dlabel D_8029012C
-    /* 8029012C */ .space 0x02
-
-nonmatching D_8029012E, 0x2
-
-dlabel D_8029012E
-    /* 8029012E */ .space 0x02
-
-nonmatching D_80290130, 0x4
-
-dlabel D_80290130
-    /* 80290130 */ .space 0x04
-
-nonmatching D_80290134, 0x4
-
-dlabel D_80290134
-    /* 80290134 */ .space 0x04
-
-nonmatching D_80290138, 0x4
-
-dlabel D_80290138
-    /* 80290138 */ .space 0x04
-
-nonmatching D_8029013C, 0x4
-
-dlabel D_8029013C
-    /* 8029013C */ .space 0x04
-
-nonmatching D_80290140, 0x4
-
-dlabel D_80290140
-    /* 80290140 */ .space 0x04
-
-nonmatching D_80290144, 0x4
-
-dlabel D_80290144
-    /* 80290144 */ .space 0x04
-
-nonmatching D_80290148, 0x2
+nonmatching D_80290148, 0x4
 
 dlabel D_80290148
-    /* 80290148 */ .space 0x02
-
-nonmatching D_8029014A, 0x2
-
-dlabel D_8029014A
-    /* 8029014A */ .space 0x02
+    /* 80290148 */ .space 0x04
 
 nonmatching D_8029014C, 0x4
 
 dlabel D_8029014C
     /* 8029014C */ .space 0x04
 
-nonmatching D_80290150, 0x18
+nonmatching D_80290150, 0x38
 
 dlabel D_80290150
-    /* 80290150 */ .space 0x18
-
-nonmatching D_80290168, 0x4
-
-dlabel D_80290168
-    /* 80290168 */ .space 0x04
-
-nonmatching D_8029016C, 0x1C
-
-dlabel D_8029016C
-    /* 8029016C */ .space 0x1C
+    /* 80290150 */ .space 0x38
 
 nonmatching D_80290188, 0x4
 
@@ -4699,80 +3209,15 @@ nonmatching D_80290194, 0x4
 dlabel D_80290194
     /* 80290194 */ .space 0x04
 
-nonmatching D_80290198, 0x4
+nonmatching D_80290198, 0x34
 
 dlabel D_80290198
-    /* 80290198 */ .space 0x04
+    /* 80290198 */ .space 0x34
 
-nonmatching D_8029019C, 0x4
-
-dlabel D_8029019C
-    /* 8029019C */ .space 0x04
-
-nonmatching D_802901A0, 0x4
-
-dlabel D_802901A0
-    /* 802901A0 */ .space 0x04
-
-nonmatching D_802901A4, 0x4
-
-dlabel D_802901A4
-    /* 802901A4 */ .space 0x04
-
-nonmatching D_802901A8, 0x4
-
-dlabel D_802901A8
-    /* 802901A8 */ .space 0x04
-
-nonmatching D_802901AC, 0x4
-
-dlabel D_802901AC
-    /* 802901AC */ .space 0x04
-
-nonmatching D_802901B0, 0x4
-
-dlabel D_802901B0
-    /* 802901B0 */ .space 0x04
-
-nonmatching D_802901B4, 0x4
-
-dlabel D_802901B4
-    /* 802901B4 */ .space 0x04
-
-nonmatching D_802901B8, 0x4
-
-dlabel D_802901B8
-    /* 802901B8 */ .space 0x04
-
-nonmatching D_802901BC, 0x4
-
-dlabel D_802901BC
-    /* 802901BC */ .space 0x04
-
-nonmatching D_802901C0, 0x4
-
-dlabel D_802901C0
-    /* 802901C0 */ .space 0x04
-
-nonmatching D_802901C4, 0x8
-
-dlabel D_802901C4
-    /* 802901C4 */ .space 0x08
-
-nonmatching D_802901CC, 0x4
+nonmatching D_802901CC, 0x10
 
 dlabel D_802901CC
-    /* 802901CC */ .space 0x04
-
-nonmatching D_802901D0, 0x4
-
-dlabel D_802901D0
-    /* 802901D0 */ .space 0x04
-
-nonmatching D_802901D4, 0x8
-
-dlabel D_802901D4
-    /* 802901D4 */ .space 0x08
+    /* 802901CC */ .space 0x10
 
 nonmatching D_802901DC, 0x4
 
@@ -4784,95 +3229,15 @@ nonmatching D_802901E0, 0x4
 dlabel D_802901E0
     /* 802901E0 */ .space 0x04
 
-nonmatching D_802901E4, 0x4
+nonmatching D_802901E4, 0xF4
 
 dlabel D_802901E4
-    /* 802901E4 */ .space 0x04
+    /* 802901E4 */ .space 0xF4
 
-nonmatching D_802901E8, 0x8
-
-dlabel D_802901E8
-    /* 802901E8 */ .space 0x08
-
-nonmatching D_802901F0, 0x4
-
-dlabel D_802901F0
-    /* 802901F0 */ .space 0x04
-
-nonmatching D_802901F4, 0x4
-
-dlabel D_802901F4
-    /* 802901F4 */ .space 0x04
-
-nonmatching D_802901F8, 0x4
-
-dlabel D_802901F8
-    /* 802901F8 */ .space 0x04
-
-nonmatching D_802901FC, 0x4
-
-dlabel D_802901FC
-    /* 802901FC */ .space 0x04
-
-nonmatching D_80290200, 0x4
-
-dlabel D_80290200
-    /* 80290200 */ .space 0x04
-
-nonmatching D_80290204, 0x4
-
-dlabel D_80290204
-    /* 80290204 */ .space 0x04
-
-nonmatching D_80290208, 0x4
-
-dlabel D_80290208
-    /* 80290208 */ .space 0x04
-
-nonmatching D_8029020C, 0x4
-
-dlabel D_8029020C
-    /* 8029020C */ .space 0x04
-
-nonmatching D_80290210, 0x60
-
-dlabel D_80290210
-    /* 80290210 */ .space 0x60
-
-nonmatching D_80290270, 0x60
-
-dlabel D_80290270
-    /* 80290270 */ .space 0x60
-
-nonmatching D_802902D0, 0x4
-
-dlabel D_802902D0
-    /* 802902D0 */ .space 0x04
-
-nonmatching D_802902D4, 0x4
-
-dlabel D_802902D4
-    /* 802902D4 */ .space 0x04
-
-nonmatching D_802902D8, 0x20
+nonmatching D_802902D8, 0x26
 
 dlabel D_802902D8
-    /* 802902D8 */ .space 0x20
-
-nonmatching D_802902F8, 0x2
-
-dlabel D_802902F8
-    /* 802902F8 */ .space 0x02
-
-nonmatching D_802902FA, 0x2
-
-dlabel D_802902FA
-    /* 802902FA */ .space 0x02
-
-nonmatching D_802902FC, 0x2
-
-dlabel D_802902FC
-    /* 802902FC */ .space 0x02
+    /* 802902D8 */ .space 0x26
 
 nonmatching D_802902FE, 0x2
 
@@ -4884,15 +3249,10 @@ nonmatching D_80290300, 0x4
 dlabel D_80290300
     /* 80290300 */ .space 0x04
 
-nonmatching D_80290304, 0x4
+nonmatching D_80290304, 0x8
 
 dlabel D_80290304
-    /* 80290304 */ .space 0x04
-
-nonmatching D_80290308, 0x4
-
-dlabel D_80290308
-    /* 80290308 */ .space 0x04
+    /* 80290304 */ .space 0x08
 
 nonmatching D_8029030C, 0x4
 
@@ -4904,25 +3264,10 @@ nonmatching D_80290310, 0x4
 dlabel D_80290310
     /* 80290310 */ .space 0x04
 
-nonmatching D_80290314, 0x4
+nonmatching D_80290314, 0x1C
 
 dlabel D_80290314
-    /* 80290314 */ .space 0x04
-
-nonmatching D_80290318, 0x4
-
-dlabel D_80290318
-    /* 80290318 */ .space 0x04
-
-nonmatching D_8029031C, 0x4
-
-dlabel D_8029031C
-    /* 8029031C */ .space 0x04
-
-nonmatching D_80290320, 0x10
-
-dlabel D_80290320
-    /* 80290320 */ .space 0x10
+    /* 80290314 */ .space 0x1C
 
 nonmatching D_80290330, 0x4
 
@@ -4934,60 +3279,25 @@ nonmatching D_80290334, 0x4
 dlabel D_80290334
     /* 80290334 */ .space 0x04
 
-nonmatching D_80290338, 0x8
+nonmatching D_80290338, 0x10
 
 dlabel D_80290338
-    /* 80290338 */ .space 0x08
+    /* 80290338 */ .space 0x10
 
-nonmatching D_80290340, 0x8
-
-dlabel D_80290340
-    /* 80290340 */ .space 0x08
-
-nonmatching D_80290348, 0x4
+nonmatching D_80290348, 0xC
 
 dlabel D_80290348
-    /* 80290348 */ .space 0x04
+    /* 80290348 */ .space 0x0C
 
-nonmatching D_8029034C, 0x4
-
-dlabel D_8029034C
-    /* 8029034C */ .space 0x04
-
-nonmatching D_80290350, 0x4
-
-dlabel D_80290350
-    /* 80290350 */ .space 0x04
-
-nonmatching D_80290354, 0x4
+nonmatching D_80290354, 0xC
 
 dlabel D_80290354
-    /* 80290354 */ .space 0x04
+    /* 80290354 */ .space 0x0C
 
-nonmatching D_80290358, 0x4
-
-dlabel D_80290358
-    /* 80290358 */ .space 0x04
-
-nonmatching D_8029035C, 0x4
-
-dlabel D_8029035C
-    /* 8029035C */ .space 0x04
-
-nonmatching D_80290360, 0x4
+nonmatching D_80290360, 0x14
 
 dlabel D_80290360
-    /* 80290360 */ .space 0x04
-
-nonmatching D_80290364, 0xC
-
-dlabel D_80290364
-    /* 80290364 */ .space 0x0C
-
-nonmatching D_80290370, 0x4
-
-dlabel D_80290370
-    /* 80290370 */ .space 0x04
+    /* 80290360 */ .space 0x14
 
 nonmatching D_80290374, 0x20
 
@@ -5004,20 +3314,10 @@ nonmatching D_80290398, 0x4
 dlabel D_80290398
     /* 80290398 */ .space 0x04
 
-nonmatching D_8029039C, 0x4
+nonmatching D_8029039C, 0xC
 
 dlabel D_8029039C
-    /* 8029039C */ .space 0x04
-
-nonmatching D_802903A0, 0x4
-
-dlabel D_802903A0
-    /* 802903A0 */ .space 0x04
-
-nonmatching D_802903A4, 0x4
-
-dlabel D_802903A4
-    /* 802903A4 */ .space 0x04
+    /* 8029039C */ .space 0x0C
 
 nonmatching D_802903A8, 0x4
 
@@ -5039,165 +3339,40 @@ nonmatching D_802903B4, 0xC
 dlabel D_802903B4
     /* 802903B4 */ .space 0x0C
 
-nonmatching D_802903C0, 0x4
+nonmatching D_802903C0, 0x50
 
 dlabel D_802903C0
-    /* 802903C0 */ .space 0x04
-
-nonmatching D_802903C4, 0x48
-
-dlabel D_802903C4
-    /* 802903C4 */ .space 0x48
-
-nonmatching D_8029040C, 0x4
-
-dlabel D_8029040C
-    /* 8029040C */ .space 0x04
+    /* 802903C0 */ .space 0x50
 
 nonmatching D_80290410, 0x8
 
 dlabel D_80290410
     /* 80290410 */ .space 0x08
 
-nonmatching D_80290418, 0x8
+nonmatching D_80290418, 0xBC
 
 dlabel D_80290418
-    /* 80290418 */ .space 0x08
+    /* 80290418 */ .space 0xBC
 
-nonmatching D_80290420, 0x4
-
-dlabel D_80290420
-    /* 80290420 */ .space 0x04
-
-nonmatching D_80290424, 0x4
-
-dlabel D_80290424
-    /* 80290424 */ .space 0x04
-
-nonmatching D_80290428, 0x8
-
-dlabel D_80290428
-    /* 80290428 */ .space 0x08
-
-nonmatching D_80290430, 0x4
-
-dlabel D_80290430
-    /* 80290430 */ .space 0x04
-
-nonmatching D_80290434, 0x4
-
-dlabel D_80290434
-    /* 80290434 */ .space 0x04
-
-nonmatching D_80290438, 0x4
-
-dlabel D_80290438
-    /* 80290438 */ .space 0x04
-
-nonmatching D_8029043C, 0x94
-
-dlabel D_8029043C
-    /* 8029043C */ .space 0x94
-
-nonmatching D_802904D0, 0x4
-
-dlabel D_802904D0
-    /* 802904D0 */ .space 0x04
-
-nonmatching D_802904D4, 0x4
+nonmatching D_802904D4, 0x675C
 
 dlabel D_802904D4
-    /* 802904D4 */ .space 0x04
+    /* 802904D4 */ .space 0x675C
 
-nonmatching D_802904D8, 0x2738
-
-dlabel D_802904D8
-    /* 802904D8 */ .space 0x2738
-
-nonmatching D_80292C10, 0x8
-
-dlabel D_80292C10
-    /* 80292C10 */ .space 0x08
-
-nonmatching D_80292C18, 0x2018
-
-dlabel D_80292C18
-    /* 80292C18 */ .space 0x2018
-
-nonmatching D_80294C30, 0x2000
-
-dlabel D_80294C30
-    /* 80294C30 */ .space 0x2000
-
-nonmatching D_80296C30, 0x30
+nonmatching D_80296C30, 0xCB8
 
 dlabel D_80296C30
-    /* 80296C30 */ .space 0x30
-
-nonmatching D_80296C60, 0x4
-
-dlabel D_80296C60
-    /* 80296C60 */ .space 0x04
-
-nonmatching D_80296C64, 0x50
-
-dlabel D_80296C64
-    /* 80296C64 */ .space 0x50
-
-nonmatching D_80296CB4, 0x28
-
-dlabel D_80296CB4
-    /* 80296CB4 */ .space 0x28
-
-nonmatching D_80296CDC, 0x5C4
-
-dlabel D_80296CDC
-    /* 80296CDC */ .space 0x5C4
-
-nonmatching D_802972A0, 0x4
-
-dlabel D_802972A0
-    /* 802972A0 */ .space 0x04
-
-nonmatching D_802972A4, 0x28
-
-dlabel D_802972A4
-    /* 802972A4 */ .space 0x28
-
-nonmatching D_802972CC, 0x50
-
-dlabel D_802972CC
-    /* 802972CC */ .space 0x50
-
-nonmatching D_8029731C, 0x4
-
-dlabel D_8029731C
-    /* 8029731C */ .space 0x04
-
-nonmatching D_80297320, 0x1F
-
-dlabel D_80297320
-    /* 80297320 */ .space 0x1F
-
-nonmatching D_8029733F, 0x5A9
-
-dlabel D_8029733F
-    /* 8029733F */ .space 0x5A9
+    /* 80296C30 */ .space 0xCB8
 
 nonmatching D_802978E8, 0x4
 
 dlabel D_802978E8
     /* 802978E8 */ .space 0x04
 
-nonmatching D_802978EC, 0x4
+nonmatching D_802978EC, 0x8
 
 dlabel D_802978EC
-    /* 802978EC */ .space 0x04
-
-nonmatching D_802978F0, 0x4
-
-dlabel D_802978F0
-    /* 802978F0 */ .space 0x04
+    /* 802978EC */ .space 0x08
 
 nonmatching D_802978F4, 0x4
 
@@ -5279,95 +3454,20 @@ nonmatching D_8029793C, 0x4
 dlabel D_8029793C
     /* 8029793C */ .space 0x04
 
-nonmatching D_80297940, 0x58
+nonmatching D_80297940, 0x2AC
 
 dlabel D_80297940
-    /* 80297940 */ .space 0x58
-
-nonmatching D_80297998, 0x64
-
-dlabel D_80297998
-    /* 80297998 */ .space 0x64
-
-nonmatching D_802979FC, 0x80
-
-dlabel D_802979FC
-    /* 802979FC */ .space 0x80
-
-nonmatching D_80297A7C, 0xE4
-
-dlabel D_80297A7C
-    /* 80297A7C */ .space 0xE4
-
-nonmatching D_80297B60, 0x8C
-
-dlabel D_80297B60
-    /* 80297B60 */ .space 0x8C
+    /* 80297940 */ .space 0x2AC
 
 nonmatching D_80297BEC, 0x4
 
 dlabel D_80297BEC
     /* 80297BEC */ .space 0x04
 
-nonmatching D_80297BF0, 0x10
+nonmatching D_80297BF0, 0x437
 
 dlabel D_80297BF0
-    /* 80297BF0 */ .space 0x10
-
-nonmatching D_80297C00, 0x4
-
-dlabel D_80297C00
-    /* 80297C00 */ .space 0x04
-
-nonmatching D_80297C04, 0x4
-
-dlabel D_80297C04
-    /* 80297C04 */ .space 0x04
-
-nonmatching D_80297C08, 0x4
-
-dlabel D_80297C08
-    /* 80297C08 */ .space 0x04
-
-nonmatching D_80297C0C, 0x4
-
-dlabel D_80297C0C
-    /* 80297C0C */ .space 0x04
-
-nonmatching D_80297C10, 0x2
-
-dlabel D_80297C10
-    /* 80297C10 */ .space 0x02
-
-nonmatching D_80297C12, 0x6
-
-dlabel D_80297C12
-    /* 80297C12 */ .space 0x06
-
-nonmatching D_80297C18, 0x8
-
-dlabel D_80297C18
-    /* 80297C18 */ .space 0x08
-
-nonmatching D_80297C20, 0x2
-
-dlabel D_80297C20
-    /* 80297C20 */ .space 0x02
-
-nonmatching D_80297C22, 0xE
-
-dlabel D_80297C22
-    /* 80297C22 */ .space 0x0E
-
-nonmatching D_80297C30, 0x8
-
-dlabel D_80297C30
-    /* 80297C30 */ .space 0x08
-
-nonmatching D_80297C38, 0x3EF
-
-dlabel D_80297C38
-    /* 80297C38 */ .space 0x3EF
+    /* 80297BF0 */ .space 0x437
 
 nonmatching D_80298027, 0x891
 
@@ -5389,80 +3489,10 @@ nonmatching D_802988BA, 0x2
 dlabel D_802988BA
     /* 802988BA */ .space 0x02
 
-nonmatching D_802988BC, 0xC
+nonmatching D_802988BC, 0x8E4
 
 dlabel D_802988BC
-    /* 802988BC */ .space 0x0C
-
-nonmatching D_802988C8, 0x58
-
-dlabel D_802988C8
-    /* 802988C8 */ .space 0x58
-
-nonmatching D_80298920, 0x8
-
-dlabel D_80298920
-    /* 80298920 */ .space 0x08
-
-nonmatching D_80298928, 0x4
-
-dlabel D_80298928
-    /* 80298928 */ .space 0x04
-
-nonmatching D_8029892C, 0x4
-
-dlabel D_8029892C
-    /* 8029892C */ .space 0x04
-
-nonmatching D_80298930, 0xA0
-
-dlabel D_80298930
-    /* 80298930 */ .space 0xA0
-
-nonmatching D_802989D0, 0x18
-
-dlabel D_802989D0
-    /* 802989D0 */ .space 0x18
-
-nonmatching D_802989E8, 0x1
-
-dlabel D_802989E8
-    /* 802989E8 */ .space 0x01
-
-nonmatching D_802989E9, 0x1
-
-dlabel D_802989E9
-    /* 802989E9 */ .space 0x01
-
-nonmatching D_802989EA, 0x1
-
-dlabel D_802989EA
-    /* 802989EA */ .space 0x01
-
-nonmatching D_802989EB, 0x1
-
-dlabel D_802989EB
-    /* 802989EB */ .space 0x01
-
-nonmatching D_802989EC, 0x2
-
-dlabel D_802989EC
-    /* 802989EC */ .space 0x02
-
-nonmatching D_802989EE, 0x2
-
-dlabel D_802989EE
-    /* 802989EE */ .space 0x02
-
-nonmatching D_802989F0, 0x4
-
-dlabel D_802989F0
-    /* 802989F0 */ .space 0x04
-
-nonmatching D_802989F4, 0x7AC
-
-dlabel D_802989F4
-    /* 802989F4 */ .space 0x7AC
+    /* 802988BC */ .space 0x8E4
 
 nonmatching D_802991A0, 0x4
 
@@ -5484,90 +3514,35 @@ nonmatching D_802991A6, 0x2
 dlabel D_802991A6
     /* 802991A6 */ .space 0x02
 
-nonmatching D_802991A8, 0x14
+nonmatching D_802991A8, 0x9C
 
 dlabel D_802991A8
-    /* 802991A8 */ .space 0x14
+    /* 802991A8 */ .space 0x9C
 
-nonmatching D_802991BC, 0x44
-
-dlabel D_802991BC
-    /* 802991BC */ .space 0x44
-
-nonmatching D_80299200, 0x2
-
-dlabel D_80299200
-    /* 80299200 */ .space 0x02
-
-nonmatching D_80299202, 0xE
-
-dlabel D_80299202
-    /* 80299202 */ .space 0x0E
-
-nonmatching D_80299210, 0x34
-
-dlabel D_80299210
-    /* 80299210 */ .space 0x34
-
-nonmatching D_80299244, 0x8
+nonmatching D_80299244, 0x48
 
 dlabel D_80299244
-    /* 80299244 */ .space 0x08
-
-nonmatching D_8029924C, 0x4
-
-dlabel D_8029924C
-    /* 8029924C */ .space 0x04
-
-nonmatching D_80299250, 0x4
-
-dlabel D_80299250
-    /* 80299250 */ .space 0x04
-
-nonmatching D_80299254, 0x38
-
-dlabel D_80299254
-    /* 80299254 */ .space 0x38
+    /* 80299244 */ .space 0x48
 
 nonmatching D_8029928C, 0x4
 
 dlabel D_8029928C
     /* 8029928C */ .space 0x04
 
-nonmatching D_80299290, 0x4
+nonmatching D_80299290, 0x104
 
 dlabel D_80299290
-    /* 80299290 */ .space 0x04
-
-nonmatching D_80299294, 0xE4
-
-dlabel D_80299294
-    /* 80299294 */ .space 0xE4
-
-nonmatching D_80299378, 0x18
-
-dlabel D_80299378
-    /* 80299378 */ .space 0x18
-
-nonmatching D_80299390, 0x4
-
-dlabel D_80299390
-    /* 80299390 */ .space 0x04
+    /* 80299290 */ .space 0x104
 
 nonmatching D_80299394, 0x4
 
 dlabel D_80299394
     /* 80299394 */ .space 0x04
 
-nonmatching D_80299398, 0x8
+nonmatching D_80299398, 0xC
 
 dlabel D_80299398
-    /* 80299398 */ .space 0x08
-
-nonmatching D_802993A0, 0x4
-
-dlabel D_802993A0
-    /* 802993A0 */ .space 0x04
+    /* 80299398 */ .space 0x0C
 
 nonmatching D_802993A4, 0x44
 
@@ -5579,75 +3554,20 @@ nonmatching D_802993E8, 0x34
 dlabel D_802993E8
     /* 802993E8 */ .space 0x34
 
-nonmatching D_8029941C, 0x5C
+nonmatching D_8029941C, 0x70
 
 dlabel D_8029941C
-    /* 8029941C */ .space 0x5C
+    /* 8029941C */ .space 0x70
 
-nonmatching D_80299478, 0x14
-
-dlabel D_80299478
-    /* 80299478 */ .space 0x14
-
-nonmatching D_8029948C, 0x14
+nonmatching D_8029948C, 0x28
 
 dlabel D_8029948C
-    /* 8029948C */ .space 0x14
+    /* 8029948C */ .space 0x28
 
-nonmatching D_802994A0, 0x4
-
-dlabel D_802994A0
-    /* 802994A0 */ .space 0x04
-
-nonmatching D_802994A4, 0x4
-
-dlabel D_802994A4
-    /* 802994A4 */ .space 0x04
-
-nonmatching D_802994A8, 0x4
-
-dlabel D_802994A8
-    /* 802994A8 */ .space 0x04
-
-nonmatching D_802994AC, 0x8
-
-dlabel D_802994AC
-    /* 802994AC */ .space 0x08
-
-nonmatching D_802994B4, 0x18
+nonmatching D_802994B4, 0x230
 
 dlabel D_802994B4
-    /* 802994B4 */ .space 0x18
-
-nonmatching D_802994CC, 0x34
-
-dlabel D_802994CC
-    /* 802994CC */ .space 0x34
-
-nonmatching D_80299500, 0x8
-
-dlabel D_80299500
-    /* 80299500 */ .space 0x08
-
-nonmatching D_80299508, 0x170
-
-dlabel D_80299508
-    /* 80299508 */ .space 0x170
-
-nonmatching D_80299678, 0x30
-
-dlabel D_80299678
-    /* 80299678 */ .space 0x30
-
-nonmatching D_802996A8, 0x3A
-
-dlabel D_802996A8
-    /* 802996A8 */ .space 0x3A
-
-nonmatching D_802996E2, 0x2
-
-dlabel D_802996E2
-    /* 802996E2 */ .space 0x02
+    /* 802994B4 */ .space 0x230
 
 nonmatching D_802996E4, 0x4
 
@@ -5674,30 +3594,15 @@ nonmatching D_80299710, 0x4
 dlabel D_80299710
     /* 80299710 */ .space 0x04
 
-nonmatching D_80299714, 0x4
+nonmatching D_80299714, 0x8
 
 dlabel D_80299714
-    /* 80299714 */ .space 0x04
+    /* 80299714 */ .space 0x08
 
-nonmatching D_80299718, 0x4
-
-dlabel D_80299718
-    /* 80299718 */ .space 0x04
-
-nonmatching D_8029971C, 0x4
+nonmatching D_8029971C, 0x24
 
 dlabel D_8029971C
-    /* 8029971C */ .space 0x04
-
-nonmatching D_80299720, 0x4
-
-dlabel D_80299720
-    /* 80299720 */ .space 0x04
-
-nonmatching D_80299724, 0x1C
-
-dlabel D_80299724
-    /* 80299724 */ .space 0x1C
+    /* 8029971C */ .space 0x24
 
 nonmatching D_80299740, 0x4
 
@@ -5709,40 +3614,15 @@ nonmatching D_80299744, 0x4
 dlabel D_80299744
     /* 80299744 */ .space 0x04
 
-nonmatching D_80299748, 0x1C
+nonmatching D_80299748, 0x6C
 
 dlabel D_80299748
-    /* 80299748 */ .space 0x1C
+    /* 80299748 */ .space 0x6C
 
-nonmatching D_80299764, 0x3C
-
-dlabel D_80299764
-    /* 80299764 */ .space 0x3C
-
-nonmatching D_802997A0, 0x4
-
-dlabel D_802997A0
-    /* 802997A0 */ .space 0x04
-
-nonmatching D_802997A4, 0xC
-
-dlabel D_802997A4
-    /* 802997A4 */ .space 0x0C
-
-nonmatching D_802997B0, 0x4
-
-dlabel D_802997B0
-    /* 802997B0 */ .space 0x04
-
-nonmatching D_802997B4, 0x4
+nonmatching D_802997B4, 0x8
 
 dlabel D_802997B4
-    /* 802997B4 */ .space 0x04
-
-nonmatching D_802997B8, 0x4
-
-dlabel D_802997B8
-    /* 802997B8 */ .space 0x04
+    /* 802997B4 */ .space 0x08
 
 nonmatching D_802997BC, 0x4
 
@@ -5764,20 +3644,10 @@ nonmatching D_802997CC, 0x4
 dlabel D_802997CC
     /* 802997CC */ .space 0x04
 
-nonmatching D_802997D0, 0x160
+nonmatching D_802997D0, 0x16C
 
 dlabel D_802997D0
-    /* 802997D0 */ .space 0x160
-
-nonmatching D_80299930, 0x8
-
-dlabel D_80299930
-    /* 80299930 */ .space 0x08
-
-nonmatching D_80299938, 0x4
-
-dlabel D_80299938
-    /* 80299938 */ .space 0x04
+    /* 802997D0 */ .space 0x16C
 
 nonmatching D_8029993C, 0x1
 
@@ -5804,365 +3674,70 @@ nonmatching D_80299954, 0xC
 dlabel D_80299954
     /* 80299954 */ .space 0x0C
 
-nonmatching D_80299960, 0x2
+nonmatching D_80299960, 0x4
 
 dlabel D_80299960
-    /* 80299960 */ .space 0x02
+    /* 80299960 */ .space 0x04
 
-nonmatching D_80299962, 0x2
-
-dlabel D_80299962
-    /* 80299962 */ .space 0x02
-
-nonmatching D_80299964, 0x4
+nonmatching D_80299964, 0x38
 
 dlabel D_80299964
-    /* 80299964 */ .space 0x04
+    /* 80299964 */ .space 0x38
 
-nonmatching D_80299968, 0x8
-
-dlabel D_80299968
-    /* 80299968 */ .space 0x08
-
-nonmatching D_80299970, 0x1
-
-dlabel D_80299970
-    /* 80299970 */ .space 0x01
-
-nonmatching D_80299971, 0x13
-
-dlabel D_80299971
-    /* 80299971 */ .space 0x13
-
-nonmatching D_80299984, 0x14
-
-dlabel D_80299984
-    /* 80299984 */ .space 0x14
-
-nonmatching D_80299998, 0x4
-
-dlabel D_80299998
-    /* 80299998 */ .space 0x04
-
-nonmatching D_8029999C, 0x2
+nonmatching D_8029999C, 0x14
 
 dlabel D_8029999C
-    /* 8029999C */ .space 0x02
+    /* 8029999C */ .space 0x14
 
-nonmatching D_8029999E, 0x2
-
-dlabel D_8029999E
-    /* 8029999E */ .space 0x02
-
-nonmatching D_802999A0, 0x4
-
-dlabel D_802999A0
-    /* 802999A0 */ .space 0x04
-
-nonmatching D_802999A4, 0x8
-
-dlabel D_802999A4
-    /* 802999A4 */ .space 0x08
-
-nonmatching D_802999AC, 0x4
-
-dlabel D_802999AC
-    /* 802999AC */ .space 0x04
-
-nonmatching D_802999B0, 0x8
+nonmatching D_802999B0, 0x1C
 
 dlabel D_802999B0
-    /* 802999B0 */ .space 0x08
-
-nonmatching D_802999B8, 0x8
-
-dlabel D_802999B8
-    /* 802999B8 */ .space 0x08
-
-nonmatching D_802999C0, 0x2
-
-dlabel D_802999C0
-    /* 802999C0 */ .space 0x02
-
-nonmatching D_802999C2, 0x2
-
-dlabel D_802999C2
-    /* 802999C2 */ .space 0x02
-
-nonmatching D_802999C4, 0x8
-
-dlabel D_802999C4
-    /* 802999C4 */ .space 0x08
+    /* 802999B0 */ .space 0x1C
 
 nonmatching D_802999CC, 0x1C
 
 dlabel D_802999CC
     /* 802999CC */ .space 0x1C
 
-nonmatching D_802999E8, 0x28
+nonmatching D_802999E8, 0x34
 
 dlabel D_802999E8
-    /* 802999E8 */ .space 0x28
+    /* 802999E8 */ .space 0x34
 
-nonmatching D_80299A10, 0xC
-
-dlabel D_80299A10
-    /* 80299A10 */ .space 0x0C
-
-nonmatching D_80299A1C, 0x10
+nonmatching D_80299A1C, 0x24
 
 dlabel D_80299A1C
-    /* 80299A1C */ .space 0x10
+    /* 80299A1C */ .space 0x24
 
-nonmatching D_80299A2C, 0x14
-
-dlabel D_80299A2C
-    /* 80299A2C */ .space 0x14
-
-nonmatching D_80299A40, 0x7C
+nonmatching D_80299A40, 0x56B0
 
 dlabel D_80299A40
-    /* 80299A40 */ .space 0x7C
+    /* 80299A40 */ .space 0x56B0
 
-nonmatching D_80299ABC, 0x198
-
-dlabel D_80299ABC
-    /* 80299ABC */ .space 0x198
-
-nonmatching D_80299C54, 0x4C
-
-dlabel D_80299C54
-    /* 80299C54 */ .space 0x4C
-
-nonmatching D_80299CA0, 0x48
-
-dlabel D_80299CA0
-    /* 80299CA0 */ .space 0x48
-
-nonmatching D_80299CE8, 0x28
-
-dlabel D_80299CE8
-    /* 80299CE8 */ .space 0x28
-
-nonmatching D_80299D10, 0x220
-
-dlabel D_80299D10
-    /* 80299D10 */ .space 0x220
-
-nonmatching D_80299F30, 0x10
-
-dlabel D_80299F30
-    /* 80299F30 */ .space 0x10
-
-nonmatching D_80299F40, 0x14
-
-dlabel D_80299F40
-    /* 80299F40 */ .space 0x14
-
-nonmatching D_80299F54, 0x4C
-
-dlabel D_80299F54
-    /* 80299F54 */ .space 0x4C
-
-nonmatching D_80299FA0, 0x5150
-
-dlabel D_80299FA0
-    /* 80299FA0 */ .space 0x5150
-
-nonmatching D_8029F0F0, 0x10
+nonmatching D_8029F0F0, 0x80
 
 dlabel D_8029F0F0
-    /* 8029F0F0 */ .space 0x10
+    /* 8029F0F0 */ .space 0x80
 
-nonmatching D_8029F100, 0x10
-
-dlabel D_8029F100
-    /* 8029F100 */ .space 0x10
-
-nonmatching D_8029F110, 0x4
-
-dlabel D_8029F110
-    /* 8029F110 */ .space 0x04
-
-nonmatching D_8029F114, 0x4
-
-dlabel D_8029F114
-    /* 8029F114 */ .space 0x04
-
-nonmatching D_8029F118, 0x4
-
-dlabel D_8029F118
-    /* 8029F118 */ .space 0x04
-
-nonmatching D_8029F11C, 0x4
-
-dlabel D_8029F11C
-    /* 8029F11C */ .space 0x04
-
-nonmatching D_8029F120, 0x4
-
-dlabel D_8029F120
-    /* 8029F120 */ .space 0x04
-
-nonmatching D_8029F124, 0x4
-
-dlabel D_8029F124
-    /* 8029F124 */ .space 0x04
-
-nonmatching D_8029F128, 0x4
-
-dlabel D_8029F128
-    /* 8029F128 */ .space 0x04
-
-nonmatching D_8029F12C, 0x10
-
-dlabel D_8029F12C
-    /* 8029F12C */ .space 0x10
-
-nonmatching D_8029F13C, 0x4
-
-dlabel D_8029F13C
-    /* 8029F13C */ .space 0x04
-
-nonmatching D_8029F140, 0x1
-
-dlabel D_8029F140
-    /* 8029F140 */ .space 0x01
-
-nonmatching D_8029F141, 0x3
-
-dlabel D_8029F141
-    /* 8029F141 */ .space 0x03
-
-nonmatching D_8029F144, 0x4
-
-dlabel D_8029F144
-    /* 8029F144 */ .space 0x04
-
-nonmatching D_8029F148, 0x4
-
-dlabel D_8029F148
-    /* 8029F148 */ .space 0x04
-
-nonmatching D_8029F14C, 0x4
-
-dlabel D_8029F14C
-    /* 8029F14C */ .space 0x04
-
-nonmatching D_8029F150, 0x4
-
-dlabel D_8029F150
-    /* 8029F150 */ .space 0x04
-
-nonmatching D_8029F154, 0x4
-
-dlabel D_8029F154
-    /* 8029F154 */ .space 0x04
-
-nonmatching D_8029F158, 0x4
-
-dlabel D_8029F158
-    /* 8029F158 */ .space 0x04
-
-nonmatching D_8029F15C, 0x4
-
-dlabel D_8029F15C
-    /* 8029F15C */ .space 0x04
-
-nonmatching D_8029F160, 0x10
-
-dlabel D_8029F160
-    /* 8029F160 */ .space 0x10
-
-nonmatching D_8029F170, 0x90
+nonmatching D_8029F170, 0xA0
 
 dlabel D_8029F170
-    /* 8029F170 */ .space 0x90
+    /* 8029F170 */ .space 0xA0
 
-nonmatching D_8029F200, 0x10
-
-dlabel D_8029F200
-    /* 8029F200 */ .space 0x10
-
-nonmatching D_8029F210, 0x4
+nonmatching D_8029F210, 0x184
 
 dlabel D_8029F210
-    /* 8029F210 */ .space 0x04
+    /* 8029F210 */ .space 0x184
 
-nonmatching D_8029F214, 0x180
-
-dlabel D_8029F214
-    /* 8029F214 */ .space 0x180
-
-nonmatching D_8029F394, 0x4
+nonmatching D_8029F394, 0xA8
 
 dlabel D_8029F394
-    /* 8029F394 */ .space 0x04
+    /* 8029F394 */ .space 0xA8
 
-nonmatching D_8029F398, 0x4
-
-dlabel D_8029F398
-    /* 8029F398 */ .space 0x04
-
-nonmatching D_8029F39C, 0x4
-
-dlabel D_8029F39C
-    /* 8029F39C */ .space 0x04
-
-nonmatching D_8029F3A0, 0x4
-
-dlabel D_8029F3A0
-    /* 8029F3A0 */ .space 0x04
-
-nonmatching D_8029F3A4, 0x4
-
-dlabel D_8029F3A4
-    /* 8029F3A4 */ .space 0x04
-
-nonmatching D_8029F3A8, 0x4
-
-dlabel D_8029F3A8
-    /* 8029F3A8 */ .space 0x04
-
-nonmatching D_8029F3AC, 0x7C
-
-dlabel D_8029F3AC
-    /* 8029F3AC */ .space 0x7C
-
-nonmatching D_8029F428, 0x8
-
-dlabel D_8029F428
-    /* 8029F428 */ .space 0x08
-
-nonmatching D_8029F430, 0x4
-
-dlabel D_8029F430
-    /* 8029F430 */ .space 0x04
-
-nonmatching D_8029F434, 0x4
-
-dlabel D_8029F434
-    /* 8029F434 */ .space 0x04
-
-nonmatching D_8029F438, 0x4
-
-dlabel D_8029F438
-    /* 8029F438 */ .space 0x04
-
-nonmatching D_8029F43C, 0x4
+nonmatching D_8029F43C, 0x1C
 
 dlabel D_8029F43C
-    /* 8029F43C */ .space 0x04
-
-nonmatching D_8029F440, 0x14
-
-dlabel D_8029F440
-    /* 8029F440 */ .space 0x14
-
-nonmatching D_8029F454, 0x4
-
-dlabel D_8029F454
-    /* 8029F454 */ .space 0x04
+    /* 8029F43C */ .space 0x1C
 
 nonmatching D_8029F458, 0x4
 
@@ -6179,225 +3754,30 @@ nonmatching D_8029F460, 0x8
 dlabel D_8029F460
     /* 8029F460 */ .space 0x08
 
-nonmatching D_8029F468, 0x4
+nonmatching D_8029F468, 0x16
 
 dlabel D_8029F468
-    /* 8029F468 */ .space 0x04
+    /* 8029F468 */ .space 0x16
 
-nonmatching D_8029F46C, 0x4
-
-dlabel D_8029F46C
-    /* 8029F46C */ .space 0x04
-
-nonmatching D_8029F470, 0x4
-
-dlabel D_8029F470
-    /* 8029F470 */ .space 0x04
-
-nonmatching D_8029F474, 0x4
-
-dlabel D_8029F474
-    /* 8029F474 */ .space 0x04
-
-nonmatching D_8029F478, 0x4
-
-dlabel D_8029F478
-    /* 8029F478 */ .space 0x04
-
-nonmatching D_8029F47C, 0x2
-
-dlabel D_8029F47C
-    /* 8029F47C */ .space 0x02
-
-nonmatching D_8029F47E, 0x2
+nonmatching D_8029F47E, 0x10E
 
 dlabel D_8029F47E
-    /* 8029F47E */ .space 0x02
+    /* 8029F47E */ .space 0x10E
 
-nonmatching D_8029F480, 0x2
-
-dlabel D_8029F480
-    /* 8029F480 */ .space 0x02
-
-nonmatching D_8029F482, 0x2
-
-dlabel D_8029F482
-    /* 8029F482 */ .space 0x02
-
-nonmatching D_8029F484, 0x1
-
-dlabel D_8029F484
-    /* 8029F484 */ .space 0x01
-
-nonmatching D_8029F485, 0x1
-
-dlabel D_8029F485
-    /* 8029F485 */ .space 0x01
-
-nonmatching D_8029F486, 0x1
-
-dlabel D_8029F486
-    /* 8029F486 */ .space 0x01
-
-nonmatching D_8029F487, 0x1
-
-dlabel D_8029F487
-    /* 8029F487 */ .space 0x01
-
-nonmatching D_8029F488, 0x20
-
-dlabel D_8029F488
-    /* 8029F488 */ .space 0x20
-
-nonmatching D_8029F4A8, 0x8
-
-dlabel D_8029F4A8
-    /* 8029F4A8 */ .space 0x08
-
-nonmatching D_8029F4B0, 0xC
-
-dlabel D_8029F4B0
-    /* 8029F4B0 */ .space 0x0C
-
-nonmatching D_8029F4BC, 0x4
-
-dlabel D_8029F4BC
-    /* 8029F4BC */ .space 0x04
-
-nonmatching D_8029F4C0, 0x4
-
-dlabel D_8029F4C0
-    /* 8029F4C0 */ .space 0x04
-
-nonmatching D_8029F4C4, 0x40
-
-dlabel D_8029F4C4
-    /* 8029F4C4 */ .space 0x40
-
-nonmatching D_8029F504, 0x20
-
-dlabel D_8029F504
-    /* 8029F504 */ .space 0x20
-
-nonmatching D_8029F524, 0x20
-
-dlabel D_8029F524
-    /* 8029F524 */ .space 0x20
-
-nonmatching D_8029F544, 0x4
-
-dlabel D_8029F544
-    /* 8029F544 */ .space 0x04
-
-nonmatching D_8029F548, 0x4
-
-dlabel D_8029F548
-    /* 8029F548 */ .space 0x04
-
-nonmatching D_8029F54C, 0x4
-
-dlabel D_8029F54C
-    /* 8029F54C */ .space 0x04
-
-nonmatching D_8029F550, 0x1C
-
-dlabel D_8029F550
-    /* 8029F550 */ .space 0x1C
-
-nonmatching D_8029F56C, 0x4
-
-dlabel D_8029F56C
-    /* 8029F56C */ .space 0x04
-
-nonmatching D_8029F570, 0x4
-
-dlabel D_8029F570
-    /* 8029F570 */ .space 0x04
-
-nonmatching D_8029F574, 0x4
-
-dlabel D_8029F574
-    /* 8029F574 */ .space 0x04
-
-nonmatching D_8029F578, 0x4
-
-dlabel D_8029F578
-    /* 8029F578 */ .space 0x04
-
-nonmatching D_8029F57C, 0x8
-
-dlabel D_8029F57C
-    /* 8029F57C */ .space 0x08
-
-nonmatching D_8029F584, 0x4
-
-dlabel D_8029F584
-    /* 8029F584 */ .space 0x04
-
-nonmatching D_8029F588, 0x4
-
-dlabel D_8029F588
-    /* 8029F588 */ .space 0x04
-
-nonmatching D_8029F58C, 0x4
+nonmatching D_8029F58C, 0x3C
 
 dlabel D_8029F58C
-    /* 8029F58C */ .space 0x04
-
-nonmatching D_8029F590, 0x2
-
-dlabel D_8029F590
-    /* 8029F590 */ .space 0x02
-
-nonmatching D_8029F592, 0xA
-
-dlabel D_8029F592
-    /* 8029F592 */ .space 0x0A
-
-nonmatching D_8029F59C, 0xC
-
-dlabel D_8029F59C
-    /* 8029F59C */ .space 0x0C
-
-nonmatching D_8029F5A8, 0x4
-
-dlabel D_8029F5A8
-    /* 8029F5A8 */ .space 0x04
-
-nonmatching D_8029F5AC, 0xC
-
-dlabel D_8029F5AC
-    /* 8029F5AC */ .space 0x0C
-
-nonmatching D_8029F5B8, 0xC
-
-dlabel D_8029F5B8
-    /* 8029F5B8 */ .space 0x0C
-
-nonmatching D_8029F5C4, 0x4
-
-dlabel D_8029F5C4
-    /* 8029F5C4 */ .space 0x04
+    /* 8029F58C */ .space 0x3C
 
 nonmatching D_8029F5C8, 0x1
 
 dlabel D_8029F5C8
     /* 8029F5C8 */ .space 0x01
 
-nonmatching D_8029F5C9, 0x1
+nonmatching D_8029F5C9, 0x3
 
 dlabel D_8029F5C9
-    /* 8029F5C9 */ .space 0x01
-
-nonmatching D_8029F5CA, 0x1
-
-dlabel D_8029F5CA
-    /* 8029F5CA */ .space 0x01
-
-nonmatching D_8029F5CB, 0x1
-
-dlabel D_8029F5CB
-    /* 8029F5CB */ .space 0x01
+    /* 8029F5C9 */ .space 0x03
 
 nonmatching D_8029F5CC, 0x4
 
@@ -6409,140 +3789,30 @@ nonmatching D_8029F5D0, 0x8
 dlabel D_8029F5D0
     /* 8029F5D0 */ .space 0x08
 
-nonmatching D_8029F5D8, 0x26
+nonmatching D_8029F5D8, 0xD4
 
 dlabel D_8029F5D8
-    /* 8029F5D8 */ .space 0x26
+    /* 8029F5D8 */ .space 0xD4
 
-nonmatching D_8029F5FE, 0xE
-
-dlabel D_8029F5FE
-    /* 8029F5FE */ .space 0x0E
-
-nonmatching D_8029F60C, 0x68
-
-dlabel D_8029F60C
-    /* 8029F60C */ .space 0x68
-
-nonmatching D_8029F674, 0x10
-
-dlabel D_8029F674
-    /* 8029F674 */ .space 0x10
-
-nonmatching D_8029F684, 0x4
-
-dlabel D_8029F684
-    /* 8029F684 */ .space 0x04
-
-nonmatching D_8029F688, 0x4
-
-dlabel D_8029F688
-    /* 8029F688 */ .space 0x04
-
-nonmatching D_8029F68C, 0x4
-
-dlabel D_8029F68C
-    /* 8029F68C */ .space 0x04
-
-nonmatching D_8029F690, 0x1C
-
-dlabel D_8029F690
-    /* 8029F690 */ .space 0x1C
-
-nonmatching D_8029F6AC, 0xBC
+nonmatching D_8029F6AC, 0x2BC
 
 dlabel D_8029F6AC
-    /* 8029F6AC */ .space 0xBC
+    /* 8029F6AC */ .space 0x2BC
 
-nonmatching D_8029F768, 0x4
-
-dlabel D_8029F768
-    /* 8029F768 */ .space 0x04
-
-nonmatching D_8029F76C, 0x4
-
-dlabel D_8029F76C
-    /* 8029F76C */ .space 0x04
-
-nonmatching D_8029F770, 0x4
-
-dlabel D_8029F770
-    /* 8029F770 */ .space 0x04
-
-nonmatching D_8029F774, 0xD8
-
-dlabel D_8029F774
-    /* 8029F774 */ .space 0xD8
-
-nonmatching D_8029F84C, 0x4
-
-dlabel D_8029F84C
-    /* 8029F84C */ .space 0x04
-
-nonmatching D_8029F850, 0x4
-
-dlabel D_8029F850
-    /* 8029F850 */ .space 0x04
-
-nonmatching D_8029F854, 0x4
-
-dlabel D_8029F854
-    /* 8029F854 */ .space 0x04
-
-nonmatching D_8029F858, 0xD8
-
-dlabel D_8029F858
-    /* 8029F858 */ .space 0xD8
-
-nonmatching D_8029F930, 0x4
-
-dlabel D_8029F930
-    /* 8029F930 */ .space 0x04
-
-nonmatching D_8029F934, 0x4
-
-dlabel D_8029F934
-    /* 8029F934 */ .space 0x04
-
-nonmatching D_8029F938, 0x4
-
-dlabel D_8029F938
-    /* 8029F938 */ .space 0x04
-
-nonmatching D_8029F93C, 0x2C
-
-dlabel D_8029F93C
-    /* 8029F93C */ .space 0x2C
-
-nonmatching D_8029F968, 0x4
+nonmatching D_8029F968, 0x8
 
 dlabel D_8029F968
-    /* 8029F968 */ .space 0x04
-
-nonmatching D_8029F96C, 0x4
-
-dlabel D_8029F96C
-    /* 8029F96C */ .space 0x04
+    /* 8029F968 */ .space 0x08
 
 nonmatching D_8029F970, 0x8
 
 dlabel D_8029F970
     /* 8029F970 */ .space 0x08
 
-nonmatching D_8029F978, 0x20
+nonmatching D_8029F978, 0x26
 
 dlabel D_8029F978
-    /* 8029F978 */ .space 0x20
-
-nonmatching D_8029F998, 0x2
-
-dlabel D_8029F998
-    /* 8029F998 */ .space 0x02
-
-nonmatching D_8029F99A, 0x4
-
-dlabel D_8029F99A
-    /* 8029F99A */ .space 0x04
+    /* 8029F978 */ .space 0x26
 
 nonmatching D_8029F99E, 0x2
 
@@ -6574,30 +3844,10 @@ nonmatching D_8029F9B0, 0x4
 dlabel D_8029F9B0
     /* 8029F9B0 */ .space 0x04
 
-nonmatching D_8029F9B4, 0x4
+nonmatching D_8029F9B4, 0x1C
 
 dlabel D_8029F9B4
-    /* 8029F9B4 */ .space 0x04
-
-nonmatching D_8029F9B8, 0x4
-
-dlabel D_8029F9B8
-    /* 8029F9B8 */ .space 0x04
-
-nonmatching D_8029F9BC, 0x4
-
-dlabel D_8029F9BC
-    /* 8029F9BC */ .space 0x04
-
-nonmatching D_8029F9C0, 0x4
-
-dlabel D_8029F9C0
-    /* 8029F9C0 */ .space 0x04
-
-nonmatching D_8029F9C4, 0xC
-
-dlabel D_8029F9C4
-    /* 8029F9C4 */ .space 0x0C
+    /* 8029F9B4 */ .space 0x1C
 
 nonmatching D_8029F9D0, 0x4
 
@@ -6609,65 +3859,20 @@ nonmatching D_8029F9D4, 0x4
 dlabel D_8029F9D4
     /* 8029F9D4 */ .space 0x04
 
-nonmatching D_8029F9D8, 0x4
+nonmatching D_8029F9D8, 0x28
 
 dlabel D_8029F9D8
-    /* 8029F9D8 */ .space 0x04
-
-nonmatching D_8029F9DC, 0x4
-
-dlabel D_8029F9DC
-    /* 8029F9DC */ .space 0x04
-
-nonmatching D_8029F9E0, 0x4
-
-dlabel D_8029F9E0
-    /* 8029F9E0 */ .space 0x04
-
-nonmatching D_8029F9E4, 0x4
-
-dlabel D_8029F9E4
-    /* 8029F9E4 */ .space 0x04
-
-nonmatching D_8029F9E8, 0x4
-
-dlabel D_8029F9E8
-    /* 8029F9E8 */ .space 0x04
-
-nonmatching D_8029F9EC, 0x4
-
-dlabel D_8029F9EC
-    /* 8029F9EC */ .space 0x04
-
-nonmatching D_8029F9F0, 0x4
-
-dlabel D_8029F9F0
-    /* 8029F9F0 */ .space 0x04
-
-nonmatching D_8029F9F4, 0xC
-
-dlabel D_8029F9F4
-    /* 8029F9F4 */ .space 0x0C
+    /* 8029F9D8 */ .space 0x28
 
 nonmatching D_8029FA00, 0x14
 
 dlabel D_8029FA00
     /* 8029FA00 */ .space 0x14
 
-nonmatching D_8029FA14, 0x10
+nonmatching D_8029FA14, 0x20
 
 dlabel D_8029FA14
-    /* 8029FA14 */ .space 0x10
-
-nonmatching D_8029FA24, 0xC
-
-dlabel D_8029FA24
-    /* 8029FA24 */ .space 0x0C
-
-nonmatching D_8029FA30, 0x4
-
-dlabel D_8029FA30
-    /* 8029FA30 */ .space 0x04
+    /* 8029FA14 */ .space 0x20
 
 nonmatching D_8029FA34, 0x4
 
@@ -6679,20 +3884,10 @@ nonmatching D_8029FA38, 0x4
 dlabel D_8029FA38
     /* 8029FA38 */ .space 0x04
 
-nonmatching D_8029FA3C, 0x4
+nonmatching D_8029FA3C, 0xC
 
 dlabel D_8029FA3C
-    /* 8029FA3C */ .space 0x04
-
-nonmatching D_8029FA40, 0x4
-
-dlabel D_8029FA40
-    /* 8029FA40 */ .space 0x04
-
-nonmatching D_8029FA44, 0x4
-
-dlabel D_8029FA44
-    /* 8029FA44 */ .space 0x04
+    /* 8029FA3C */ .space 0x0C
 
 nonmatching D_8029FA48, 0x4
 
@@ -6714,165 +3909,30 @@ nonmatching D_8029FA5C, 0x4
 dlabel D_8029FA5C
     /* 8029FA5C */ .space 0x04
 
-nonmatching D_8029FA60, 0x10
+nonmatching D_8029FA60, 0x25A0
 
 dlabel D_8029FA60
-    /* 8029FA60 */ .space 0x10
+    /* 8029FA60 */ .space 0x25A0
 
-nonmatching D_8029FA70, 0x10
-
-dlabel D_8029FA70
-    /* 8029FA70 */ .space 0x10
-
-nonmatching D_8029FA80, 0x8B8
-
-dlabel D_8029FA80
-    /* 8029FA80 */ .space 0x8B8
-
-nonmatching D_802A0338, 0x1CC8
-
-dlabel D_802A0338
-    /* 802A0338 */ .space 0x1CC8
-
-nonmatching D_802A2000, 0x20
+nonmatching D_802A2000, 0xC8
 
 dlabel D_802A2000
-    /* 802A2000 */ .space 0x20
+    /* 802A2000 */ .space 0xC8
 
-nonmatching D_802A2020, 0x4
-
-dlabel D_802A2020
-    /* 802A2020 */ .space 0x04
-
-nonmatching D_802A2024, 0x4
-
-dlabel D_802A2024
-    /* 802A2024 */ .space 0x04
-
-nonmatching D_802A2028, 0xC
-
-dlabel D_802A2028
-    /* 802A2028 */ .space 0x0C
-
-nonmatching D_802A2034, 0x24
-
-dlabel D_802A2034
-    /* 802A2034 */ .space 0x24
-
-nonmatching D_802A2058, 0x8
-
-dlabel D_802A2058
-    /* 802A2058 */ .space 0x08
-
-nonmatching D_802A2060, 0x5C
-
-dlabel D_802A2060
-    /* 802A2060 */ .space 0x5C
-
-nonmatching D_802A20BC, 0x4
-
-dlabel D_802A20BC
-    /* 802A20BC */ .space 0x04
-
-nonmatching D_802A20C0, 0x4
-
-dlabel D_802A20C0
-    /* 802A20C0 */ .space 0x04
-
-nonmatching D_802A20C4, 0x4
-
-dlabel D_802A20C4
-    /* 802A20C4 */ .space 0x04
-
-nonmatching D_802A20C8, 0x10
+nonmatching D_802A20C8, 0x1C
 
 dlabel D_802A20C8
-    /* 802A20C8 */ .space 0x10
+    /* 802A20C8 */ .space 0x1C
 
-nonmatching D_802A20D8, 0xC
-
-dlabel D_802A20D8
-    /* 802A20D8 */ .space 0x0C
-
-nonmatching D_802A20E4, 0x1
+nonmatching D_802A20E4, 0x8624
 
 dlabel D_802A20E4
-    /* 802A20E4 */ .space 0x01
+    /* 802A20E4 */ .space 0x8624
 
-nonmatching D_802A20E5, 0x3
-
-dlabel D_802A20E5
-    /* 802A20E5 */ .space 0x03
-
-nonmatching D_802A20E8, 0x8
-
-dlabel D_802A20E8
-    /* 802A20E8 */ .space 0x08
-
-nonmatching D_802A20F0, 0x10
-
-dlabel D_802A20F0
-    /* 802A20F0 */ .space 0x10
-
-nonmatching D_802A2100, 0x2
-
-dlabel D_802A2100
-    /* 802A2100 */ .space 0x02
-
-nonmatching D_802A2102, 0x3
-
-dlabel D_802A2102
-    /* 802A2102 */ .space 0x03
-
-nonmatching D_802A2105, 0x2
-
-dlabel D_802A2105
-    /* 802A2105 */ .space 0x02
-
-nonmatching D_802A2107, 0x5D49
-
-dlabel D_802A2107
-    /* 802A2107 */ .space 0x5D49
-
-nonmatching D_802A7E50, 0x28B0
-
-dlabel D_802A7E50
-    /* 802A7E50 */ .space 0x28B0
-
-nonmatching D_802AA700, 0x8
-
-dlabel D_802AA700
-    /* 802AA700 */ .space 0x08
-
-nonmatching D_802AA708, 0x4
+nonmatching D_802AA708, 0x18
 
 dlabel D_802AA708
-    /* 802AA708 */ .space 0x04
-
-nonmatching D_802AA70C, 0x2
-
-dlabel D_802AA70C
-    /* 802AA70C */ .space 0x02
-
-nonmatching D_802AA70E, 0x2
-
-dlabel D_802AA70E
-    /* 802AA70E */ .space 0x02
-
-nonmatching D_802AA710, 0x4
-
-dlabel D_802AA710
-    /* 802AA710 */ .space 0x04
-
-nonmatching D_802AA714, 0x4
-
-dlabel D_802AA714
-    /* 802AA714 */ .space 0x04
-
-nonmatching D_802AA718, 0x8
-
-dlabel D_802AA718
-    /* 802AA718 */ .space 0x08
+    /* 802AA708 */ .space 0x18
 
 nonmatching D_802AA720, 0xC
 
@@ -6894,45 +3954,20 @@ nonmatching D_802AA738, 0x4
 dlabel D_802AA738
     /* 802AA738 */ .space 0x04
 
-nonmatching D_802AA73C, 0x7
+nonmatching D_802AA73C, 0x5C
 
 dlabel D_802AA73C
-    /* 802AA73C */ .space 0x07
+    /* 802AA73C */ .space 0x5C
 
-nonmatching D_802AA743, 0x51
-
-dlabel D_802AA743
-    /* 802AA743 */ .space 0x51
-
-nonmatching D_802AA794, 0x4
-
-dlabel D_802AA794
-    /* 802AA794 */ .space 0x04
-
-nonmatching D_802AA798, 0x4
+nonmatching D_802AA798, 0x8
 
 dlabel D_802AA798
-    /* 802AA798 */ .space 0x04
+    /* 802AA798 */ .space 0x08
 
-nonmatching D_802AA79C, 0x4
-
-dlabel D_802AA79C
-    /* 802AA79C */ .space 0x04
-
-nonmatching D_802AA7A0, 0x4
+nonmatching D_802AA7A0, 0x88
 
 dlabel D_802AA7A0
-    /* 802AA7A0 */ .space 0x04
-
-nonmatching D_802AA7A4, 0x7C
-
-dlabel D_802AA7A4
-    /* 802AA7A4 */ .space 0x7C
-
-nonmatching D_802AA820, 0x8
-
-dlabel D_802AA820
-    /* 802AA820 */ .space 0x08
+    /* 802AA7A0 */ .space 0x88
 
 nonmatching D_802AA828, 0xC
 
@@ -6979,782 +4014,42 @@ nonmatching D_802AA84B, 0x55
 dlabel D_802AA84B
     /* 802AA84B */ .space 0x55
 
-nonmatching D_802AA8A0, 0xC
+nonmatching D_802AA8A0, 0x78
 
 dlabel D_802AA8A0
-    /* 802AA8A0 */ .space 0x0C
+    /* 802AA8A0 */ .space 0x78
 
-nonmatching D_802AA8AC, 0xC
-
-dlabel D_802AA8AC
-    /* 802AA8AC */ .space 0x0C
-
-nonmatching D_802AA8B8, 0x4
-
-dlabel D_802AA8B8
-    /* 802AA8B8 */ .space 0x04
-
-nonmatching D_802AA8BC, 0x4
-
-dlabel D_802AA8BC
-    /* 802AA8BC */ .space 0x04
-
-nonmatching D_802AA8C0, 0x1
-
-dlabel D_802AA8C0
-    /* 802AA8C0 */ .space 0x01
-
-nonmatching D_802AA8C1, 0x1
-
-dlabel D_802AA8C1
-    /* 802AA8C1 */ .space 0x01
-
-nonmatching D_802AA8C2, 0x56
-
-dlabel D_802AA8C2
-    /* 802AA8C2 */ .space 0x56
-
-nonmatching D_802AA918, 0xC0
+nonmatching D_802AA918, 0xC8
 
 dlabel D_802AA918
-    /* 802AA918 */ .space 0xC0
+    /* 802AA918 */ .space 0xC8
 
-nonmatching D_802AA9D8, 0x8
-
-dlabel D_802AA9D8
-    /* 802AA9D8 */ .space 0x08
-
-nonmatching D_802AA9E0, 0x4
+nonmatching D_802AA9E0, 0x580
 
 dlabel D_802AA9E0
-    /* 802AA9E0 */ .space 0x04
+    /* 802AA9E0 */ .space 0x580
 
-nonmatching D_802AA9E4, 0x574
-
-dlabel D_802AA9E4
-    /* 802AA9E4 */ .space 0x574
-
-nonmatching D_802AAF58, 0x8
-
-dlabel D_802AAF58
-    /* 802AAF58 */ .space 0x08
-
-nonmatching D_802AAF60, 0x4
+nonmatching D_802AAF60, 0x7C
 
 dlabel D_802AAF60
-    /* 802AAF60 */ .space 0x04
+    /* 802AAF60 */ .space 0x7C
 
-nonmatching D_802AAF64, 0x6C
-
-dlabel D_802AAF64
-    /* 802AAF64 */ .space 0x6C
-
-nonmatching D_802AAFD0, 0x8
-
-dlabel D_802AAFD0
-    /* 802AAFD0 */ .space 0x08
-
-nonmatching D_802AAFD8, 0x2
-
-dlabel D_802AAFD8
-    /* 802AAFD8 */ .space 0x02
-
-nonmatching D_802AAFDA, 0x2
-
-dlabel D_802AAFDA
-    /* 802AAFDA */ .space 0x02
-
-nonmatching D_802AAFDC, 0x2
+nonmatching D_802AAFDC, 0xB
 
 dlabel D_802AAFDC
-    /* 802AAFDC */ .space 0x02
+    /* 802AAFDC */ .space 0x0B
 
-nonmatching D_802AAFDE, 0x2
-
-dlabel D_802AAFDE
-    /* 802AAFDE */ .space 0x02
-
-nonmatching D_802AAFE0, 0x4
-
-dlabel D_802AAFE0
-    /* 802AAFE0 */ .space 0x04
-
-nonmatching D_802AAFE4, 0x1
-
-dlabel D_802AAFE4
-    /* 802AAFE4 */ .space 0x01
-
-nonmatching D_802AAFE5, 0x1
-
-dlabel D_802AAFE5
-    /* 802AAFE5 */ .space 0x01
-
-nonmatching D_802AAFE6, 0x1
-
-dlabel D_802AAFE6
-    /* 802AAFE6 */ .space 0x01
-
-nonmatching D_802AAFE7, 0x1
+nonmatching D_802AAFE7, 0x9
 
 dlabel D_802AAFE7
-    /* 802AAFE7 */ .space 0x01
+    /* 802AAFE7 */ .space 0x09
 
-nonmatching D_802AAFE8, 0x1
-
-dlabel D_802AAFE8
-    /* 802AAFE8 */ .space 0x01
-
-nonmatching D_802AAFE9, 0x1
-
-dlabel D_802AAFE9
-    /* 802AAFE9 */ .space 0x01
-
-nonmatching D_802AAFEA, 0x6
-
-dlabel D_802AAFEA
-    /* 802AAFEA */ .space 0x06
-
-nonmatching D_802AAFF0, 0xC
+nonmatching D_802AAFF0, 0x2610
 
 dlabel D_802AAFF0
-    /* 802AAFF0 */ .space 0x0C
+    /* 802AAFF0 */ .space 0x2610
 
-nonmatching D_802AAFFC, 0x14
-
-dlabel D_802AAFFC
-    /* 802AAFFC */ .space 0x14
-
-nonmatching D_802AB010, 0x18
-
-dlabel D_802AB010
-    /* 802AB010 */ .space 0x18
-
-nonmatching D_802AB028, 0x4
-
-dlabel D_802AB028
-    /* 802AB028 */ .space 0x04
-
-nonmatching D_802AB02C, 0xC
-
-dlabel D_802AB02C
-    /* 802AB02C */ .space 0x0C
-
-nonmatching D_802AB038, 0x4
-
-dlabel D_802AB038
-    /* 802AB038 */ .space 0x04
-
-nonmatching D_802AB03C, 0x4
-
-dlabel D_802AB03C
-    /* 802AB03C */ .space 0x04
-
-nonmatching D_802AB040, 0x4
-
-dlabel D_802AB040
-    /* 802AB040 */ .space 0x04
-
-nonmatching D_802AB044, 0x4
-
-dlabel D_802AB044
-    /* 802AB044 */ .space 0x04
-
-nonmatching D_802AB048, 0x4
-
-dlabel D_802AB048
-    /* 802AB048 */ .space 0x04
-
-nonmatching D_802AB04C, 0x4
-
-dlabel D_802AB04C
-    /* 802AB04C */ .space 0x04
-
-nonmatching D_802AB050, 0x4
-
-dlabel D_802AB050
-    /* 802AB050 */ .space 0x04
-
-nonmatching D_802AB054, 0x2
-
-dlabel D_802AB054
-    /* 802AB054 */ .space 0x02
-
-nonmatching D_802AB056, 0x2
-
-dlabel D_802AB056
-    /* 802AB056 */ .space 0x02
-
-nonmatching D_802AB058, 0x4
-
-dlabel D_802AB058
-    /* 802AB058 */ .space 0x04
-
-nonmatching D_802AB05C, 0x4
-
-dlabel D_802AB05C
-    /* 802AB05C */ .space 0x04
-
-nonmatching D_802AB060, 0x4
-
-dlabel D_802AB060
-    /* 802AB060 */ .space 0x04
-
-nonmatching D_802AB064, 0x4
-
-dlabel D_802AB064
-    /* 802AB064 */ .space 0x04
-
-nonmatching D_802AB068, 0x4
-
-dlabel D_802AB068
-    /* 802AB068 */ .space 0x04
-
-nonmatching D_802AB06C, 0x4
-
-dlabel D_802AB06C
-    /* 802AB06C */ .space 0x04
-
-nonmatching D_802AB070, 0x4
-
-dlabel D_802AB070
-    /* 802AB070 */ .space 0x04
-
-nonmatching D_802AB074, 0x4
-
-dlabel D_802AB074
-    /* 802AB074 */ .space 0x04
-
-nonmatching D_802AB078, 0x4
-
-dlabel D_802AB078
-    /* 802AB078 */ .space 0x04
-
-nonmatching D_802AB07C, 0x4
-
-dlabel D_802AB07C
-    /* 802AB07C */ .space 0x04
-
-nonmatching D_802AB080, 0x10
-
-dlabel D_802AB080
-    /* 802AB080 */ .space 0x10
-
-nonmatching D_802AB090, 0x8
-
-dlabel D_802AB090
-    /* 802AB090 */ .space 0x08
-
-nonmatching D_802AB098, 0x8
-
-dlabel D_802AB098
-    /* 802AB098 */ .space 0x08
-
-nonmatching D_802AB0A0, 0x8
-
-dlabel D_802AB0A0
-    /* 802AB0A0 */ .space 0x08
-
-nonmatching D_802AB0A8, 0x1B0
-
-dlabel D_802AB0A8
-    /* 802AB0A8 */ .space 0x1B0
-
-nonmatching D_802AB258, 0x18
-
-dlabel D_802AB258
-    /* 802AB258 */ .space 0x18
-
-nonmatching D_802AB270, 0x20
-
-dlabel D_802AB270
-    /* 802AB270 */ .space 0x20
-
-nonmatching D_802AB290, 0x18
-
-dlabel D_802AB290
-    /* 802AB290 */ .space 0x18
-
-nonmatching D_802AB2A8, 0x20
-
-dlabel D_802AB2A8
-    /* 802AB2A8 */ .space 0x20
-
-nonmatching D_802AB2C8, 0x2050
-
-dlabel D_802AB2C8
-    /* 802AB2C8 */ .space 0x2050
-
-nonmatching D_802AD318, 0xC
-
-dlabel D_802AD318
-    /* 802AD318 */ .space 0x0C
-
-nonmatching D_802AD324, 0x4
-
-dlabel D_802AD324
-    /* 802AD324 */ .space 0x04
-
-nonmatching D_802AD328, 0x4
-
-dlabel D_802AD328
-    /* 802AD328 */ .space 0x04
-
-nonmatching D_802AD32C, 0xC
-
-dlabel D_802AD32C
-    /* 802AD32C */ .space 0x0C
-
-nonmatching D_802AD338, 0x18
-
-dlabel D_802AD338
-    /* 802AD338 */ .space 0x18
-
-nonmatching D_802AD350, 0x4
-
-dlabel D_802AD350
-    /* 802AD350 */ .space 0x04
-
-nonmatching D_802AD354, 0x4
-
-dlabel D_802AD354
-    /* 802AD354 */ .space 0x04
-
-nonmatching D_802AD358, 0x4
-
-dlabel D_802AD358
-    /* 802AD358 */ .space 0x04
-
-nonmatching D_802AD35C, 0x4
-
-dlabel D_802AD35C
-    /* 802AD35C */ .space 0x04
-
-nonmatching D_802AD360, 0x4
-
-dlabel D_802AD360
-    /* 802AD360 */ .space 0x04
-
-nonmatching D_802AD364, 0x4
-
-dlabel D_802AD364
-    /* 802AD364 */ .space 0x04
-
-nonmatching D_802AD368, 0x4
-
-dlabel D_802AD368
-    /* 802AD368 */ .space 0x04
-
-nonmatching D_802AD36C, 0x4
-
-dlabel D_802AD36C
-    /* 802AD36C */ .space 0x04
-
-nonmatching D_802AD370, 0x30
-
-dlabel D_802AD370
-    /* 802AD370 */ .space 0x30
-
-nonmatching D_802AD3A0, 0x10
-
-dlabel D_802AD3A0
-    /* 802AD3A0 */ .space 0x10
-
-nonmatching D_802AD3B0, 0x1B0
-
-dlabel D_802AD3B0
-    /* 802AD3B0 */ .space 0x1B0
-
-nonmatching D_802AD560, 0x40
-
-dlabel D_802AD560
-    /* 802AD560 */ .space 0x40
-
-nonmatching D_802AD5A0, 0x4
-
-dlabel D_802AD5A0
-    /* 802AD5A0 */ .space 0x04
-
-nonmatching D_802AD5A4, 0x3C
-
-dlabel D_802AD5A4
-    /* 802AD5A4 */ .space 0x3C
-
-nonmatching D_802AD5E0, 0x4
-
-dlabel D_802AD5E0
-    /* 802AD5E0 */ .space 0x04
-
-nonmatching D_802AD5E4, 0x4
-
-dlabel D_802AD5E4
-    /* 802AD5E4 */ .space 0x04
-
-nonmatching D_802AD5E8, 0x4
-
-dlabel D_802AD5E8
-    /* 802AD5E8 */ .space 0x04
-
-nonmatching D_802AD5EC, 0x4
-
-dlabel D_802AD5EC
-    /* 802AD5EC */ .space 0x04
-
-nonmatching D_802AD5F0, 0x10
-
-dlabel D_802AD5F0
-    /* 802AD5F0 */ .space 0x10
-
-nonmatching D_802AD600, 0x20
+nonmatching D_802AD600, 0x3710
 
 dlabel D_802AD600
-    /* 802AD600 */ .space 0x20
-
-nonmatching D_802AD620, 0x4
-
-dlabel D_802AD620
-    /* 802AD620 */ .space 0x04
-
-nonmatching D_802AD624, 0x4
-
-dlabel D_802AD624
-    /* 802AD624 */ .space 0x04
-
-nonmatching D_802AD628, 0x4
-
-dlabel D_802AD628
-    /* 802AD628 */ .space 0x04
-
-nonmatching D_802AD62C, 0x4
-
-dlabel D_802AD62C
-    /* 802AD62C */ .space 0x04
-
-nonmatching D_802AD630, 0x4
-
-dlabel D_802AD630
-    /* 802AD630 */ .space 0x04
-
-nonmatching D_802AD634, 0xC
-
-dlabel D_802AD634
-    /* 802AD634 */ .space 0x0C
-
-nonmatching D_802AD640, 0x8
-
-dlabel D_802AD640
-    /* 802AD640 */ .space 0x08
-
-nonmatching D_802AD648, 0x4
-
-dlabel D_802AD648
-    /* 802AD648 */ .space 0x04
-
-nonmatching D_802AD64C, 0x4
-
-dlabel D_802AD64C
-    /* 802AD64C */ .space 0x04
-
-nonmatching D_802AD650, 0x8
-
-dlabel D_802AD650
-    /* 802AD650 */ .space 0x08
-
-nonmatching D_802AD658, 0x4
-
-dlabel D_802AD658
-    /* 802AD658 */ .space 0x04
-
-nonmatching D_802AD65C, 0x4
-
-dlabel D_802AD65C
-    /* 802AD65C */ .space 0x04
-
-nonmatching D_802AD660, 0x8
-
-dlabel D_802AD660
-    /* 802AD660 */ .space 0x08
-
-nonmatching D_802AD668, 0x4
-
-dlabel D_802AD668
-    /* 802AD668 */ .space 0x04
-
-nonmatching D_802AD66C, 0x4
-
-dlabel D_802AD66C
-    /* 802AD66C */ .space 0x04
-
-nonmatching D_802AD670, 0x8
-
-dlabel D_802AD670
-    /* 802AD670 */ .space 0x08
-
-nonmatching D_802AD678, 0x11B8
-
-dlabel D_802AD678
-    /* 802AD678 */ .space 0x11B8
-
-nonmatching D_802AE830, 0x18
-
-dlabel D_802AE830
-    /* 802AE830 */ .space 0x18
-
-nonmatching D_802AE848, 0x18
-
-dlabel D_802AE848
-    /* 802AE848 */ .space 0x18
-
-nonmatching D_802AE860, 0x2
-
-dlabel D_802AE860
-    /* 802AE860 */ .space 0x02
-
-nonmatching D_802AE862, 0x2
-
-dlabel D_802AE862
-    /* 802AE862 */ .space 0x02
-
-nonmatching D_802AE864, 0x14
-
-dlabel D_802AE864
-    /* 802AE864 */ .space 0x14
-
-nonmatching D_802AE878, 0x2
-
-dlabel D_802AE878
-    /* 802AE878 */ .space 0x02
-
-nonmatching D_802AE87A, 0x2
-
-dlabel D_802AE87A
-    /* 802AE87A */ .space 0x02
-
-nonmatching D_802AE87C, 0x14
-
-dlabel D_802AE87C
-    /* 802AE87C */ .space 0x14
-
-nonmatching D_802AE890, 0x10
-
-dlabel D_802AE890
-    /* 802AE890 */ .space 0x10
-
-nonmatching D_802AE8A0, 0x20
-
-dlabel D_802AE8A0
-    /* 802AE8A0 */ .space 0x20
-
-nonmatching D_802AE8C0, 0x20
-
-dlabel D_802AE8C0
-    /* 802AE8C0 */ .space 0x20
-
-nonmatching D_802AE8E0, 0x18
-
-dlabel D_802AE8E0
-    /* 802AE8E0 */ .space 0x18
-
-nonmatching D_802AE8F8, 0x4
-
-dlabel D_802AE8F8
-    /* 802AE8F8 */ .space 0x04
-
-nonmatching D_802AE8FC, 0x4
-
-dlabel D_802AE8FC
-    /* 802AE8FC */ .space 0x04
-
-nonmatching D_802AE900, 0x38
-
-dlabel D_802AE900
-    /* 802AE900 */ .space 0x38
-
-nonmatching D_802AE938, 0x4
-
-dlabel D_802AE938
-    /* 802AE938 */ .space 0x04
-
-nonmatching D_802AE93C, 0x4
-
-dlabel D_802AE93C
-    /* 802AE93C */ .space 0x04
-
-nonmatching D_802AE940, 0x10
-
-dlabel D_802AE940
-    /* 802AE940 */ .space 0x10
-
-nonmatching D_802AE950, 0x3C
-
-dlabel D_802AE950
-    /* 802AE950 */ .space 0x3C
-
-nonmatching D_802AE98C, 0x4
-
-dlabel D_802AE98C
-    /* 802AE98C */ .space 0x04
-
-nonmatching D_802AE990, 0x11B0
-
-dlabel D_802AE990
-    /* 802AE990 */ .space 0x11B0
-
-nonmatching D_802AFB40, 0x18
-
-dlabel D_802AFB40
-    /* 802AFB40 */ .space 0x18
-
-nonmatching D_802AFB58, 0x8
-
-dlabel D_802AFB58
-    /* 802AFB58 */ .space 0x08
-
-nonmatching D_802AFB60, 0x4
-
-dlabel D_802AFB60
-    /* 802AFB60 */ .space 0x04
-
-nonmatching D_802AFB64, 0x1
-
-dlabel D_802AFB64
-    /* 802AFB64 */ .space 0x01
-
-nonmatching D_802AFB65, 0x1
-
-dlabel D_802AFB65
-    /* 802AFB65 */ .space 0x01
-
-nonmatching D_802AFB66, 0x1
-
-dlabel D_802AFB66
-    /* 802AFB66 */ .space 0x01
-
-nonmatching D_802AFB67, 0x1
-
-dlabel D_802AFB67
-    /* 802AFB67 */ .space 0x01
-
-nonmatching D_802AFB68, 0x1
-
-dlabel D_802AFB68
-    /* 802AFB68 */ .space 0x01
-
-nonmatching D_802AFB69, 0x3
-
-dlabel D_802AFB69
-    /* 802AFB69 */ .space 0x03
-
-nonmatching D_802AFB6C, 0x4
-
-dlabel D_802AFB6C
-    /* 802AFB6C */ .space 0x04
-
-nonmatching D_802AFB70, 0x74
-
-dlabel D_802AFB70
-    /* 802AFB70 */ .space 0x74
-
-nonmatching D_802AFBE4, 0x1
-
-dlabel D_802AFBE4
-    /* 802AFBE4 */ .space 0x01
-
-nonmatching D_802AFBE5, 0x1
-
-dlabel D_802AFBE5
-    /* 802AFBE5 */ .space 0x01
-
-nonmatching D_802AFBE6, 0x1
-
-dlabel D_802AFBE6
-    /* 802AFBE6 */ .space 0x01
-
-nonmatching D_802AFBE7, 0x1
-
-dlabel D_802AFBE7
-    /* 802AFBE7 */ .space 0x01
-
-nonmatching D_802AFBE8, 0x1
-
-dlabel D_802AFBE8
-    /* 802AFBE8 */ .space 0x01
-
-nonmatching D_802AFBE9, 0x3
-
-dlabel D_802AFBE9
-    /* 802AFBE9 */ .space 0x03
-
-nonmatching D_802AFBEC, 0x4
-
-dlabel D_802AFBEC
-    /* 802AFBEC */ .space 0x04
-
-nonmatching D_802AFBF0, 0x64
-
-dlabel D_802AFBF0
-    /* 802AFBF0 */ .space 0x64
-
-nonmatching D_802AFC54, 0xC
-
-dlabel D_802AFC54
-    /* 802AFC54 */ .space 0x0C
-
-nonmatching D_802AFC60, 0x1000
-
-dlabel D_802AFC60
-    /* 802AFC60 */ .space 0x1000
-
-nonmatching D_802B0C60, 0x4
-
-dlabel D_802B0C60
-    /* 802B0C60 */ .space 0x04
-
-nonmatching D_802B0C64, 0x1
-
-dlabel D_802B0C64
-    /* 802B0C64 */ .space 0x01
-
-nonmatching D_802B0C65, 0x1
-
-dlabel D_802B0C65
-    /* 802B0C65 */ .space 0x01
-
-nonmatching D_802B0C66, 0x1
-
-dlabel D_802B0C66
-    /* 802B0C66 */ .space 0x01
-
-nonmatching D_802B0C67, 0x1
-
-dlabel D_802B0C67
-    /* 802B0C67 */ .space 0x01
-
-nonmatching D_802B0C68, 0x1
-
-dlabel D_802B0C68
-    /* 802B0C68 */ .space 0x01
-
-nonmatching D_802B0C69, 0x3
-
-dlabel D_802B0C69
-    /* 802B0C69 */ .space 0x03
-
-nonmatching D_802B0C6C, 0x4
-
-dlabel D_802B0C6C
-    /* 802B0C6C */ .space 0x04
-
-nonmatching D_802B0C70, 0x70
-
-dlabel D_802B0C70
-    /* 802B0C70 */ .space 0x70
-
-nonmatching D_802B0CE0, 0x10
-
-dlabel D_802B0CE0
-    /* 802B0CE0 */ .space 0x10
-
-nonmatching D_802B0CF0, 0x20
-
-dlabel D_802B0CF0
-    /* 802B0CF0 */ .space 0x20
+    /* 802AD600 */ .space 0x3710

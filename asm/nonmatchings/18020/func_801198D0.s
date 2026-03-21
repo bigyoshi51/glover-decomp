@@ -290,4 +290,4 @@ glabel func_801198D0
     /* 19D48 80119D48 27BD0078 */ .word 0x27BD0078
     /* 19D4C 80119D4C 03E00008 */ .word 0x03E00008
     /* 19D50 80119D50 00000000 */ .word 0x00000000
-endlabel func_801198D0
+enddlabel func_801198D0

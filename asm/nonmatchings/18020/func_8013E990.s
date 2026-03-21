@@ -101,7 +101,6 @@ glabel func_8013E990
     /* 3EB0C 8013EB0C 00000000 */   nop
     /* 3EB10 8013EB10 3C04801E */  lui        $a0, %hi(D_801E6790)
     /* 3EB14 8013EB14 24846790 */  addiu      $a0, $a0, %lo(D_801E6790)
-  alabel D_8013EB18
     /* 3EB18 8013EB18 3C05801E */  lui        $a1, %hi(D_801E6850)
     /* 3EB1C 8013EB1C 24A56850 */  addiu      $a1, $a1, %lo(D_801E6850)
     /* 3EB20 8013EB20 2406001E */  addiu      $a2, $zero, 0x1E

@@ -1,4 +1,4 @@
-nonmatching func_8013AD14, 0x58
+nonmatching func_8013AD14, 0x5C
 
 glabel func_8013AD14
     /* 3AD14 8013AD14 27BDFFF8 */  addiu      $sp, $sp, -0x8
@@ -25,5 +25,5 @@ glabel func_8013AD14
     /* 3AD60 8013AD60 27BD0008 */  addiu      $sp, $sp, 0x8
     /* 3AD64 8013AD64 03E00008 */  jr         $ra
     /* 3AD68 8013AD68 00000000 */   nop
-endlabel func_8013AD14
     /* 3AD6C 8013AD6C 00000000 */  nop
+endlabel func_8013AD14

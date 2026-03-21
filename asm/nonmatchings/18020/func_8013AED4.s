@@ -23,8 +23,8 @@ glabel func_8013AED4
     /* 3AF20 8013AF20 3C048020 */  lui        $a0, %hi(D_801FFC98)
     /* 3AF24 8013AF24 2484FC98 */  addiu      $a0, $a0, %lo(D_801FFC98)
     /* 3AF28 8013AF28 24050003 */  addiu      $a1, $zero, 0x3
-    /* 3AF2C 8013AF2C 3C068014 */  lui        $a2, %hi(D_8013EB18)
-    /* 3AF30 8013AF30 24C6EB18 */  addiu      $a2, $a2, %lo(D_8013EB18)
+    /* 3AF2C 8013AF2C 3C068014 */  lui        $a2, %hi(func_8013E990 + 0x188)
+    /* 3AF30 8013AF30 24C6EB18 */  addiu      $a2, $a2, %lo(func_8013E990 + 0x188)
     /* 3AF34 8013AF34 8FC70020 */  lw         $a3, 0x20($fp)
   .L8013AF38:
     /* 3AF38 8013AF38 0C071954 */  jal        func_801C6550

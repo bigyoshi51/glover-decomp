@@ -1,0 +1,81 @@
+diff --git a/gas/as.c b/gas/as.c
+index d9fda03..661b4f0 100644
+--- a/gas/as.c
++++ b/gas/as.c
+@@ -116,6 +116,7 @@ Options:\n\
+ --version		print assembler version number and exit\n\
+ -V, --vr4300mul-off	turn off vr4300 mulmul fix\n\
+ -N, --force-n64align          enable special alignment for Nintendo 64\n\
++--no-float-doubleword	expand l.d/s.d to lwc1/swc1 pairs (never ldc1/sdc1)\n\
+ -W			suppress warnings\n\
+ -w			ignored\n\
+ -X			ignored\n\
+@@ -221,6 +222,7 @@ common_emul_init ()
+ 
+ extern int vr4300mul_enabled;
+ extern int force_n64align_enabled;
++extern int no_float_doubleword;
+ 
+ void
+ parse_args (pargc, pargv)
+@@ -262,6 +264,7 @@ parse_args (pargc, pargv)
+     {"mri", no_argument, NULL, 'M'},
+     {"vr4300mul-off", no_argument, NULL, 'V'},
+     {"force-n64align", no_argument, NULL, 'N'},
++    {"no-float-doubleword", no_argument, NULL, 'F'},
+ #define OPTION_NOCPP (OPTION_STD_BASE + 1)
+     {"nocpp", no_argument, NULL, OPTION_NOCPP},
+ #define OPTION_STATISTICS (OPTION_STD_BASE + 2)
+@@ -501,6 +504,10 @@ parse_args (pargc, pargv)
+ 	  force_n64align_enabled = 1;
+ 	  break;
+ 
++	case 'F':
++	  no_float_doubleword = 1;
++	  break;
++
+ 	case 'w':
+ 	  break;
+ 
+diff --git a/gas/config/tc-mips.c b/gas/config/tc-mips.c
+index c2c9156..599f3d9 100644
+--- a/gas/config/tc-mips.c
++++ b/gas/config/tc-mips.c
+@@ -459,6 +459,7 @@ static const struct regname reg_names_n32n64[] = {
+ };
+ 
+ extern int target_big_endian;
++extern int no_float_doubleword;
+ 
+ /* The default target format to use.  */
+ const char *
+@@ -3850,7 +3851,7 @@ macro (ip)
+        * generate the extra instruction?
+        */
+       coproc = 1;
+-      if (mips_isa >= 2)
++      if (mips_isa >= 2 && !no_float_doubleword)
+ 	{
+ 	  s = "ldc1";
+ 	  goto ld;
+@@ -3861,7 +3862,7 @@ macro (ip)
+       goto ldd_std;
+ 
+     case M_S_DAB:
+-      if (mips_isa >= 2)
++      if (mips_isa >= 2 && !no_float_doubleword)
+ 	{
+ 	  s = "sdc1";
+ 	  goto st;
+diff --git a/gas/input-file.c b/gas/input-file.c
+index 2092526..50fb2f3 100644
+--- a/gas/input-file.c
++++ b/gas/input-file.c
+@@ -127,6 +127,7 @@ input_file_pop (arg)
+ }
+ 
+ int vr4300mul_enabled = -1;
++int no_float_doubleword = 0;
+ 
+ // Mimic KMC as mulmul fix functionality
+ char* read_asm(const char *pathname, size_t* output_size) {

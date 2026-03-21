@@ -1,5 +1,5 @@
 /* Handwritten function */
-nonmatching func_8011D36C, 0x480
+nonmatching func_8011D36C, 0x484
 
 glabel func_8011D36C
     /* 1D36C 8011D36C 27BDFFC8 */  addiu      $sp, $sp, -0x38
@@ -305,5 +305,5 @@ glabel func_8011D36C
     /* 1D7E0 8011D7E0 00000000 */   nop
     /* 1D7E4 8011D7E4 09000402 */  j          func_84001008
     /* 1D7E8 8011D7E8 00000000 */   nop
-endlabel func_8011D36C
     /* 1D7EC 8011D7EC 00000000 */  nop
+endlabel func_8011D36C

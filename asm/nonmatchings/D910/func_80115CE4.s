@@ -1,6 +1,6 @@
 nonmatching func_80115CE4
 
-glabel func_80115CE4
+dlabel func_80115CE4
     /* 16CE4 80115CE4 27BDFF40 */ .word 0x27BDFF40
     /* 16CE8 80115CE8 AFB7009C */ .word 0xAFB7009C
     /* 16CEC 80115CEC 0080B821 */ .word 0x0080B821
@@ -1232,4 +1232,4 @@ glabel func_80115CE4
     /* 18014 80117014 00000000 */ .word 0x00000000
     /* 18018 80117018 63737062 */ .word 0x63737062
     /* 1801C 8011701C 726B005F */ .word 0x726B005F /* invalid instruction */
-endlabel func_80115CE4
+enddlabel func_80115CE4
