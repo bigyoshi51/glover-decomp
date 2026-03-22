@@ -45,7 +45,42 @@ void func_8010CB60(s32 arg0, s32 arg1) {
     *ptr = (*ptr & ~(0xFF << shift)) | ((arg1 & 0xFF) << shift);
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010CB9C);
+void func_8010CB9C(s32 arg0, s32 arg1, u32 arg2) {
+    register u32 count asm("$18");
+    register s32 dst asm("$19");
+    register s32 src asm("$17");
+    u32 word;
+
+    dst = arg0;
+    src = arg1;
+    count = arg2;
+    if (count != 0) {
+        while (count != 0 && (dst & 3) != 0) {
+            func_8010CB60(src++, func_8010CA44(dst++) & 0xFF);
+            count--;
+        }
+    }
+    if (count >= 4) {
+        do {
+            word = func_8010C9C0((s32 *)dst);
+            func_8010CB60(src++, (word >> 24) & 0xFF);
+            func_8010CB60(src++, (word >> 16) & 0xFF);
+            func_8010CB60(src++, (word >> 8) & 0xFF);
+            func_8010CB60(src++, word & 0xFF);
+            dst += 4;
+            count -= 4;
+        } while (count >= 4);
+    }
+    if (count != 0) {
+        s32 a0 = dst;
+        do {
+            func_8010CB60(src++, func_8010CA44(a0) & 0xFF);
+            dst++;
+            a0 = dst;
+            count--;
+        } while (count != 0);
+    }
+}
 
 #ifdef NON_MATCHING
 void func_8010CCB0(s32 arg0, s32 arg1) {
