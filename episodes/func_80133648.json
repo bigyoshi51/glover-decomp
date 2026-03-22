@@ -1,0 +1,52 @@
+{
+  "function_name": "func_80133648",
+  "asm_text": "nonmatching func_80133648, 0xA0\n\nglabel func_80133648\n    /* 33648 80133648 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 3364C 8013364C 3C048010 */  lui        $a0, %hi(D_80101F58)\n    /* 33650 80133650 24841F58 */  addiu      $a0, $a0, %lo(D_80101F58)\n    /* 33654 80133654 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 33658 80133658 0C055691 */  jal        func_80155A44\n    /* 3365C 8013365C 00000000 */   nop\n    /* 33660 80133660 0C0515A0 */  jal        func_80145680\n    /* 33664 80133664 00002021 */   addu      $a0, $zero, $zero\n    /* 33668 80133668 3C01801E */  lui        $at, %hi(D_801E7584)\n    /* 3366C 8013366C A0207584 */  sb         $zero, %lo(D_801E7584)($at)\n    /* 33670 80133670 3C018020 */  lui        $at, %hi(D_80201004)\n    /* 33674 80133674 AC201004 */  sw         $zero, %lo(D_80201004)($at)\n    /* 33678 80133678 3C018020 */  lui        $at, %hi(D_802004E0)\n    /* 3367C 8013367C AC2004E0 */  sw         $zero, %lo(D_802004E0)($at)\n    /* 33680 80133680 0C047F60 */  jal        func_8011FD80\n    /* 33684 80133684 00000000 */   nop\n    /* 33688 80133688 3C02801F */  lui        $v0, %hi(D_801EE8E4)\n    /* 3368C 8013368C 2442E8E4 */  addiu      $v0, $v0, %lo(D_801EE8E4)\n    /* 33690 80133690 C4420000 */  lwc1       $f2, 0x0($v0)\n    /* 33694 80133694 46021080 */  add.s      $f2, $f2, $f2\n    /* 33698 80133698 3C01801F */  lui        $at, %hi(D_801EE8EC)\n    /* 3369C 8013369C C420E8EC */  lwc1       $f0, %lo(D_801EE8EC)($at)\n    /* 336A0 801336A0 46000000 */  add.s      $f0, $f0, $f0\n    /* 336A4 801336A4 E4420000 */  swc1       $f2, 0x0($v0)\n    /* 336A8 801336A8 3C01801F */  lui        $at, %hi(D_801EE8EC)\n    /* 336AC 801336AC E420E8EC */  swc1       $f0, %lo(D_801EE8EC)($at)\n    /* 336B0 801336B0 0C047FD0 */  jal        func_8011FF40\n    /* 336B4 801336B4 2404002D */   addiu     $a0, $zero, 0x2D\n    /* 336B8 801336B8 0C0451D0 */  jal        func_80114740\n    /* 336BC 801336BC 00000000 */   nop\n    /* 336C0 801336C0 0C053552 */  jal        func_8014D548\n    /* 336C4 801336C4 00000000 */   nop\n    /* 336C8 801336C8 24020001 */  addiu      $v0, $zero, 0x1\n    /* 336CC 801336CC 3C01801F */  lui        $at, %hi(D_801EC748)\n    /* 336D0 801336D0 A022C748 */  sb         $v0, %lo(D_801EC748)($at)\n    /* 336D4 801336D4 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 336D8 801336D8 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 336DC 801336DC 03E00008 */  jr         $ra\n    /* 336E0 801336E0 00000000 */   nop\n    /* 336E4 801336E4 00000000 */  nop\nendlabel func_80133648\n",
+  "m2c_output": "? func_80114740();                                  /* extern */\n? func_8011FD80();                                  /* extern */\n? func_8011FF40(?);                                 /* extern */\n? func_80145680(?);                                 /* extern */\n? func_8014D548();                                  /* extern */\n? func_80155A44(? *);                               /* extern */\nextern ? D_80101F58;\nextern s8 D_801E7584;\nextern s8 D_801EC748;\nextern f32 D_801EE8E4;\nextern f32 D_801EE8EC;\nextern s32 D_802004E0;\nextern s32 D_80201004;\n\nvoid func_80133648(void) {\n    func_80155A44(&D_80101F58);\n    func_80145680(0);\n    D_801E7584 = 0;\n    D_80201004 = 0;\n    D_802004E0 = 0;\n    func_8011FD80();\n    D_801EE8E4 *= 2.0f;\n    D_801EE8EC *= 2.0f;\n    func_8011FF40(0x2D);\n    func_80114740();\n    func_8014D548();\n    D_801EC748 = 1;\n}\n",
+  "attempts": [
+    {
+      "c_code": "see src/18020.c",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "see src/18020.c",
+  "matched": true,
+  "instruction_count": 40,
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1774143493.6997466,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_8014408C"
+  ],
+  "called_functions": [
+    "func_80155A44",
+    "func_80145680",
+    "func_8011FD80",
+    "func_8011FF40",
+    "func_80114740",
+    "func_8014D548"
+  ],
+  "referenced_data": [
+    "D_80101F58",
+    "D_801E7584",
+    "D_80201004",
+    "D_802004E0",
+    "D_801EE8E4",
+    "D_801EE8EC",
+    "D_801EC748"
+  ],
+  "segment": "18020"
+}
