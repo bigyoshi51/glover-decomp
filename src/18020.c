@@ -753,6 +753,7 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80143A10);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80143AFC);
 
+#ifdef NON_MATCHING
 s32 func_8013FCDC(s32, s32, s32 *);
 void func_801484F0(s32 *, s32 *);
 void func_80149834(s32 *);
@@ -800,6 +801,9 @@ void func_8014408C(void) {
         } while (node != head);
     }
 }
+#else
+INCLUDE_ASM("asm/nonmatchings/18020", func_8014408C);
+#endif
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801441AC);
 
