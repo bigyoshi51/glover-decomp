@@ -761,7 +761,46 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010EEF8);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F0B8);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010F1AC);
+extern f32 D_80100170;
+extern f32 D_801E652C;
+extern f32 D_801E654C;
+extern f32 D_801E656C;
+extern f32 D_801F6430;
+extern s32 D_80269F40[];
+
+void func_8010F1AC(s32 arg0) {
+    register s32 i asm("$5");
+    f32 fconst;
+    f32 *t1;
+    f32 *t0;
+    s32 **v1;
+    f32 *a3;
+    f32 *a2;
+    char pad[4];
+
+    i = 0;
+    if (arg0 > 0) {
+        fconst = D_80100170;
+        t1 = (f32 *)&D_801F6430;
+        t0 = (f32 *)&D_801E656C;
+        v1 = (s32 **)&D_80269F40;
+        a3 = (f32 *)&D_801E654C;
+        a2 = (f32 *)&D_801E652C;
+
+        do {
+            *a2 = *(f32 *)((u8 *)*v1 + 0x34);
+            *a3 = *(f32 *)((u8 *)*v1 + 0x38);
+            *t0 = *(f32 *)((u8 *)*v1 + 0x7C);
+            *t1 = fconst;
+            a2++;
+            v1++;
+            a3++;
+            t1++;
+            t0++;
+            i++;
+        } while (i < arg0);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F23C);
 
