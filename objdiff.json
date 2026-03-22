@@ -10,6 +10,15 @@
   ],
   "units": [
     {
+      "name": "asm/1000",
+      "target_path": "expected/asm/1000.o",
+      "base_path": "build/asm/1000.o",
+      "metadata": {
+        "auto_generated": true,
+        "progress_categories": ["boot"]
+      }
+    },
+    {
       "name": "src/D910",
       "target_path": "expected/src/D910.o",
       "base_path": "build/src/D910.o",
@@ -39,6 +48,10 @@
     }
   ],
   "progress_categories": [
+    {
+      "id": "boot",
+      "name": "Boot"
+    },
     {
       "id": "game",
       "name": "Game"
