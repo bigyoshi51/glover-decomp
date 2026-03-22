@@ -70,7 +70,29 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010CD28);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CE14);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010CEE0);
+void func_8010CEE0(s32 arg0, s32 arg1, s32 arg2) {
+    register s32 count asm("$16");
+    register s32 dst asm("$17");
+    register s32 src asm("$18");
+    register s32 end asm("$19");
+    char pad[4];
+
+    dst = arg0;
+    src = arg1;
+    count = arg2 - 1;
+    if (arg2 != 0) {
+        end = -1;
+        {
+            s32 a0 = src;
+            do {
+                func_8010CCB0(dst++, func_8010CA44(a0) & 0xFF);
+                src++;
+                a0 = src;
+                count--;
+            } while (count != end);
+        }
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CF54);
 
