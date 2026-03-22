@@ -124,15 +124,22 @@ void func_8010CCB0(s32 arg0, s32 arg1) {
     register s32 addr asm("$16");
     register s32 byte_val asm("$17");
     register s32 shift asm("$18");
+    s32 word;
+    s32 mask;
 
     addr = arg0;
     shift = ~addr;
-    addr = addr & ~3;
+    addr = addr & -4;
     byte_val = arg1;
     shift = shift & 3;
-    __asm__("");
     shift = shift << 3;
-    func_8010C988((s32 *)addr, (func_8010C9C0((s32 *)addr) & ~(0xFF << shift)) | ((byte_val & 0xFF) << shift));
+    word = func_8010C9C0(addr);
+    mask = 0xFF << shift;
+    mask = ~mask;
+    word = word & mask;
+    byte_val = byte_val & 0xFF;
+    byte_val = byte_val << shift;
+    func_8010C988(addr, word | byte_val);
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CCB0);
@@ -289,7 +296,7 @@ s32 func_8010D490(void) {
     return result;
 }
 
-void func_8010CD28(u32, s32, s32);
+void func_8010CD28(s32, s32, s32);
 
 s32 func_8010D4DC(s32 arg0, s32 arg1) {
     s32 saved = func_8010C920();

@@ -46,6 +46,9 @@ SPLAT_YAML ?= glover.yaml
 #### Flags ####
 CFLAGS    := -G0 -mips3 -mgp32 -mfp32 -Wa,--vr4300mul-off -Wa,--no-float-doubleword -Wa,-Iinclude -D_LANGUAGE_C
 CPPFLAGS  := -Iinclude -I$(BUILD_DIR)/include -Isrc -DF3DEX_GBI_2 -D_LANGUAGE_C
+ifeq ($(NON_MATCHING),1)
+  CPPFLAGS += -DNON_MATCHING
+endif
 OPTFLAGS  := -O2 -g2
 ASFLAGS   := -march=vr4300 -32 -G0
 LDFLAGS   := --no-check-sections --accept-unknown-input-arch --emit-relocs
