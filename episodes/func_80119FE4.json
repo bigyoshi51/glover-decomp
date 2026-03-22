@@ -1,0 +1,54 @@
+{
+  "function_name": "func_80119FE4",
+  "asm_text": "nonmatching func_80119FE4, 0xD8\n\nglabel func_80119FE4\n    /* 19FE4 80119FE4 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 19FE8 80119FE8 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 19FEC 80119FEC 0C043AFA */  jal        func_8010EBE8\n    /* 19FF0 80119FF0 00000000 */   nop\n    /* 19FF4 80119FF4 3C048010 */  lui        $a0, %hi(D_80100AF4)\n    /* 19FF8 80119FF8 24840AF4 */  addiu      $a0, $a0, %lo(D_80100AF4)\n    /* 19FFC 80119FFC 0C055691 */  jal        func_80155A44\n    /* 1A000 8011A000 00000000 */   nop\n    /* 1A004 8011A004 0C047E7D */  jal        func_8011F9F4\n    /* 1A008 8011A008 00000000 */   nop\n    /* 1A00C 8011A00C 3C03801F */  lui        $v1, %hi(D_801EAB24)\n    /* 1A010 8011A010 8463AB24 */  lh         $v1, %lo(D_801EAB24)($v1)\n    /* 1A014 8011A014 3C04801E */  lui        $a0, %hi(D_801E6700)\n    /* 1A018 8011A018 90846700 */  lbu        $a0, %lo(D_801E6700)($a0)\n    /* 1A01C 8011A01C 000310C0 */  sll        $v0, $v1, 3\n    /* 1A020 8011A020 00431023 */  subu       $v0, $v0, $v1\n    /* 1A024 8011A024 00021080 */  sll        $v0, $v0, 2\n    /* 1A028 8011A028 3C018020 */  lui        $at, %hi(D_801FA9A8)\n    /* 1A02C 8011A02C A024A9A8 */  sb         $a0, %lo(D_801FA9A8)($at)\n    /* 1A030 8011A030 3C01801F */  lui        $at, %hi(D_801EAA44)\n    /* 1A034 8011A034 00220821 */  addu       $at, $at, $v0\n    /* 1A038 8011A038 A024AA44 */  sb         $a0, %lo(D_801EAA44)($at)\n    /* 1A03C 8011A03C 3C03801F */  lui        $v1, %hi(D_801EAB24)\n    /* 1A040 8011A040 8463AB24 */  lh         $v1, %lo(D_801EAB24)($v1)\n    /* 1A044 8011A044 3C04801E */  lui        $a0, %hi(D_801E6701)\n    /* 1A048 8011A048 90846701 */  lbu        $a0, %lo(D_801E6701)($a0)\n    /* 1A04C 8011A04C 000310C0 */  sll        $v0, $v1, 3\n    /* 1A050 8011A050 00431023 */  subu       $v0, $v0, $v1\n    /* 1A054 8011A054 00021080 */  sll        $v0, $v0, 2\n    /* 1A058 8011A058 3C018020 */  lui        $at, %hi(D_801FA9A9)\n    /* 1A05C 8011A05C A024A9A9 */  sb         $a0, %lo(D_801FA9A9)($at)\n    /* 1A060 8011A060 3C01801F */  lui        $at, %hi(D_801EAA45)\n    /* 1A064 8011A064 00220821 */  addu       $at, $at, $v0\n    /* 1A068 8011A068 A024AA45 */  sb         $a0, %lo(D_801EAA45)($at)\n    /* 1A06C 8011A06C 3C03801F */  lui        $v1, %hi(D_801EAB24)\n    /* 1A070 8011A070 8463AB24 */  lh         $v1, %lo(D_801EAB24)($v1)\n    /* 1A074 8011A074 3C05801E */  lui        $a1, %hi(D_801E6702)\n    /* 1A078 8011A078 90A56702 */  lbu        $a1, %lo(D_801E6702)($a1)\n    /* 1A07C 8011A07C 000310C0 */  sll        $v0, $v1, 3\n    /* 1A080 8011A080 00431023 */  subu       $v0, $v0, $v1\n    /* 1A084 8011A084 00021080 */  sll        $v0, $v0, 2\n    /* 1A088 8011A088 3C018020 */  lui        $at, %hi(D_801FA9AA)\n    /* 1A08C 8011A08C A025A9AA */  sb         $a1, %lo(D_801FA9AA)($at)\n    /* 1A090 8011A090 3C01801F */  lui        $at, %hi(D_801EAA46)\n    /* 1A094 8011A094 00220821 */  addu       $at, $at, $v0\n    /* 1A098 8011A098 A025AA46 */  sb         $a1, %lo(D_801EAA46)($at)\n    /* 1A09C 8011A09C 0C04CD6A */  jal        func_801335A8\n    /* 1A0A0 8011A0A0 00002021 */   addu      $a0, $zero, $zero\n    /* 1A0A4 8011A0A4 0C047FD0 */  jal        func_8011FF40\n    /* 1A0A8 8011A0A8 2404002E */   addiu     $a0, $zero, 0x2E\n    /* 1A0AC 8011A0AC 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 1A0B0 8011A0B0 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 1A0B4 8011A0B4 03E00008 */  jr         $ra\n    /* 1A0B8 8011A0B8 00000000 */   nop\nendlabel func_80119FE4\n",
+  "m2c_output": "? func_8010EBE8();                                  /* extern */\n? func_8011F9F4();                                  /* extern */\n? func_8011FF40(?);                                 /* extern */\n? func_801335A8(?, u8);                             /* extern */\n? func_80155A44(? *);                               /* extern */\nextern ? D_80100AF4;\nextern u8 D_801E6700;\nextern u8 D_801E6701;\nextern u8 D_801E6702;\nextern ? D_801EAA44;\nextern ? D_801EAA45;\nextern ? D_801EAA46;\nextern s16 D_801EAB24;\nextern u8 D_801FA9A8;\nextern u8 D_801FA9A9;\nextern u8 D_801FA9AA;\n\nvoid func_80119FE4(void) {\n    func_8010EBE8();\n    func_80155A44(&D_80100AF4);\n    func_8011F9F4();\n    D_801FA9A8 = D_801E6700;\n    *(&D_801EAA44 + (D_801EAB24 * 0x1C)) = D_801E6700;\n    D_801FA9A9 = D_801E6701;\n    *(&D_801EAA45 + (D_801EAB24 * 0x1C)) = D_801E6701;\n    D_801FA9AA = D_801E6702;\n    *(&D_801EAA46 + (D_801EAB24 * 0x1C)) = D_801E6702;\n    func_801335A8(0, D_801E6702);\n    func_8011FF40(0x2E);\n}\n",
+  "attempts": [
+    {
+      "c_code": "(void) {\n    u8 r;\n    u8 g;\n    u8 b;\n\n    func_8010EBE8();\n    func_80155A44(&D_80100AF4);\n    func_8011F9F4();\n    r = D_801E6700;\n    D_801FA9A8 = r;\n    *(&D_801EAA44 + (D_801EAB24 * 0x1C)) = r;\n    g = D_801E6701;\n    D_801FA9A9 = g;\n    *(&D_801EAA45 + (D_801EAB24 * 0x1C)) = g;\n    b = D_801E6702;\n    D_801FA9AA = b;\n    *(&D_801EAA46 + (D_801EAB24 * 0x1C)) = b;\n    func_801335A8(0, b);\n    func_8011FF40(0x2E);\n}\n",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "(void) {\n    u8 r;\n    u8 g;\n    u8 b;\n\n    func_8010EBE8();\n    func_80155A44(&D_80100AF4);\n    func_8011F9F4();\n    r = D_801E6700;\n    D_801FA9A8 = r;\n    *(&D_801EAA44 + (D_801EAB24 * 0x1C)) = r;\n    g = D_801E6701;\n    D_801FA9A9 = g;\n    *(&D_801EAA45 + (D_801EAB24 * 0x1C)) = g;\n    b = D_801E6702;\n    D_801FA9AA = b;\n    *(&D_801EAA46 + (D_801EAB24 * 0x1C)) = b;\n    func_801335A8(0, b);\n    func_8011FF40(0x2E);\n}\n",
+  "matched": true,
+  "instruction_count": 54,
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1774143091.9050102,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8011D7F0",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_8014408C"
+  ],
+  "called_functions": [
+    "func_8010EBE8",
+    "func_80155A44",
+    "func_8011F9F4",
+    "func_801335A8",
+    "func_8011FF40"
+  ],
+  "referenced_data": [
+    "D_80100AF4",
+    "D_801EAB24",
+    "D_801E6700",
+    "D_801FA9A8",
+    "D_801EAA44",
+    "D_801E6701",
+    "D_801FA9A9",
+    "D_801EAA45",
+    "D_801E6702",
+    "D_801FA9AA",
+    "D_801EAA46"
+  ],
+  "segment": "18020"
+}
