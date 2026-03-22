@@ -37,7 +37,44 @@ s32 func_8010CA44(s32 arg0) {
     return (val >> shift) & 0xFF;
 }
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010CA84);
+void func_8010CA84(s32 arg0, u8 *arg1, u32 arg2) {
+    register u8 *dst asm("$16");
+    register u32 count asm("$17");
+    register s32 src asm("$18");
+
+    src = arg0;
+    dst = arg1;
+    count = arg2;
+    if (count != 0) {
+        while (count != 0 && (src & 3) != 0) {
+            s32 a0 = src;
+            src++;
+            *dst = func_8010CA44(a0);
+            dst++;
+            count--;
+        }
+    }
+    if (count >= 4) {
+        do {
+            u32 word = func_8010C9C0((s32 *)src);
+            *dst++ = word >> 24;
+            *dst++ = word >> 16;
+            *dst++ = word >> 8;
+            *dst++ = word;
+            src += 4;
+            count -= 4;
+        } while (count >= 4);
+    }
+    if (count != 0) {
+        do {
+            s32 a0 = src;
+            src++;
+            *dst = func_8010CA44(a0);
+            dst++;
+            count--;
+        } while (count != 0);
+    }
+}
 
 void func_8010CB60(s32 arg0, s32 arg1) {
     s32 shift = (~arg0 & 3) << 3;
@@ -251,7 +288,6 @@ s32 func_8010D5FC(s32 arg0) {
     return result;
 }
 
-s32 func_8010CA84(u32, s32, s32);
 
 s32 func_8010D664(s32 arg0, s32 arg1, s32 arg2) {
     s32 saved;
