@@ -24,9 +24,8 @@ jobs:
           find tools/ -maxdepth 1 -type l -delete 2>/dev/null || true
 
           # KMC GCC 2.7.2 + GAS 2.6 (from repo release)
-          mkdir -p tools/gcc_2.7.2/linux
           gh release download toolchain -p "kmc-gcc-2.7.2-linux.tar.gz"
-          tar xzf kmc-gcc-2.7.2-linux.tar.gz -C tools/gcc_2.7.2/linux --strip-components=1
+          tar xzf kmc-gcc-2.7.2-linux.tar.gz -C tools/
           rm kmc-gcc-2.7.2-linux.tar.gz
           chmod +x tools/gcc_2.7.2/linux/*
           ls tools/gcc_2.7.2/linux/
