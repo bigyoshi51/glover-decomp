@@ -88,7 +88,25 @@ void func_8011D7F0(void) {
     func_8011C810();
 }
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8011D810);
+void func_8014A9FC();
+extern ObjectNode D_8028F350;
+
+void func_8011D810(void) {
+    ObjectNode *node;
+    ObjectNode *next;
+    ObjectNode *head;
+
+    node = D_8028F350.next;
+    if (node != &D_8028F350) {
+        __asm__ __volatile__("addu %0, %1, $0" : "=r"(head) : "r"(&D_8028F350));
+        do {
+            next = node->next;
+            func_80141720(&node);
+            node = next;
+        } while (next != head);
+    }
+    func_8014A9FC();
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8011D870);
 
