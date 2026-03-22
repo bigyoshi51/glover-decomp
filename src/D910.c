@@ -759,7 +759,67 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010EBE8);
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010EEF8);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010F0B8);
+extern f32 D_801E652C;
+extern f32 D_801E654C;
+extern f32 D_801E656C;
+extern s32 D_80269F40[];
+extern f32 D_80100168;
+extern f32 D_8010016C;
+extern s32 D_801F6128;
+extern s32 D_801F612C;
+extern s32 D_801F6130;
+extern s32 D_801F6134;
+extern s32 D_801E64F8;
+extern f32 D_801F60A0;
+extern f32 D_801F60A4;
+extern f32 D_801F60A8;
+extern f32 D_801F60AC;
+extern f32 D_801F6430;
+extern f32 D_801F6434;
+extern f32 D_801F6438;
+extern f32 D_801F643C;
+
+void func_8010F0B8(s32 arg0) {
+    register s32 i asm("$5");
+    f32 *t0;
+    s32 **v1;
+    f32 *a3;
+    f32 *a2;
+    char pad[4];
+
+    i = 0;
+    if (arg0 > 0) {
+        t0 = (f32 *)&D_801E656C;
+        v1 = (s32 **)&D_80269F40;
+        a3 = (f32 *)&D_801E654C;
+        a2 = (f32 *)&D_801E652C;
+
+        do {
+            *a2 = *(f32 *)((u8 *)*v1 + 0x34);
+            *a3 = *(f32 *)((u8 *)*v1 + 0x38);
+            *t0 = *(f32 *)((u8 *)*v1 + 0x7C);
+            a2++;
+            v1++;
+            a3++;
+            t0++;
+            i++;
+        } while (i < arg0);
+    }
+
+    D_801F6128 = 1;
+    D_801F612C = 1;
+    D_801F6130 = 1;
+    D_801F6134 = 1;
+    D_801E64F8 = 0;
+    D_801F60A0 = D_80100168;
+    D_801F60A4 = D_80100168;
+    D_801F60A8 = D_80100168;
+    D_801F60AC = D_80100168;
+    D_801F6430 = D_8010016C;
+    D_801F6434 = D_8010016C;
+    D_801F6438 = D_8010016C;
+    D_801F643C = D_8010016C;
+}
 
 extern f32 D_80100170;
 extern f32 D_801E652C;
