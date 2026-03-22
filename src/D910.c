@@ -47,7 +47,20 @@ void func_8010CB60(s32 arg0, s32 arg1) {
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CB9C);
 
-INCLUDE_ASM("asm/nonmatchings/D910", func_8010CCB0);
+void func_8010CCB0(s32 arg0, s32 arg1) {
+    register s32 addr asm("$16");
+    register s32 byte_val asm("$17");
+    register s32 shift asm("$18");
+
+    addr = arg0;
+    shift = ~addr;
+    addr = addr & ~3;
+    byte_val = arg1;
+    shift = shift & 3;
+    __asm__("");
+    shift = shift << 3;
+    func_8010C988((s32 *)addr, (func_8010C9C0((s32 *)addr) & ~(0xFF << shift)) | ((byte_val & 0xFF) << shift));
+}
 
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CD28);
 
