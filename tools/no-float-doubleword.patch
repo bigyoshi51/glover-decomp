@@ -38,7 +38,7 @@ index d9fda03..661b4f0 100644
  	  break;
  
 diff --git a/gas/config/tc-mips.c b/gas/config/tc-mips.c
-index c2c9156..599f3d9 100644
+index c2c9156..8b2b066 100644
 --- a/gas/config/tc-mips.c
 +++ b/gas/config/tc-mips.c
 @@ -459,6 +459,7 @@ static const struct regname reg_names_n32n64[] = {
@@ -49,6 +49,15 @@ index c2c9156..599f3d9 100644
  
  /* The default target format to use.  */
  const char *
+@@ -3817,7 +3818,7 @@ macro (ip)
+ 	 to adjust when loading from memory.  */
+       r = BFD_RELOC_LO16;
+     dob:
+-      assert (mips_isa < 2);
++      assert (mips_isa < 2 || no_float_doubleword);
+       macro_build ((char *) NULL, &icnt, &offset_expr, "lwc1", "T,o(b)",
+ 		   byte_order == LITTLE_ENDIAN ? treg : treg + 1,
+ 		   (int) r, breg);
 @@ -3850,7 +3851,7 @@ macro (ip)
         * generate the extra instruction?
         */
@@ -67,6 +76,28 @@ index c2c9156..599f3d9 100644
  	{
  	  s = "sdc1";
  	  goto st;
+@@ -4263,7 +4264,7 @@ macro2 (ip)
+       break;
+ 
+     case M_S_DOB:
+-      assert (mips_isa < 2);
++      assert (mips_isa < 2 || no_float_doubleword);
+       /* Even on a big endian machine $fn comes before $fn+1.  We have
+ 	 to adjust when storing to memory.  */
+       macro_build ((char *) NULL, &icnt, &offset_expr, "swc1", "T,o(b)",
+@@ -4903,7 +4904,11 @@ mips_ip (str, ip)
+ 	  || ((insn->pinfo & INSN_ISA) == INSN_4010
+ 	      && ! mips_4010)
+ 	  || ((insn->pinfo & INSN_ISA) == INSN_4100
+-	      && ! mips_4100))
++	      && ! mips_4100)
++	  || (no_float_doubleword
++	      && insn->pinfo != INSN_MACRO
++	      && (strcmp (insn->name, "l.d") == 0
++		  || strcmp (insn->name, "s.d") == 0)))
+ 	{
+ 	  if (insn + 1 < &mips_opcodes[NUMOPCODES]
+ 	      && strcmp (insn->name, insn[1].name) == 0)
 diff --git a/gas/input-file.c b/gas/input-file.c
 index 2092526..50fb2f3 100644
 --- a/gas/input-file.c
