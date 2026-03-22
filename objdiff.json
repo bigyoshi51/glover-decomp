@@ -1,11 +1,10 @@
 {
   "custom_make": "make",
-  "custom_args": [],
+  "custom_args": ["RUN_CC_CHECK=0"],
   "build_target": false,
   "build_base": true,
   "watch_patterns": [
     "src/**/*.c",
-    "src/**/*.h",
     "include/**/*.h",
     "asm/**/*.s"
   ],
@@ -36,26 +35,6 @@
         "platform": "n64",
         "compiler": "gcc2.7.2",
         "c_flags": "-G0 -mips3 -mgp32 -mfp32 -O2 -g2"
-      }
-    },
-    {
-      "name": "asm/1000 (entry)",
-      "target_path": "expected/asm/1000.o",
-      "base_path": "build/asm/1000.o",
-      "metadata": {
-        "source_path": "asm/1000.s",
-        "progress_categories": ["game"],
-        "auto_generated": true
-      }
-    },
-    {
-      "name": "asm/header",
-      "target_path": "expected/asm/header.o",
-      "base_path": "build/asm/header.o",
-      "metadata": {
-        "source_path": "asm/header.s",
-        "progress_categories": ["game"],
-        "auto_generated": true
       }
     }
   ],
