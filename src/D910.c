@@ -138,7 +138,46 @@ void func_8010CCB0(s32 arg0, s32 arg1) {
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CCB0);
 #endif
 
+#ifdef NON_MATCHING
+void func_8010CD28(s32 arg0, s32 arg1, s32 arg2) {
+    register u32 count asm("$16");
+    register s32 dst asm("$17");
+    register u8 *src asm("$18");
+    register u8 *src3 asm("$19");
+
+    dst = arg0;
+    src = (u8 *)arg1;
+    count = arg2;
+    if (count != 0) {
+        while (count != 0 && (dst & 3) != 0) {
+            func_8010CCB0(dst++, *src++);
+            count--;
+        }
+    }
+    if (count >= 4) {
+        src3 = src + 3;
+        do {
+            u8 b1 = src3[-2];
+            u8 b2 = src3[-1];
+            u8 b3 = *src3;
+            u8 b0 = *src;
+            src3 += 4;
+            src += 4;
+            count -= 4;
+            func_8010C988((s32 *)dst, (b0 << 24) | (b1 << 16) | (b2 << 8) | b3);
+            dst += 4;
+        } while (count >= 4);
+    }
+    if (count != 0) {
+        do {
+            func_8010CCB0(dst++, *src++);
+            count--;
+        } while (count != 0);
+    }
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CD28);
+#endif
 
 void func_8010CE14(s32 arg0, s32 arg1, u32 arg2) {
     register u32 count asm("$16");
