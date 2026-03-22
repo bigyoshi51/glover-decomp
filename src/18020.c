@@ -625,7 +625,31 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_8013A9EC);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8013AACC);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8013ACA0);
+s32 func_801D20F8();
+extern u32 D_801FB2A0[];
+
+u32 func_8013ACA0(u8 *arg0) {
+    s32 len;
+    s32 i;
+    u32 crc;
+    char pad[4];
+
+    len = func_801D20F8();
+    i = 0;
+    crc = 0;
+    if (len > 0) {
+        do {
+            {
+                u32 tbl_val = D_801FB2A0[(crc >> 24) ^ *arg0];
+                __asm__("");
+                i++;
+                crc = (crc << 8) ^ tbl_val;
+            }
+            arg0++;
+        } while (i < len);
+    }
+    return crc;
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8013AD14);
 
