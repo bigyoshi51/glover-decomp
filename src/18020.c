@@ -651,7 +651,25 @@ u32 func_8013ACA0(u8 *arg0) {
     return crc;
 }
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8013AD14);
+u32 func_8013AD14(u8 *arg0, s32 arg1) {
+    s32 i;
+    u32 crc;
+    char pad[4];
+
+    i = 0;
+    crc = 0;
+    if (arg1 > 0) {
+        do {
+            u32 tbl_val = D_801FB2A0[(crc >> 24) ^ *arg0];
+            __asm__("");
+            i++;
+            crc = (crc << 8) ^ tbl_val;
+            arg0++;
+        } while (i < arg1);
+    }
+    return crc;
+}
+__asm__(".align 3");
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8013AD70);
 

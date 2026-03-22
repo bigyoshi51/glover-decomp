@@ -1,0 +1,42 @@
+{
+  "function_name": "func_8013AD14",
+  "asm_text": "nonmatching func_8013AD14, 0x5C\n\nglabel func_8013AD14\n    /* 3AD14 8013AD14 27BDFFF8 */  addiu      $sp, $sp, -0x8\n    /* 3AD18 8013AD18 00003821 */  addu       $a3, $zero, $zero\n    /* 3AD1C 8013AD1C 18A0000F */  blez       $a1, .L8013AD5C\n    /* 3AD20 8013AD20 00003021 */   addu      $a2, $zero, $zero\n    /* 3AD24 8013AD24 3C088020 */  lui        $t0, %hi(D_801FB2A0)\n    /* 3AD28 8013AD28 2508B2A0 */  addiu      $t0, $t0, %lo(D_801FB2A0)\n  .L8013AD2C:\n    /* 3AD2C 8013AD2C 90830000 */  lbu        $v1, 0x0($a0)\n    /* 3AD30 8013AD30 00061602 */  srl        $v0, $a2, 24\n    /* 3AD34 8013AD34 00431026 */  xor        $v0, $v0, $v1\n    /* 3AD38 8013AD38 00021080 */  sll        $v0, $v0, 2\n    /* 3AD3C 8013AD3C 00481021 */  addu       $v0, $v0, $t0\n    /* 3AD40 8013AD40 8C430000 */  lw         $v1, 0x0($v0)\n    /* 3AD44 8013AD44 24E70001 */  addiu      $a3, $a3, 0x1\n    /* 3AD48 8013AD48 00061200 */  sll        $v0, $a2, 8\n    /* 3AD4C 8013AD4C 00433026 */  xor        $a2, $v0, $v1\n    /* 3AD50 8013AD50 00E5102A */  slt        $v0, $a3, $a1\n    /* 3AD54 8013AD54 1440FFF5 */  bnez       $v0, .L8013AD2C\n    /* 3AD58 8013AD58 24840001 */   addiu     $a0, $a0, 0x1\n  .L8013AD5C:\n    /* 3AD5C 8013AD5C 00C01021 */  addu       $v0, $a2, $zero\n    /* 3AD60 8013AD60 27BD0008 */  addiu      $sp, $sp, 0x8\n    /* 3AD64 8013AD64 03E00008 */  jr         $ra\n    /* 3AD68 8013AD68 00000000 */   nop\n    /* 3AD6C 8013AD6C 00000000 */  nop\nendlabel func_8013AD14\n",
+  "m2c_output": "extern ? D_801FB2A0;\n\nu32 func_8013AD14(u8 *arg0, s32 arg1) {\n    s32 var_a3;\n    u32 var_a2;\n    u8 *var_a0;\n\n    var_a0 = arg0;\n    var_a3 = 0;\n    var_a2 = 0;\n    if (arg1 > 0) {\n        do {\n            var_a3 += 1;\n            var_a2 = (var_a2 << 8) ^ *((((var_a2 >> 0x18) ^ *var_a0) * 4) + &D_801FB2A0);\n            var_a0 += 1;\n        } while (var_a3 < arg1);\n    }\n    return var_a2;\n}\n",
+  "attempts": [
+    {
+      "c_code": "see 18020.c",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "see 18020.c",
+  "matched": true,
+  "instruction_count": 23,
+  "has_branches": true,
+  "has_calls": false,
+  "timestamp": 1774147264.988848,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8014408C"
+  ],
+  "called_functions": [],
+  "referenced_data": [
+    "D_801FB2A0"
+  ],
+  "segment": "18020"
+}
