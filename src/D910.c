@@ -888,7 +888,48 @@ void func_8010F94C(void) {
     D_801EC860 = 0;
 }
 
+typedef struct {
+    s32 data[59];
+} SM;
+
+extern f32 D_801001B4;
+extern f32 D_801E58A0;
+extern s32 D_801E58A8;
+extern s32 D_801E58B4;
+extern SM D_801E58BC[];
+extern s32 D_801E58DC;
+extern s32 D_801F6138;
+extern s32 D_801F613C;
+
+#ifdef NON_MATCHING
+void func_8010F9C0(s32 arg0) {
+    s32 idx;
+    s32 field;
+
+    idx = D_801E58B4;
+    field = *(s32 *)((u8 *)&D_801E58DC + idx * 236);
+    D_801F6138 = 0;
+    D_801F613C = field;
+
+    if (D_801E58A8 >= 7) {
+        D_801E58A8 = 0;
+    }
+
+    if (D_801E58BC[idx].data[D_801E58A8] == 0) {
+        do {
+            func_8010FC10(&D_801E58A8);
+        } while (D_801E58BC[D_801E58B4].data[D_801E58A8] == 0);
+    }
+
+    if (((s32 (*)(s32))D_801E58BC[D_801E58B4].data[D_801E58A8])(arg0) != 0) {
+        func_8010FC10(&D_801E58A8);
+    }
+
+    D_801E58A0 += D_801001B4;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F9C0);
+#endif
 
 void func_8010EBE8(void);
 void func_80155A44(u8*);
