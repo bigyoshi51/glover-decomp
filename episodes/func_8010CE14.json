@@ -1,0 +1,63 @@
+{
+  "function_name": "func_8010CE14",
+  "asm_text": "nonmatching func_8010CE14, 0xCC\n\nglabel func_8010CE14\n    /* DE14 8010CE14 27BDFFD8 */  addiu      $sp, $sp, -0x28\n    /* DE18 8010CE18 AFB10014 */  sw         $s1, 0x14($sp)\n    /* DE1C 8010CE1C 00808821 */  addu       $s1, $a0, $zero\n    /* DE20 8010CE20 AFB00010 */  sw         $s0, 0x10($sp)\n    /* DE24 8010CE24 00C08021 */  addu       $s0, $a2, $zero\n    /* DE28 8010CE28 AFB3001C */  sw         $s3, 0x1C($sp)\n    /* DE2C 8010CE2C 00A09821 */  addu       $s3, $a1, $zero\n    /* DE30 8010CE30 AFBF0020 */  sw         $ra, 0x20($sp)\n    /* DE34 8010CE34 1200000A */  beqz       $s0, .L8010CE60\n    /* DE38 8010CE38 AFB20018 */   sw        $s2, 0x18($sp)\n    /* DE3C 8010CE3C 32220003 */  andi       $v0, $s1, 0x3\n  .L8010CE40:\n    /* DE40 8010CE40 10400007 */  beqz       $v0, .L8010CE60\n    /* DE44 8010CE44 02202021 */   addu      $a0, $s1, $zero\n    /* DE48 8010CE48 26310001 */  addiu      $s1, $s1, 0x1\n    /* DE4C 8010CE4C 0C04332C */  jal        func_8010CCB0\n    /* DE50 8010CE50 326500FF */   andi      $a1, $s3, 0xFF\n    /* DE54 8010CE54 2610FFFF */  addiu      $s0, $s0, -0x1\n    /* DE58 8010CE58 1600FFF9 */  bnez       $s0, .L8010CE40\n    /* DE5C 8010CE5C 32220003 */   andi      $v0, $s1, 0x3\n  .L8010CE60:\n    /* DE60 8010CE60 2E020004 */  sltiu      $v0, $s0, 0x4\n    /* DE64 8010CE64 1440000E */  bnez       $v0, .L8010CEA0\n    /* DE68 8010CE68 326400FF */   andi      $a0, $s3, 0xFF\n    /* DE6C 8010CE6C 00041600 */  sll        $v0, $a0, 24\n    /* DE70 8010CE70 00041C00 */  sll        $v1, $a0, 16\n    /* DE74 8010CE74 00431025 */  or         $v0, $v0, $v1\n    /* DE78 8010CE78 00041A00 */  sll        $v1, $a0, 8\n    /* DE7C 8010CE7C 00431025 */  or         $v0, $v0, $v1\n    /* DE80 8010CE80 00449025 */  or         $s2, $v0, $a0\n  .L8010CE84:\n    /* DE84 8010CE84 02202021 */  addu       $a0, $s1, $zero\n    /* DE88 8010CE88 0C043262 */  jal        func_8010C988\n    /* DE8C 8010CE8C 02402821 */   addu      $a1, $s2, $zero\n    /* DE90 8010CE90 2610FFFC */  addiu      $s0, $s0, -0x4\n    /* DE94 8010CE94 2E020004 */  sltiu      $v0, $s0, 0x4\n    /* DE98 8010CE98 1040FFFA */  beqz       $v0, .L8010CE84\n    /* DE9C 8010CE9C 26310004 */   addiu     $s1, $s1, 0x4\n  .L8010CEA0:\n    /* DEA0 8010CEA0 12000007 */  beqz       $s0, .L8010CEC0\n    /* DEA4 8010CEA4 02202021 */   addu      $a0, $s1, $zero\n  .L8010CEA8:\n    /* DEA8 8010CEA8 26310001 */  addiu      $s1, $s1, 0x1\n    /* DEAC 8010CEAC 0C04332C */  jal        func_8010CCB0\n    /* DEB0 8010CEB0 326500FF */   andi      $a1, $s3, 0xFF\n    /* DEB4 8010CEB4 2610FFFF */  addiu      $s0, $s0, -0x1\n    /* DEB8 8010CEB8 1600FFFB */  bnez       $s0, .L8010CEA8\n    /* DEBC 8010CEBC 02202021 */   addu      $a0, $s1, $zero\n  .L8010CEC0:\n    /* DEC0 8010CEC0 8FBF0020 */  lw         $ra, 0x20($sp)\n    /* DEC4 8010CEC4 8FB3001C */  lw         $s3, 0x1C($sp)\n    /* DEC8 8010CEC8 8FB20018 */  lw         $s2, 0x18($sp)\n    /* DECC 8010CECC 8FB10014 */  lw         $s1, 0x14($sp)\n    /* DED0 8010CED0 8FB00010 */  lw         $s0, 0x10($sp)\n    /* DED4 8010CED4 27BD0028 */  addiu      $sp, $sp, 0x28\n    /* DED8 8010CED8 03E00008 */  jr         $ra\n    /* DEDC 8010CEDC 00000000 */   nop\nendlabel func_8010CE14\n",
+  "m2c_output": "? func_8010C988(s32, s32);                          /* extern */\n? func_8010CCB0(s32, s32);                          /* extern */\n\nvoid func_8010CE14(s32 arg0, s32 arg1, u32 arg2) {\n    s32 temp_a0;\n    s32 temp_a0_2;\n    s32 var_a0;\n    s32 var_s1;\n    s32 var_v0;\n    u32 var_s0;\n\n    var_s1 = arg0;\n    var_s0 = arg2;\n    if (var_s0 != 0) {\n        var_v0 = var_s1 & 3;\nloop_2:\n        temp_a0 = var_s1;\n        if (var_v0 != 0) {\n            var_s1 += 1;\n            func_8010CCB0(temp_a0, arg1 & 0xFF);\n            var_s0 -= 1;\n            var_v0 = var_s1 & 3;\n            if (var_s0 != 0) {\n                goto loop_2;\n            }\n        }\n    }\n    temp_a0_2 = arg1 & 0xFF;\n    if (var_s0 >= 4U) {\n        do {\n            func_8010C988(var_s1, (temp_a0_2 << 0x18) | (temp_a0_2 << 0x10) | (temp_a0_2 << 8) | temp_a0_2);\n            var_s0 -= 4;\n            var_s1 += 4;\n        } while (var_s0 >= 4U);\n    }\n    var_a0 = var_s1;\n    if (var_s0 != 0) {\n        do {\n            var_s1 += 1;\n            func_8010CCB0(var_a0, arg1 & 0xFF);\n            var_s0 -= 1;\n            var_a0 = var_s1;\n        } while (var_s0 != 0);\n    }\n}\n",
+  "attempts": [
+    {
+      "c_code": "see D910.c",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "see D910.c",
+  "matched": true,
+  "instruction_count": 51,
+  "has_branches": true,
+  "has_calls": true,
+  "timestamp": 1774147742.198779,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_8010C920",
+    "func_8010C958",
+    "func_8010C988",
+    "func_8010C9C0",
+    "func_8010C9FC",
+    "func_8010CA44",
+    "func_8010CB60",
+    "func_8010CCB0",
+    "func_8010CEE0",
+    "func_8010D104",
+    "func_8010D39C",
+    "func_8010D470",
+    "func_8010D490",
+    "func_8010D4DC",
+    "func_8010D56C",
+    "func_8010D5FC",
+    "func_8010D664",
+    "func_8010D728",
+    "func_8010D7F0",
+    "func_8010E0D8",
+    "func_8010E174",
+    "func_8010E2B4",
+    "func_8010E2F4",
+    "func_8010E400",
+    "func_8010E560",
+    "func_8010E6AC",
+    "func_8010EB14",
+    "func_8010F94C",
+    "func_8010FB30",
+    "func_8010FB80",
+    "func_8010FC10"
+  ],
+  "called_functions": [
+    "func_8010CCB0",
+    "func_8010C988"
+  ],
+  "referenced_data": [],
+  "segment": "D910"
+}
