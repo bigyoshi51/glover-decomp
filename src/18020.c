@@ -1,4 +1,5 @@
 #include "common.h"
+#include "structs.h"
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80118020);
 
@@ -171,12 +172,12 @@ void func_80120E48(void) {
 }
 
 void func_8014AAB8();
-void func_80141720(s32);
+void func_80141720(s32 *);
 
 void func_80120F08(s32 arg0) {
     func_8014AAB8();
-    func_80141720(arg0 + 0x5C);
-    func_80141720(arg0 + 0x24);
+    func_80141720((s32 *)(arg0 + 0x5C));
+    func_80141720((s32 *)(arg0 + 0x24));
 }
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80120F40);
@@ -677,7 +678,53 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80143A10);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80143AFC);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8014408C);
+s32 func_8013FCDC(s32, s32, s32 *);
+void func_801484F0(s32 *, s32 *);
+void func_80149834(s32 *);
+void func_801498CC();
+void func_80149940();
+void func_801C5300(s32 *, s32);
+void func_801C5F20(s32 *, s32, s32, s32);
+void func_801C61A0(s32 *, s32, s32, s32);
+extern s32 D_80106088;
+extern s32 D_80284D74;
+
+void func_8014408C(void) {
+    s32 mtx3[16];
+    s32 mtx2[16];
+    s32 mtx1[16];
+    ObjectNode *node;
+    ObjectNode *head;
+    s32 targetType = 0x3C;
+
+    node = D_8026A148.next;
+    if (node != &D_8026A148) {
+        do {
+            if (node->type == targetType) {
+                if (node->meshRef == 0) goto alloc;
+                func_80141720(&node->displayList);
+            alloc:
+                node->displayList = func_8013FCDC(0x40, 1, &D_80106088);
+                __asm__("");
+                func_801C61A0(mtx1, node->posX, node->posY, node->posZ);
+                func_80149834(mtx1);
+                func_801484F0(&node->rotW, mtx3);
+                func_80149834(mtx3);
+                func_801C5F20(mtx2, node->scaleX, node->scaleY, node->scaleZ);
+                func_80149834(mtx2);
+                func_80149940();
+                func_801C5300(&D_80284D74, node->displayList);
+                func_801498CC();
+                func_801498CC();
+                func_801498CC();
+            } else {
+                node->displayList = 0;
+            }
+            node = node->next;
+            __asm__ __volatile__("la %0, D_8026A148" : "=r"(head));
+        } while (node != head);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801441AC);
 
