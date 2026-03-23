@@ -120,25 +120,23 @@ void func_8010CB9C(s32 arg0, s32 arg1, u32 arg2) {
 }
 
 #ifdef NON_MATCHING
-/* 14 scheduling diffs remaining. Instruction selection and register
-   allocation match. Delay slot matches. Diffs are sched2 tiebreaker
-   (INSN_LUID) + assembler .set reorder prologue reordering. */
+/* 11 scheduling diffs remaining (+ 2 jal relocation diffs).
+   Post-jal section, delay slot, and epilogue match perfectly.
+   All diffs in prologue save ordering: register asm forces early
+   $s1 save, but original has it late (after addr computation).
+   Assembler .set reorder mode rearranges prologue saves. */
 void func_8010CCB0(s32 arg0, s32 arg1) {
     register s32 addr asm("$16");
-    register s32 byte_val asm("$17");
     register s32 shift asm("$18");
     s32 word;
 
     addr = arg0;
     shift = ~addr;
     addr = addr & -4;
-    byte_val = arg1;
     shift = shift & 3;
     word = func_8010C9C0(addr);
     shift = shift << 3;
-    byte_val = byte_val & 0xFF;
-    byte_val = byte_val << shift;
-    func_8010C988(addr, (word & ~(0xFF << shift)) | byte_val);
+    func_8010C988(addr, (word & ~(0xFF << shift)) | ((arg1 & 0xFF) << shift));
 }
 #else
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010CCB0);
