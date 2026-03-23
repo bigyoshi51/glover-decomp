@@ -709,7 +709,138 @@ void func_8010E6AC(void) {
     }
 }
 
+void func_8014F510(s32);
+void *func_8013FCDC(s32, s32, void *);
+void func_8014AA20(void *);
+s32 func_80139CA0(void *);
+void func_8014FCF8(void *, s32, s32);
+void func_8014D4D0(void);
+void func_8014D548(void);
+s32 func_8014D5E0(void);
+void func_80141720(void *);
+void func_8011C810(void);
+extern u32 D_801E64D4;
+extern s16 D_801E64D8;
+extern s16 D_801EC7DA;
+extern u8 D_801ED400;
+extern u8 D_801ED401;
+extern u8 D_801ED402;
+extern void *D_801F6098;
+extern s32 D_80000300;
+extern s32 D_80100130;
+extern s32 D_8010013C;
+extern s32 D_80100144;
+extern s32 D_8028F7DC;
+extern s32 D_801F1B24;
+
+#ifdef NON_MATCHING
+/* 29 real diffs: 6 register alloc in fade ($a1/$v1 swap),
+   23 in cleanup section (register swap + 2 extra instructions).
+   First 66 instructions match perfectly. */
+s32 func_8010E86C(void) {
+    u32 state;
+    s32 i;
+    u8 *ptr;
+
+    if (D_801E64D4 == 0) {
+        func_8014F510(0);
+        D_801EC7DA = 0x7530;
+    }
+
+    state = D_801E64D4;
+    if (state == 1) {
+        void *obj = func_8013FCDC(0x70, 1, &D_80100130);
+        D_801F6098 = obj;
+        ((u8 *)obj)[0x6E] = 0xFF;
+        ((u8 *)obj)[0x6D] = 0xFF;
+        ((u8 *)obj)[0x6C] = 0xFF;
+        ((u8 *)D_801F6098)[0x6F] = 0;
+        *(s32 *)((u8 *)D_801F6098 + 0x4C) = 0xA;
+        func_8014AA20(D_801F6098);
+        {
+            void *a0 = &D_80100144;
+            if (D_80000300 == 0) {
+                a0 = &D_8010013C;
+            }
+            func_8014FCF8((u8 *)D_801F6098 + 0x48, func_80139CA0(a0), 1);
+        }
+        {
+            void *p = D_801F6098;
+            *(s16 *)((u8 *)p + 0x58) = 0x400;
+            *(s16 *)((u8 *)p + 0x5A) = 0x400;
+        }
+        D_801ED400 = 0;
+        D_801ED401 = 0;
+        D_801ED402 = 0;
+        state = D_801E64D4;
+    }
+
+    if (state < 2U) goto skip_fade;
+    if (state >= 0x46U) goto skip_fade;
+    {
+        u8 *obj = (u8 *)D_801F6098;
+        u8 alpha = obj[0x6F];
+        u32 alphaU = alpha & 0xFF;
+        if (alphaU < 0xFFU) {
+            u8 newAlpha = alpha + 0xA;
+            if ((s32)(alphaU + 0xA) >= 0x100) {
+                newAlpha = 0xFF;
+            }
+            obj[0x6F] = newAlpha;
+        }
+    }
+skip_fade:
+
+    {
+        u32 ns = D_801E64D4 + 1;
+        D_801E64D4 = ns;
+        if ((ns == 0x7D) | (ns == 0xFA)) {
+            func_8014D4D0();
+        }
+    }
+
+    if (D_801E64D4 >= 0x7EU && func_8014D5E0() != 0 && D_801E64D8 == 0) {
+        if (D_80000300 == 0) {
+            D_801E64D8 = 1;
+            func_8014FCF8((u8 *)D_801F6098 + 0x48, func_80139CA0(&D_80100144), 1);
+            func_8014D548();
+        } else {
+            i = 0;
+            goto cleanup;
+        }
+    }
+
+    if (D_801E64D4 >= 0xFBU) {
+        if (func_8014D5E0() != 0 && D_801E64D8 == 1) {
+            i = 0;
+            goto cleanup;
+        }
+        return 0;
+    }
+    return 0;
+
+cleanup:
+    ptr = (u8 *)&D_8028F7DC;
+    do {
+        func_80141720(ptr);
+        i++;
+        ptr += 0xC;
+    } while (i < 5);
+
+    i = 0;
+    ptr = (u8 *)&D_801F1B24;
+    do {
+        func_80141720(ptr);
+        i++;
+        ptr += 0x10;
+    } while (i < 0x26);
+
+    func_8011C810();
+    return 1;
+}
+#else
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010E86C);
+#endif
 
 s32 func_80147000(s32);
 extern s32 D_801E64B8;
@@ -871,7 +1002,7 @@ INCLUDE_ASM("asm/nonmatchings/D910", func_8010F23C);
 INCLUDE_ASM("asm/nonmatchings/D910", func_8010F520);
 
 void func_801625F0(s32, s32);
-void func_80141720(s32*);
+void func_80141720(void *);
 extern s32 D_801EC860;
 extern s32 D_80269F40[];
 
