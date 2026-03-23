@@ -1,0 +1,58 @@
+{
+  "function_name": "func_80163694",
+  "asm_text": "nonmatching func_80163694, 0x58\n\nglabel func_80163694\n    /* 63694 80163694 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 63698 80163698 AFB00010 */  sw         $s0, 0x10($sp)\n    /* 6369C 8016369C 00808021 */  addu       $s0, $a0, $zero\n    /* 636A0 801636A0 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* 636A4 801636A4 8E040034 */  lw         $a0, 0x34($s0)\n    /* 636A8 801636A8 10800003 */  beqz       $a0, .L801636B8\n    /* 636AC 801636AC 00000000 */   nop\n    /* 636B0 801636B0 0C0589A5 */  jal        func_80162694\n    /* 636B4 801636B4 00000000 */   nop\n  .L801636B8:\n    /* 636B8 801636B8 8E040038 */  lw         $a0, 0x38($s0)\n    /* 636BC 801636BC 10800003 */  beqz       $a0, .L801636CC\n    /* 636C0 801636C0 00000000 */   nop\n    /* 636C4 801636C4 0C0589A5 */  jal        func_80162694\n    /* 636C8 801636C8 00000000 */   nop\n  .L801636CC:\n    /* 636CC 801636CC 8E040014 */  lw         $a0, 0x14($s0)\n    /* 636D0 801636D0 0C0505C8 */  jal        func_80141720\n    /* 636D4 801636D4 24840014 */   addiu     $a0, $a0, 0x14\n    /* 636D8 801636D8 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* 636DC 801636DC 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 636E0 801636E0 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 636E4 801636E4 03E00008 */  jr         $ra\n    /* 636E8 801636E8 00000000 */   nop\nendlabel func_80163694\n",
+  "m2c_output": "? func_80141720(s32);                               /* extern */\n? func_80162694(s32);                               /* extern */\n\nvoid func_80163694(void *arg0) {\n    s32 temp_a0;\n    s32 temp_a0_2;\n\n    temp_a0 = arg0->unk34;\n    if (temp_a0 != 0) {\n        func_80162694(temp_a0);\n    }\n    temp_a0_2 = arg0->unk38;\n    if (temp_a0_2 != 0) {\n        func_80162694(temp_a0_2);\n    }\n    func_80141720(arg0->unk14 + 0x14);\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_80162694();\nvoid func_80163694(s32 arg0) {\n    if (*(s32 *)(arg0 + 0x34) != 0) {\n        func_80162694(*(s32 *)(arg0 + 0x34));\n    }\n    if (*(s32 *)(arg0 + 0x38) != 0) {\n        func_80162694(*(s32 *)(arg0 + 0x38));\n    }\n    func_80141720(*(s32 *)(arg0 + 0x14) + 0x14);\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "void func_80162694();\nvoid func_80163694(s32 arg0) {\n    if (*(s32 *)(arg0 + 0x34) != 0) {\n        func_80162694(*(s32 *)(arg0 + 0x34));\n    }\n    if (*(s32 *)(arg0 + 0x38) != 0) {\n        func_80162694(*(s32 *)(arg0 + 0x38));\n    }\n    func_80141720(*(s32 *)(arg0 + 0x14) + 0x14);\n}",
+  "matched": true,
+  "instruction_count": 22,
+  "has_branches": true,
+  "has_calls": true,
+  "timestamp": 1774305708.8878775,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_80179704",
+    "func_80182FC4",
+    "func_801841FC",
+    "func_8018D55C",
+    "func_8018ED18",
+    "func_801ABB3C",
+    "func_801ABDDC",
+    "func_801AF204",
+    "func_801B9894"
+  ],
+  "called_functions": [
+    "func_80162694",
+    "func_80141720"
+  ],
+  "referenced_data": [],
+  "segment": "18020"
+}

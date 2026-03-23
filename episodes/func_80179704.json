@@ -1,0 +1,59 @@
+{
+  "function_name": "func_80179704",
+  "asm_text": "nonmatching func_80179704, 0x5C\n\nglabel func_80179704\n    /* 79704 80179704 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 79708 80179708 AFB00010 */  sw         $s0, 0x10($sp)\n  .L8017970C:\n    /* 7970C 8017970C 00808021 */  addu       $s0, $a0, $zero\n    /* 79710 80179710 AFBF0014 */  sw         $ra, 0x14($sp)\n    /* 79714 80179714 8E040000 */  lw         $a0, 0x0($s0)\n    /* 79718 80179718 10800008 */  beqz       $a0, .L8017973C\n    /* 7971C 8017971C 00000000 */   nop\n    /* 79720 80179720 0C0702DC */  jal        func_801C0B70\n    /* 79724 80179724 00002821 */   addu      $a1, $zero, $zero\n    /* 79728 80179728 3C02801F */  lui        $v0, %hi(D_801EF488)\n    /* 7972C 8017972C 8C42F488 */  lw         $v0, %lo(D_801EF488)($v0)\n    /* 79730 80179730 2442FFFF */  addiu      $v0, $v0, -0x1\n    /* 79734 80179734 3C01801F */  lui        $at, %hi(D_801EF488)\n    /* 79738 80179738 AC22F488 */  sw         $v0, %lo(D_801EF488)($at)\n  .L8017973C:\n    /* 7973C 8017973C 8E020004 */  lw         $v0, 0x4($s0)\n    /* 79740 80179740 AE000004 */  sw         $zero, 0x4($s0)\n    /* 79744 80179744 AE000000 */  sw         $zero, 0x0($s0)\n    /* 79748 80179748 AE020008 */  sw         $v0, 0x8($s0)\n    /* 7974C 8017974C 8FBF0014 */  lw         $ra, 0x14($sp)\n    /* 79750 80179750 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 79754 80179754 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 79758 80179758 03E00008 */  jr         $ra\n    /* 7975C 8017975C 00000000 */   nop\nendlabel func_80179704\n",
+  "m2c_output": "? func_801C0B70(s32, ?);                            /* extern */\nextern s32 D_801EF488;\n\nvoid func_80179704(void *arg0) {\n    s32 temp_a0;\n    s32 temp_v0;\n\n    temp_a0 = arg0->unk0;\n    if (temp_a0 != 0) {\n        func_801C0B70(temp_a0, 0);\n        D_801EF488 -= 1;\n    }\n    temp_v0 = arg0->unk4;\n    arg0->unk4 = 0;\n    arg0->unk0 = 0;\n    arg0->unk8 = temp_v0;\n}\n",
+  "attempts": [
+    {
+      "c_code": "extern s32 D_801EF488;\nvoid func_801C0B70();\nvoid func_80179704(s32 *arg0) {\n    if (arg0[0] != 0) {\n        func_801C0B70(arg0[0], 0);\n        D_801EF488--;\n    }\n    {\n        s32 tmp = arg0[1];\n        arg0[1] = 0;\n        arg0[0] = 0;\n        arg0[2] = tmp;\n    }\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "extern s32 D_801EF488;\nvoid func_801C0B70();\nvoid func_80179704(s32 *arg0) {\n    if (arg0[0] != 0) {\n        func_801C0B70(arg0[0], 0);\n        D_801EF488--;\n    }\n    {\n        s32 tmp = arg0[1];\n        arg0[1] = 0;\n        arg0[0] = 0;\n        arg0[2] = tmp;\n    }\n}",
+  "matched": true,
+  "instruction_count": 23,
+  "has_branches": true,
+  "has_calls": true,
+  "timestamp": 1774305709.158422,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_80163694",
+    "func_80182FC4",
+    "func_801841FC",
+    "func_8018D55C",
+    "func_8018ED18",
+    "func_801ABB3C",
+    "func_801ABDDC",
+    "func_801AF204",
+    "func_801B9894"
+  ],
+  "called_functions": [
+    "func_801C0B70"
+  ],
+  "referenced_data": [
+    "D_801EF488"
+  ],
+  "segment": "18020"
+}
