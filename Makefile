@@ -39,6 +39,7 @@ LD       := $(CROSS)ld
 OBJCOPY  := $(CROSS)objcopy
 OBJDUMP  := $(CROSS)objdump
 CPP      := cpp
+ASM_PROC := $(PYTHON) tools/asm-processor/build.py
 
 SPLAT      ?= $(PYTHON) -m splat split
 SPLAT_YAML ?= glover.yaml
@@ -129,6 +130,10 @@ $(BUILD_DIR)/$(TARGET).elf: $(O_FILES) $(LDSCRIPT)
 
 $(LDSCRIPT): $(TARGET).ld
 	$(CPP) -P $(IINC) -o $@ $<
+
+#### Per-file optimization overrides ####
+# -O0 functions in the game segment need separate compilation
+# $(BUILD_DIR)/src/18020_O0.o: OPTFLAGS := -O0 -g2
 
 $(BUILD_DIR)/%.o: %.c
 ifndef PERMUTER
