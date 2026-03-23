@@ -1917,7 +1917,12 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80183F64);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018415C);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_801841FC);
+void func_801D211C();
+s32 func_801841FC(s32 arg0, s32 *arg1, s32 arg2) {
+    func_801D211C(arg0, *arg1);
+    *arg1 += arg2;
+    return *arg1;
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80184240);
 
@@ -2535,7 +2540,12 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_801AB8D4);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801ABA98);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_801ABB3C);
+void func_80178134();
+void func_801ABB3C(s32 arg0) {
+    s32 ptr = arg0 + 0x34;
+    func_80178134(0x16, ptr, 0x64, 0x80);
+    func_80178134(0x1F, ptr, 0x32, 0x80);
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801ABB88);
 

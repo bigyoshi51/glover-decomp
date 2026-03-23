@@ -1,43 +1,54 @@
 {
   "function_name": "func_801841FC",
-  "project": "glover",
-  "model": "claude-opus-4-6 (Claude Code)",
-  "start_time": "2026-03-16T03:57:43.446213+00:00",
-  "end_time": null,
-  "steps": [
+  "asm_text": "nonmatching func_801841FC, 0x44\n\nglabel func_801841FC\n    /* 841FC 801841FC 27BDFFE0 */  addiu      $sp, $sp, -0x20\n    /* 84200 80184200 AFB00010 */  sw         $s0, 0x10($sp)\n    /* 84204 80184204 00A08021 */  addu       $s0, $a1, $zero\n    /* 84208 80184208 AFBF0018 */  sw         $ra, 0x18($sp)\n    /* 8420C 8018420C AFB10014 */  sw         $s1, 0x14($sp)\n    /* 84210 80184210 8E050000 */  lw         $a1, 0x0($s0)\n    /* 84214 80184214 0C074847 */  jal        func_801D211C\n    /* 84218 80184218 00C08821 */   addu      $s1, $a2, $zero\n    /* 8421C 8018421C 8E020000 */  lw         $v0, 0x0($s0)\n    /* 84220 80184220 00511021 */  addu       $v0, $v0, $s1\n    /* 84224 80184224 AE020000 */  sw         $v0, 0x0($s0)\n    /* 84228 80184228 8FBF0018 */  lw         $ra, 0x18($sp)\n    /* 8422C 8018422C 8FB10014 */  lw         $s1, 0x14($sp)\n    /* 84230 80184230 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 84234 80184234 27BD0020 */  addiu      $sp, $sp, 0x20\n    /* 84238 80184238 03E00008 */  jr         $ra\n    /* 8423C 8018423C 00000000 */   nop\nendlabel func_801841FC\n",
+  "m2c_output": "? func_801D211C(s32);                               /* extern */\n\nvoid func_801841FC(s32 *arg1, s32 arg2) {\n    func_801D211C(*arg1);\n    *arg1 += arg2;\n}\n",
+  "attempts": [
     {
-      "step_number": 1,
-      "timestamp": "2026-03-17T03:21:09.240784+00:00",
-      "assistant_text": "Manual decompilation (Claude Code session)",
-      "tool_calls": [],
-      "match_percent": 100.0,
-      "compiled": true,
-      "token_usage": null
+      "c_code": "void func_801D211C();\ns32 func_801841FC(s32 arg0, s32 *arg1, s32 arg2) {\n    func_801D211C(arg0, *arg1);\n    *arg1 += arg2;\n    return *arg1;\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
     }
   ],
-  "outcome": "match",
-  "final_match_percent": 100.0,
-  "best_match_percent": 100.0,
-  "total_tokens": 0,
+  "final_c": "void func_801D211C();\ns32 func_801841FC(s32 arg0, s32 *arg1, s32 arg2) {\n    func_801D211C(arg0, *arg1);\n    *arg1 += arg2;\n    return *arg1;\n}",
+  "matched": true,
   "instruction_count": 17,
-  "initial_m2c_source": "? func_801D211C(s32);                               /* extern */\n\nvoid func_801841FC(s32 *arg1, s32 arg2) {\n    func_801D211C(*arg1);\n    *arg1 += arg2;\n}\n",
-  "final_source": "void func_801841FC(s32 arg0, s32 *arg1, s32 arg2) {\n    func_801D211C(arg0, *arg1);\n    *arg1 += arg2;\n}",
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1774305261.008619,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
   "compiler_flags": "-O2 -g2",
-  "segment": "18020",
-  "called_functions": [
-    "func_801D211C"
-  ],
-  "referenced_data": [],
   "nearby_decompiled": [
+    "func_80119FE4",
     "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
     "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
     "func_80147000",
     "func_80147460",
     "func_8015F098",
     "func_8018D55C",
     "func_8018ED18",
+    "func_801ABB3C",
     "func_801ABDDC",
+    "func_801AF204",
     "func_801B9894"
   ],
-  "asm_text": "nonmatching func_801841FC, 0x44\n\nglabel func_801841FC\n    /* 841FC 801841FC 27BDFFE0 */  addiu      $sp, $sp, -0x20\n    /* 84200 80184200 AFB00010 */  sw         $s0, 0x10($sp)\n    /* 84204 80184204 00A08021 */  addu       $s0, $a1, $zero\n    /* 84208 80184208 AFBF0018 */  sw         $ra, 0x18($sp)\n    /* 8420C 8018420C AFB10014 */  sw         $s1, 0x14($sp)\n    /* 84210 80184210 8E050000 */  lw         $a1, 0x0($s0)\n    /* 84214 80184214 0C074847 */  jal        func_801D211C\n    /* 84218 80184218 00C08821 */   addu      $s1, $a2, $zero\n    /* 8421C 8018421C 8E020000 */  lw         $v0, 0x0($s0)\n    /* 84220 80184220 00511021 */  addu       $v0, $v0, $s1\n    /* 84224 80184224 AE020000 */  sw         $v0, 0x0($s0)\n    /* 84228 80184228 8FBF0018 */  lw         $ra, 0x18($sp)\n    /* 8422C 8018422C 8FB10014 */  lw         $s1, 0x14($sp)\n    /* 84230 80184230 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 84234 80184234 27BD0020 */  addiu      $sp, $sp, 0x20\n    /* 84238 80184238 03E00008 */  jr         $ra\n    /* 8423C 8018423C 00000000 */   nop\nendlabel func_801841FC\n"
+  "called_functions": [
+    "func_801D211C"
+  ],
+  "referenced_data": [],
+  "segment": "18020"
 }
