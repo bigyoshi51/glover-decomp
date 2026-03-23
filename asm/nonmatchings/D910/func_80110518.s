@@ -33,4 +33,4 @@ glabel func_80110518
     /* 1158C 8011058C AC2358A8 */ .word 0xAC2358A8
     /* 11590 80110590 03E00008 */ .word 0x03E00008
     /* 11594 80110594 00000000 */ .word 0x00000000
-endlabel func_80110518
+enddlabel func_80110518

@@ -1,44 +1,51 @@
 {
   "function_name": "func_8018D55C",
-  "project": "glover",
-  "model": "claude-opus-4-6 (Claude Code)",
-  "start_time": "2026-03-16T03:57:43.660133+00:00",
-  "end_time": null,
-  "steps": [
+  "asm_text": "nonmatching func_8018D55C, 0x28\n\nglabel func_8018D55C\n    /* 8D55C 8018D55C 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 8D560 8018D560 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 8D564 8018D564 0C062D94 */  jal        func_8018B650\n    /* 8D568 8018D568 00000000 */   nop\n    /* 8D56C 8018D56C 0C062FE9 */  jal        func_8018BFA4\n    /* 8D570 8018D570 00000000 */   nop\n    /* 8D574 8018D574 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 8D578 8018D578 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 8D57C 8018D57C 03E00008 */  jr         $ra\n    /* 8D580 8018D580 00000000 */   nop\nendlabel func_8018D55C\n",
+  "m2c_output": "? func_8018B650();                                  /* extern */\n? func_8018BFA4();                                  /* extern */\n\nvoid func_8018D55C(void) {\n    func_8018B650();\n    func_8018BFA4();\n}\n",
+  "attempts": [
     {
-      "step_number": 1,
-      "timestamp": "2026-03-17T03:21:09.240986+00:00",
-      "assistant_text": "Manual decompilation (Claude Code session)",
-      "tool_calls": [],
-      "match_percent": 100.0,
-      "compiled": true,
-      "token_usage": null
+      "c_code": "void func_8018B650();\nvoid func_8018BFA4();\nvoid func_8018D55C(void) {\n    func_8018B650();\n    func_8018BFA4();\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
     }
   ],
-  "outcome": "match",
-  "final_match_percent": 100.0,
-  "best_match_percent": 100.0,
-  "total_tokens": 0,
+  "final_c": "void func_8018B650();\nvoid func_8018BFA4();\nvoid func_8018D55C(void) {\n    func_8018B650();\n    func_8018BFA4();\n}",
+  "matched": true,
   "instruction_count": 10,
-  "initial_m2c_source": "? func_8018B650();                                  /* extern */\n? func_8018BFA4();                                  /* extern */\n\nvoid func_8018D55C(void) {\n    func_8018B650();\n    func_8018BFA4();\n}\n",
-  "final_source": "void func_8018D55C(void) {\n    func_8018B650();\n    func_8018BFA4();\n}",
+  "has_branches": false,
+  "has_calls": true,
+  "timestamp": 1774303250.0567055,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
   "compiler_flags": "-O2 -g2",
-  "segment": "18020",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_801ABDDC",
+    "func_801B9894"
+  ],
   "called_functions": [
     "func_8018B650",
     "func_8018BFA4"
   ],
   "referenced_data": [],
-  "nearby_decompiled": [
-    "func_8011D7F0",
-    "func_80120F08",
-    "func_80147000",
-    "func_80147460",
-    "func_8015F098",
-    "func_801841FC",
-    "func_8018ED18",
-    "func_801ABDDC",
-    "func_801B9894"
-  ],
-  "asm_text": "nonmatching func_8018D55C, 0x28\n\nglabel func_8018D55C\n    /* 8D55C 8018D55C 27BDFFE8 */  addiu      $sp, $sp, -0x18\n    /* 8D560 8018D560 AFBF0010 */  sw         $ra, 0x10($sp)\n    /* 8D564 8018D564 0C062D94 */  jal        func_8018B650\n    /* 8D568 8018D568 00000000 */   nop\n    /* 8D56C 8018D56C 0C062FE9 */  jal        func_8018BFA4\n    /* 8D570 8018D570 00000000 */   nop\n    /* 8D574 8018D574 8FBF0010 */  lw         $ra, 0x10($sp)\n    /* 8D578 8018D578 27BD0018 */  addiu      $sp, $sp, 0x18\n    /* 8D57C 8018D57C 03E00008 */  jr         $ra\n    /* 8D580 8018D580 00000000 */   nop\nendlabel func_8018D55C\n"
+  "segment": "18020"
 }
