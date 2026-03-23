@@ -53,22 +53,6 @@
         "compiler": "gcc2.7.2",
         "c_flags": "-G0 -mips3 -mgp32 -mfp32 -O2 -g2"
       }
-    },
-    {
-      "name": "src/18020_O0",
-      "target_path": "expected/src/18020.o",
-      "base_path": "build/src/18020_O0.o",
-      "metadata": {
-        "source_path": "src/18020_O0.c",
-        "progress_categories": [
-          "game"
-        ]
-      },
-      "scratch": {
-        "platform": "n64",
-        "compiler": "gcc2.7.2",
-        "c_flags": "-G0 -mips3 -mgp32 -mfp32 -O0 -g2"
-      }
     }
   ],
   "progress_categories": [
