@@ -1,0 +1,59 @@
+{
+  "function_name": "func_801635F0",
+  "asm_text": "nonmatching func_801635F0, 0xA4\n\nglabel func_801635F0\n    /* 635F0 801635F0 27BDFFE0 */  addiu      $sp, $sp, -0x20\n    /* 635F4 801635F4 AFB00010 */  sw         $s0, 0x10($sp)\n    /* 635F8 801635F8 00808021 */  addu       $s0, $a0, $zero\n    /* 635FC 801635FC AFBF0018 */  sw         $ra, 0x18($sp)\n    /* 63600 80163600 AFB10014 */  sw         $s1, 0x14($sp)\n    /* 63604 80163604 8E0200C8 */  lw         $v0, 0xC8($s0)\n    /* 63608 80163608 10400003 */  beqz       $v0, .L80163618\n    /* 6360C 8016360C 00A08821 */   addu      $s1, $a1, $zero\n    /* 63610 80163610 0C0505C8 */  jal        func_80141720\n    /* 63614 80163614 2604001C */   addiu     $a0, $s0, 0x1C\n  .L80163618:\n    /* 63618 80163618 32220001 */  andi       $v0, $s1, 0x1\n    /* 6361C 8016361C 10400004 */  beqz       $v0, .L80163630\n    /* 63620 80163620 32220002 */   andi      $v0, $s1, 0x2\n    /* 63624 80163624 0C0505C8 */  jal        func_80141720\n    /* 63628 80163628 260400D0 */   addiu     $a0, $s0, 0xD0\n    /* 6362C 8016362C 32220002 */  andi       $v0, $s1, 0x2\n  .L80163630:\n    /* 63630 80163630 10400004 */  beqz       $v0, .L80163644\n    /* 63634 80163634 32220004 */   andi      $v0, $s1, 0x4\n    /* 63638 80163638 0C0505C8 */  jal        func_80141720\n    /* 6363C 8016363C 260400D8 */   addiu     $a0, $s0, 0xD8\n    /* 63640 80163640 32220004 */  andi       $v0, $s1, 0x4\n  .L80163644:\n    /* 63644 80163644 10400004 */  beqz       $v0, .L80163658\n    /* 63648 80163648 32220008 */   andi      $v0, $s1, 0x8\n    /* 6364C 8016364C 0C0505C8 */  jal        func_80141720\n    /* 63650 80163650 260400DC */   addiu     $a0, $s0, 0xDC\n    /* 63654 80163654 32220008 */  andi       $v0, $s1, 0x8\n  .L80163658:\n    /* 63658 80163658 10400004 */  beqz       $v0, .L8016366C\n    /* 6365C 8016365C 32220010 */   andi      $v0, $s1, 0x10\n    /* 63660 80163660 0C0505C8 */  jal        func_80141720\n    /* 63664 80163664 260400CC */   addiu     $a0, $s0, 0xCC\n    /* 63668 80163668 32220010 */  andi       $v0, $s1, 0x10\n  .L8016366C:\n    /* 6366C 8016366C 10400003 */  beqz       $v0, .L8016367C\n    /* 63670 80163670 00000000 */   nop\n    /* 63674 80163674 0C0505C8 */  jal        func_80141720\n    /* 63678 80163678 260400D4 */   addiu     $a0, $s0, 0xD4\n  .L8016367C:\n    /* 6367C 8016367C 8FBF0018 */  lw         $ra, 0x18($sp)\n    /* 63680 80163680 8FB10014 */  lw         $s1, 0x14($sp)\n    /* 63684 80163684 8FB00010 */  lw         $s0, 0x10($sp)\n    /* 63688 80163688 27BD0020 */  addiu      $sp, $sp, 0x20\n    /* 6368C 8016368C 03E00008 */  jr         $ra\n    /* 63690 80163690 00000000 */   nop\nendlabel func_801635F0\n",
+  "m2c_output": "? func_80141720(void *);                            /* extern */\n\nvoid func_801635F0(void *arg0, s32 arg1) {\n    s32 var_v0;\n    s32 var_v0_2;\n    s32 var_v0_3;\n    s32 var_v0_4;\n\n    if (arg0->unkC8 != 0) {\n        func_80141720(arg0 + 0x1C);\n    }\n    var_v0 = arg1 & 2;\n    if (arg1 & 1) {\n        func_80141720(arg0 + 0xD0);\n        var_v0 = arg1 & 2;\n    }\n    var_v0_2 = arg1 & 4;\n    if (var_v0 != 0) {\n        func_80141720(arg0 + 0xD8);\n        var_v0_2 = arg1 & 4;\n    }\n    var_v0_3 = arg1 & 8;\n    if (var_v0_2 != 0) {\n        func_80141720(arg0 + 0xDC);\n        var_v0_3 = arg1 & 8;\n    }\n    var_v0_4 = arg1 & 0x10;\n    if (var_v0_3 != 0) {\n        func_80141720(arg0 + 0xCC);\n        var_v0_4 = arg1 & 0x10;\n    }\n    if (var_v0_4 != 0) {\n        func_80141720(arg0 + 0xD4);\n    }\n}\n",
+  "attempts": [
+    {
+      "c_code": "void func_801635F0(s32 arg0, s32 flags) {\n    if (*(s32 *)(arg0 + 0xC8) != 0) {\n        func_80141720(arg0 + 0x1C);\n    }\n    if (flags & 1) {\n        func_80141720(arg0 + 0xD0);\n    }\n    if (flags & 2) {\n        func_80141720(arg0 + 0xD8);\n    }\n    if (flags & 4) {\n        func_80141720(arg0 + 0xDC);\n    }\n    if (flags & 8) {\n        func_80141720(arg0 + 0xCC);\n    }\n    if (flags & 0x10) {\n        func_80141720(arg0 + 0xD4);\n    }\n}",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "void func_801635F0(s32 arg0, s32 flags) {\n    if (*(s32 *)(arg0 + 0xC8) != 0) {\n        func_80141720(arg0 + 0x1C);\n    }\n    if (flags & 1) {\n        func_80141720(arg0 + 0xD0);\n    }\n    if (flags & 2) {\n        func_80141720(arg0 + 0xD8);\n    }\n    if (flags & 4) {\n        func_80141720(arg0 + 0xDC);\n    }\n    if (flags & 8) {\n        func_80141720(arg0 + 0xCC);\n    }\n    if (flags & 0x10) {\n        func_80141720(arg0 + 0xD4);\n    }\n}",
+  "matched": true,
+  "instruction_count": 41,
+  "has_branches": true,
+  "has_calls": true,
+  "timestamp": 1774306058.073442,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_80163694",
+    "func_80179704",
+    "func_80182FC4",
+    "func_80183018",
+    "func_801841FC",
+    "func_8018D55C",
+    "func_8018ED18",
+    "func_801ABB3C",
+    "func_801ABDDC",
+    "func_801AF204",
+    "func_801B9894"
+  ],
+  "called_functions": [
+    "func_80141720"
+  ],
+  "referenced_data": [],
+  "segment": "18020"
+}
