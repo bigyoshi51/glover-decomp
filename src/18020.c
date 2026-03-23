@@ -1932,7 +1932,24 @@ void func_80182FC4(s32 arg0) {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_80183018);
+void func_8015CB44();
+void func_8015C840();
+void func_80183018(s32 arg0) {
+    s32 obj;
+    func_8015CB44(arg0);
+    obj = *(s32 *)(arg0 + 0xC8);
+    if (obj != 0) {
+        s32 s0 = *(s32 *)(obj + 0xC);
+        *(u16 *)(s0 + 0x32) = *(u16 *)(s0 + 0x32) | 2;
+        if (*(s32 *)(s0 + 0x34) != 0) {
+            func_80181FC4(*(s32 *)(s0 + 0x34));
+        }
+        if (*(s32 *)(s0 + 0x38) != 0) {
+            func_80181FC4(*(s32 *)(s0 + 0x38));
+        }
+    }
+    func_8015C840(arg0);
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80183090);
 
