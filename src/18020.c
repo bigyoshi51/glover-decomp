@@ -1899,7 +1899,16 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80182F0C);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80182F64);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_80182FC4);
+void func_80181FC4();
+void func_80182FC4(s32 arg0) {
+    *(u16 *)(arg0 + 0x32) = *(u16 *)(arg0 + 0x32) | 2;
+    if (*(s32 *)(arg0 + 0x34) != 0) {
+        func_80181FC4(*(s32 *)(arg0 + 0x34));
+    }
+    if (*(s32 *)(arg0 + 0x38) != 0) {
+        func_80181FC4(*(s32 *)(arg0 + 0x38));
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80183018);
 
