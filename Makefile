@@ -139,7 +139,7 @@ $(BUILD_DIR)/%.o: %.c
 ifndef PERMUTER
 	$(CC_CHECK) $(CC_CHECK_FLAGS) $(CPPFLAGS) -o $@ $<
 endif
-	export COMPILER_PATH=tools/gcc_2.7.2/$(DETECTED_OS) && $(CC) $(OPTFLAGS) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+	export COMPILER_PATH=tools/gcc_2.7.2/$(DETECTED_OS) && $(CC) -Btools/build/ $(OPTFLAGS) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
 ifndef PERMUTER
 	@$(STRIP) $@ -N dummy-symbol-name
 endif
