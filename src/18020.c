@@ -2102,7 +2102,14 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_8018E914);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018E9AC);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8018ED18);
+void func_8018D39C();
+void func_8018ED18(void) {
+    s32 i = 0;
+    do {
+        func_8018D39C(i);
+        i++;
+    } while (i < 15);
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018ED54);
 
@@ -2599,7 +2606,15 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_801AEFC8);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801AF0CC);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_801AF204);
+extern s16 D_8029011E;
+void func_80176AFC();
+void func_801AF204(s16 arg0) {
+    if (arg0 == 2) {
+        if (D_8029011E != 0) {
+            func_80176AFC();
+        }
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801AF244);
 
