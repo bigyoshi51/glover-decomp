@@ -807,7 +807,38 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_801431AC);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_801437E4);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_80143928);
+s32 func_80139CA0(void *);
+void func_80151FD0(s32, s32, s32, s32);
+void func_80142700(void *, s32);
+extern f32 D_80105FBC;
+extern s32 D_801ED3D0;
+
+void func_80143928(void *arg0, s32 arg1, f32 arg2, f32 arg3, f32 arg4, s32 arg5) {
+    func_80151FD0((s32)arg0 + 0xC8, func_80139CA0(arg1), arg1, 1);
+
+    if (*(s32 *)((u8 *)arg0 + 0xC8) != 0) {
+        f32 val;
+        register s32 *src asm("$5");
+        s32 t0, t1, t2;
+
+        func_80142700(arg0, arg5);
+        val = D_80105FBC;
+        *(f32 *)((u8 *)arg0 + 0x34) = arg2;
+        *(f32 *)((u8 *)arg0 + 0x38) = arg3;
+        *(f32 *)((u8 *)arg0 + 0x3C) = arg4;
+        *(f32 *)((u8 *)arg0 + 0xC4) = val;
+        *(f32 *)((u8 *)arg0 + 0xC0) = val;
+        *(f32 *)((u8 *)arg0 + 0xBC) = val;
+        __asm__ volatile("la %0, D_801ED3D0" : "=r"(src));
+        t0 = src[0];
+        t1 = src[1];
+        t2 = src[2];
+        *(s32 *)((u8 *)arg0 + 0x9C) = t0;
+        *(s32 *)((u8 *)arg0 + 0xA0) = t1;
+        *(s32 *)((u8 *)arg0 + 0xA4) = t2;
+        *(s32 *)((u8 *)arg0 + 0xA8) = src[3];
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80143A10);
 
