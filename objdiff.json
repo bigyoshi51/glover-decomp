@@ -1,6 +1,8 @@
 {
   "custom_make": "make",
-  "custom_args": ["RUN_CC_CHECK=0"],
+  "custom_args": [
+    "RUN_CC_CHECK=0"
+  ],
   "build_target": false,
   "build_base": true,
   "watch_patterns": [
@@ -15,7 +17,9 @@
       "base_path": "build/asm/1000.o",
       "metadata": {
         "auto_generated": true,
-        "progress_categories": ["boot"]
+        "progress_categories": [
+          "boot"
+        ]
       }
     },
     {
@@ -24,7 +28,9 @@
       "base_path": "build/src/D910.o",
       "metadata": {
         "source_path": "src/D910.c",
-        "progress_categories": ["game"]
+        "progress_categories": [
+          "game"
+        ]
       },
       "scratch": {
         "platform": "n64",
@@ -38,12 +44,30 @@
       "base_path": "build/src/18020.o",
       "metadata": {
         "source_path": "src/18020.c",
-        "progress_categories": ["game"]
+        "progress_categories": [
+          "game"
+        ]
       },
       "scratch": {
         "platform": "n64",
         "compiler": "gcc2.7.2",
         "c_flags": "-G0 -mips3 -mgp32 -mfp32 -O2 -g2"
+      }
+    },
+    {
+      "name": "src/18020_O0",
+      "target_path": "expected/src/18020.o",
+      "base_path": "build/src/18020_O0.o",
+      "metadata": {
+        "source_path": "src/18020_O0.c",
+        "progress_categories": [
+          "game"
+        ]
+      },
+      "scratch": {
+        "platform": "n64",
+        "compiler": "gcc2.7.2",
+        "c_flags": "-G0 -mips3 -mgp32 -mfp32 -O0 -g2"
       }
     }
   ],

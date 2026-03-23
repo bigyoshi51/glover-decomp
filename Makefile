@@ -133,7 +133,7 @@ $(LDSCRIPT): $(TARGET).ld
 
 #### Per-file optimization overrides ####
 # -O0 functions in the game segment need separate compilation
-# $(BUILD_DIR)/src/18020_O0.o: OPTFLAGS := -O0 -g2
+$(BUILD_DIR)/src/18020_O0.o: OPTFLAGS := -O0 -g2
 
 $(BUILD_DIR)/%.o: %.c
 ifndef PERMUTER
