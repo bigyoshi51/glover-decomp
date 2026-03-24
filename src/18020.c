@@ -1766,7 +1766,12 @@ void func_80178888(s32 arg0) {
     }
 }
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_80178910);
+extern s32 D_801EEBEC;
+extern s32 D_8029030C;
+void func_80178910(void) {
+    func_80178134((s16)(D_801EEBEC + 0x109), &D_8029030C, 0x64, 0x8A);
+    D_801EEBEC = (D_801EEBEC + 1) % 4;
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8017897C);
 
