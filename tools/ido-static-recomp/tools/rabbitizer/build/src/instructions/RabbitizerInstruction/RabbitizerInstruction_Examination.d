@@ -1,0 +1,66 @@
+build/src/instructions/RabbitizerInstruction/RabbitizerInstruction_Examination.o: \
+ src/instructions/RabbitizerInstruction/RabbitizerInstruction_Examination.c \
+ include/instructions/RabbitizerInstruction.h include/common/Utils.h \
+ include/instructions/RabbitizerInstrId.h \
+ include/instructions/instr_id/RabbitizerInstrId_cpu.inc \
+ include/instructions/instr_id/cpu/cpu_normal.inc \
+ include/instructions/instr_id/cpu/cpu_special.inc \
+ include/instructions/instr_id/cpu/cpu_regimm.inc \
+ include/instructions/instr_id/cpu/cpu_cop0.inc \
+ include/instructions/instr_id/cpu/cpu_cop0_bc0.inc \
+ include/instructions/instr_id/cpu/cpu_cop0_tlb.inc \
+ include/instructions/instr_id/cpu/cpu_cop1.inc \
+ include/instructions/instr_id/cpu/cpu_cop1_bc1.inc \
+ include/instructions/instr_id/cpu/cpu_cop1_fpu_s.inc \
+ include/instructions/instr_id/cpu/cpu_cop1_fpu_d.inc \
+ include/instructions/instr_id/cpu/cpu_cop1_fpu_w.inc \
+ include/instructions/instr_id/cpu/cpu_cop1_fpu_l.inc \
+ include/instructions/instr_id/RabbitizerInstrId_rsp.inc \
+ include/instructions/instr_id/rsp/rsp_cop2.inc \
+ include/instructions/instr_id/rsp/rsp_cop2_vu.inc \
+ include/instructions/instr_id/rsp/rsp_normal_lwc2.inc \
+ include/instructions/instr_id/rsp/rsp_normal_swc2.inc \
+ include/instructions/instr_id/rsp/rsp_normal.inc \
+ include/instructions/instr_id/rsp/rsp_special.inc \
+ include/instructions/instr_id/rsp/rsp_regimm.inc \
+ include/instructions/instr_id/rsp/rsp_cop0.inc \
+ include/instructions/instr_id/RabbitizerInstrId_r5900.inc \
+ include/instructions/instr_id/r5900/r5900_normal.inc \
+ include/instructions/instr_id/r5900/r5900_special.inc \
+ include/instructions/instr_id/r5900/r5900_regimm.inc \
+ include/instructions/instr_id/r5900/r5900_mmi.inc \
+ include/instructions/instr_id/r5900/r5900_mmi_0.inc \
+ include/instructions/instr_id/r5900/r5900_mmi_1.inc \
+ include/instructions/instr_id/r5900/r5900_mmi_2.inc \
+ include/instructions/instr_id/r5900/r5900_mmi_3.inc \
+ include/instructions/instr_id/r5900/r5900_cop0_tlb.inc \
+ include/instructions/instr_id/r5900/r5900_cop1_fpu_s.inc \
+ include/instructions/instr_id/r5900/r5900_cop2.inc \
+ include/instructions/instr_id/r5900/r5900_cop2_bc2.inc \
+ include/instructions/instr_id/r5900/r5900_cop2_special1.inc \
+ include/instructions/instr_id/r5900/r5900_cop2_special2.inc \
+ include/instructions/RabbitizerInstrDescriptor.h \
+ include/instructions/RabbitizerOperandType.h \
+ include/instructions/operands/RabbitizerOperandType_cpu.inc \
+ include/instructions/operands/RabbitizerOperandType_rsp.inc \
+ include/instructions/operands/RabbitizerOperandType_r5900.inc \
+ include/instructions/RabbitizerInstrSuffix.h \
+ include/instructions/InstrCategory.inc include/common/RabbitizerConfig.h \
+ include/common/Abi.inc include/instructions/RabbitizerInstructionRsp.h \
+ include/instructions/RabbitizerInstructionR5900.h \
+ include/instructions/RabbitizerRegister.h \
+ include/instructions/registers/RabbitizerRegister_GprO32.inc \
+ include/instructions/registers/RabbitizerRegister_GprN32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop0.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1O32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1N32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1N64.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1Control.inc \
+ include/instructions/registers/RabbitizerRegister_Cop2.inc \
+ include/instructions/registers/RabbitizerRegister_RspGpr.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop0.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop2.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop2Control.inc \
+ include/instructions/registers/RabbitizerRegister_RspVector.inc \
+ include/instructions/registers/RabbitizerRegister_R5900VF.inc \
+ include/instructions/registers/RabbitizerRegister_R5900VI.inc

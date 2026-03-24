@@ -1,0 +1,19 @@
+build/src/instructions/RabbitizerRegister.o: \
+ src/instructions/RabbitizerRegister.c \
+ include/instructions/RabbitizerRegister.h include/common/Utils.h \
+ include/instructions/registers/RabbitizerRegister_GprO32.inc \
+ include/instructions/registers/RabbitizerRegister_GprN32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop0.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1O32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1N32.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1N64.inc \
+ include/instructions/registers/RabbitizerRegister_Cop1Control.inc \
+ include/instructions/registers/RabbitizerRegister_Cop2.inc \
+ include/instructions/registers/RabbitizerRegister_RspGpr.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop0.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop2.inc \
+ include/instructions/registers/RabbitizerRegister_RspCop2Control.inc \
+ include/instructions/registers/RabbitizerRegister_RspVector.inc \
+ include/instructions/registers/RabbitizerRegister_R5900VF.inc \
+ include/instructions/registers/RabbitizerRegister_R5900VI.inc \
+ include/common/RabbitizerConfig.h include/common/Abi.inc
