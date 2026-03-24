@@ -1741,7 +1741,30 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_80178704);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80178760);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_80178888);
+extern s32 D_801ED3C4;
+extern u16 D_801EEC10;
+s32 func_801B66D4();
+void func_8014ACB4();
+void func_8014AC1C();
+void func_80178888(s32 arg0) {
+    s32 result = func_801B66D4(0x16, arg0, &D_801ED3C4, 0, 0);
+    if (result != 0) {
+        s32 s0 = result + 0xE8;
+        *(u8 *)(result + 0x106) = 0;
+        *(u8 *)(result + 0x107) = 0;
+        *(u8 *)(result + 0x109) = 0;
+        {
+            register u16 val asm("$2") = D_801EEC10;
+            *(s16 *)(result + 0x24) = 1;
+            *(s16 *)(result + 0x100) = val;
+            *(s16 *)(result + 0x102) = val;
+            *(s16 *)(result + 0x114) = val;
+            *(s16 *)(result + 0x116) = val;
+        }
+        func_8014ACB4(s0);
+        func_8014AC1C(s0, 0);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_80178910);
 

@@ -1,0 +1,66 @@
+{
+  "function_name": "func_80178888",
+  "asm_text": "nonmatching func_80178888, 0x88\n\nglabel func_80178888\n    /* 78888 80178888 27BDFFE0 */  addiu      $sp, $sp, -0x20\n    /* 7888C 8017888C 00802821 */  addu       $a1, $a0, $zero\n    /* 78890 80178890 24040016 */  addiu      $a0, $zero, 0x16\n    /* 78894 80178894 3C06801F */  lui        $a2, %hi(D_801ED3C4)\n    /* 78898 80178898 24C6D3C4 */  addiu      $a2, $a2, %lo(D_801ED3C4)\n    /* 7889C 8017889C 00003821 */  addu       $a3, $zero, $zero\n    /* 788A0 801788A0 AFBF001C */  sw         $ra, 0x1C($sp)\n    /* 788A4 801788A4 AFB00018 */  sw         $s0, 0x18($sp)\n    /* 788A8 801788A8 0C06D9B5 */  jal        func_801B66D4\n    /* 788AC 801788AC AFA00010 */   sw        $zero, 0x10($sp)\n    /* 788B0 801788B0 00402821 */  addu       $a1, $v0, $zero\n    /* 788B4 801788B4 10A00011 */  beqz       $a1, .L801788FC\n    /* 788B8 801788B8 24B000E8 */   addiu     $s0, $a1, 0xE8\n    /* 788BC 801788BC A0A00106 */  sb         $zero, 0x106($a1)\n    /* 788C0 801788C0 A0A00107 */  sb         $zero, 0x107($a1)\n    /* 788C4 801788C4 A0A00109 */  sb         $zero, 0x109($a1)\n    /* 788C8 801788C8 3C02801F */  lui        $v0, %hi(D_801EEC10)\n    /* 788CC 801788CC 9442EC10 */  lhu        $v0, %lo(D_801EEC10)($v0)\n    /* 788D0 801788D0 02002021 */  addu       $a0, $s0, $zero\n    /* 788D4 801788D4 24030001 */  addiu      $v1, $zero, 0x1\n    /* 788D8 801788D8 A4A30024 */  sh         $v1, 0x24($a1)\n    /* 788DC 801788DC A4A20100 */  sh         $v0, 0x100($a1)\n    /* 788E0 801788E0 A4A20102 */  sh         $v0, 0x102($a1)\n    /* 788E4 801788E4 A4A20114 */  sh         $v0, 0x114($a1)\n    /* 788E8 801788E8 0C052B2D */  jal        func_8014ACB4\n    /* 788EC 801788EC A4A20116 */   sh        $v0, 0x116($a1)\n    /* 788F0 801788F0 02002021 */  addu       $a0, $s0, $zero\n    /* 788F4 801788F4 0C052B07 */  jal        func_8014AC1C\n    /* 788F8 801788F8 00002821 */   addu      $a1, $zero, $zero\n  .L801788FC:\n    /* 788FC 801788FC 8FBF001C */  lw         $ra, 0x1C($sp)\n    /* 78900 80178900 8FB00018 */  lw         $s0, 0x18($sp)\n    /* 78904 80178904 27BD0020 */  addiu      $sp, $sp, 0x20\n    /* 78908 80178908 03E00008 */  jr         $ra\n    /* 7890C 8017890C 00000000 */   nop\nendlabel func_80178888\n",
+  "m2c_output": "? func_8014AC1C(s32, ?);                            /* extern */\n? func_8014ACB4(s32, void *);                       /* extern */\nvoid *func_801B66D4(?, s32, ? *, ?, s32);           /* extern */\nextern ? D_801ED3C4;\nextern u16 D_801EEC10;\n\nvoid func_80178888(s32 arg0) {\n    s32 temp_s0;\n    void *temp_v0;\n\n    temp_v0 = func_801B66D4(0x16, arg0, &D_801ED3C4, 0, 0);\n    temp_s0 = temp_v0 + 0xE8;\n    if (temp_v0 != NULL) {\n        temp_v0->unk106 = 0;\n        temp_v0->unk107 = 0;\n        temp_v0->unk109 = 0;\n        temp_v0->unk24 = 1;\n        temp_v0->unk100 = (u16) D_801EEC10;\n        temp_v0->unk102 = (u16) D_801EEC10;\n        temp_v0->unk114 = (u16) D_801EEC10;\n        temp_v0->unk116 = (u16) D_801EEC10;\n        func_8014ACB4(temp_s0, temp_v0);\n        func_8014AC1C(temp_s0, 0);\n    }\n}\n",
+  "attempts": [
+    {
+      "c_code": "(s32 arg0) {\n    s32 result = func_801B66D4(0x16, arg0, &D_801ED3C4, 0, 0);\n    if (result != 0) {\n        s32 s0 = result + 0xE8;\n        *(u8 *)(result + 0x106) = 0;\n        *(u8 *)(result + 0x107) = 0;\n        *(u8 *)(result + 0x109) = 0;\n        {\n            register u16 val asm(\"$2\") = D_801EEC10;\n            *(s16 *)(result + 0x24) = 1;\n            *(s16 *)(result + 0x100) = val;\n            *(s16 *)(result + 0x102) = val;\n            *(s16 *)(result + 0x114) = val;\n            *(s16 *)(result + 0x116) = val;\n        }\n        func_8014ACB4(s0);\n        func_8014AC1C(s0, 0);\n    }\n}\n",
+      "matched": true,
+      "diff_count": 0,
+      "diff_details": [],
+      "compiler_flags": "",
+      "notes": "flags: -O2 -g2"
+    }
+  ],
+  "final_c": "(s32 arg0) {\n    s32 result = func_801B66D4(0x16, arg0, &D_801ED3C4, 0, 0);\n    if (result != 0) {\n        s32 s0 = result + 0xE8;\n        *(u8 *)(result + 0x106) = 0;\n        *(u8 *)(result + 0x107) = 0;\n        *(u8 *)(result + 0x109) = 0;\n        {\n            register u16 val asm(\"$2\") = D_801EEC10;\n            *(s16 *)(result + 0x24) = 1;\n            *(s16 *)(result + 0x100) = val;\n            *(s16 *)(result + 0x102) = val;\n            *(s16 *)(result + 0x114) = val;\n            *(s16 *)(result + 0x116) = val;\n        }\n        func_8014ACB4(s0);\n        func_8014AC1C(s0, 0);\n    }\n}\n",
+  "matched": true,
+  "instruction_count": 34,
+  "has_branches": true,
+  "has_calls": true,
+  "timestamp": 1774318259.4012733,
+  "game": "glover",
+  "compiler": "gcc_2.7.2_kmc",
+  "compiler_flags": "-O2 -g2",
+  "nearby_decompiled": [
+    "func_80119FE4",
+    "func_8011D7F0",
+    "func_8011D810",
+    "func_8011D8F4",
+    "func_8011DCF0",
+    "func_80120D80",
+    "func_80120E48",
+    "func_80120F08",
+    "func_8012CCA8",
+    "func_80133648",
+    "func_8013ACA0",
+    "func_8013AD14",
+    "func_80143928",
+    "func_8014408C",
+    "func_80147000",
+    "func_80147460",
+    "func_8015F098",
+    "func_801635F0",
+    "func_80163694",
+    "func_80179704",
+    "func_80182FC4",
+    "func_80183018",
+    "func_801841FC",
+    "func_8018D55C",
+    "func_8018ED18",
+    "func_80196CD4",
+    "func_801ABB3C",
+    "func_801ABDDC",
+    "func_801AF204",
+    "func_801B9894"
+  ],
+  "called_functions": [
+    "func_801B66D4",
+    "func_8014ACB4",
+    "func_8014AC1C"
+  ],
+  "referenced_data": [
+    "D_801ED3C4",
+    "D_801EEC10"
+  ],
+  "segment": "18020"
+}
