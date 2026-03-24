@@ -2219,7 +2219,32 @@ INCLUDE_ASM("asm/nonmatchings/18020", func_8018EFAC);
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018F738);
 
-INCLUDE_ASM("asm/nonmatchings/18020", func_8018F7F4);
+extern s32 D_802994B4;
+extern u8 D_801EEBAC;
+s32 func_8018FE98();
+void func_8018E914();
+void func_8018E888();
+void func_8018F7F4(void) {
+    s32 *head = &D_802994B4;
+    s32 *node = *(s32 **)head;
+    head = (s32 *)((s32)head - 4);
+    D_801EEBAC = 0;
+    if (node != head) {
+        s32 *sentinel = head;
+        do {
+            if (*(s16 *)((s32)node + 0x1E) != 0) {
+                if (func_8018FE98((s32)node + 8) != 0) {
+                    *(u16 *)((s32)node + 0x1E) -= 1;
+                    func_8018E914((s32)node + 0x20);
+                }
+            }
+            if (*(s32 *)((s32)node + 0x4C) != 0) {
+                func_8018E888((s32)node + 0x20);
+            }
+            node = *(s32 **)((s32)node + 4);
+        } while (node != sentinel);
+    }
+}
 
 INCLUDE_ASM("asm/nonmatchings/18020", func_8018F888);
 
